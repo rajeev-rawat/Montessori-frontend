@@ -22,7 +22,7 @@ export default function Home() {
   }
 
   if (!userRole) {
-    return <LoginPage onLogin={handleLogin} />
+    return <LoginPage  />
   }
 
   if (userRole === "admin") {

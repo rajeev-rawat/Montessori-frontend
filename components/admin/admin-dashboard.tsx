@@ -14,6 +14,7 @@ interface AdminDashboardProps {
   onLogout: () => void
 }
 
+
 export function AdminDashboard({ currentView, setCurrentView, onLogout }: AdminDashboardProps) {
   const renderContent = () => {
     switch (currentView) {
@@ -28,13 +29,13 @@ export function AdminDashboard({ currentView, setCurrentView, onLogout }: AdminD
       case "settings":
         return <SettingsModule />
       default:
-        return <DashboardOverview setCurrentView={setCurrentView} />
+        return <DashboardOverview  />
     }
   }
 
   return (
     <div className="flex h-screen overflow-hidden">
-      <AdminSidebar currentView={currentView} setCurrentView={setCurrentView} onLogout={onLogout} />
+      <AdminSidebar />
       <main className="flex-1 overflow-auto bg-background">{renderContent()}</main>
     </div>
   )

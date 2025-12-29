@@ -3,7 +3,9 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Users, Upload, FileCheck, AlertCircle, TrendingUp, ArrowRight } from "lucide-react"
-
+import { useAuthStore } from "@/store/auth.store"
+import { useRouter } from "next/navigation"
+import { useEffect, useState } from "react"
 interface DashboardOverviewProps {
   setCurrentView: (view: string) => void
 }
@@ -22,7 +24,19 @@ const recentUploads = [
   { id: 4, filename: "management_batch.xlsx", records: 450, status: "failed", date: "2024-01-12" },
 ]
 
-export function DashboardOverview({ setCurrentView }: DashboardOverviewProps) {
+// export function DashboardOverview({ setCurrentView }: DashboardOverviewProps) {
+  export function DashboardOverview() {
+ const router = useRouter()
+  const { user } = useAuthStore()
+  const [authChecked, setAuthChecked] = useState(false)
+  useEffect(() => {
+    const token = localStorage.getItem("auth_token")
+    if (!token) {
+      router.replace("/login") // redirect if not logged in
+      return
+    }
+    setAuthChecked(true)
+  }, [router])
   return (
     <div className="p-6 space-y-6">
       {/* Header */}
@@ -66,7 +80,8 @@ export function DashboardOverview({ setCurrentView }: DashboardOverviewProps) {
             <Button
               className="w-full justify-between bg-transparent"
               variant="outline"
-              onClick={() => setCurrentView("bulk-upload")}
+              onClick={() => router.push('/bulkUpload')}
+              // onClick={() => setCurrentView("bulk-upload")}
             >
               <span className="flex items-center gap-2">
                 <Upload className="w-4 h-4" />
@@ -77,25 +92,25 @@ export function DashboardOverview({ setCurrentView }: DashboardOverviewProps) {
             <Button
               className="w-full justify-between bg-transparent"
               variant="outline"
-              onClick={() => setCurrentView("search")}
+              onClick={() => router.push('/students')}
             >
               <span className="flex items-center gap-2">
                 <Users className="w-4 h-4" />
-                Search by Student ID
+               All Students
               </span>
               <ArrowRight className="w-4 h-4" />
             </Button>
-            <Button
+            {/* <Button
               className="w-full justify-between bg-transparent"
               variant="outline"
-              onClick={() => setCurrentView("reports")}
+              // onClick={() => setCurrentView("reports")}
             >
               <span className="flex items-center gap-2">
                 <FileCheck className="w-4 h-4" />
                 Export Records
               </span>
               <ArrowRight className="w-4 h-4" />
-            </Button>
+            </Button> */}
           </CardContent>
         </Card>
 

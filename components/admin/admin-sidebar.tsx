@@ -8,31 +8,33 @@ import {
   Upload,
   Search,
   Users,
-  FileText,
-  Settings,
   LogOut,
   ChevronLeft,
   Menu,
 } from "lucide-react"
 import { useState } from "react"
-
-interface AdminSidebarProps {
-  currentView: string
-  setCurrentView: (view: string) => void
-  onLogout: () => void
-}
+import { useRouter } from "next/navigation"
+import { useAuthStore } from "@/store/auth.store"
 
 const menuItems = [
-  { id: "dashboard", label: "Dashboard", icon: LayoutDashboard },
-  { id: "bulk-upload", label: "Bulk Upload", icon: Upload },
-  { id: "search", label: "Search Records", icon: Search },
-  { id: "students", label: "All Students", icon: Users },
-  { id: "reports", label: "Reports", icon: FileText },
-  { id: "settings", label: "Settings", icon: Settings },
+  { id: "dashboard", label: "Dashboard", icon: LayoutDashboard, route: "/dashboard" },
+  { id: "bulk-upload", label: "Bulk Upload", icon: Upload, route: "/bulkUpload" },
+  // { id: "search", label: "Search Records", icon: Search, route: "/search" },
+  { id: "students", label: "All Students", icon: Users, route: "/students" },
+  // { id: "reports", label: "Reports", icon: FileText, route: "/reports" }, // { id: "settings", label: "Settings", icon: Settings, route: "/settings" },
 ]
 
-export function AdminSidebar({ currentView, setCurrentView, onLogout }: AdminSidebarProps) {
+export function AdminSidebar() {
   const [collapsed, setCollapsed] = useState(false)
+  const router = useRouter()
+  const user = useAuthStore((state) => state.user)
+  const logout = useAuthStore((state) => state.logout)
+console.log(user, 'user')
+  const handleLogout = () => {
+    logout()
+    document.cookie = "auth_token=; path=/; max-age=0" // remove cookie
+    router.replace("/login")
+  }
 
   return (
     <aside
@@ -67,10 +69,9 @@ export function AdminSidebar({ currentView, setCurrentView, onLogout }: AdminSid
             variant="ghost"
             className={cn(
               "w-full justify-start gap-3 text-sidebar-foreground hover:bg-sidebar-accent hover:text-sidebar-accent-foreground",
-              currentView === item.id && "bg-sidebar-accent text-sidebar-accent-foreground",
-              collapsed && "justify-center px-2",
+              collapsed && "justify-center px-2"
             )}
-            onClick={() => setCurrentView(item.id)}
+            onClick={() => router.push(item.route)}
           >
             <item.icon className="w-5 h-5 shrink-0" />
             {!collapsed && <span>{item.label}</span>}
@@ -78,16 +79,19 @@ export function AdminSidebar({ currentView, setCurrentView, onLogout }: AdminSid
         ))}
       </nav>
 
-      {/* User & Logout */}
-      <div className="p-3 border-t border-sidebar-border">
+      {/* User Info & Logout */}
+      <div className="p-3 border-t border-sidebar-border mt-auto">
         <div className={cn("flex items-center gap-3 mb-3 px-3", collapsed && "justify-center")}>
           <div className="w-8 h-8 rounded-full bg-sidebar-accent flex items-center justify-center shrink-0">
-            <span className="text-xs font-medium">AD</span>
+            <span className="text-xs font-medium">
+              {user?.name?.split(" ").map((n: string) => n[0]).join("") || "AD"}
+            </span>
           </div>
-          {!collapsed && (
+          {!collapsed && user && (
             <div className="flex-1 min-w-0">
-              <p className="text-sm font-medium truncate">Admin User</p>
-              <p className="text-xs text-sidebar-foreground/60 truncate">admin@indus.edu</p>
+              <p className="text-sm font-medium truncate">{user.name}</p>
+              <p className="text-xs text-sidebar-foreground/60 truncate">{user.user_type}</p>
+              <p className="text-xs text-sidebar-foreground/60 truncate">{user.email}</p>
             </div>
           )}
         </div>
@@ -97,7 +101,7 @@ export function AdminSidebar({ currentView, setCurrentView, onLogout }: AdminSid
             "w-full justify-start gap-3 text-sidebar-foreground hover:bg-sidebar-accent",
             collapsed && "justify-center px-2",
           )}
-          onClick={onLogout}
+          onClick={handleLogout}
         >
           <LogOut className="w-5 h-5 shrink-0" />
           {!collapsed && <span>Logout</span>}
