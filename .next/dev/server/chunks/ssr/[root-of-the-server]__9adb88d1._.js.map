@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 14, "column": 0}, "map": {"version":3,"sources":["file:///Users/rajeevrawat/Desktop/MONTESSORI/Montessori-frontend/app/dashboard/page.tsx"],"sourcesContent":["import { DashboardOverview } from \"@/components/admin/dashboard-overview\";\n\nexport default function DashboardPage() {\n  return (\n   <AdminDashboard />\n  )\n}\n"],"names":[],"mappings":";;;;;;AAEe,SAAS;IACtB,qBACC,iSAAC;;;;;AAEJ"}}]
+}

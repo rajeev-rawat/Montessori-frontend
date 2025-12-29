@@ -1,20 +1,76 @@
-"use client"
+"use client";
 
-import { useState } from "react"
-import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { Input } from "@/components/ui/input"
-import { Label } from "@/components/ui/label"
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
-import { GraduationCap, ShieldCheck, Users, Mail, Lock, Phone, User } from "lucide-react"
-import type { UserRole } from "@/app/page"
+import { useEffect, useState } from "react";
+import { Button } from "@/components/ui/button";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import {
+  GraduationCap,
+  ShieldCheck,
+  Users,
+  Mail,
+  Lock,
+  Phone,
+  User,
+} from "lucide-react";
+import type { UserRole } from "@/app/page";
+import { useRouter } from "next/navigation";
+import { useToast } from "@/hooks/use-toast";
+import { useAuthStore } from "@/store/auth.store";
 
 interface LoginPageProps {
-  onLogin: (role: UserRole) => void
+  onLogin: (role: UserRole) => void;
 }
 
-export function LoginPage({ onLogin }: LoginPageProps) {
-  const [isRegistering, setIsRegistering] = useState(false)
+// export function LoginPage({ onLogin }: LoginPageProps) {
+export function LoginPage() {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const router = useRouter();
+  const { toast } = useToast();
+  const { login, loading } = useAuthStore();
+  const [isRegistering, setIsRegistering] = useState(false);
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    try {
+      const res = await login({ username: email, password });
+
+      localStorage.setItem("auth_token", res.token);
+      localStorage.setItem("auth_user", JSON.stringify(res.user));
+      localStorage.setItem("auth_expires_at", res.expires_at);
+
+      document.cookie = `auth_token=${res.token}; path=/; max-age=86400;`;
+
+      toast({
+        title: "Login Successful",
+        description: res.message || "Welcome to Dashboard",
+      });
+
+      router.push("/dashboard");
+    } catch (error: any) {
+      toast({
+        variant: "destructive",
+        title: "Login Failed",
+        description: error.message || "Invalid credentials",
+      });
+    }
+  };
+
+  useEffect(() => {
+    const token = localStorage.getItem("auth_token");
+    if (token) {
+      router.replace("/dashboard"); // redirect if already logged in
+    }
+  }, [router]);
 
   return (
     <div className="min-h-screen bg-background">
@@ -27,7 +83,9 @@ export function LoginPage({ onLogin }: LoginPageProps) {
             </div>
             <div>
               <h1 className="font-semibold text-foreground">Indus Education</h1>
-              <p className="text-xs text-muted-foreground">Student Records Management Portal</p>
+              <p className="text-xs text-muted-foreground">
+                Student Records Management Portal
+              </p>
             </div>
           </div>
         </div>
@@ -43,8 +101,9 @@ export function LoginPage({ onLogin }: LoginPageProps) {
                 Centralized Student Records Management
               </h2>
               <p className="mt-4 text-lg text-muted-foreground text-pretty">
-                Securely manage and access student data for 2+ lakh alumni students with powerful search, bulk uploads,
-                and role-based access.
+                Securely manage and access student data for 2+ lakh alumni
+                students with powerful search, bulk uploads, and role-based
+                access.
               </p>
             </div>
 
@@ -54,9 +113,12 @@ export function LoginPage({ onLogin }: LoginPageProps) {
                   <ShieldCheck className="w-5 h-5 text-primary" />
                 </div>
                 <div>
-                  <h3 className="font-medium text-foreground">Secure & Scalable</h3>
+                  <h3 className="font-medium text-foreground">
+                    Secure & Scalable
+                  </h3>
                   <p className="text-sm text-muted-foreground">
-                    Role-based access with audit trails and data privacy compliance
+                    Role-based access with audit trails and data privacy
+                    compliance
                   </p>
                 </div>
               </div>
@@ -66,9 +128,12 @@ export function LoginPage({ onLogin }: LoginPageProps) {
                   <Users className="w-5 h-5 text-accent" />
                 </div>
                 <div>
-                  <h3 className="font-medium text-foreground">Bulk Data Management</h3>
+                  <h3 className="font-medium text-foreground">
+                    Bulk Data Management
+                  </h3>
                   <p className="text-sm text-muted-foreground">
-                    Upload CSV/Excel files with automated validation and error reporting
+                    Upload CSV/Excel files with automated validation and error
+                    reporting
                   </p>
                 </div>
               </div>
@@ -85,29 +150,37 @@ export function LoginPage({ onLogin }: LoginPageProps) {
               <Tabs defaultValue="admin" className="w-full">
                 <TabsList className="grid w-full grid-cols-2 mb-6">
                   <TabsTrigger value="admin">Admin Login</TabsTrigger>
-                  <TabsTrigger value="student">Student Login</TabsTrigger>
+                  {/* <TabsTrigger value="student">Student Login</TabsTrigger> */}
                 </TabsList>
 
                 <TabsContent value="admin">
-                  <form
-                    className="space-y-4"
-                    onSubmit={(e) => {
-                      e.preventDefault()
-                      onLogin("admin")
-                    }}
-                  >
+                  <form onSubmit={handleSubmit}>
                     <div className="space-y-2">
                       <Label htmlFor="admin-email">Email</Label>
                       <div className="relative">
                         <Mail className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-muted-foreground" />
-                        <Input id="admin-email" type="email" placeholder="admin@indus.edu" className="pl-10" />
+                        <Input
+                          value={email}
+                          onChange={(e) => setEmail(e.target.value)}
+                          id="admin-email"
+                          // type="email"
+                          placeholder="admin@indus.edu"
+                          className="pl-10"
+                        />
                       </div>
                     </div>
                     <div className="space-y-2">
                       <Label htmlFor="admin-password">Password</Label>
                       <div className="relative">
                         <Lock className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-muted-foreground" />
-                        <Input id="admin-password" type="password" placeholder="••••••••" className="pl-10" />
+                        <Input
+                          value={password}
+                          onChange={(e) => setPassword(e.target.value)}
+                          id="admin-password"
+                          type="password"
+                          placeholder="••••••••"
+                          className="pl-10"
+                        />
                       </div>
                     </div>
                     <Button type="submit" className="w-full">
@@ -121,13 +194,13 @@ export function LoginPage({ onLogin }: LoginPageProps) {
                   </form>
                 </TabsContent>
 
-                <TabsContent value="student">
+                {/* <TabsContent value="student">
                   {!isRegistering ? (
                     <form
                       className="space-y-4"
                       onSubmit={(e) => {
                         e.preventDefault()
-                        onLogin("student")
+                        // onLogin("student")
                       }}
                     >
                       <div className="space-y-2">
@@ -170,7 +243,7 @@ export function LoginPage({ onLogin }: LoginPageProps) {
                       className="space-y-4"
                       onSubmit={(e) => {
                         e.preventDefault()
-                        onLogin("student")
+                        // onLogin("student")
                       }}
                     >
                       <div className="space-y-2">
@@ -216,7 +289,7 @@ export function LoginPage({ onLogin }: LoginPageProps) {
                       </p>
                     </form>
                   )}
-                </TabsContent>
+                </TabsContent> */}
               </Tabs>
             </CardContent>
           </Card>
@@ -230,5 +303,5 @@ export function LoginPage({ onLogin }: LoginPageProps) {
         </div>
       </footer>
     </div>
-  )
+  );
 }

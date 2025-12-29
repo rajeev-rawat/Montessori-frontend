@@ -1,0 +1,43 @@
+{
+  "sorted_middleware": [],
+  "middleware": {
+    "/": {
+      "files": [
+        "server/edge/chunks/Desktop_MONTESSORI_Montessori-frontend_fffffa04._.js",
+        "server/edge/chunks/[root-of-the-server]__ec057a34._.js",
+        "server/edge/chunks/turbopack-Desktop_MONTESSORI_Montessori-frontend_edge-wrapper_bb48c317.js"
+      ],
+      "name": "middleware",
+      "page": "/",
+      "matchers": [
+        {
+          "regexp": "/:nextData(_next/data/[^/]{1,})?/dashboard/:path*{(\\\\.json)}?",
+          "originalSource": "/dashboard/:path*"
+        },
+        {
+          "regexp": "/:nextData(_next/data/[^/]{1,})?/login{(\\\\.json)}?",
+          "originalSource": "/login"
+        },
+        {
+          "regexp": "/:nextData(_next/data/[^/]{1,})?/signup{(\\\\.json)}?",
+          "originalSource": "/signup"
+        },
+        {
+          "regexp": "/:nextData(_next/data/[^/]{1,})?/bulkUpload/:path*{(\\\\.json)}?",
+          "originalSource": "/bulkUpload/:path*"
+        }
+      ],
+      "wasm": [],
+      "assets": [],
+      "env": {
+        "__NEXT_BUILD_ID": "development",
+        "NEXT_SERVER_ACTIONS_ENCRYPTION_KEY": "XHC/Le5PRE+fwxAoX/clHABDbQPtBoQ3wevrxhsFFLA=",
+        "__NEXT_PREVIEW_MODE_ID": "3d4b3a051d2dceb8ba8188c93dd2a7e9",
+        "__NEXT_PREVIEW_MODE_ENCRYPTION_KEY": "c944a3283b223b09750e194a2e61e6ee721d0006a40d1f935bbc1dd4162b2466",
+        "__NEXT_PREVIEW_MODE_SIGNING_KEY": "bb26123aaa7d5b464b00527ae073bebe47ec8f0ec2567ce0bc698ef9276d314b"
+      }
+    }
+  },
+  "instrumentation": null,
+  "functions": {}
+}
