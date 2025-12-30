@@ -15429,3 +15429,83 @@ Check the render method of `select`.  It was passed a child from SelectItemText.
 [168:33:22.899] Browser LOG     {"City":"","SchoolName":"","School_Name":"","State":"","address":"","email":"","id":16,"mobile":"","name":"","user_type":"Super Admin","username":"Akmsmeta@gmail.com"} user
 [168:33:22.899] Browser LOG     {"City":"","SchoolName":"","School_Name":"","State":"","address":"","email":"","id":16,"mobile":"","name":"","user_type":"Super Admin","username":"Akmsmeta@gmail.com"} user
 [168:33:22.899] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1767111105214}
+[168:53:15.231] Server  LOG      ✓ Compiled in 753ms
+[168:53:18.390] Server  LOG      ✓ Compiled in 100ms
+[168:53:19.006] Browser ERROR   The final argument passed to %s changed size between renders. The order and size of this array must remain constant.
+
+Previous: %s
+Incoming: %s useEffect [9, async (SchoolName)=>{
+            try {
+                set({
+                    loading: true
+                });
+                const schools = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$services$2f$school$2e$service$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["getSchoolsApi"])(SchoolName);
+                set({
+                    schools
+                });
+            } catch (error) {
+                console.error("fetchSchools error:", error);
+                set({
+                    schools: []
+                });
+            } finally{
+                set({
+                    loading: false
+                });
+            }
+        }, ] [async (SchoolName)=>{
+            try {
+                set({
+                    loading: true
+                });
+                const schools = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$services$2f$school$2e$service$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["getSchoolsApi"])(SchoolName);
+                set({
+                    schools
+                });
+            } catch (error) {
+                console.error("fetchSchools error:", error);
+                set({
+                    schools: []
+                });
+            } finally{
+                set({
+                    loading: false
+                });
+            }
+        }, ]
+[168:53:39.206] Browser LOG     {"City":"","SchoolName":"","School_Name":"","State":"","address":"","email":"","id":16,"mobile":"","name":"","user_type":"Super Admin","username":"Akmsmeta@gmail.com"} user
+[168:53:39.206] Browser LOG     {"City":"","SchoolName":"","School_Name":"","State":"","address":"","email":"","id":16,"mobile":"","name":"","user_type":"Super Admin","username":"Akmsmeta@gmail.com"} user
+[168:53:39.206] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/dashboard color: rgb(120, 120, 120) color: inherit {"dp":"/dashboard","o":"http://localhost:3000/dashboard","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1767112321504}
+[168:53:41.667] Server  LOG     null "user"
+[168:53:43.465] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[168:53:44.120] Browser LOG     null user
+[168:53:44.120] Browser LOG     null user
+[168:53:44.121] Browser LOG     {"City":"","SchoolName":"","School_Name":"","State":"","address":"","email":"","id":16,"mobile":"","name":"","user_type":"Super Admin","username":"Akmsmeta@gmail.com"} user
+[168:53:44.126] Browser LOG     {"City":"","SchoolName":"","School_Name":"","State":"","address":"","email":"","id":16,"mobile":"","name":"","user_type":"Super Admin","username":"Akmsmeta@gmail.com"} user
+[168:53:44.477] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[168:53:44.484] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/dashboard","route":"/dashboard"}
+[168:53:44.485] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/dashboard color: rgb(120, 120, 120) color: inherit {"dp":"/dashboard","o":"http://localhost:3000/dashboard","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1767112326705}
+[168:53:49.040] Browser LOG     null user
+[168:53:49.040] Browser LOG     null user
+[168:53:49.230] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/login color: rgb(120, 120, 120) color: inherit {"dp":"/login","o":"http://localhost:3000/login","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1767112331642}
+[168:54:04.068] Browser LOG     {"City":"","SchoolName":"SSKH","School_Name":"Sproutz School, Khanamit, Hyderabad","State":"","address":"","email":"","id":13,"mobile":"","name":"","user_type":"Admin","username":"contact@sproutzschool.in"} user
+[168:54:04.068] Browser LOG     {"City":"","SchoolName":"SSKH","School_Name":"Sproutz School, Khanamit, Hyderabad","State":"","address":"","email":"","id":13,"mobile":"","name":"","user_type":"Admin","username":"contact@sproutzschool.in"} user
+[168:54:04.068] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/dashboard color: rgb(120, 120, 120) color: inherit {"dp":"/dashboard","o":"http://localhost:3000/dashboard","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1767112346330}
+[168:54:15.941] Browser LOG     {"City":"","SchoolName":"SSKH","School_Name":"Sproutz School, Khanamit, Hyderabad","State":"","address":"","email":"","id":13,"mobile":"","name":"","user_type":"Admin","username":"contact@sproutzschool.in"} user
+[168:54:15.941] Browser LOG     {"City":"","SchoolName":"SSKH","School_Name":"Sproutz School, Khanamit, Hyderabad","State":"","address":"","email":"","id":13,"mobile":"","name":"","user_type":"Admin","username":"contact@sproutzschool.in"} user
+[168:54:15.941] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/bulkUpload color: rgb(120, 120, 120) color: inherit {"dp":"/bulkUpload","o":"http://localhost:3000/bulkUpload","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1767112358332}
+[168:54:17.959] Browser LOG     {"City":"","SchoolName":"SSKH","School_Name":"Sproutz School, Khanamit, Hyderabad","State":"","address":"","email":"","id":13,"mobile":"","name":"","user_type":"Admin","username":"contact@sproutzschool.in"} user
+[168:54:17.959] Browser LOG     {"City":"","SchoolName":"SSKH","School_Name":"Sproutz School, Khanamit, Hyderabad","State":"","address":"","email":"","id":13,"mobile":"","name":"","user_type":"Admin","username":"contact@sproutzschool.in"} user
+[168:54:17.959] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1767112360293}
+[168:54:25.597] Browser LOG     null user
+[168:54:25.597] Browser LOG     null user
+[168:54:25.758] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/login color: rgb(120, 120, 120) color: inherit {"dp":"/login","o":"http://localhost:3000/login","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1767112368146}
+[168:54:37.516] Browser LOG     {"City":"","SchoolName":"","School_Name":"","State":"","address":"","email":"","id":16,"mobile":"","name":"","user_type":"Super Admin","username":"Akmsmeta@gmail.com"} user
+[168:54:37.516] Browser LOG     {"City":"","SchoolName":"","School_Name":"","State":"","address":"","email":"","id":16,"mobile":"","name":"","user_type":"Super Admin","username":"Akmsmeta@gmail.com"} user
+[168:54:37.516] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/dashboard color: rgb(120, 120, 120) color: inherit {"dp":"/dashboard","o":"http://localhost:3000/dashboard","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1767112379789}
+[168:54:46.703] Browser LOG     null user
+[168:54:46.703] Browser LOG     null user
+[168:54:46.703] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/login color: rgb(120, 120, 120) color: inherit {"dp":"/login","o":"http://localhost:3000/login","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1767112389109}
+[168:54:58.285] Browser LOG     {"City":"","SchoolName":"MISNHK","School_Name":"Monte International School, NH-44, Kallur","State":"","address":"","email":"","id":12,"mobile":"","name":"","user_type":"Admin","username":"office.cbmonte@gmail.com"} user
+[168:54:58.285] Browser LOG     {"City":"","SchoolName":"MISNHK","School_Name":"Monte International School, NH-44, Kallur","State":"","address":"","email":"","id":12,"mobile":"","name":"","user_type":"Admin","username":"office.cbmonte@gmail.com"} user
+[168:54:58.285] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/dashboard color: rgb(120, 120, 120) color: inherit {"dp":"/dashboard","o":"http://localhost:3000/dashboard","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1767112400605}
