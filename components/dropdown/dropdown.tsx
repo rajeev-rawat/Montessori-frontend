@@ -28,10 +28,8 @@ export function SchoolSelect({
 
   // Fetch schools on load
   useEffect(() => {
-    if (schools.length === 0) {
-      fetchSchools(SchoolName)
-    }
-  }, [schools.length, fetchSchools, SchoolName])
+     fetchSchools(SchoolName)
+  }, [ fetchSchools, SchoolName])
 
   // Auto-select first school if none selected
   useEffect(() => {

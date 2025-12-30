@@ -1515,11 +1515,8 @@ function SchoolSelect({ value, onChange, placeholder = "Select school" }) {
     const SchoolName = user?.SchoolName || "";
     // Fetch schools on load
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"])(()=>{
-        if (schools.length === 0) {
-            fetchSchools(SchoolName);
-        }
+        fetchSchools(SchoolName);
     }, [
-        schools.length,
         fetchSchools,
         SchoolName
     ]);
@@ -1544,12 +1541,12 @@ function SchoolSelect({ value, onChange, placeholder = "Select school" }) {
                     className: "truncate"
                 }, void 0, false, {
                     fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/components/dropdown/dropdown.tsx",
-                    lineNumber: 46,
+                    lineNumber: 44,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/components/dropdown/dropdown.tsx",
-                lineNumber: 45,
+                lineNumber: 43,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["SelectContent"], {
@@ -1561,23 +1558,23 @@ function SchoolSelect({ value, onChange, placeholder = "Select school" }) {
                             children: school.School_Name
                         }, void 0, false, {
                             fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/components/dropdown/dropdown.tsx",
-                            lineNumber: 55,
+                            lineNumber: 53,
                             columnNumber: 13
                         }, this)
                     }, school.SchoolName, false, {
                         fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/components/dropdown/dropdown.tsx",
-                        lineNumber: 54,
+                        lineNumber: 52,
                         columnNumber: 11
                     }, this))
             }, void 0, false, {
                 fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/components/dropdown/dropdown.tsx",
-                lineNumber: 52,
+                lineNumber: 50,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/components/dropdown/dropdown.tsx",
-        lineNumber: 44,
+        lineNumber: 42,
         columnNumber: 5
     }, this);
 }
