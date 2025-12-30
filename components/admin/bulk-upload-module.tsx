@@ -52,10 +52,10 @@ export function BulkUploadModule() {
 
   // Fetch schools on load
   useEffect(() => {
-    if (user?.ShortName && schools.length === 0) {
-      fetchSchools(user.ShortName)
+    if (user?.SchoolName && schools.length === 0) {
+      fetchSchools(user.SchoolName)
     }
-  }, [user?.ShortName, schools.length, fetchSchools])
+  }, [user?.SchoolName, schools.length, fetchSchools])
 
   const resetUpload = () => {
     reset()

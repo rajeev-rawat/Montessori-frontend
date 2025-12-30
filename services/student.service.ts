@@ -27,7 +27,7 @@ export interface Student {
   ReasonOfLeaving?: string
   NoAndDateTransferCertificate?: string
   EntryDate?: string,
-  ShortName?:string
+  SchoolName?:string
 }
 
 interface GetStudentsParams {
@@ -47,7 +47,7 @@ export async function getStudentsApi(
     limit: params.limit?.toString() || "10",
     search: params.search || "",
     status: params.status || "",
-    ShortName: params.school || "",
+    SchoolName: params.school || "",
   })
 
   const res = await fetch(`${BASE_URL}/student_list?${query}`, {

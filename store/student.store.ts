@@ -128,7 +128,7 @@ addStudent: async (student) => {
 
   try {
     const { school } = get()
-    await addStudentApi({ ...student, ShortName: school }, token) // send ShortName
+    await addStudentApi({ ...student, SchoolName: school }, token) // send SchoolName
     toast({ title: "Success", description: "Student added successfully" })
     get().fetchStudents()
     get().closeModals()
@@ -147,7 +147,7 @@ addStudent: async (student) => {
 
   try {
     const { school } = get()
-    await updateStudentApi({ ...student, ShortName: school }, token) // send ShortName
+    await updateStudentApi({ ...student, SchoolName: school }, token) // send SchoolName
     toast({ title: "Success", description: "Student updated successfully" })
     get().fetchStudents()
     get().closeModals()

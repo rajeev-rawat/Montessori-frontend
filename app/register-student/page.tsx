@@ -43,7 +43,7 @@ const defaultStudent: Student = {
   email: "",
   status: "valid",
   EntryDate: "",
-  ShortName: "",
+  SchoolName: "",
 }
 
 /* ---------------------------------------------
@@ -124,7 +124,7 @@ export default function RegisterStudentPage() {
       const token = localStorage.getItem("auth_token") || ""
 
       await addStudentApi(
-        { ...formData, ShortName: school },
+        { ...formData, SchoolName: school },
         token
       )
 
@@ -168,7 +168,7 @@ export default function RegisterStudentPage() {
 
               {/* Dynamic Fields */}
               {Object.entries(formData).map(([key, value]) => {
-                if (["ShortName"].includes(key)) return null
+                if (["SchoolName"].includes(key)) return null
 
                 if (DATE_FIELDS.includes(key as DateFieldKey)) {
                   return (

@@ -24,7 +24,7 @@ interface StudentFormModalProps {
 }
 
 const defaultStudent: Student = {
-  id: 0,
+//   id: 0,
   student_name: "",
   AdmissionNo: "",
   ParentNameFather: "",
@@ -47,9 +47,9 @@ const defaultStudent: Student = {
   AdharNo: "",
   mobile: "",
   email: "",
-  status: "valid",
+//   status: "valid",
   EntryDate: "",
-  ShortName: "",
+//   SchoolName: "",
 }
 
 export function StudentFormModal({
@@ -65,7 +65,7 @@ export function StudentFormModal({
   useEffect(() => {
     if (initialData) {
       setFormData({ ...defaultStudent, ...initialData })
-      if (initialData.ShortName) setSchool(initialData.ShortName)
+      if (initialData.SchoolName) setSchool(initialData.SchoolName)
     } else {
       setFormData(defaultStudent)
     }
@@ -77,8 +77,8 @@ export function StudentFormModal({
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    // Include selected school ShortName before submitting
-    await onSubmit({ ...formData, ShortName: selectedSchool })
+    // Include selected school SchoolName before submitting
+    await onSubmit({ ...formData, SchoolName: selectedSchool })
   }
 
   return (

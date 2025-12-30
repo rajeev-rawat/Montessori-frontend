@@ -6,18 +6,18 @@ import { getSchoolsApi, School } from "@/services/school.service"
 interface SchoolStore {
   schools: School[]
   loading: boolean
-  fetchSchools: (shortName: string) => Promise<void>
+  fetchSchools: (SchoolName: string) => Promise<void>
 }
 
 export const useSchoolStore = create<SchoolStore>((set) => ({
   schools: [],
   loading: false,
 
-  fetchSchools: async (shortName: string) => {
+  fetchSchools: async (SchoolName: string) => {
     try {
       set({ loading: true })
 
-      const schools = await getSchoolsApi(shortName)
+      const schools = await getSchoolsApi(SchoolName)
 
       set({ schools })
     } catch (error) {

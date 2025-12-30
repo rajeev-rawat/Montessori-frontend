@@ -434,8 +434,8 @@ __turbopack_context__.s([
 var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$node_modules$2f$next$2f$dist$2f$build$2f$polyfills$2f$process$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = /*#__PURE__*/ __turbopack_context__.i("[project]/Desktop/MONTESSORI/Montessori-frontend/node_modules/next/dist/build/polyfills/process.js [app-client] (ecmascript)");
 const BASE_URL = ("TURBOPACK compile-time value", "https://warrantyindia.co.in/student/api");
 const API_KEY = ("TURBOPACK compile-time value", "asdtfyghjklcghvhbjknlmfxcghbjknlmgcvhbjnkml");
-async function getSchoolsApi(shortName) {
-    const res = await fetch(`${BASE_URL}/get_schools?ShortName=${shortName}`, {
+async function getSchoolsApi(SchoolName) {
+    const res = await fetch(`${BASE_URL}/get_schools?SchoolName=${SchoolName}`, {
         headers: {
             "X-API-Key": API_KEY
         }
@@ -465,12 +465,12 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Mon
 const useSchoolStore = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$node_modules$2f$zustand$2f$esm$2f$react$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["create"])((set)=>({
         schools: [],
         loading: false,
-        fetchSchools: async (shortName)=>{
+        fetchSchools: async (SchoolName)=>{
             try {
                 set({
                     loading: true
                 });
-                const schools = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$services$2f$school$2e$service$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["getSchoolsApi"])(shortName);
+                const schools = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$services$2f$school$2e$service$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["getSchoolsApi"])(SchoolName);
                 set({
                     schools
                 });
@@ -500,8 +500,8 @@ __turbopack_context__.s([
 var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$node_modules$2f$next$2f$dist$2f$build$2f$polyfills$2f$process$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = /*#__PURE__*/ __turbopack_context__.i("[project]/Desktop/MONTESSORI/Montessori-frontend/node_modules/next/dist/build/polyfills/process.js [app-client] (ecmascript)");
 const BASE_URL = ("TURBOPACK compile-time value", "https://warrantyindia.co.in/student/api");
 const API_KEY = ("TURBOPACK compile-time value", "asdtfyghjklcghvhbjknlmfxcghbjknlmgcvhbjnkml");
-async function getTotalCountsApi(schoolShortName) {
-    const res = await fetch(`${BASE_URL}/student_total_count?short_name=${schoolShortName}`, {
+async function getTotalCountsApi(schoolSchoolName) {
+    const res = await fetch(`${BASE_URL}/student_total_count?short_name=${schoolSchoolName}`, {
         headers: {
             "X-Api-Key": API_KEY
         }
@@ -531,12 +531,12 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Mon
 const useDashboardStore = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$node_modules$2f$zustand$2f$esm$2f$react$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["create"])((set)=>({
         counts: null,
         loading: false,
-        fetchCounts: async (schoolShortName)=>{
+        fetchCounts: async (schoolSchoolName)=>{
             try {
                 set({
                     loading: true
                 });
-                const counts = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$services$2f$dashboard$2e$service$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["getTotalCountsApi"])(schoolShortName);
+                const counts = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$services$2f$dashboard$2e$service$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["getTotalCountsApi"])(schoolSchoolName);
                 set({
                     counts
                 });
@@ -738,12 +738,12 @@ function DashboardOverview() {
     // Fetch schools on load
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
         "DashboardOverview.useEffect": ()=>{
-            if (user?.ShortName && schools.length === 0) {
-                fetchSchools(user.ShortName);
+            if (user?.SchoolName && schools.length === 0) {
+                fetchSchools(user.SchoolName);
             }
         }
     }["DashboardOverview.useEffect"], [
-        user?.ShortName,
+        user?.SchoolName,
         schools.length,
         fetchSchools
     ]);
@@ -752,10 +752,10 @@ function DashboardOverview() {
         "DashboardOverview.useEffect": ()=>{
             if (selectedSchool) {
                 const schoolObj = schools.find({
-                    "DashboardOverview.useEffect.schoolObj": (s)=>s.FullName === selectedSchool
+                    "DashboardOverview.useEffect.schoolObj": (s)=>s.SchoolName === selectedSchool
                 }["DashboardOverview.useEffect.schoolObj"]);
-                if (schoolObj?.ShortName) {
-                    fetchCounts(schoolObj.ShortName);
+                if (schoolObj?.SchoolName) {
+                    fetchCounts(schoolObj.SchoolName);
                 }
             }
         }

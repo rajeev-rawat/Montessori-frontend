@@ -10,7 +10,7 @@ export interface User {
   mobile: string
   user_type: string
   SchoolName:string,
-  ShortName?: string
+  SchoolName?: string
   City: string
   State: string
   address: string
