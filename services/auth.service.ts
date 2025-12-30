@@ -9,6 +9,8 @@ export interface User {
   name: string
   mobile: string
   user_type: string
+  SchoolName:string,
+  ShortName?: string
   City: string
   State: string
   address: string

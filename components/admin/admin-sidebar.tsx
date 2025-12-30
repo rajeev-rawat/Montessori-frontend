@@ -91,7 +91,8 @@ console.log(user, 'user')
             <div className="flex-1 min-w-0">
               <p className="text-sm font-medium truncate">{user.name}</p>
               <p className="text-xs text-sidebar-foreground/60 truncate">{user.user_type}</p>
-              <p className="text-xs text-sidebar-foreground/60 truncate">{user.email}</p>
+                <p className="text-xs text-sidebar-foreground/60 truncate">{user.SchoolName}</p>
+              <p className="text-xs text-sidebar-foreground/60 truncate">{user.username}</p>
             </div>
           )}
         </div>

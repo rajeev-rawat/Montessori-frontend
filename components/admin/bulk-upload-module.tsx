@@ -1,8 +1,11 @@
 "use client"
 
-import { useRef, useState } from "react"
+import { useRef, useState, useEffect } from "react"
 import { useBulkUploadStore } from "@/store/bulk-upload.store"
 import { useToast } from "@/hooks/use-toast"
+import { useSchoolStore } from "@/store/school.store"
+import { useAuthStore } from "@/store/auth.store"
+import { SchoolSelect } from "@/components/dropdown/dropdown"
 
 import {
   Card,
@@ -21,7 +24,6 @@ import {
   TableHeader,
   TableRow,
 } from "@/components/ui/table"
-
 import {
   Upload,
   FileSpreadsheet,
@@ -39,11 +41,21 @@ export function BulkUploadModule() {
   const [uploadStatus, setUploadStatus] = useState<UploadStatus>("idle")
   const [progress, setProgress] = useState(0)
   const [dragActive, setDragActive] = useState(false)
-
+  const [selectedSchool, setSelectedSchool] = useState<string>("")
+  const user = useAuthStore((state) => state.user)
   const fileInputRef = useRef<HTMLInputElement>(null)
 
   const { upload, response, report, reset } = useBulkUploadStore()
   const { toast } = useToast()
+
+  const { schools, fetchSchools } = useSchoolStore()
+
+  // Fetch schools on load
+  useEffect(() => {
+    if (user?.ShortName && schools.length === 0) {
+      fetchSchools(user.ShortName)
+    }
+  }, [user?.ShortName, schools.length, fetchSchools])
 
   const resetUpload = () => {
     reset()
@@ -53,13 +65,19 @@ export function BulkUploadModule() {
 
   const handleFileUpload = async (file?: File) => {
     if (!file) return
+    if (!selectedSchool) {
+      toast({
+        variant: "destructive",
+        title: "Select a school first",
+      })
+      return
+    }
 
     setUploadStatus("uploading")
     setProgress(40)
 
     try {
-      await upload(file)
-
+      await upload(file, selectedSchool) // Pass school info to your store if needed
       setProgress(100)
       setUploadStatus("preview")
 
@@ -95,6 +113,11 @@ export function BulkUploadModule() {
         <p className="text-muted-foreground">
           Upload CSV or Excel files to add multiple student records
         </p>
+      </div>
+
+      {/* School Dropdown */}
+      <div className="max-w-sm mb-4">
+        <SchoolSelect value={selectedSchool} onChange={setSelectedSchool} />
       </div>
 
       <div className="grid gap-6 lg:grid-cols-3">
@@ -240,19 +263,6 @@ export function BulkUploadModule() {
                   <Button variant="outline" onClick={resetUpload}>
                     Upload New File
                   </Button>
-
-                  {/* <Button
-                    onClick={() => {
-                      setUploadStatus("complete")
-                      toast({
-                        title: "Upload finalized",
-                        description:
-                          "Valid records have been saved successfully",
-                      })
-                    }}
-                  >
-                    Confirm Upload
-                  </Button> */}
                 </div>
               </CardContent>
             </Card>

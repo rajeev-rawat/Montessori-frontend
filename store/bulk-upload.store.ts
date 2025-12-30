@@ -11,7 +11,7 @@ interface BulkUploadState {
   loading: boolean
   response: BulkUploadApiResponse | null
   report: BulkUploadReportRow[]
-  upload: (file: File) => Promise<void>
+  upload: (file: File, schoolShortName: string) => Promise<void>
   reset: () => void
 }
 
@@ -20,19 +20,25 @@ export const useBulkUploadStore = create<BulkUploadState>((set) => ({
   response: null,
   report: [],
 
-  upload: async (file) => {
+  upload: async (file, schoolShortName) => {
     const token = localStorage.getItem("auth_token")
     if (!token) throw new Error("Unauthorized")
+    if (!schoolShortName) throw new Error("School not selected")
 
     set({ loading: true })
 
-    const res = await bulkUploadApi(file, token)
+    try {
+      const res = await bulkUploadApi(file, token, schoolShortName)
 
-    set({
-      loading: false,
-      response: res,
-      report: res.report,
-    })
+      set({
+        loading: false,
+        response: res,
+        report: res.report,
+      })
+    } catch (err: any) {
+      set({ loading: false })
+      throw err
+    }
   },
 
   reset: () => {
