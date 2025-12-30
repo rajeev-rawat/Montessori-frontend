@@ -10,13 +10,11 @@ export interface BulkUploadReportRow {
 export interface BulkUploadApiResponse {
   status: boolean
   message: string
-
   total_rows: number
   inserted_total: number
   duplicates_inserted: number
   missing_required_rows: number
   errors_count: number
-
   errors: string[]
   report: BulkUploadReportRow[]
 }
@@ -24,12 +22,17 @@ export interface BulkUploadApiResponse {
 const BASE_URL = process.env.NEXT_PUBLIC_API_BASE_URL!
 const API_KEY = process.env.NEXT_PUBLIC_API_KEY!
 
+/**
+ * Upload file with associated schoolShortName
+ */
 export async function bulkUploadApi(
   file: File,
-  token: string
+  token: string,
+  schoolShortName: string
 ): Promise<BulkUploadApiResponse> {
   const formData = new FormData()
   formData.append("file", file)
+  formData.append("ShortName", schoolShortName)
 
   const res = await fetch(`${BASE_URL}/student_bulk_upload`, {
     method: "POST",

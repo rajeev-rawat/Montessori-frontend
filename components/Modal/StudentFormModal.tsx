@@ -12,6 +12,8 @@ import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Button } from "@/components/ui/button"
 import { Student } from "@/services/student.service"
+import SchoolSelect from "@/components/dropdown/dropdown" // import your dropdown
+import { useStudentStore } from "@/store/student.store"
 
 interface StudentFormModalProps {
   open: boolean
@@ -47,6 +49,7 @@ const defaultStudent: Student = {
   email: "",
   status: "valid",
   EntryDate: "",
+  ShortName: "",
 }
 
 export function StudentFormModal({
@@ -57,11 +60,16 @@ export function StudentFormModal({
   title,
 }: StudentFormModalProps) {
   const [formData, setFormData] = useState<Student>(defaultStudent)
+  const { school: selectedSchool, setSchool } = useStudentStore() // access store
 
   useEffect(() => {
-    if (initialData) setFormData({ ...defaultStudent, ...initialData })
-    else setFormData(defaultStudent)
-  }, [initialData])
+    if (initialData) {
+      setFormData({ ...defaultStudent, ...initialData })
+      if (initialData.ShortName) setSchool(initialData.ShortName)
+    } else {
+      setFormData(defaultStudent)
+    }
+  }, [initialData, setSchool])
 
   const handleChange = (key: keyof Student, value: any) => {
     setFormData({ ...formData, [key]: value })
@@ -69,20 +77,32 @@ export function StudentFormModal({
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    await onSubmit(formData)
+    // Include selected school ShortName before submitting
+    await onSubmit({ ...formData, ShortName: selectedSchool })
   }
 
   return (
     <Dialog open={open} onOpenChange={onClose}>
-<DialogContent className="w-full max-w-[800px] sm:max-w-2xl lg:max-w-3xl max-h-[90vh] overflow-y-auto sm:p-6">
+      <DialogContent className="w-full max-w-[800px] sm:max-w-2xl lg:max-w-3xl max-h-[90vh] overflow-y-auto sm:p-6">
         <DialogHeader>
           <DialogTitle className="text-lg sm:text-xl">{title}</DialogTitle>
         </DialogHeader>
 
         <form onSubmit={handleSubmit}>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs sm:text-sm">
+
+            {/* School Dropdown */}
+            <div className="space-y-1">
+              <Label className="text-xs capitalize">School</Label>
+              <SchoolSelect
+                value={selectedSchool}
+                onChange={(val) => setSchool(val)}
+                placeholder="Select school"
+              />
+            </div>
+
             {Object.entries(formData).map(([key, value]) => {
-              if (key === "id" || key === "EntryDate") return null
+              if (key === "id" || key === "EntryDate" || key === "School") return null
               
               // Disable AdmissionNo for edit mode
               const isAdmissionNo = key === "AdmissionNo"

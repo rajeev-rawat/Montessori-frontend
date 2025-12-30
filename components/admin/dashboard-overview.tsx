@@ -1,48 +1,95 @@
 "use client"
 
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { Button } from "@/components/ui/button"
-import { Users, Upload, FileCheck, AlertCircle, TrendingUp, ArrowRight } from "lucide-react"
-import { useAuthStore } from "@/store/auth.store"
-import { useRouter } from "next/navigation"
 import { useEffect, useState } from "react"
-interface DashboardOverviewProps {
-  setCurrentView: (view: string) => void
-}
+import { useRouter } from "next/navigation"
+import { useAuthStore } from "@/store/auth.store"
+import { useSchoolStore } from "@/store/school.store"
+import { useDashboardStore } from "@/store/dashboard.store"
+import { SchoolSelect } from "@/components/dropdown/dropdown"
+import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card"
+import { Button } from "@/components/ui/button"
+import { Users, Upload, ArrowRight, FileCheck, AlertCircle, TrendingUp } from "lucide-react"
 
-const stats = [
-  { label: "Total Students", value: "2,34,567", icon: Users, trend: "+2.5%", color: "bg-primary" },
-  { label: "Uploads This Month", value: "45", icon: Upload, trend: "+12%", color: "bg-accent" },
-  { label: "Records Verified", value: "2,31,890", icon: FileCheck, trend: "+1.2%", color: "bg-success" },
-  { label: "Pending Reviews", value: "2,677", icon: AlertCircle, trend: "-5%", color: "bg-warning" },
-]
-
-const recentUploads = [
-  { id: 1, filename: "batch_2024_records.csv", records: 1250, status: "success", date: "2024-01-15" },
-  { id: 2, filename: "alumni_data_dec.xlsx", records: 890, status: "partial", date: "2024-01-14" },
-  { id: 3, filename: "engineering_students.csv", records: 2100, status: "success", date: "2024-01-13" },
-  { id: 4, filename: "management_batch.xlsx", records: 450, status: "failed", date: "2024-01-12" },
-]
-
-// export function DashboardOverview({ setCurrentView }: DashboardOverviewProps) {
-  export function DashboardOverview() {
- const router = useRouter()
-  const { user } = useAuthStore()
+export function DashboardOverview() {
+  const router = useRouter()
   const [authChecked, setAuthChecked] = useState(false)
+  const { schools, fetchSchools } = useSchoolStore()
+  const { counts, fetchCounts, loading } = useDashboardStore()
+  const [selectedSchool, setSelectedSchool] = useState<string>("")
+  const user = useAuthStore((state) => state.user)
+
+  // Auth check
   useEffect(() => {
     const token = localStorage.getItem("auth_token")
     if (!token) {
-      router.replace("/login") // redirect if not logged in
+      router.replace("/login")
       return
     }
     setAuthChecked(true)
   }, [router])
+
+  // Fetch schools on load
+  useEffect(() => {
+    if (user?.ShortName && schools.length === 0) {
+      fetchSchools(user.ShortName)
+    }
+  }, [user?.ShortName, schools.length, fetchSchools])
+
+  // Fetch counts when school selected
+  useEffect(() => {
+    if (selectedSchool) {
+      const schoolObj = schools.find((s) => s.ShortName === selectedSchool)
+      if (schoolObj?.ShortName) {
+        fetchCounts(schoolObj.ShortName)
+      }
+    }
+  }, [selectedSchool, schools, fetchCounts])
+
+  if (!authChecked) return null
+
+  const stats = [
+    {
+      label: "Total Students",
+      value: counts ? counts.total_students.toLocaleString() : "0",
+      icon: Users,
+      trend: "+2.5%",
+      color: "bg-primary",
+    },
+    {
+      label: "Uploads This Month",
+      value: counts ? counts.uploads_this_month.toLocaleString() : "0",
+      icon: Upload,
+      trend: "+12%",
+      color: "bg-accent",
+    },
+    {
+      label: "Records Verified",
+      value: counts ? counts.records_verified.toLocaleString() : "0",
+      icon: FileCheck,
+      trend: "+1.2%",
+      color: "bg-success",
+    },
+    {
+      label: "Pending Reviews",
+      value: counts ? counts.pending_reviews.toLocaleString() : "0",
+      icon: AlertCircle,
+      trend: "-5%",
+      color: "bg-warning",
+    },
+  ]
+
   return (
     <div className="p-6 space-y-6">
-      {/* Header */}
       <div>
         <h1 className="text-2xl font-bold text-foreground">Admin Dashboard</h1>
-        <p className="text-muted-foreground">Welcome back! {"Here's"} an overview of your student records.</p>
+        <p className="text-muted-foreground">
+          Welcome back! {"Here's"} an overview of your student records.
+        </p>
+      </div>
+
+      {/* School Dropdown */}
+      <div className="max-w-sm">
+        <SchoolSelect value={selectedSchool} onChange={setSelectedSchool} />
       </div>
 
       {/* Stats Grid */}
@@ -68,9 +115,8 @@ const recentUploads = [
         ))}
       </div>
 
-      {/* Quick Actions & Recent Activity */}
+      {/* Quick Actions */}
       <div className="grid gap-6 lg:grid-cols-2">
-        {/* Quick Actions */}
         <Card>
           <CardHeader>
             <CardTitle>Quick Actions</CardTitle>
@@ -80,8 +126,7 @@ const recentUploads = [
             <Button
               className="w-full justify-between bg-transparent"
               variant="outline"
-              onClick={() => router.push('/bulkUpload')}
-              // onClick={() => setCurrentView("bulk-upload")}
+              onClick={() => router.push("/bulkUpload")}
             >
               <span className="flex items-center gap-2">
                 <Upload className="w-4 h-4" />
@@ -92,58 +137,14 @@ const recentUploads = [
             <Button
               className="w-full justify-between bg-transparent"
               variant="outline"
-              onClick={() => router.push('/students')}
+              onClick={() => router.push("/students")}
             >
               <span className="flex items-center gap-2">
                 <Users className="w-4 h-4" />
-               All Students
+                All Students
               </span>
               <ArrowRight className="w-4 h-4" />
             </Button>
-            {/* <Button
-              className="w-full justify-between bg-transparent"
-              variant="outline"
-              // onClick={() => setCurrentView("reports")}
-            >
-              <span className="flex items-center gap-2">
-                <FileCheck className="w-4 h-4" />
-                Export Records
-              </span>
-              <ArrowRight className="w-4 h-4" />
-            </Button> */}
-          </CardContent>
-        </Card>
-
-        {/* Recent Uploads */}
-        <Card>
-          <CardHeader>
-            <CardTitle>Recent Uploads</CardTitle>
-            <CardDescription>Latest file upload activity</CardDescription>
-          </CardHeader>
-          <CardContent>
-            <div className="space-y-3">
-              {recentUploads.map((upload) => (
-                <div key={upload.id} className="flex items-center justify-between p-3 rounded-lg bg-muted/50">
-                  <div className="flex-1 min-w-0">
-                    <p className="text-sm font-medium text-foreground truncate">{upload.filename}</p>
-                    <p className="text-xs text-muted-foreground">
-                      {upload.records} records • {upload.date}
-                    </p>
-                  </div>
-                  <span
-                    className={`px-2 py-1 text-xs font-medium rounded-full ${
-                      upload.status === "success"
-                        ? "bg-success/20 text-success"
-                        : upload.status === "partial"
-                          ? "bg-warning/20 text-warning"
-                          : "bg-destructive/20 text-destructive"
-                    }`}
-                  >
-                    {upload.status}
-                  </span>
-                </div>
-              ))}
-            </div>
           </CardContent>
         </Card>
       </div>

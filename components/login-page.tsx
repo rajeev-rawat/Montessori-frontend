@@ -155,7 +155,7 @@ export function LoginPage() {
 
                 <TabsContent value="admin">
                   <form onSubmit={handleSubmit}>
-                    <div className="space-y-2">
+                    <div className="space-y-2 mb-5">
                       <Label htmlFor="admin-email">Email</Label>
                       <div className="relative">
                         <Mail className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-muted-foreground" />
@@ -169,7 +169,7 @@ export function LoginPage() {
                         />
                       </div>
                     </div>
-                    <div className="space-y-2">
+                    <div className="space-y-2 mb-5">
                       <Label htmlFor="admin-password">Password</Label>
                       <div className="relative">
                         <Lock className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-muted-foreground" />
@@ -183,14 +183,21 @@ export function LoginPage() {
                         />
                       </div>
                     </div>
-                    <Button type="submit" className="w-full">
+                    <Button type="submit" className="w-full mb-5">
                       Sign in as Admin
                     </Button>
-                    <p className="text-center text-sm text-muted-foreground">
+                    <button
+                        type="button"
+                        onClick={() => router.push("/register-student")}
+                        className="text-primary hover:underline"
+                      >
+                        Register here
+                      </button>
+                    {/* <p className="text-center text-sm text-muted-foreground">
                       <a href="#" className="text-primary hover:underline">
                         Forgot password?
                       </a>
-                    </p>
+                    </p> */}
                   </form>
                 </TabsContent>
 

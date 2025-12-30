@@ -1,5 +1,6 @@
-const BASE_URL = process.env.NEXT_PUBLIC_API_BASE_URL!;
-const API_KEY = process.env.NEXT_PUBLIC_API_KEY!;
+const BASE_URL = process.env.NEXT_PUBLIC_API_BASE_URL!
+const API_KEY = process.env.NEXT_PUBLIC_API_KEY!
+
 export interface Student {
   id?: number
   AdmissionNo: string
@@ -25,7 +26,8 @@ export interface Student {
   DateOfLeaving?: string
   ReasonOfLeaving?: string
   NoAndDateTransferCertificate?: string
-  EntryDate?: string
+  EntryDate?: string,
+  ShortName?:string
 }
 
 interface GetStudentsParams {
@@ -33,15 +35,21 @@ interface GetStudentsParams {
   limit?: number
   search?: string
   status?: string
+  school?: string 
 }
 
-export async function getStudentsApi(params: GetStudentsParams, token: string) {
+export async function getStudentsApi(
+  params: GetStudentsParams,
+  token: string
+) {
   const query = new URLSearchParams({
     page: params.page?.toString() || "1",
     limit: params.limit?.toString() || "10",
     search: params.search || "",
     status: params.status || "",
+    ShortName: params.school || "",
   })
+
   const res = await fetch(`${BASE_URL}/student_list?${query}`, {
     headers: {
       Authorization: `Bearer ${token}`,
@@ -49,12 +57,18 @@ export async function getStudentsApi(params: GetStudentsParams, token: string) {
       "Content-Type": "application/json",
     },
   })
+
   const data = await res.json()
-  if (!data.status) throw new Error(data.message || "Failed to fetch students")
+  if (!data.status) {
+    throw new Error(data.message || "Failed to fetch students")
+  }
   return data
 }
 
-export async function addStudentApi(student: Partial<Student>, token: string) {
+export async function addStudentApi(
+  student: Partial<Student>,
+  token: string
+) {
   const res = await fetch(`${BASE_URL}/student_insert`, {
     method: "POST",
     headers: {
@@ -64,12 +78,18 @@ export async function addStudentApi(student: Partial<Student>, token: string) {
     },
     body: JSON.stringify(student),
   })
+
   const data = await res.json()
-  if (!data.status) throw new Error(data.message || "Failed to add student")
+  if (!data.status) {
+    throw new Error(data.message || "Failed to add student")
+  }
   return data
 }
 
-export async function updateStudentApi(student: Partial<Student>, token: string) {
+export async function updateStudentApi(
+  student: Partial<Student>,
+  token: string
+) {
   const res = await fetch(`${BASE_URL}/student_update`, {
     method: "POST",
     headers: {
@@ -79,12 +99,18 @@ export async function updateStudentApi(student: Partial<Student>, token: string)
     },
     body: JSON.stringify(student),
   })
+
   const data = await res.json()
-  if (!data.status) throw new Error(data.message || "Failed to update student")
+  if (!data.status) {
+    throw new Error(data.message || "Failed to update student")
+  }
   return data
 }
 
-export async function deleteStudentApi(admissionNo: string, token: string) {
+export async function deleteStudentApi(
+  admissionNo: string,
+  token: string
+) {
   const res = await fetch(`${BASE_URL}/delete_student.php`, {
     method: "POST",
     headers: {
@@ -92,14 +118,23 @@ export async function deleteStudentApi(admissionNo: string, token: string) {
       "X-Api-Key": API_KEY,
       "Content-Type": "application/json",
     },
-    body: JSON.stringify({ AdmissionNo: admissionNo, confirm: "DELETE" }),
+    body: JSON.stringify({
+      AdmissionNo: admissionNo,
+      confirm: "DELETE",
+    }),
   })
+
   const data = await res.json()
-  if (!data.status) throw new Error(data.message || "Failed to delete student")
+  if (!data.status) {
+    throw new Error(data.message || "Failed to delete student")
+  }
   return data
 }
 
-export async function deleteDuplicateApi(admissionNo: string, token: string) {
+export async function deleteDuplicateApi(
+  admissionNo: string,
+  token: string
+) {
   const res = await fetch(`${BASE_URL}/delete_duplicates_by_admission`, {
     method: "POST",
     headers: {
@@ -109,8 +144,10 @@ export async function deleteDuplicateApi(admissionNo: string, token: string) {
     },
     body: JSON.stringify({ AdmissionNo: admissionNo }),
   })
+
   const data = await res.json()
-  if (!data.status) throw new Error(data.message || "Failed to delete duplicate")
+  if (!data.status) {
+    throw new Error(data.message || "Failed to delete duplicate")
+  }
   return data
 }
-
