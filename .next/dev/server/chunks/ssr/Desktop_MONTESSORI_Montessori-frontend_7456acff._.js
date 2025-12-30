@@ -426,8 +426,8 @@ __turbopack_context__.s([
 ]);
 const BASE_URL = ("TURBOPACK compile-time value", "https://warrantyindia.co.in/student/api");
 const API_KEY = ("TURBOPACK compile-time value", "asdtfyghjklcghvhbjknlmfxcghbjknlmgcvhbjnkml");
-async function getSchoolsApi(shortName) {
-    const res = await fetch(`${BASE_URL}/get_schools?${shortName ? `ShortName=${shortName}` : ""}`, {
+async function getSchoolsApi(SchoolName) {
+    const res = await fetch(`${BASE_URL}/get_schools?${SchoolName ? `SchoolName=${SchoolName}` : ""}`, {
         headers: {
             "X-API-Key": API_KEY
         }
@@ -454,12 +454,12 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Mon
 const useSchoolStore = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$node_modules$2f$zustand$2f$esm$2f$react$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["create"])((set)=>({
         schools: [],
         loading: false,
-        fetchSchools: async (shortName)=>{
+        fetchSchools: async (SchoolName)=>{
             try {
                 set({
                     loading: true
                 });
-                const schools = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$services$2f$school$2e$service$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["getSchoolsApi"])(shortName);
+                const schools = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$services$2f$school$2e$service$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["getSchoolsApi"])(SchoolName);
                 set({
                     schools
                 });
@@ -485,8 +485,8 @@ __turbopack_context__.s([
 ]);
 const BASE_URL = ("TURBOPACK compile-time value", "https://warrantyindia.co.in/student/api");
 const API_KEY = ("TURBOPACK compile-time value", "asdtfyghjklcghvhbjknlmfxcghbjknlmgcvhbjnkml");
-async function getTotalCountsApi(schoolShortName) {
-    const res = await fetch(`${BASE_URL}/student_total_count?ShortName=${schoolShortName}`, {
+async function getTotalCountsApi(schoolSchoolName) {
+    const res = await fetch(`${BASE_URL}/student_total_count?SchoolName=${schoolSchoolName}`, {
         headers: {
             "X-Api-Key": API_KEY
         }
@@ -495,7 +495,7 @@ async function getTotalCountsApi(schoolShortName) {
     if (!data.status) {
         throw new Error(data.message || "Failed to fetch total counts");
     }
-    return data.data;
+    return data.cards;
 }
 }),
 "[project]/Desktop/MONTESSORI/Montessori-frontend/store/dashboard.store.ts [app-ssr] (ecmascript)", ((__turbopack_context__) => {
@@ -791,21 +791,21 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Mon
 function SchoolSelect({ value, onChange, placeholder = "Select school" }) {
     const { schools, fetchSchools, loading } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$store$2f$school$2e$store$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useSchoolStore"])();
     const user = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$store$2f$auth$2e$store$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useAuthStore"])((state)=>state.user);
-    const shortName = user?.ShortName || "";
+    const SchoolName = user?.SchoolName || "";
     // Fetch schools on load
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"])(()=>{
         if (schools.length === 0) {
-            fetchSchools(shortName);
+            fetchSchools(SchoolName);
         }
     }, [
         schools.length,
         fetchSchools,
-        shortName
+        SchoolName
     ]);
     // Auto-select first school if none selected
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"])(()=>{
         if (!value && schools.length > 0) {
-            onChange(schools[0].ShortName);
+            onChange(schools[0].SchoolName);
         }
     }, [
         schools,
@@ -834,16 +834,16 @@ function SchoolSelect({ value, onChange, placeholder = "Select school" }) {
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["SelectContent"], {
                 className: "max-w-[320px]",
                 children: schools.map((school)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["SelectItem"], {
-                        value: school.ShortName,
+                        value: school.SchoolName,
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                             className: "truncate",
-                            children: school.FullName
+                            children: school.School_Name
                         }, void 0, false, {
                             fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/components/dropdown/dropdown.tsx",
                             lineNumber: 55,
                             columnNumber: 13
                         }, this)
-                    }, school.ShortName, false, {
+                    }, school.SchoolName, false, {
                         fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/components/dropdown/dropdown.tsx",
                         lineNumber: 54,
                         columnNumber: 11
@@ -1017,20 +1017,20 @@ function DashboardOverview() {
     ]);
     // Fetch schools on load
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"])(()=>{
-        if (user?.ShortName && schools.length === 0) {
-            fetchSchools(user.ShortName);
+        if (user?.SchoolName && schools.length === 0) {
+            fetchSchools(user.SchoolName);
         }
     }, [
-        user?.ShortName,
+        user?.SchoolName,
         schools.length,
         fetchSchools
     ]);
     // Fetch counts when school selected
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"])(()=>{
         if (selectedSchool) {
-            const schoolObj = schools.find((s)=>s.ShortName === selectedSchool);
-            if (schoolObj?.ShortName) {
-                fetchCounts(schoolObj.ShortName);
+            const schoolObj = schools.find((s)=>s.SchoolName === selectedSchool);
+            if (schoolObj?.SchoolName) {
+                fetchCounts(schoolObj.SchoolName);
             }
         }
     }, [

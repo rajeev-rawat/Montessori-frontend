@@ -30,17 +30,17 @@ export function DashboardOverview() {
 
   // Fetch schools on load
   useEffect(() => {
-    if (user?.ShortName && schools.length === 0) {
-      fetchSchools(user.ShortName)
+    if (user?.SchoolName && schools.length === 0) {
+      fetchSchools(user.SchoolName)
     }
-  }, [user?.ShortName, schools.length, fetchSchools])
+  }, [user?.SchoolName, schools.length, fetchSchools])
 
   // Fetch counts when school selected
   useEffect(() => {
     if (selectedSchool) {
-      const schoolObj = schools.find((s) => s.ShortName === selectedSchool)
-      if (schoolObj?.ShortName) {
-        fetchCounts(schoolObj.ShortName)
+      const schoolObj = schools.find((s) => s.SchoolName === selectedSchool)
+      if (schoolObj?.SchoolName) {
+        fetchCounts(schoolObj.SchoolName)
       }
     }
   }, [selectedSchool, schools, fetchCounts])

@@ -695,7 +695,7 @@
         description = "" === description ? ioInfo : ioInfo + " (" + description + ")";
         return env === rootEnv || void 0 === env ? description : description + " [" + env + "]";
     }
-    function getIOShortName(ioInfo, description, env, rootEnv) {
+    function getIOSchoolName(ioInfo, description, env, rootEnv) {
         ioInfo = ioInfo.name;
         env = env === rootEnv || void 0 === env ? "" : " [" + env + "]";
         var desc = "";
@@ -715,7 +715,7 @@
     }
     function logComponentAwait(asyncInfo, trackIdx, startTime, endTime, rootEnv, value) {
         if (supportsUserTiming && 0 < endTime) {
-            var description = getIODescription(value), name = getIOShortName(asyncInfo.awaited, description, asyncInfo.env, rootEnv), entryName = "await " + name;
+            var description = getIODescription(value), name = getIOSchoolName(asyncInfo.awaited, description, asyncInfo.env, rootEnv), entryName = "await " + name;
             name = getIOColor(name);
             var debugTask = asyncInfo.debugTask || asyncInfo.awaited.debugTask;
             if (debugTask) {
@@ -742,7 +742,7 @@
     function logIOInfoErrored(ioInfo, rootEnv, error) {
         var startTime = ioInfo.start, endTime = ioInfo.end;
         if (supportsUserTiming && 0 <= endTime) {
-            var description = getIODescription(error), entryName = getIOShortName(ioInfo, description, ioInfo.env, rootEnv), debugTask = ioInfo.debugTask;
+            var description = getIODescription(error), entryName = getIOSchoolName(ioInfo, description, ioInfo.env, rootEnv), debugTask = ioInfo.debugTask;
             entryName = "\u200b" + entryName;
             debugTask ? (error = [
                 [
@@ -766,7 +766,7 @@
     function logIOInfo(ioInfo, rootEnv, value) {
         var startTime = ioInfo.start, endTime = ioInfo.end;
         if (supportsUserTiming && 0 <= endTime) {
-            var description = getIODescription(value), entryName = getIOShortName(ioInfo, description, ioInfo.env, rootEnv), color = getIOColor(entryName), debugTask = ioInfo.debugTask;
+            var description = getIODescription(value), entryName = getIOSchoolName(ioInfo, description, ioInfo.env, rootEnv), color = getIOColor(entryName), debugTask = ioInfo.debugTask;
             entryName = "\u200b" + entryName;
             if (debugTask) {
                 var properties = [];
@@ -2173,7 +2173,7 @@
                                 case "rejected":
                                     var asyncInfo$jscomp$0 = asyncInfo, trackIdx$jscomp$3 = trackIdx$jscomp$6, startTime$jscomp$4 = time, endTime$jscomp$0 = endTime, rootEnv = env$jscomp$1, error$jscomp$0 = thenable.reason;
                                     if (supportsUserTiming && 0 < endTime$jscomp$0) {
-                                        var description = getIODescription(error$jscomp$0), entryName$jscomp$1 = "await " + getIOShortName(asyncInfo$jscomp$0.awaited, description, asyncInfo$jscomp$0.env, rootEnv), debugTask$jscomp$1 = asyncInfo$jscomp$0.debugTask || asyncInfo$jscomp$0.awaited.debugTask;
+                                        var description = getIODescription(error$jscomp$0), entryName$jscomp$1 = "await " + getIOSchoolName(asyncInfo$jscomp$0.awaited, description, asyncInfo$jscomp$0.env, rootEnv), debugTask$jscomp$1 = asyncInfo$jscomp$0.debugTask || asyncInfo$jscomp$0.awaited.debugTask;
                                         if (debugTask$jscomp$1) {
                                             var properties$jscomp$1 = [
                                                 [
@@ -2244,7 +2244,7 @@
                             endTime > childrenEndTime && (childrenEndTime = endTime);
                             var asyncInfo$jscomp$1 = _asyncInfo, trackIdx$jscomp$5 = trackIdx$jscomp$6, startTime$jscomp$6 = time, endTime$jscomp$1 = endTime, rootEnv$jscomp$0 = _env2;
                             if (supportsUserTiming && 0 < endTime$jscomp$1) {
-                                var entryName$jscomp$3 = "await " + getIOShortName(asyncInfo$jscomp$1.awaited, "", asyncInfo$jscomp$1.env, rootEnv$jscomp$0), debugTask$jscomp$2 = asyncInfo$jscomp$1.debugTask || asyncInfo$jscomp$1.awaited.debugTask;
+                                var entryName$jscomp$3 = "await " + getIOSchoolName(asyncInfo$jscomp$1.awaited, "", asyncInfo$jscomp$1.env, rootEnv$jscomp$0), debugTask$jscomp$2 = asyncInfo$jscomp$1.debugTask || asyncInfo$jscomp$1.awaited.debugTask;
                                 if (debugTask$jscomp$2) {
                                     var tooltipText$jscomp$0 = getIOLongName(asyncInfo$jscomp$1.awaited, "", asyncInfo$jscomp$1.env, rootEnv$jscomp$0) + " Aborted";
                                     debugTask$jscomp$2.run(performance.measure.bind(performance, entryName$jscomp$3, {

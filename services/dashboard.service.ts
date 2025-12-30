@@ -8,8 +8,8 @@ export interface TotalCounts {
   pending_reviews: number
 }
 
-export async function getTotalCountsApi(schoolShortName: string): Promise<TotalCounts> {
-  const res = await fetch(`${BASE_URL}/student_total_count?ShortName=${schoolShortName}`, {
+export async function getTotalCountsApi(schoolSchoolName: string): Promise<TotalCounts> {
+  const res = await fetch(`${BASE_URL}/student_total_count?SchoolName=${schoolSchoolName}`, {
     headers: {
       "X-Api-Key": API_KEY,
     },
@@ -21,5 +21,5 @@ export async function getTotalCountsApi(schoolShortName: string): Promise<TotalC
     throw new Error(data.message || "Failed to fetch total counts")
   }
 
-  return data.data
+  return data.cards
 }

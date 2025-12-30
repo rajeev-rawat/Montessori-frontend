@@ -12,7 +12,7 @@ import { useSchoolStore } from "@/store/school.store"
 import { useAuthStore } from "@/store/auth.store"
 
 interface SchoolSelectProps {
-  value?: string // stores ShortName
+  value?: string // stores SchoolName
   onChange: (value: string) => void
   placeholder?: string
 }
@@ -24,19 +24,19 @@ export function SchoolSelect({
 }: SchoolSelectProps) {
   const { schools, fetchSchools, loading } = useSchoolStore()
   const user = useAuthStore((state) => state.user)
-  const shortName = user?.ShortName || ""
+  const SchoolName = user?.SchoolName || ""
 
   // Fetch schools on load
   useEffect(() => {
     if (schools.length === 0) {
-      fetchSchools(shortName)
+      fetchSchools(SchoolName)
     }
-  }, [schools.length, fetchSchools, shortName])
+  }, [schools.length, fetchSchools, SchoolName])
 
   // Auto-select first school if none selected
   useEffect(() => {
     if (!value && schools.length > 0) {
-      onChange(schools[0].ShortName!)
+      onChange(schools[0].SchoolName!)
     }
   }, [schools, value, onChange])
 
@@ -51,8 +51,8 @@ export function SchoolSelect({
 
       <SelectContent className="max-w-[320px]">
         {schools.map((school) => (
-          <SelectItem key={school.ShortName} value={school.ShortName!}>
-            <span className="truncate">{school.FullName}</span>
+          <SelectItem key={school.SchoolName} value={school.SchoolName!}>
+            <span className="truncate">{school.School_Name}</span>
           </SelectItem>
         ))}
       </SelectContent>
