@@ -1,6 +1,7 @@
 "use client"
 
 import { cn } from "@/lib/utils"
+import Image from "next/image";
 import { Button } from "@/components/ui/button"
 import {
   GraduationCap,
@@ -60,10 +61,20 @@ export function AdminSidebar() {
       {/* Logo */}
       <div className="p-4 border-b border-sidebar-border flex items-center justify-between">
         <div className={cn("flex items-center gap-3", collapsed && "justify-center")}>
-          <div className="w-8 h-8 rounded-lg bg-sidebar-primary flex items-center justify-center shrink-0">
+          <div className="w-10 h-10 flex items-center justify-center">
+              <Image
+                src="/logo.png"
+                alt="Montessori Golden Jubilee Logo"
+                width={80}
+                height={80}
+                className="object-contain"
+                priority
+              />
+            </div>
+          {/* <div className="w-8 h-8 rounded-lg bg-sidebar-primary flex items-center justify-center shrink-0">
             <GraduationCap className="w-5 h-5 text-sidebar-primary-foreground" />
-          </div>
-          {!collapsed && <span className="font-semibold text-sm">Indus Education</span>}
+          </div> */}
+          {!collapsed && <span className="font-semibold text-sm">Montessori</span>}
         </div>
         <Button
           variant="ghost"
