@@ -6,6 +6,7 @@ import { useToast } from "@/hooks/use-toast"
 import { useSchoolStore } from "@/store/school.store"
 import { useAuthStore } from "@/store/auth.store"
 import { SchoolSelect } from "@/components/dropdown/dropdown"
+import Image from "next/image";
 
 import {
   Card,
@@ -107,6 +108,17 @@ export function BulkUploadModule() {
 
   return (
     <div className="p-6 space-y-6">
+       {/* ================= WATERMARK (ADDED ONLY) ================= */}
+          <div className="pointer-events-none absolute inset-0 flex items-center justify-center opacity-[0.05]">
+            <Image
+              src="/logo.png"
+              alt="Watermark Logo"
+              width={600}
+              height={600}
+              className="object-contain"
+              priority
+            />
+          </div>
       {/* Header */}
       <div>
         <h1 className="text-2xl font-bold text-foreground">Bulk Upload</h1>

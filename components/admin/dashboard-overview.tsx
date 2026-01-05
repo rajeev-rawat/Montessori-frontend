@@ -9,7 +9,7 @@ import { SchoolSelect } from "@/components/dropdown/dropdown"
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Users, Upload, ArrowRight, FileCheck, AlertCircle, TrendingUp } from "lucide-react"
-
+import Image from "next/image";
 export function DashboardOverview() {
   const router = useRouter()
   const [authChecked, setAuthChecked] = useState(false)
@@ -80,6 +80,19 @@ export function DashboardOverview() {
 
   return (
     <div className="p-6 space-y-6">
+        {/* ================= WATERMARK (ADDED ONLY) ================= */}
+            <div className="pointer-events-none absolute inset-0 flex items-center justify-center opacity-[0.05]">
+              <Image
+                src="/logo.png"
+                alt="Watermark Logo"
+                width={600}
+                height={600}
+                className="object-contain"
+                priority
+              />
+            </div>
+      
+            {/* Header */}
       <div>
         <h1 className="text-2xl font-bold text-foreground">Admin Dashboard</h1>
         <p className="text-muted-foreground">
