@@ -6,22 +6,20 @@ import { getSchoolsApi, School } from "@/services/school.service"
 interface SchoolStore {
   schools: School[]
   loading: boolean
-  fetchSchools: (SchoolName: string) => Promise<void>
+  fetchSchools: (schoolName?: string) => Promise<void>
 }
 
 export const useSchoolStore = create<SchoolStore>((set) => ({
   schools: [],
   loading: false,
 
-  fetchSchools: async (SchoolName: string) => {
+  fetchSchools: async (schoolName) => {
     try {
       set({ loading: true })
-
-      const schools = await getSchoolsApi(SchoolName)
-
+      const schools = await getSchoolsApi(schoolName)
       set({ schools })
-    } catch (error) {
-      console.error("fetchSchools error:", error)
+    } catch (err) {
+      console.error(err)
       set({ schools: [] })
     } finally {
       set({ loading: false })

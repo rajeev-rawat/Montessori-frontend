@@ -12,7 +12,7 @@ import { useSchoolStore } from "@/store/school.store"
 import { useAuthStore } from "@/store/auth.store"
 
 interface SchoolSelectProps {
-  value?: string // stores SchoolName
+  value?: string
   onChange: (value: string) => void
   placeholder?: string
 }
@@ -22,35 +22,33 @@ export function SchoolSelect({
   onChange,
   placeholder = "Select school",
 }: SchoolSelectProps) {
-  const { schools, fetchSchools, loading } = useSchoolStore()
+  const { schools, fetchSchools } = useSchoolStore()
   const user = useAuthStore((state) => state.user)
-  const SchoolName = user?.SchoolName || ""
 
-  // Fetch schools on load
   useEffect(() => {
-     fetchSchools(SchoolName)
-  }, [ fetchSchools, SchoolName])
+    if (!user) return
+    fetchSchools(user.SchoolName || undefined)
+  }, [user, fetchSchools])
 
-  // Auto-select first school if none selected
   useEffect(() => {
-    if (!value && schools.length > 0) {
-      onChange(schools[0].SchoolName!)
+    if (schools.length > 0 && !value) {
+      onChange(schools[0].SchoolName)
     }
   }, [schools, value, onChange])
 
   return (
     <Select value={value} onValueChange={onChange}>
-      <SelectTrigger className="w-full max-w-full overflow-hidden">
-        <SelectValue
-          placeholder={loading ? "Loading..." : placeholder}
-          className="truncate"
-        />
+      <SelectTrigger className="w-full">
+        <SelectValue placeholder={placeholder} />
       </SelectTrigger>
 
-      <SelectContent className="max-w-[320px]">
+      <SelectContent>
         {schools.map((school) => (
-          <SelectItem key={school.SchoolName} value={school.SchoolName!}>
-            <span className="truncate">{school.School_Name}</span>
+          <SelectItem
+            key={school.SchoolName}
+            value={school.SchoolName}
+          >
+            {school.School_Name}
           </SelectItem>
         ))}
       </SelectContent>
