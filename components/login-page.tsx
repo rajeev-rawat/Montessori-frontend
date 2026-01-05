@@ -56,6 +56,7 @@ export function LoginPage() {
       });
 
       router.push("/dashboard");
+       window.location.reload();
     } catch (error: any) {
       toast({
         variant: "destructive",
@@ -69,6 +70,7 @@ export function LoginPage() {
     const token = localStorage.getItem("auth_token");
     if (token) {
       router.replace("/dashboard"); // redirect if already logged in
+      
     }
   }, [router]);
 

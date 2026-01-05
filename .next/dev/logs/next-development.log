@@ -15509,3 +15509,1530 @@ Incoming: %s useEffect [9, async (SchoolName)=>{
 [168:54:58.285] Browser LOG     {"City":"","SchoolName":"MISNHK","School_Name":"Monte International School, NH-44, Kallur","State":"","address":"","email":"","id":12,"mobile":"","name":"","user_type":"Admin","username":"office.cbmonte@gmail.com"} user
 [168:54:58.285] Browser LOG     {"City":"","SchoolName":"MISNHK","School_Name":"Monte International School, NH-44, Kallur","State":"","address":"","email":"","id":12,"mobile":"","name":"","user_type":"Admin","username":"office.cbmonte@gmail.com"} user
 [168:54:58.285] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/dashboard color: rgb(120, 120, 120) color: inherit {"dp":"/dashboard","o":"http://localhost:3000/dashboard","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1767112400605}
+[262:58:34.413] Browser LOG     {"City":"","SchoolName":"MISNHK","School_Name":"Monte International School, NH-44, Kallur","State":"","address":"","email":"","id":12,"mobile":"","name":"","user_type":"Admin","username":"office.cbmonte@gmail.com"} user
+[262:58:34.414] Browser LOG     {"City":"","SchoolName":"MISNHK","School_Name":"Monte International School, NH-44, Kallur","State":"","address":"","email":"","id":12,"mobile":"","name":"","user_type":"Admin","username":"office.cbmonte@gmail.com"} user
+[262:58:34.414] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1767451005749}
+[262:58:49.579] Server  LOG     null "user"
+[262:58:50.120] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[262:58:50.409] Browser LOG     null user
+[262:58:50.409] Browser LOG     null user
+[262:58:50.409] Browser LOG     {"City":"","SchoolName":"MISNHK","School_Name":"Monte International School, NH-44, Kallur","State":"","address":"","email":"","id":12,"mobile":"","name":"","user_type":"Admin","username":"office.cbmonte@gmail.com"} user
+[262:58:50.410] Browser LOG     {"City":"","SchoolName":"MISNHK","School_Name":"Monte International School, NH-44, Kallur","State":"","address":"","email":"","id":12,"mobile":"","name":"","user_type":"Admin","username":"office.cbmonte@gmail.com"} user
+[262:58:50.410] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[262:58:50.412] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/students","route":"/students"}
+[262:58:50.412] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1767451021793}
+[262:59:03.148] Server  LOG     null "user"
+[262:59:03.399] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[262:59:03.628] Browser LOG     null user
+[262:59:03.628] Browser LOG     null user
+[262:59:03.628] Browser LOG     {"City":"","SchoolName":"MISNHK","School_Name":"Monte International School, NH-44, Kallur","State":"","address":"","email":"","id":12,"mobile":"","name":"","user_type":"Admin","username":"office.cbmonte@gmail.com"} user
+[262:59:03.628] Browser LOG     {"City":"","SchoolName":"MISNHK","School_Name":"Monte International School, NH-44, Kallur","State":"","address":"","email":"","id":12,"mobile":"","name":"","user_type":"Admin","username":"office.cbmonte@gmail.com"} user
+[262:59:03.628] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[262:59:03.628] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/students","route":"/students"}
+[262:59:03.628] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1767451035011}
+[298:26:15.253] Browser LOG     {"City":"","SchoolName":"MISNHK","School_Name":"Monte International School, NH-44, Kallur","State":"","address":"","email":"","id":12,"mobile":"","name":"","user_type":"Admin","username":"office.cbmonte@gmail.com"} user
+[298:26:15.253] Browser LOG     {"City":"","SchoolName":"MISNHK","School_Name":"Monte International School, NH-44, Kallur","State":"","address":"","email":"","id":12,"mobile":"","name":"","user_type":"Admin","username":"office.cbmonte@gmail.com"} user
+[298:26:16.468] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[298:26:16.468] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[298:26:20.998] Server  LOG     null "user"
+[298:26:21.639] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[298:26:21.856] Browser LOG     null user
+[298:26:21.856] Browser LOG     null user
+[298:26:21.856] Browser LOG     {"City":"","SchoolName":"MISNHK","School_Name":"Monte International School, NH-44, Kallur","State":"","address":"","email":"","id":12,"mobile":"","name":"","user_type":"Admin","username":"office.cbmonte@gmail.com"} user
+[298:26:21.856] Browser LOG     {"City":"","SchoolName":"MISNHK","School_Name":"Monte International School, NH-44, Kallur","State":"","address":"","email":"","id":12,"mobile":"","name":"","user_type":"Admin","username":"office.cbmonte@gmail.com"} user
+[298:26:22.141] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[298:26:22.141] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/students","route":"/students"}
+[298:26:22.141] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1767578669544}
+[298:26:29.095] Browser LOG     null user
+[298:26:29.095] Browser LOG     null user
+[298:26:29.355] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/login color: rgb(120, 120, 120) color: inherit {"dp":"/login","o":"http://localhost:3000/login","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1767578676880}
+[298:26:41.127] Browser LOG     {"City":"","SchoolName":"","School_Name":"","State":"","address":"","email":"","id":16,"mobile":"","name":"","user_type":"Super Admin","username":"Akmsmeta@gmail.com"} user
+[298:26:41.127] Browser LOG     {"City":"","SchoolName":"","School_Name":"","State":"","address":"","email":"","id":16,"mobile":"","name":"","user_type":"Super Admin","username":"Akmsmeta@gmail.com"} user
+[298:26:41.127] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/dashboard color: rgb(120, 120, 120) color: inherit {"dp":"/dashboard","o":"http://localhost:3000/dashboard","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1767578688597}
+[298:26:48.329] Browser LOG     {"City":"","SchoolName":"","School_Name":"","State":"","address":"","email":"","id":16,"mobile":"","name":"","user_type":"Super Admin","username":"Akmsmeta@gmail.com"} user
+[298:26:48.330] Browser LOG     {"City":"","SchoolName":"","School_Name":"","State":"","address":"","email":"","id":16,"mobile":"","name":"","user_type":"Super Admin","username":"Akmsmeta@gmail.com"} user
+[298:26:48.330] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1767578695820}
+[298:26:52.307] Browser LOG     null user
+[298:26:52.307] Browser LOG     null user
+[298:26:52.426] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/login color: rgb(120, 120, 120) color: inherit {"dp":"/login","o":"http://localhost:3000/login","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1767578700001}
+[298:27:03.396] Browser LOG     {"City":"","SchoolName":"SSKH","School_Name":"Sproutz School, Khanamit, Hyderabad","State":"","address":"","email":"","id":13,"mobile":"","name":"","user_type":"Admin","username":"contact@sproutzschool.in"} user
+[298:27:03.396] Browser LOG     {"City":"","SchoolName":"SSKH","School_Name":"Sproutz School, Khanamit, Hyderabad","State":"","address":"","email":"","id":13,"mobile":"","name":"","user_type":"Admin","username":"contact@sproutzschool.in"} user
+[298:27:03.396] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/dashboard color: rgb(120, 120, 120) color: inherit {"dp":"/dashboard","o":"http://localhost:3000/dashboard","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1767578710873}
+[298:30:03.288] Server  LOG      ✓ Compiled in 1079ms
+[298:30:03.775] Browser ERROR   The final argument passed to %s changed size between renders. The order and size of this array must remain constant.
+
+Previous: %s
+Incoming: %s useEffect [[object Object], MIH, function () { [native code] }] [[object Object], false, MIH, function () { [native code] }]
+[298:30:10.150] Server  LOG      ✓ Compiled in 85ms
+[298:30:18.852] Browser LOG     null user
+[298:30:18.852] Browser LOG     null user
+[298:30:19.331] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/login color: rgb(120, 120, 120) color: inherit {"dp":"/login","o":"http://localhost:3000/login","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1767578906865}
+[298:30:33.161] Browser LOG     {"City":"","SchoolName":"","School_Name":"","State":"","address":"","email":"","id":16,"mobile":"","name":"","user_type":"Super Admin","username":"Akmsmeta@gmail.com"} user
+[298:30:33.161] Browser LOG     {"City":"","SchoolName":"","School_Name":"","State":"","address":"","email":"","id":16,"mobile":"","name":"","user_type":"Super Admin","username":"Akmsmeta@gmail.com"} user
+[298:30:33.161] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/dashboard color: rgb(120, 120, 120) color: inherit {"dp":"/dashboard","o":"http://localhost:3000/dashboard","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1767578920660}
+[298:30:46.810] Server  LOG     null "user"
+[298:30:47.144] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[298:30:47.371] Browser LOG     null user
+[298:30:47.371] Browser LOG     null user
+[298:30:47.371] Browser LOG     {"City":"","SchoolName":"","School_Name":"","State":"","address":"","email":"","id":16,"mobile":"","name":"","user_type":"Super Admin","username":"Akmsmeta@gmail.com"} user
+[298:30:47.371] Browser LOG     {"City":"","SchoolName":"","School_Name":"","State":"","address":"","email":"","id":16,"mobile":"","name":"","user_type":"Super Admin","username":"Akmsmeta@gmail.com"} user
+[298:30:47.371] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[298:30:47.371] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/dashboard","route":"/dashboard"}
+[298:30:47.371] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/dashboard color: rgb(120, 120, 120) color: inherit {"dp":"/dashboard","o":"http://localhost:3000/dashboard","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1767578934947}
+[298:30:52.092] Server  LOG     null "user"
+[298:30:52.375] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[298:30:52.579] Browser LOG     null user
+[298:30:52.579] Browser LOG     null user
+[298:30:52.579] Browser LOG     {"City":"","SchoolName":"","School_Name":"","State":"","address":"","email":"","id":16,"mobile":"","name":"","user_type":"Super Admin","username":"Akmsmeta@gmail.com"} user
+[298:30:52.579] Browser LOG     {"City":"","SchoolName":"","School_Name":"","State":"","address":"","email":"","id":16,"mobile":"","name":"","user_type":"Super Admin","username":"Akmsmeta@gmail.com"} user
+[298:30:52.579] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[298:30:52.579] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/dashboard","route":"/dashboard"}
+[298:30:52.579] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/dashboard color: rgb(120, 120, 120) color: inherit {"dp":"/dashboard","o":"http://localhost:3000/dashboard","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1767578940155}
+[298:31:00.195] Browser LOG     {"City":"","SchoolName":"","School_Name":"","State":"","address":"","email":"","id":16,"mobile":"","name":"","user_type":"Super Admin","username":"Akmsmeta@gmail.com"} user
+[298:31:00.195] Browser LOG     {"City":"","SchoolName":"","School_Name":"","State":"","address":"","email":"","id":16,"mobile":"","name":"","user_type":"Super Admin","username":"Akmsmeta@gmail.com"} user
+[298:31:00.195] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/bulkUpload color: rgb(120, 120, 120) color: inherit {"dp":"/bulkUpload","o":"http://localhost:3000/bulkUpload","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1767578947756}
+[298:31:02.543] Server  LOG     null "user"
+[298:31:03.017] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[298:31:03.221] Browser LOG     null user
+[298:31:03.221] Browser LOG     null user
+[298:31:03.221] Browser LOG     {"City":"","SchoolName":"","School_Name":"","State":"","address":"","email":"","id":16,"mobile":"","name":"","user_type":"Super Admin","username":"Akmsmeta@gmail.com"} user
+[298:31:03.221] Browser LOG     {"City":"","SchoolName":"","School_Name":"","State":"","address":"","email":"","id":16,"mobile":"","name":"","user_type":"Super Admin","username":"Akmsmeta@gmail.com"} user
+[298:31:03.221] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[298:31:03.221] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/bulkUpload","route":"/bulkUpload"}
+[298:31:03.221] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/bulkUpload color: rgb(120, 120, 120) color: inherit {"dp":"/bulkUpload","o":"http://localhost:3000/bulkUpload","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1767578950797}
+[298:31:07.357] Browser LOG     null user
+[298:31:07.357] Browser LOG     null user
+[298:31:07.518] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/login color: rgb(120, 120, 120) color: inherit {"dp":"/login","o":"http://localhost:3000/login","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1767578955085}
+[298:31:20.708] Browser LOG     {"City":"","SchoolName":"MISNHK","School_Name":"Monte International School, NH-44, Kallur","State":"","address":"","email":"","id":12,"mobile":"","name":"","user_type":"Admin","username":"office.cbmonte@gmail.com"} user
+[298:31:20.709] Browser LOG     {"City":"","SchoolName":"MISNHK","School_Name":"Monte International School, NH-44, Kallur","State":"","address":"","email":"","id":12,"mobile":"","name":"","user_type":"Admin","username":"office.cbmonte@gmail.com"} user
+[298:31:20.709] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/dashboard color: rgb(120, 120, 120) color: inherit {"dp":"/dashboard","o":"http://localhost:3000/dashboard","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1767578968223}
+[298:31:23.046] Server  LOG     null "user"
+[298:31:23.332] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[298:31:23.568] Browser LOG     null user
+[298:31:23.568] Browser LOG     null user
+[298:31:23.568] Browser LOG     {"City":"","SchoolName":"MISNHK","School_Name":"Monte International School, NH-44, Kallur","State":"","address":"","email":"","id":12,"mobile":"","name":"","user_type":"Admin","username":"office.cbmonte@gmail.com"} user
+[298:31:23.568] Browser LOG     {"City":"","SchoolName":"MISNHK","School_Name":"Monte International School, NH-44, Kallur","State":"","address":"","email":"","id":12,"mobile":"","name":"","user_type":"Admin","username":"office.cbmonte@gmail.com"} user
+[298:31:23.568] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[298:31:23.568] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/dashboard","route":"/dashboard"}
+[298:31:23.568] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/dashboard color: rgb(120, 120, 120) color: inherit {"dp":"/dashboard","o":"http://localhost:3000/dashboard","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1767578971130}
+[298:32:59.194] Server  LOG      ✓ Compiled in 1252ms
+[298:33:15.814] Browser LOG     null user
+[298:33:15.814] Browser LOG     null user
+[298:33:16.033] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/login color: rgb(120, 120, 120) color: inherit {"dp":"/login","o":"http://localhost:3000/login","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1767579083570}
+[298:33:28.495] Browser LOG     {"City":"","SchoolName":"","School_Name":"","State":"","address":"","email":"","id":16,"mobile":"","name":"","user_type":"Super Admin","username":"Akmsmeta@gmail.com"} user
+[298:33:28.495] Browser LOG     {"City":"","SchoolName":"","School_Name":"","State":"","address":"","email":"","id":16,"mobile":"","name":"","user_type":"Super Admin","username":"Akmsmeta@gmail.com"} user
+[298:33:28.495] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/dashboard color: rgb(120, 120, 120) color: inherit {"dp":"/dashboard","o":"http://localhost:3000/dashboard","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1767579095929}
+[298:33:36.728] Browser LOG     null user
+[298:33:36.728] Browser LOG     null user
+[298:33:36.960] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/login color: rgb(120, 120, 120) color: inherit {"dp":"/login","o":"http://localhost:3000/login","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1767579104435}
+[298:33:49.932] Browser LOG     {"City":"","SchoolName":"MEMHSP","School_Name":"Montessori English Medium High School, Panchalingala","State":"","address":"","email":"","id":10,"mobile":"","name":"","user_type":"Admin","username":"Panchalingala@GMAIL.COM"} user
+[298:33:49.932] Browser LOG     {"City":"","SchoolName":"MEMHSP","School_Name":"Montessori English Medium High School, Panchalingala","State":"","address":"","email":"","id":10,"mobile":"","name":"","user_type":"Admin","username":"Panchalingala@GMAIL.COM"} user
+[298:33:49.932] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/dashboard color: rgb(120, 120, 120) color: inherit {"dp":"/dashboard","o":"http://localhost:3000/dashboard","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1767579117399}
+[298:34:07.070] Server  LOG     null "user"
+[298:34:07.557] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[298:34:07.860] Browser LOG     null user
+[298:34:07.860] Browser LOG     null user
+[298:34:07.860] Browser LOG     {"City":"","SchoolName":"MEMHSP","School_Name":"Montessori English Medium High School, Panchalingala","State":"","address":"","email":"","id":10,"mobile":"","name":"","user_type":"Admin","username":"Panchalingala@GMAIL.COM"} user
+[298:34:07.860] Browser LOG     {"City":"","SchoolName":"MEMHSP","School_Name":"Montessori English Medium High School, Panchalingala","State":"","address":"","email":"","id":10,"mobile":"","name":"","user_type":"Admin","username":"Panchalingala@GMAIL.COM"} user
+[298:34:07.860] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[298:34:07.860] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/dashboard","route":"/dashboard"}
+[298:34:07.860] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/dashboard color: rgb(120, 120, 120) color: inherit {"dp":"/dashboard","o":"http://localhost:3000/dashboard","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1767579135373}
+[298:34:12.324] Browser LOG     null user
+[298:34:12.324] Browser LOG     null user
+[298:34:12.631] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/login color: rgb(120, 120, 120) color: inherit {"dp":"/login","o":"http://localhost:3000/login","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1767579140181}
+[298:34:25.457] Browser LOG     {"City":"","SchoolName":"MIRSNHK","School_Name":"Montessori Indus Residential School, NH-44, Kallur","State":"","address":"","email":"","id":9,"mobile":"","name":"","user_type":"Admin","username":"indusschool10@gmail.com"} user
+[298:34:25.457] Browser LOG     {"City":"","SchoolName":"MIRSNHK","School_Name":"Montessori Indus Residential School, NH-44, Kallur","State":"","address":"","email":"","id":9,"mobile":"","name":"","user_type":"Admin","username":"indusschool10@gmail.com"} user
+[298:34:25.457] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/dashboard color: rgb(120, 120, 120) color: inherit {"dp":"/dashboard","o":"http://localhost:3000/dashboard","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1767579152934}
+[298:39:02.566] Server  LOG      ✓ Compiled in 583ms
+[298:39:14.471] Server  LOG      ✓ Compiled in 127ms
+[298:39:23.827] Browser LOG     null user
+[298:39:23.827] Browser LOG     null user
+[298:39:24.071] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/login color: rgb(120, 120, 120) color: inherit {"dp":"/login","o":"http://localhost:3000/login","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1767579451619}
+[298:39:35.054] Browser LOG     {"City":"","SchoolName":"","School_Name":"","State":"","address":"","email":"","id":15,"mobile":"","name":"","user_type":"Super Admin","username":"montesraj@yahoo.com"} user
+[298:39:35.054] Browser LOG     {"City":"","SchoolName":"","School_Name":"","State":"","address":"","email":"","id":15,"mobile":"","name":"","user_type":"Super Admin","username":"montesraj@yahoo.com"} user
+[298:39:35.054] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/dashboard color: rgb(120, 120, 120) color: inherit {"dp":"/dashboard","o":"http://localhost:3000/dashboard","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1767579462538}
+[298:39:40.285] Server  LOG     null "user"
+[298:39:40.997] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[298:39:41.265] Browser LOG     null user
+[298:39:41.265] Browser LOG     null user
+[298:39:41.265] Browser LOG     {"City":"","SchoolName":"","School_Name":"","State":"","address":"","email":"","id":15,"mobile":"","name":"","user_type":"Super Admin","username":"montesraj@yahoo.com"} user
+[298:39:41.265] Browser LOG     {"City":"","SchoolName":"","School_Name":"","State":"","address":"","email":"","id":15,"mobile":"","name":"","user_type":"Super Admin","username":"montesraj@yahoo.com"} user
+[298:39:41.265] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[298:39:41.265] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/dashboard","route":"/dashboard"}
+[298:39:41.265] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/dashboard color: rgb(120, 120, 120) color: inherit {"dp":"/dashboard","o":"http://localhost:3000/dashboard","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1767579468826}
+[298:39:46.818] Browser LOG     null user
+[298:39:46.818] Browser LOG     null user
+[298:39:47.165] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/login color: rgb(120, 120, 120) color: inherit {"dp":"/login","o":"http://localhost:3000/login","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1767579474616}
+[298:39:57.356] Browser LOG     {"City":"","SchoolName":"","School_Name":"","State":"","address":"","email":"","id":16,"mobile":"","name":"","user_type":"Super Admin","username":"Akmsmeta@gmail.com"} user
+[298:39:57.356] Browser LOG     {"City":"","SchoolName":"","School_Name":"","State":"","address":"","email":"","id":16,"mobile":"","name":"","user_type":"Super Admin","username":"Akmsmeta@gmail.com"} user
+[298:39:57.356] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/dashboard color: rgb(120, 120, 120) color: inherit {"dp":"/dashboard","o":"http://localhost:3000/dashboard","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1767579484874}
+[298:40:01.306] Server  LOG     null "user"
+[298:40:01.736] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[298:40:02.025] Browser LOG     null user
+[298:40:02.025] Browser LOG     null user
+[298:40:02.025] Browser LOG     {"City":"","SchoolName":"","School_Name":"","State":"","address":"","email":"","id":16,"mobile":"","name":"","user_type":"Super Admin","username":"Akmsmeta@gmail.com"} user
+[298:40:02.025] Browser LOG     {"City":"","SchoolName":"","School_Name":"","State":"","address":"","email":"","id":16,"mobile":"","name":"","user_type":"Super Admin","username":"Akmsmeta@gmail.com"} user
+[298:40:02.025] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[298:40:02.025] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/dashboard","route":"/dashboard"}
+[298:40:02.025] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/dashboard color: rgb(120, 120, 120) color: inherit {"dp":"/dashboard","o":"http://localhost:3000/dashboard","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1767579489584}
+[298:42:15.598] Server  LOG      ✓ Compiled in 338ms
+[298:42:23.394] Server  LOG     null "user"
+[298:42:23.729] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[298:42:24.048] Browser LOG     null user
+[298:42:24.048] Browser LOG     null user
+[298:42:24.048] Browser LOG     {"City":"","SchoolName":"","School_Name":"","State":"","address":"","email":"","id":16,"mobile":"","name":"","user_type":"Super Admin","username":"Akmsmeta@gmail.com"} user
+[298:42:24.048] Browser LOG     {"City":"","SchoolName":"","School_Name":"","State":"","address":"","email":"","id":16,"mobile":"","name":"","user_type":"Super Admin","username":"Akmsmeta@gmail.com"} user
+[298:42:24.048] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[298:42:24.048] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/dashboard","route":"/dashboard"}
+[298:42:24.048] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/dashboard color: rgb(120, 120, 120) color: inherit {"dp":"/dashboard","o":"http://localhost:3000/dashboard","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1767579631521}
+[298:42:27.717] Browser LOG     null user
+[298:42:27.717] Browser LOG     null user
+[298:42:27.919] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/login color: rgb(120, 120, 120) color: inherit {"dp":"/login","o":"http://localhost:3000/login","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1767579635464}
+[298:42:39.128] Browser LOG     {"City":"","SchoolName":"MISNHK","School_Name":"Monte International School, NH-44, Kallur","State":"","address":"","email":"","id":12,"mobile":"","name":"","user_type":"Admin","username":"office.cbmonte@gmail.com"} user
+[298:42:39.129] Browser LOG     {"City":"","SchoolName":"MISNHK","School_Name":"Monte International School, NH-44, Kallur","State":"","address":"","email":"","id":12,"mobile":"","name":"","user_type":"Admin","username":"office.cbmonte@gmail.com"} user
+[298:42:39.129] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/dashboard color: rgb(120, 120, 120) color: inherit {"dp":"/dashboard","o":"http://localhost:3000/dashboard","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1767579646608}
+[298:43:20.935] Server  LOG     null "user"
+[298:43:21.252] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[298:43:21.252] Browser LOG     null user
+[298:43:21.252] Browser LOG     null user
+[298:43:21.450] Browser LOG     {"City":"","SchoolName":"MISNHK","School_Name":"Monte International School, NH-44, Kallur","State":"","address":"","email":"","id":12,"mobile":"","name":"","user_type":"Admin","username":"office.cbmonte@gmail.com"} user
+[298:43:21.450] Browser LOG     {"City":"","SchoolName":"MISNHK","School_Name":"Monte International School, NH-44, Kallur","State":"","address":"","email":"","id":12,"mobile":"","name":"","user_type":"Admin","username":"office.cbmonte@gmail.com"} user
+[298:43:21.450] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[298:43:21.450] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/dashboard","route":"/dashboard"}
+[298:43:21.450] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/dashboard color: rgb(120, 120, 120) color: inherit {"dp":"/dashboard","o":"http://localhost:3000/dashboard","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1767579689001}
+[298:43:24.752] Browser LOG     null user
+[298:43:24.752] Browser LOG     null user
+[298:43:25.017] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/login color: rgb(120, 120, 120) color: inherit {"dp":"/login","o":"http://localhost:3000/login","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1767579692563}
+[298:43:36.577] Browser LOG     {"City":"","SchoolName":"MEMHSP","School_Name":"Montessori English Medium High School, Panchalingala","State":"","address":"","email":"","id":10,"mobile":"","name":"","user_type":"Admin","username":"Panchalingala@GMAIL.COM"} user
+[298:43:36.577] Browser LOG     {"City":"","SchoolName":"MEMHSP","School_Name":"Montessori English Medium High School, Panchalingala","State":"","address":"","email":"","id":10,"mobile":"","name":"","user_type":"Admin","username":"Panchalingala@GMAIL.COM"} user
+[298:43:36.577] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/dashboard color: rgb(120, 120, 120) color: inherit {"dp":"/dashboard","o":"http://localhost:3000/dashboard","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1767579704047}
+[298:43:42.393] Server  LOG     null "user"
+[298:43:42.709] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[298:43:42.943] Browser LOG     null user
+[298:43:42.943] Browser LOG     null user
+[298:43:42.943] Browser LOG     {"City":"","SchoolName":"MEMHSP","School_Name":"Montessori English Medium High School, Panchalingala","State":"","address":"","email":"","id":10,"mobile":"","name":"","user_type":"Admin","username":"Panchalingala@GMAIL.COM"} user
+[298:43:42.943] Browser LOG     {"City":"","SchoolName":"MEMHSP","School_Name":"Montessori English Medium High School, Panchalingala","State":"","address":"","email":"","id":10,"mobile":"","name":"","user_type":"Admin","username":"Panchalingala@GMAIL.COM"} user
+[298:43:42.943] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[298:43:42.943] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/dashboard","route":"/dashboard"}
+[298:43:42.943] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/dashboard color: rgb(120, 120, 120) color: inherit {"dp":"/dashboard","o":"http://localhost:3000/dashboard","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1767579710472}
+[298:43:54.459] Browser LOG     {"City":"","SchoolName":"MEMHSP","School_Name":"Montessori English Medium High School, Panchalingala","State":"","address":"","email":"","id":10,"mobile":"","name":"","user_type":"Admin","username":"Panchalingala@GMAIL.COM"} user
+[298:43:54.459] Browser LOG     {"City":"","SchoolName":"MEMHSP","School_Name":"Montessori English Medium High School, Panchalingala","State":"","address":"","email":"","id":10,"mobile":"","name":"","user_type":"Admin","username":"Panchalingala@GMAIL.COM"} user
+[298:43:54.459] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/bulkUpload color: rgb(120, 120, 120) color: inherit {"dp":"/bulkUpload","o":"http://localhost:3000/bulkUpload","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1767579721966}
+[298:43:58.440] Browser LOG     {"City":"","SchoolName":"MEMHSP","School_Name":"Montessori English Medium High School, Panchalingala","State":"","address":"","email":"","id":10,"mobile":"","name":"","user_type":"Admin","username":"Panchalingala@GMAIL.COM"} user
+[298:43:58.440] Browser LOG     {"City":"","SchoolName":"MEMHSP","School_Name":"Montessori English Medium High School, Panchalingala","State":"","address":"","email":"","id":10,"mobile":"","name":"","user_type":"Admin","username":"Panchalingala@GMAIL.COM"} user
+[298:43:58.440] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1767579725918}
+[298:44:32.545] Browser LOG     {"City":"","SchoolName":"MEMHSP","School_Name":"Montessori English Medium High School, Panchalingala","State":"","address":"","email":"","id":10,"mobile":"","name":"","user_type":"Admin","username":"Panchalingala@GMAIL.COM"} user
+[298:44:32.545] Browser LOG     {"City":"","SchoolName":"MEMHSP","School_Name":"Montessori English Medium High School, Panchalingala","State":"","address":"","email":"","id":10,"mobile":"","name":"","user_type":"Admin","username":"Panchalingala@GMAIL.COM"} user
+[298:44:32.545] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/dashboard color: rgb(120, 120, 120) color: inherit {"dp":"/dashboard","o":"http://localhost:3000/dashboard","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1767579760019}
+[298:44:34.190] Browser LOG     null user
+[298:44:34.190] Browser LOG     null user
+[298:44:34.396] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/login color: rgb(120, 120, 120) color: inherit {"dp":"/login","o":"http://localhost:3000/login","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1767579761947}
+[298:44:44.085] Browser LOG     {"City":"","SchoolName":"","School_Name":"","State":"","address":"","email":"","id":16,"mobile":"","name":"","user_type":"Super Admin","username":"Akmsmeta@gmail.com"} user
+[298:44:44.085] Browser LOG     {"City":"","SchoolName":"","School_Name":"","State":"","address":"","email":"","id":16,"mobile":"","name":"","user_type":"Super Admin","username":"Akmsmeta@gmail.com"} user
+[298:44:44.085] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/dashboard color: rgb(120, 120, 120) color: inherit {"dp":"/dashboard","o":"http://localhost:3000/dashboard","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1767579771562}
+[298:44:51.175] Browser LOG     null user
+[298:44:51.175] Browser LOG     null user
+[298:44:51.175] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/login color: rgb(120, 120, 120) color: inherit {"dp":"/login","o":"http://localhost:3000/login","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1767579778725}
+[298:44:57.922] Browser LOG     null user
+[298:44:57.922] Browser LOG     null user
+[298:44:57.922] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1767579785370}
+[298:45:00.112] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/login color: rgb(120, 120, 120) color: inherit {"dp":"/login","o":"http://localhost:3000/login","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1767579787648}
+[298:45:08.839] Browser LOG     {"City":"","SchoolName":"MISNHK","School_Name":"Monte International School, NH-44, Kallur","State":"","address":"","email":"","id":12,"mobile":"","name":"","user_type":"Admin","username":"office.cbmonte@gmail.com"} user
+[298:45:08.839] Browser LOG     {"City":"","SchoolName":"MISNHK","School_Name":"Monte International School, NH-44, Kallur","State":"","address":"","email":"","id":12,"mobile":"","name":"","user_type":"Admin","username":"office.cbmonte@gmail.com"} user
+[298:45:08.839] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/dashboard color: rgb(120, 120, 120) color: inherit {"dp":"/dashboard","o":"http://localhost:3000/dashboard","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1767579796325}
+[298:47:37.665] Server  LOG      ✓ Compiled in 320ms
+[298:47:47.428] Server  LOG      ✓ Compiled in 142ms
+[298:47:55.717] Server  LOG     null "user"
+[298:47:56.904] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[298:47:57.569] Browser LOG     null user
+[298:47:57.569] Browser LOG     null user
+[298:47:57.569] Browser LOG     {"City":"","SchoolName":"MISNHK","School_Name":"Monte International School, NH-44, Kallur","State":"","address":"","email":"","id":12,"mobile":"","name":"","user_type":"Admin","username":"office.cbmonte@gmail.com"} user
+[298:47:57.569] Browser LOG     {"City":"","SchoolName":"MISNHK","School_Name":"Monte International School, NH-44, Kallur","State":"","address":"","email":"","id":12,"mobile":"","name":"","user_type":"Admin","username":"office.cbmonte@gmail.com"} user
+[298:47:57.569] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[298:47:57.569] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/dashboard","route":"/dashboard"}
+[298:47:57.569] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/dashboard color: rgb(120, 120, 120) color: inherit {"dp":"/dashboard","o":"http://localhost:3000/dashboard","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1767579965085}
+[298:48:02.103] Server  LOG     null "user"
+[298:48:02.526] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[298:48:02.791] Browser LOG     null user
+[298:48:02.791] Browser LOG     null user
+[298:48:02.791] Browser LOG     {"City":"","SchoolName":"MISNHK","School_Name":"Monte International School, NH-44, Kallur","State":"","address":"","email":"","id":12,"mobile":"","name":"","user_type":"Admin","username":"office.cbmonte@gmail.com"} user
+[298:48:02.791] Browser LOG     {"City":"","SchoolName":"MISNHK","School_Name":"Monte International School, NH-44, Kallur","State":"","address":"","email":"","id":12,"mobile":"","name":"","user_type":"Admin","username":"office.cbmonte@gmail.com"} user
+[298:48:02.794] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[298:48:02.794] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/dashboard","route":"/dashboard"}
+[298:48:02.794] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/dashboard color: rgb(120, 120, 120) color: inherit {"dp":"/dashboard","o":"http://localhost:3000/dashboard","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1767579970330}
+[298:48:07.119] Browser LOG     {"City":"","SchoolName":"MISNHK","School_Name":"Monte International School, NH-44, Kallur","State":"","address":"","email":"","id":12,"mobile":"","name":"","user_type":"Admin","username":"office.cbmonte@gmail.com"} user
+[298:48:07.119] Browser LOG     {"City":"","SchoolName":"MISNHK","School_Name":"Monte International School, NH-44, Kallur","State":"","address":"","email":"","id":12,"mobile":"","name":"","user_type":"Admin","username":"office.cbmonte@gmail.com"} user
+[298:48:07.119] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/bulkUpload color: rgb(120, 120, 120) color: inherit {"dp":"/bulkUpload","o":"http://localhost:3000/bulkUpload","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1767579974625}
+[298:48:07.873] Browser LOG     {"City":"","SchoolName":"MISNHK","School_Name":"Monte International School, NH-44, Kallur","State":"","address":"","email":"","id":12,"mobile":"","name":"","user_type":"Admin","username":"office.cbmonte@gmail.com"} user
+[298:48:07.873] Browser LOG     {"City":"","SchoolName":"MISNHK","School_Name":"Monte International School, NH-44, Kallur","State":"","address":"","email":"","id":12,"mobile":"","name":"","user_type":"Admin","username":"office.cbmonte@gmail.com"} user
+[298:48:07.873] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1767579975366}
+[298:48:18.732] Browser LOG     null user
+[298:48:18.732] Browser LOG     null user
+[298:48:18.926] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/login color: rgb(120, 120, 120) color: inherit {"dp":"/login","o":"http://localhost:3000/login","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1767579986471}
+[298:48:29.176] Browser LOG     {"City":"","SchoolName":"","School_Name":"","State":"","address":"","email":"","id":15,"mobile":"","name":"","user_type":"Super Admin","username":"montesraj@yahoo.com"} user
+[298:48:29.176] Browser LOG     {"City":"","SchoolName":"","School_Name":"","State":"","address":"","email":"","id":15,"mobile":"","name":"","user_type":"Super Admin","username":"montesraj@yahoo.com"} user
+[298:48:29.176] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/dashboard color: rgb(120, 120, 120) color: inherit {"dp":"/dashboard","o":"http://localhost:3000/dashboard","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1767579996672}
+[298:48:41.893] Browser LOG     null user
+[298:48:41.893] Browser LOG     null user
+[298:48:42.022] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/login color: rgb(120, 120, 120) color: inherit {"dp":"/login","o":"http://localhost:3000/login","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1767580009559}
+[298:48:51.346] Browser LOG     {"City":"","SchoolName":"MISNHK","School_Name":"Monte International School, NH-44, Kallur","State":"","address":"","email":"","id":12,"mobile":"","name":"","user_type":"Admin","username":"office.cbmonte@gmail.com"} user
+[298:48:51.346] Browser LOG     {"City":"","SchoolName":"MISNHK","School_Name":"Monte International School, NH-44, Kallur","State":"","address":"","email":"","id":12,"mobile":"","name":"","user_type":"Admin","username":"office.cbmonte@gmail.com"} user
+[298:48:51.346] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/dashboard color: rgb(120, 120, 120) color: inherit {"dp":"/dashboard","o":"http://localhost:3000/dashboard","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1767580018838}
+[298:51:18.242] Server  LOG      ✓ Compiled in 1567ms
+[298:51:18.777] Browser ERROR   ./Desktop/MONTESSORI/Montessori-frontend/components/admin/bulk-upload-module.tsx:6:1
+Export useSchoolStore doesn't exist in target module
+  4 | import { useBulkUploadStore } from "@/store/bulk-upload.store"
+  5 | import { useToast } from "@/hooks/use-toast"
+> 6 | import { useSchoolStore } from "@/store/school.store"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import { useAuthStore } from "@/store/auth.store"
+  8 | import { SchoolSelect } from "@/components/dropdown/dropdown"
+  9 |
+
+The export useSchoolStore was not found in module [project]/Desktop/MONTESSORI/Montessori-frontend/store/school.store.ts [app-client] (ecmascript).
+Did you mean to import getSchoolsApi?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/bulk-upload-module.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/admin-dashboard.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/bulk-upload-module.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/admin-dashboard.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Server Component]
+[298:51:18.777] Browser ERROR   ./Desktop/MONTESSORI/Montessori-frontend/components/admin/bulk-upload-module.tsx:6:1
+Export useSchoolStore doesn't exist in target module
+  4 | import { useBulkUploadStore } from "@/store/bulk-upload.store"
+  5 | import { useToast } from "@/hooks/use-toast"
+> 6 | import { useSchoolStore } from "@/store/school.store"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import { useAuthStore } from "@/store/auth.store"
+  8 | import { SchoolSelect } from "@/components/dropdown/dropdown"
+  9 |
+
+The export useSchoolStore was not found in module [project]/Desktop/MONTESSORI/Montessori-frontend/store/school.store.ts [app-ssr] (ecmascript).
+Did you mean to import getSchoolsApi?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/bulk-upload-module.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/admin-dashboard.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/bulk-upload-module.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/admin-dashboard.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Server Component]
+[298:51:18.777] Browser ERROR   ./Desktop/MONTESSORI/Montessori-frontend/components/admin/dashboard-overview.tsx:6:1
+Export useSchoolStore doesn't exist in target module
+  4 | import { useRouter } from "next/navigation"
+  5 | import { useAuthStore } from "@/store/auth.store"
+> 6 | import { useSchoolStore } from "@/store/school.store"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import { useDashboardStore } from "@/store/dashboard.store"
+  8 | import { SchoolSelect } from "@/components/dropdown/dropdown"
+  9 | import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card"
+
+The export useSchoolStore was not found in module [project]/Desktop/MONTESSORI/Montessori-frontend/store/school.store.ts [app-client] (ecmascript).
+Did you mean to import getSchoolsApi?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/dashboard-overview.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/admin-dashboard.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/dashboard-overview.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/admin-dashboard.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Server Component]
+[298:51:18.777] Browser ERROR   ./Desktop/MONTESSORI/Montessori-frontend/components/admin/dashboard-overview.tsx:6:1
+Export useSchoolStore doesn't exist in target module
+  4 | import { useRouter } from "next/navigation"
+  5 | import { useAuthStore } from "@/store/auth.store"
+> 6 | import { useSchoolStore } from "@/store/school.store"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import { useDashboardStore } from "@/store/dashboard.store"
+  8 | import { SchoolSelect } from "@/components/dropdown/dropdown"
+  9 | import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card"
+
+The export useSchoolStore was not found in module [project]/Desktop/MONTESSORI/Montessori-frontend/store/school.store.ts [app-ssr] (ecmascript).
+Did you mean to import getSchoolsApi?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/dashboard-overview.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/admin-dashboard.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/dashboard-overview.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/admin-dashboard.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Server Component]
+[298:51:18.777] Browser ERROR   ./Desktop/MONTESSORI/Montessori-frontend/components/dropdown/dropdown.tsx:11:1
+Export useSchoolStore doesn't exist in target module
+   9 |   SelectValue,
+  10 | } from "@/components/ui/select"
+> 11 | import { useSchoolStore } from "@/store/school.store"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  12 | import { useAuthStore } from "@/store/auth.store"
+  13 |
+  14 | interface SchoolSelectProps {
+
+The export useSchoolStore was not found in module [project]/Desktop/MONTESSORI/Montessori-frontend/store/school.store.ts [app-client] (ecmascript).
+Did you mean to import getSchoolsApi?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/MONTESSORI/Montessori-frontend/components/dropdown/dropdown.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/bulk-upload-module.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/admin-dashboard.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/MONTESSORI/Montessori-frontend/components/dropdown/dropdown.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/bulk-upload-module.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/admin-dashboard.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Server Component]
+[298:51:18.777] Browser ERROR   ./Desktop/MONTESSORI/Montessori-frontend/components/dropdown/dropdown.tsx:11:1
+Export useSchoolStore doesn't exist in target module
+   9 |   SelectValue,
+  10 | } from "@/components/ui/select"
+> 11 | import { useSchoolStore } from "@/store/school.store"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  12 | import { useAuthStore } from "@/store/auth.store"
+  13 |
+  14 | interface SchoolSelectProps {
+
+The export useSchoolStore was not found in module [project]/Desktop/MONTESSORI/Montessori-frontend/store/school.store.ts [app-ssr] (ecmascript).
+Did you mean to import getSchoolsApi?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/MONTESSORI/Montessori-frontend/components/dropdown/dropdown.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/bulk-upload-module.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/admin-dashboard.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/MONTESSORI/Montessori-frontend/components/dropdown/dropdown.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/bulk-upload-module.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/admin-dashboard.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Server Component]
+[298:51:49.987] Server  LOG      ✓ Compiled in 167ms
+[298:51:51.519] Browser ERROR   ./Desktop/MONTESSORI/Montessori-frontend/components/admin/bulk-upload-module.tsx:6:1
+Export useSchoolStore doesn't exist in target module
+  4 | import { useBulkUploadStore } from "@/store/bulk-upload.store"
+  5 | import { useToast } from "@/hooks/use-toast"
+> 6 | import { useSchoolStore } from "@/store/school.store"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import { useAuthStore } from "@/store/auth.store"
+  8 | import { SchoolSelect } from "@/components/dropdown/dropdown"
+  9 |
+
+The export useSchoolStore was not found in module [project]/Desktop/MONTESSORI/Montessori-frontend/store/school.store.ts [app-client] (ecmascript).
+Did you mean to import getSchoolsApi?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/bulk-upload-module.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/admin-dashboard.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/bulk-upload-module.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/admin-dashboard.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Server Component]
+[298:51:51.520] Browser ERROR   ./Desktop/MONTESSORI/Montessori-frontend/components/admin/bulk-upload-module.tsx:6:1
+Export useSchoolStore doesn't exist in target module
+  4 | import { useBulkUploadStore } from "@/store/bulk-upload.store"
+  5 | import { useToast } from "@/hooks/use-toast"
+> 6 | import { useSchoolStore } from "@/store/school.store"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import { useAuthStore } from "@/store/auth.store"
+  8 | import { SchoolSelect } from "@/components/dropdown/dropdown"
+  9 |
+
+The export useSchoolStore was not found in module [project]/Desktop/MONTESSORI/Montessori-frontend/store/school.store.ts [app-ssr] (ecmascript).
+Did you mean to import getSchoolsApi?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/bulk-upload-module.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/admin-dashboard.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/bulk-upload-module.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/admin-dashboard.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Server Component]
+[298:51:51.520] Browser ERROR   ./Desktop/MONTESSORI/Montessori-frontend/components/admin/dashboard-overview.tsx:6:1
+Export useSchoolStore doesn't exist in target module
+  4 | import { useRouter } from "next/navigation"
+  5 | import { useAuthStore } from "@/store/auth.store"
+> 6 | import { useSchoolStore } from "@/store/school.store"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import { useDashboardStore } from "@/store/dashboard.store"
+  8 | import { SchoolSelect } from "@/components/dropdown/dropdown"
+  9 | import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card"
+
+The export useSchoolStore was not found in module [project]/Desktop/MONTESSORI/Montessori-frontend/store/school.store.ts [app-client] (ecmascript).
+Did you mean to import getSchoolsApi?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/dashboard-overview.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/admin-dashboard.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/dashboard-overview.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/admin-dashboard.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Server Component]
+[298:51:51.520] Browser ERROR   ./Desktop/MONTESSORI/Montessori-frontend/components/admin/dashboard-overview.tsx:6:1
+Export useSchoolStore doesn't exist in target module
+  4 | import { useRouter } from "next/navigation"
+  5 | import { useAuthStore } from "@/store/auth.store"
+> 6 | import { useSchoolStore } from "@/store/school.store"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import { useDashboardStore } from "@/store/dashboard.store"
+  8 | import { SchoolSelect } from "@/components/dropdown/dropdown"
+  9 | import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card"
+
+The export useSchoolStore was not found in module [project]/Desktop/MONTESSORI/Montessori-frontend/store/school.store.ts [app-ssr] (ecmascript).
+Did you mean to import getSchoolsApi?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/dashboard-overview.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/admin-dashboard.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/dashboard-overview.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/admin-dashboard.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Server Component]
+[298:51:51.520] Browser ERROR   ./Desktop/MONTESSORI/Montessori-frontend/components/dropdown/dropdown.tsx:11:1
+Export useSchoolStore doesn't exist in target module
+   9 |   SelectValue,
+  10 | } from "@/components/ui/select"
+> 11 | import { useSchoolStore } from "@/store/school.store"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  12 | import { useAuthStore } from "@/store/auth.store"
+  13 |
+  14 | interface SchoolSelectProps {
+
+The export useSchoolStore was not found in module [project]/Desktop/MONTESSORI/Montessori-frontend/store/school.store.ts [app-client] (ecmascript).
+Did you mean to import getSchoolsApi?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/MONTESSORI/Montessori-frontend/components/dropdown/dropdown.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/bulk-upload-module.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/admin-dashboard.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/MONTESSORI/Montessori-frontend/components/dropdown/dropdown.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/bulk-upload-module.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/admin-dashboard.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Server Component]
+[298:51:51.520] Browser ERROR   ./Desktop/MONTESSORI/Montessori-frontend/components/dropdown/dropdown.tsx:11:1
+Export useSchoolStore doesn't exist in target module
+   9 |   SelectValue,
+  10 | } from "@/components/ui/select"
+> 11 | import { useSchoolStore } from "@/store/school.store"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  12 | import { useAuthStore } from "@/store/auth.store"
+  13 |
+  14 | interface SchoolSelectProps {
+
+The export useSchoolStore was not found in module [project]/Desktop/MONTESSORI/Montessori-frontend/store/school.store.ts [app-ssr] (ecmascript).
+Did you mean to import getSchoolsApi?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/MONTESSORI/Montessori-frontend/components/dropdown/dropdown.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/bulk-upload-module.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/admin-dashboard.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/MONTESSORI/Montessori-frontend/components/dropdown/dropdown.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/bulk-upload-module.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/admin-dashboard.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Server Component]
+[298:52:12.782] Browser ERROR   ./Desktop/MONTESSORI/Montessori-frontend/components/admin/bulk-upload-module.tsx:6:1
+Export useSchoolStore doesn't exist in target module
+  4 | import { useBulkUploadStore } from "@/store/bulk-upload.store"
+  5 | import { useToast } from "@/hooks/use-toast"
+> 6 | import { useSchoolStore } from "@/store/school.store"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import { useAuthStore } from "@/store/auth.store"
+  8 | import { SchoolSelect } from "@/components/dropdown/dropdown"
+  9 |
+
+The export useSchoolStore was not found in module [project]/Desktop/MONTESSORI/Montessori-frontend/store/school.store.ts [app-client] (ecmascript).
+Did you mean to import getSchoolsApi?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/bulk-upload-module.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/admin-dashboard.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/bulk-upload-module.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/admin-dashboard.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Server Component]
+[298:52:12.782] Browser ERROR   ./Desktop/MONTESSORI/Montessori-frontend/components/admin/bulk-upload-module.tsx:6:1
+Export useSchoolStore doesn't exist in target module
+  4 | import { useBulkUploadStore } from "@/store/bulk-upload.store"
+  5 | import { useToast } from "@/hooks/use-toast"
+> 6 | import { useSchoolStore } from "@/store/school.store"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import { useAuthStore } from "@/store/auth.store"
+  8 | import { SchoolSelect } from "@/components/dropdown/dropdown"
+  9 |
+
+The export useSchoolStore was not found in module [project]/Desktop/MONTESSORI/Montessori-frontend/store/school.store.ts [app-ssr] (ecmascript).
+Did you mean to import getSchoolsApi?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/bulk-upload-module.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/admin-dashboard.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/bulk-upload-module.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/admin-dashboard.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Server Component]
+[298:52:12.782] Browser ERROR   ./Desktop/MONTESSORI/Montessori-frontend/components/admin/dashboard-overview.tsx:6:1
+Export useSchoolStore doesn't exist in target module
+  4 | import { useRouter } from "next/navigation"
+  5 | import { useAuthStore } from "@/store/auth.store"
+> 6 | import { useSchoolStore } from "@/store/school.store"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import { useDashboardStore } from "@/store/dashboard.store"
+  8 | import { SchoolSelect } from "@/components/dropdown/dropdown"
+  9 | import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card"
+
+The export useSchoolStore was not found in module [project]/Desktop/MONTESSORI/Montessori-frontend/store/school.store.ts [app-client] (ecmascript).
+Did you mean to import getSchoolsApi?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/dashboard-overview.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/admin-dashboard.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/dashboard-overview.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/admin-dashboard.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Server Component]
+[298:52:12.782] Browser ERROR   ./Desktop/MONTESSORI/Montessori-frontend/components/admin/dashboard-overview.tsx:6:1
+Export useSchoolStore doesn't exist in target module
+  4 | import { useRouter } from "next/navigation"
+  5 | import { useAuthStore } from "@/store/auth.store"
+> 6 | import { useSchoolStore } from "@/store/school.store"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import { useDashboardStore } from "@/store/dashboard.store"
+  8 | import { SchoolSelect } from "@/components/dropdown/dropdown"
+  9 | import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card"
+
+The export useSchoolStore was not found in module [project]/Desktop/MONTESSORI/Montessori-frontend/store/school.store.ts [app-ssr] (ecmascript).
+Did you mean to import getSchoolsApi?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/dashboard-overview.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/admin-dashboard.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/dashboard-overview.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/admin-dashboard.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Server Component]
+[298:52:12.782] Browser ERROR   ./Desktop/MONTESSORI/Montessori-frontend/components/dropdown/dropdown.tsx:11:1
+Export useSchoolStore doesn't exist in target module
+   9 |   SelectValue,
+  10 | } from "@/components/ui/select"
+> 11 | import { useSchoolStore } from "@/store/school.store"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  12 | import { useAuthStore } from "@/store/auth.store"
+  13 |
+  14 | interface SchoolSelectProps {
+
+The export useSchoolStore was not found in module [project]/Desktop/MONTESSORI/Montessori-frontend/store/school.store.ts [app-client] (ecmascript).
+Did you mean to import getSchoolsApi?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/MONTESSORI/Montessori-frontend/components/dropdown/dropdown.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/bulk-upload-module.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/admin-dashboard.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/MONTESSORI/Montessori-frontend/components/dropdown/dropdown.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/bulk-upload-module.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/admin-dashboard.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Server Component]
+[298:52:12.782] Browser ERROR   ./Desktop/MONTESSORI/Montessori-frontend/components/dropdown/dropdown.tsx:11:1
+Export useSchoolStore doesn't exist in target module
+   9 |   SelectValue,
+  10 | } from "@/components/ui/select"
+> 11 | import { useSchoolStore } from "@/store/school.store"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  12 | import { useAuthStore } from "@/store/auth.store"
+  13 |
+  14 | interface SchoolSelectProps {
+
+The export useSchoolStore was not found in module [project]/Desktop/MONTESSORI/Montessori-frontend/store/school.store.ts [app-ssr] (ecmascript).
+Did you mean to import getSchoolsApi?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/MONTESSORI/Montessori-frontend/components/dropdown/dropdown.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/bulk-upload-module.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/admin-dashboard.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/MONTESSORI/Montessori-frontend/components/dropdown/dropdown.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/bulk-upload-module.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/admin-dashboard.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Server Component]
+[298:52:12.782] Browser ERROR   ./Desktop/MONTESSORI/Montessori-frontend/components/admin/bulk-upload-module.tsx:6:1
+Export useSchoolStore doesn't exist in target module
+  4 | import { useBulkUploadStore } from "@/store/bulk-upload.store"
+  5 | import { useToast } from "@/hooks/use-toast"
+> 6 | import { useSchoolStore } from "@/store/school.store"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import { useAuthStore } from "@/store/auth.store"
+  8 | import { SchoolSelect } from "@/components/dropdown/dropdown"
+  9 |
+
+The export useSchoolStore was not found in module [project]/Desktop/MONTESSORI/Montessori-frontend/store/school.store.ts [app-client] (ecmascript).
+Did you mean to import getSchoolsApi?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/bulk-upload-module.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/admin-dashboard.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/bulk-upload-module.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/admin-dashboard.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Server Component]
+[298:52:12.782] Browser ERROR   ./Desktop/MONTESSORI/Montessori-frontend/components/admin/bulk-upload-module.tsx:6:1
+Export useSchoolStore doesn't exist in target module
+  4 | import { useBulkUploadStore } from "@/store/bulk-upload.store"
+  5 | import { useToast } from "@/hooks/use-toast"
+> 6 | import { useSchoolStore } from "@/store/school.store"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import { useAuthStore } from "@/store/auth.store"
+  8 | import { SchoolSelect } from "@/components/dropdown/dropdown"
+  9 |
+
+The export useSchoolStore was not found in module [project]/Desktop/MONTESSORI/Montessori-frontend/store/school.store.ts [app-ssr] (ecmascript).
+Did you mean to import getSchoolsApi?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/bulk-upload-module.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/admin-dashboard.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/bulk-upload-module.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/admin-dashboard.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Server Component]
+[298:52:12.782] Browser ERROR   ./Desktop/MONTESSORI/Montessori-frontend/components/admin/dashboard-overview.tsx:6:1
+Export useSchoolStore doesn't exist in target module
+  4 | import { useRouter } from "next/navigation"
+  5 | import { useAuthStore } from "@/store/auth.store"
+> 6 | import { useSchoolStore } from "@/store/school.store"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import { useDashboardStore } from "@/store/dashboard.store"
+  8 | import { SchoolSelect } from "@/components/dropdown/dropdown"
+  9 | import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card"
+
+The export useSchoolStore was not found in module [project]/Desktop/MONTESSORI/Montessori-frontend/store/school.store.ts [app-client] (ecmascript).
+Did you mean to import getSchoolsApi?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/dashboard-overview.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/admin-dashboard.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/dashboard-overview.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/admin-dashboard.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Server Component]
+[298:52:12.782] Browser ERROR   ./Desktop/MONTESSORI/Montessori-frontend/components/admin/dashboard-overview.tsx:6:1
+Export useSchoolStore doesn't exist in target module
+  4 | import { useRouter } from "next/navigation"
+  5 | import { useAuthStore } from "@/store/auth.store"
+> 6 | import { useSchoolStore } from "@/store/school.store"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import { useDashboardStore } from "@/store/dashboard.store"
+  8 | import { SchoolSelect } from "@/components/dropdown/dropdown"
+  9 | import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card"
+
+The export useSchoolStore was not found in module [project]/Desktop/MONTESSORI/Montessori-frontend/store/school.store.ts [app-ssr] (ecmascript).
+Did you mean to import getSchoolsApi?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/dashboard-overview.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/admin-dashboard.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/dashboard-overview.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/admin-dashboard.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Server Component]
+[298:52:12.783] Browser ERROR   ./Desktop/MONTESSORI/Montessori-frontend/components/dropdown/dropdown.tsx:11:1
+Export useSchoolStore doesn't exist in target module
+   9 |   SelectValue,
+  10 | } from "@/components/ui/select"
+> 11 | import { useSchoolStore } from "@/store/school.store"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  12 | import { useAuthStore } from "@/store/auth.store"
+  13 |
+  14 | interface SchoolSelectProps {
+
+The export useSchoolStore was not found in module [project]/Desktop/MONTESSORI/Montessori-frontend/store/school.store.ts [app-client] (ecmascript).
+Did you mean to import getSchoolsApi?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/MONTESSORI/Montessori-frontend/components/dropdown/dropdown.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/bulk-upload-module.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/admin-dashboard.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/MONTESSORI/Montessori-frontend/components/dropdown/dropdown.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/bulk-upload-module.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/admin-dashboard.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Server Component]
+[298:52:12.783] Browser ERROR   ./Desktop/MONTESSORI/Montessori-frontend/components/dropdown/dropdown.tsx:11:1
+Export useSchoolStore doesn't exist in target module
+   9 |   SelectValue,
+  10 | } from "@/components/ui/select"
+> 11 | import { useSchoolStore } from "@/store/school.store"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  12 | import { useAuthStore } from "@/store/auth.store"
+  13 |
+  14 | interface SchoolSelectProps {
+
+The export useSchoolStore was not found in module [project]/Desktop/MONTESSORI/Montessori-frontend/store/school.store.ts [app-ssr] (ecmascript).
+Did you mean to import getSchoolsApi?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/MONTESSORI/Montessori-frontend/components/dropdown/dropdown.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/bulk-upload-module.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/admin-dashboard.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/MONTESSORI/Montessori-frontend/components/dropdown/dropdown.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/bulk-upload-module.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/admin-dashboard.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Server Component]
+[298:52:13.780] Browser ERROR   ./Desktop/MONTESSORI/Montessori-frontend/components/admin/bulk-upload-module.tsx:6:1
+Export useSchoolStore doesn't exist in target module
+  4 | import { useBulkUploadStore } from "@/store/bulk-upload.store"
+  5 | import { useToast } from "@/hooks/use-toast"
+> 6 | import { useSchoolStore } from "@/store/school.store"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import { useAuthStore } from "@/store/auth.store"
+  8 | import { SchoolSelect } from "@/components/dropdown/dropdown"
+  9 |
+
+The export useSchoolStore was not found in module [project]/Desktop/MONTESSORI/Montessori-frontend/store/school.store.ts [app-client] (ecmascript).
+Did you mean to import getSchoolsApi?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/bulk-upload-module.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/admin-dashboard.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/bulk-upload-module.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/admin-dashboard.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Server Component]
+[298:52:13.781] Browser ERROR   ./Desktop/MONTESSORI/Montessori-frontend/components/admin/bulk-upload-module.tsx:6:1
+Export useSchoolStore doesn't exist in target module
+  4 | import { useBulkUploadStore } from "@/store/bulk-upload.store"
+  5 | import { useToast } from "@/hooks/use-toast"
+> 6 | import { useSchoolStore } from "@/store/school.store"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import { useAuthStore } from "@/store/auth.store"
+  8 | import { SchoolSelect } from "@/components/dropdown/dropdown"
+  9 |
+
+The export useSchoolStore was not found in module [project]/Desktop/MONTESSORI/Montessori-frontend/store/school.store.ts [app-ssr] (ecmascript).
+Did you mean to import getSchoolsApi?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/bulk-upload-module.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/admin-dashboard.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/bulk-upload-module.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/admin-dashboard.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Server Component]
+[298:52:13.781] Browser ERROR   ./Desktop/MONTESSORI/Montessori-frontend/components/admin/dashboard-overview.tsx:6:1
+Export useSchoolStore doesn't exist in target module
+  4 | import { useRouter } from "next/navigation"
+  5 | import { useAuthStore } from "@/store/auth.store"
+> 6 | import { useSchoolStore } from "@/store/school.store"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import { useDashboardStore } from "@/store/dashboard.store"
+  8 | import { SchoolSelect } from "@/components/dropdown/dropdown"
+  9 | import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card"
+
+The export useSchoolStore was not found in module [project]/Desktop/MONTESSORI/Montessori-frontend/store/school.store.ts [app-client] (ecmascript).
+Did you mean to import getSchoolsApi?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/dashboard-overview.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/admin-dashboard.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/dashboard-overview.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/admin-dashboard.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Server Component]
+[298:52:13.782] Browser ERROR   ./Desktop/MONTESSORI/Montessori-frontend/components/admin/dashboard-overview.tsx:6:1
+Export useSchoolStore doesn't exist in target module
+  4 | import { useRouter } from "next/navigation"
+  5 | import { useAuthStore } from "@/store/auth.store"
+> 6 | import { useSchoolStore } from "@/store/school.store"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import { useDashboardStore } from "@/store/dashboard.store"
+  8 | import { SchoolSelect } from "@/components/dropdown/dropdown"
+  9 | import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card"
+
+The export useSchoolStore was not found in module [project]/Desktop/MONTESSORI/Montessori-frontend/store/school.store.ts [app-ssr] (ecmascript).
+Did you mean to import getSchoolsApi?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/dashboard-overview.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/admin-dashboard.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/dashboard-overview.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/admin-dashboard.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Server Component]
+[298:52:13.782] Browser ERROR   ./Desktop/MONTESSORI/Montessori-frontend/components/dropdown/dropdown.tsx:11:1
+Export useSchoolStore doesn't exist in target module
+   9 |   SelectValue,
+  10 | } from "@/components/ui/select"
+> 11 | import { useSchoolStore } from "@/store/school.store"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  12 | import { useAuthStore } from "@/store/auth.store"
+  13 |
+  14 | interface SchoolSelectProps {
+
+The export useSchoolStore was not found in module [project]/Desktop/MONTESSORI/Montessori-frontend/store/school.store.ts [app-client] (ecmascript).
+Did you mean to import getSchoolsApi?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/MONTESSORI/Montessori-frontend/components/dropdown/dropdown.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/bulk-upload-module.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/admin-dashboard.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/MONTESSORI/Montessori-frontend/components/dropdown/dropdown.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/bulk-upload-module.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/admin-dashboard.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Server Component]
+[298:52:13.782] Browser ERROR   ./Desktop/MONTESSORI/Montessori-frontend/components/dropdown/dropdown.tsx:11:1
+Export useSchoolStore doesn't exist in target module
+   9 |   SelectValue,
+  10 | } from "@/components/ui/select"
+> 11 | import { useSchoolStore } from "@/store/school.store"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  12 | import { useAuthStore } from "@/store/auth.store"
+  13 |
+  14 | interface SchoolSelectProps {
+
+The export useSchoolStore was not found in module [project]/Desktop/MONTESSORI/Montessori-frontend/store/school.store.ts [app-ssr] (ecmascript).
+Did you mean to import getSchoolsApi?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/MONTESSORI/Montessori-frontend/components/dropdown/dropdown.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/bulk-upload-module.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/admin-dashboard.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/MONTESSORI/Montessori-frontend/components/dropdown/dropdown.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/bulk-upload-module.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/admin-dashboard.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Server Component]
+[298:52:30.112] Server  LOG      ✓ Compiled in 226ms
+[298:52:30.788] Browser ERROR   ./Desktop/MONTESSORI/Montessori-frontend/services/school.service.ts:4:1
+Export getSchoolsApi doesn't exist in target module
+  2 |
+  3 | import { create } from "zustand"
+> 4 | import { getSchoolsApi, School } from "@/services/school.service"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 |
+  6 | interface SchoolStore {
+  7 |   schools: School[]
+
+The export getSchoolsApi was not found in module [project]/Desktop/MONTESSORI/Montessori-frontend/services/school.service.ts [app-client] (ecmascript).
+Did you mean to import useSchoolStore?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/MONTESSORI/Montessori-frontend/services/school.service.ts [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/store/school.store.ts [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/bulk-upload-module.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/admin-dashboard.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/MONTESSORI/Montessori-frontend/services/school.service.ts [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/store/school.store.ts [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/bulk-upload-module.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/admin-dashboard.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Server Component]
+[298:52:30.788] Browser ERROR   ./Desktop/MONTESSORI/Montessori-frontend/services/school.service.ts:4:1
+Export getSchoolsApi doesn't exist in target module
+  2 |
+  3 | import { create } from "zustand"
+> 4 | import { getSchoolsApi, School } from "@/services/school.service"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 |
+  6 | interface SchoolStore {
+  7 |   schools: School[]
+
+The export getSchoolsApi was not found in module [project]/Desktop/MONTESSORI/Montessori-frontend/services/school.service.ts [app-ssr] (ecmascript).
+Did you mean to import useSchoolStore?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/MONTESSORI/Montessori-frontend/services/school.service.ts [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/store/school.store.ts [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/bulk-upload-module.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/admin-dashboard.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/MONTESSORI/Montessori-frontend/services/school.service.ts [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/store/school.store.ts [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/bulk-upload-module.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/admin-dashboard.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Server Component]
+[298:52:30.789] Browser ERROR   ./Desktop/MONTESSORI/Montessori-frontend/store/school.store.ts:4:1
+Export getSchoolsApi doesn't exist in target module
+  2 |
+  3 | import { create } from "zustand"
+> 4 | import { getSchoolsApi, School } from "@/services/school.service"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 |
+  6 | interface SchoolStore {
+  7 |   schools: School[]
+
+The export getSchoolsApi was not found in module [project]/Desktop/MONTESSORI/Montessori-frontend/services/school.service.ts [app-client] (ecmascript).
+Did you mean to import useSchoolStore?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/MONTESSORI/Montessori-frontend/store/school.store.ts [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/bulk-upload-module.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/admin-dashboard.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/MONTESSORI/Montessori-frontend/store/school.store.ts [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/bulk-upload-module.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/admin-dashboard.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Server Component]
+[298:52:30.789] Browser ERROR   ./Desktop/MONTESSORI/Montessori-frontend/store/school.store.ts:4:1
+Export getSchoolsApi doesn't exist in target module
+  2 |
+  3 | import { create } from "zustand"
+> 4 | import { getSchoolsApi, School } from "@/services/school.service"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 |
+  6 | interface SchoolStore {
+  7 |   schools: School[]
+
+The export getSchoolsApi was not found in module [project]/Desktop/MONTESSORI/Montessori-frontend/services/school.service.ts [app-ssr] (ecmascript).
+Did you mean to import useSchoolStore?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/MONTESSORI/Montessori-frontend/store/school.store.ts [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/bulk-upload-module.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/admin-dashboard.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/MONTESSORI/Montessori-frontend/store/school.store.ts [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/bulk-upload-module.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/admin-dashboard.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Server Component]
+[298:52:30.789] Browser ERROR   ./Desktop/MONTESSORI/Montessori-frontend/services/school.service.ts:4:1
+Export getSchoolsApi doesn't exist in target module
+  2 |
+  3 | import { create } from "zustand"
+> 4 | import { getSchoolsApi, School } from "@/services/school.service"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 |
+  6 | interface SchoolStore {
+  7 |   schools: School[]
+
+The export getSchoolsApi was not found in module [project]/Desktop/MONTESSORI/Montessori-frontend/services/school.service.ts [app-client] (ecmascript).
+Did you mean to import useSchoolStore?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/MONTESSORI/Montessori-frontend/services/school.service.ts [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/store/school.store.ts [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/bulk-upload-module.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/admin-dashboard.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/MONTESSORI/Montessori-frontend/services/school.service.ts [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/store/school.store.ts [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/bulk-upload-module.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/admin-dashboard.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Server Component]
+[298:52:30.789] Browser ERROR   ./Desktop/MONTESSORI/Montessori-frontend/services/school.service.ts:4:1
+Export getSchoolsApi doesn't exist in target module
+  2 |
+  3 | import { create } from "zustand"
+> 4 | import { getSchoolsApi, School } from "@/services/school.service"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 |
+  6 | interface SchoolStore {
+  7 |   schools: School[]
+
+The export getSchoolsApi was not found in module [project]/Desktop/MONTESSORI/Montessori-frontend/services/school.service.ts [app-ssr] (ecmascript).
+Did you mean to import useSchoolStore?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/MONTESSORI/Montessori-frontend/services/school.service.ts [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/store/school.store.ts [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/bulk-upload-module.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/admin-dashboard.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/MONTESSORI/Montessori-frontend/services/school.service.ts [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/store/school.store.ts [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/bulk-upload-module.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/admin-dashboard.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Server Component]
+[298:52:30.789] Browser ERROR   ./Desktop/MONTESSORI/Montessori-frontend/store/school.store.ts:4:1
+Export getSchoolsApi doesn't exist in target module
+  2 |
+  3 | import { create } from "zustand"
+> 4 | import { getSchoolsApi, School } from "@/services/school.service"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 |
+  6 | interface SchoolStore {
+  7 |   schools: School[]
+
+The export getSchoolsApi was not found in module [project]/Desktop/MONTESSORI/Montessori-frontend/services/school.service.ts [app-client] (ecmascript).
+Did you mean to import useSchoolStore?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/MONTESSORI/Montessori-frontend/store/school.store.ts [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/bulk-upload-module.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/admin-dashboard.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/MONTESSORI/Montessori-frontend/store/school.store.ts [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/bulk-upload-module.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/admin-dashboard.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Server Component]
+[298:52:30.789] Browser ERROR   ./Desktop/MONTESSORI/Montessori-frontend/store/school.store.ts:4:1
+Export getSchoolsApi doesn't exist in target module
+  2 |
+  3 | import { create } from "zustand"
+> 4 | import { getSchoolsApi, School } from "@/services/school.service"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 |
+  6 | interface SchoolStore {
+  7 |   schools: School[]
+
+The export getSchoolsApi was not found in module [project]/Desktop/MONTESSORI/Montessori-frontend/services/school.service.ts [app-ssr] (ecmascript).
+Did you mean to import useSchoolStore?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/MONTESSORI/Montessori-frontend/store/school.store.ts [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/bulk-upload-module.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/admin-dashboard.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/MONTESSORI/Montessori-frontend/store/school.store.ts [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/bulk-upload-module.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/admin-dashboard.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Server Component]
+[298:52:42.256] Server  LOG      ✓ Compiled in 143ms
+[298:52:43.820] Browser LOG     {"City":"","SchoolName":"MISNHK","School_Name":"Monte International School, NH-44, Kallur","State":"","address":"","email":"","id":12,"mobile":"","name":"","user_type":"Admin","username":"office.cbmonte@gmail.com"} user
+[298:52:43.820] Browser LOG     {"City":"","SchoolName":"MISNHK","School_Name":"Monte International School, NH-44, Kallur","State":"","address":"","email":"","id":12,"mobile":"","name":"","user_type":"Admin","username":"office.cbmonte@gmail.com"} user
+[298:52:53.162] Server  LOG      ✓ Compiled in 178ms
+[298:52:58.445] Server  LOG     null "user"
+[298:52:59.036] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[298:52:59.036] Browser LOG     null user
+[298:52:59.036] Browser LOG     null user
+[298:52:59.036] Browser LOG     {"City":"","SchoolName":"MISNHK","School_Name":"Monte International School, NH-44, Kallur","State":"","address":"","email":"","id":12,"mobile":"","name":"","user_type":"Admin","username":"office.cbmonte@gmail.com"} user
+[298:52:59.036] Browser LOG     {"City":"","SchoolName":"MISNHK","School_Name":"Monte International School, NH-44, Kallur","State":"","address":"","email":"","id":12,"mobile":"","name":"","user_type":"Admin","username":"office.cbmonte@gmail.com"} user
+[298:52:59.143] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[298:52:59.143] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/dashboard","route":"/dashboard"}
+[298:52:59.143] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/dashboard color: rgb(120, 120, 120) color: inherit {"dp":"/dashboard","o":"http://localhost:3000/dashboard","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1767580266660}
+[298:53:07.824] Browser LOG     {"City":"","SchoolName":"MISNHK","School_Name":"Monte International School, NH-44, Kallur","State":"","address":"","email":"","id":12,"mobile":"","name":"","user_type":"Admin","username":"office.cbmonte@gmail.com"} user
+[298:53:07.824] Browser LOG     {"City":"","SchoolName":"MISNHK","School_Name":"Monte International School, NH-44, Kallur","State":"","address":"","email":"","id":12,"mobile":"","name":"","user_type":"Admin","username":"office.cbmonte@gmail.com"} user
+[298:53:07.824] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1767580275285}
+[298:53:18.640] Browser LOG     null user
+[298:53:18.640] Browser LOG     null user
+[298:53:18.795] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/login color: rgb(120, 120, 120) color: inherit {"dp":"/login","o":"http://localhost:3000/login","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1767580286330}
+[298:53:29.203] Browser LOG     {"City":"","SchoolName":"","School_Name":"","State":"","address":"","email":"","id":15,"mobile":"","name":"","user_type":"Super Admin","username":"montesraj@yahoo.com"} user
+[298:53:29.203] Browser LOG     {"City":"","SchoolName":"","School_Name":"","State":"","address":"","email":"","id":15,"mobile":"","name":"","user_type":"Super Admin","username":"montesraj@yahoo.com"} user
+[298:53:29.203] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/dashboard color: rgb(120, 120, 120) color: inherit {"dp":"/dashboard","o":"http://localhost:3000/dashboard","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1767580296629}
+[298:53:59.297] Browser LOG     null user
+[298:53:59.298] Browser LOG     null user
+[298:53:59.298] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/login color: rgb(120, 120, 120) color: inherit {"dp":"/login","o":"http://localhost:3000/login","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1767580326831}
+[298:54:13.357] Browser LOG     {"City":"","SchoolName":"SSKH","School_Name":"Sproutz School, Khanamit, Hyderabad","State":"","address":"","email":"","id":13,"mobile":"","name":"","user_type":"Admin","username":"contact@sproutzschool.in"} user
+[298:54:13.357] Browser LOG     {"City":"","SchoolName":"SSKH","School_Name":"Sproutz School, Khanamit, Hyderabad","State":"","address":"","email":"","id":13,"mobile":"","name":"","user_type":"Admin","username":"contact@sproutzschool.in"} user
+[298:54:13.357] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/dashboard color: rgb(120, 120, 120) color: inherit {"dp":"/dashboard","o":"http://localhost:3000/dashboard","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1767580340804}
+[298:54:54.432] Server  LOG      ✓ Compiled in 492ms
+[298:54:57.175] Server  LOG      ✓ Compiled in 229ms
+[298:55:36.066] Browser LOG     null user
+[298:55:36.066] Browser LOG     null user
+[298:55:36.229] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/login color: rgb(120, 120, 120) color: inherit {"dp":"/login","o":"http://localhost:3000/login","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1767580423759}
+[298:55:49.696] Browser LOG     {"City":"","SchoolName":"","School_Name":"","State":"","address":"","email":"","id":16,"mobile":"","name":"","user_type":"Super Admin","username":"Akmsmeta@gmail.com"} user
+[298:55:49.696] Browser LOG     {"City":"","SchoolName":"","School_Name":"","State":"","address":"","email":"","id":16,"mobile":"","name":"","user_type":"Super Admin","username":"Akmsmeta@gmail.com"} user
+[298:55:49.696] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/dashboard color: rgb(120, 120, 120) color: inherit {"dp":"/dashboard","o":"http://localhost:3000/dashboard","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1767580437103}
+[298:56:21.309] Browser LOG     null user
+[298:56:21.309] Browser LOG     null user
+[298:56:21.494] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/login color: rgb(120, 120, 120) color: inherit {"dp":"/login","o":"http://localhost:3000/login","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1767580469001}
+[298:56:38.891] Browser LOG     {"City":"","SchoolName":"MISNHK","School_Name":"Monte International School, NH-44, Kallur","State":"","address":"","email":"","id":12,"mobile":"","name":"","user_type":"Admin","username":"office.cbmonte@gmail.com"} user
+[298:56:38.891] Browser LOG     {"City":"","SchoolName":"MISNHK","School_Name":"Monte International School, NH-44, Kallur","State":"","address":"","email":"","id":12,"mobile":"","name":"","user_type":"Admin","username":"office.cbmonte@gmail.com"} user
+[298:56:38.891] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/dashboard color: rgb(120, 120, 120) color: inherit {"dp":"/dashboard","o":"http://localhost:3000/dashboard","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1767580486324}
+[298:59:14.273] Server  LOG      ✓ Compiled in 230ms
+[298:59:21.446] Server  LOG      ✓ Compiled in 105ms
+[299:00:59.557] Server  LOG     null "user"
+[299:01:00.051] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[299:01:00.270] Browser LOG     null user
+[299:01:00.270] Browser LOG     null user
+[299:01:00.271] Browser LOG     {"City":"","SchoolName":"MISNHK","School_Name":"Monte International School, NH-44, Kallur","State":"","address":"","email":"","id":12,"mobile":"","name":"","user_type":"Admin","username":"office.cbmonte@gmail.com"} user
+[299:01:00.271] Browser LOG     {"City":"","SchoolName":"MISNHK","School_Name":"Monte International School, NH-44, Kallur","State":"","address":"","email":"","id":12,"mobile":"","name":"","user_type":"Admin","username":"office.cbmonte@gmail.com"} user
+[299:01:00.398] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[299:01:00.398] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/dashboard","route":"/dashboard"}
+[299:01:00.398] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/dashboard color: rgb(120, 120, 120) color: inherit {"dp":"/dashboard","o":"http://localhost:3000/dashboard","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1767580747912}
+[299:01:25.626] Server  LOG      ✓ Compiled in 153ms
+[299:01:45.842] Browser LOG     {"City":"","SchoolName":"MISNHK","School_Name":"Monte International School, NH-44, Kallur","State":"","address":"","email":"","id":12,"mobile":"","name":"","user_type":"Admin","username":"office.cbmonte@gmail.com"} user
+[299:01:45.842] Browser LOG     {"City":"","SchoolName":"MISNHK","School_Name":"Monte International School, NH-44, Kallur","State":"","address":"","email":"","id":12,"mobile":"","name":"","user_type":"Admin","username":"office.cbmonte@gmail.com"} user
+[299:01:45.842] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1767580793277}
+[299:02:01.640] Browser LOG     null user
+[299:02:01.640] Browser LOG     null user
+[299:02:01.826] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/login color: rgb(120, 120, 120) color: inherit {"dp":"/login","o":"http://localhost:3000/login","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1767580809342}
+[299:02:13.381] Browser LOG     {"City":"","SchoolName":"","School_Name":"","State":"","address":"","email":"","id":15,"mobile":"","name":"","user_type":"Super Admin","username":"montesraj@yahoo.com"} user
+[299:02:13.381] Browser LOG     {"City":"","SchoolName":"","School_Name":"","State":"","address":"","email":"","id":15,"mobile":"","name":"","user_type":"Super Admin","username":"montesraj@yahoo.com"} user
+[299:02:13.381] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/dashboard color: rgb(120, 120, 120) color: inherit {"dp":"/dashboard","o":"http://localhost:3000/dashboard","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1767580820754}
+[299:02:31.062] Server  LOG     null "user"
+[299:02:31.377] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[299:02:31.565] Browser LOG     null user
+[299:02:31.565] Browser LOG     null user
+[299:02:31.565] Browser LOG     {"City":"","SchoolName":"","School_Name":"","State":"","address":"","email":"","id":15,"mobile":"","name":"","user_type":"Super Admin","username":"montesraj@yahoo.com"} user
+[299:02:31.565] Browser LOG     {"City":"","SchoolName":"","School_Name":"","State":"","address":"","email":"","id":15,"mobile":"","name":"","user_type":"Super Admin","username":"montesraj@yahoo.com"} user
+[299:02:31.830] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[299:02:31.830] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/dashboard","route":"/dashboard"}
+[299:02:31.831] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/dashboard color: rgb(120, 120, 120) color: inherit {"dp":"/dashboard","o":"http://localhost:3000/dashboard","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1767580839180}
+[299:05:44.948] Server  LOG      ✓ Compiled in 1086ms
+[299:05:55.758] Browser LOG     null user
+[299:05:55.758] Browser LOG     null user
+[299:05:56.937] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/login color: rgb(120, 120, 120) color: inherit {"dp":"/login","o":"http://localhost:3000/login","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1767581044226}
+[299:05:57.395] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[299:05:57.675] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[299:05:57.675] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/login","route":"/login"}
+[299:05:57.675] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/login color: rgb(120, 120, 120) color: inherit {"dp":"/login","o":"http://localhost:3000/login","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1767581045197}
+[299:06:08.612] Server  LOG      ✓ Compiled in 94ms
+[299:07:06.766] Server  LOG      ✓ Compiled in 158ms
+[299:07:11.081] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[299:07:11.470] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[299:07:11.470] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/login","route":"/login"}
+[299:07:11.470] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/login color: rgb(120, 120, 120) color: inherit {"dp":"/login","o":"http://localhost:3000/login","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1767581118988}
+[299:07:25.628] Browser LOG     {"City":"","SchoolName":"MEMHSP","School_Name":"Montessori English Medium High School, Panchalingala","State":"","address":"","email":"","id":10,"mobile":"","name":"","user_type":"Admin","username":"Panchalingala@GMAIL.COM"} user
+[299:07:25.628] Browser LOG     {"City":"","SchoolName":"MEMHSP","School_Name":"Montessori English Medium High School, Panchalingala","State":"","address":"","email":"","id":10,"mobile":"","name":"","user_type":"Admin","username":"Panchalingala@GMAIL.COM"} user
+[299:07:25.628] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/dashboard color: rgb(120, 120, 120) color: inherit {"dp":"/dashboard","o":"http://localhost:3000/dashboard","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1767581133066}
+[299:07:32.227] Browser LOG     null user
+[299:07:32.227] Browser LOG     null user
+[299:07:32.418] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/login color: rgb(120, 120, 120) color: inherit {"dp":"/login","o":"http://localhost:3000/login","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1767581139927}
+[299:07:45.973] Browser LOG     {"City":"","SchoolName":"","School_Name":"","State":"","address":"","email":"","id":15,"mobile":"","name":"","user_type":"Super Admin","username":"montesraj@yahoo.com"} user
+[299:07:45.973] Browser LOG     {"City":"","SchoolName":"","School_Name":"","State":"","address":"","email":"","id":15,"mobile":"","name":"","user_type":"Super Admin","username":"montesraj@yahoo.com"} user
+[299:07:45.973] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/dashboard color: rgb(120, 120, 120) color: inherit {"dp":"/dashboard","o":"http://localhost:3000/dashboard","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1767581153353}
+[299:07:56.260] Browser LOG     null user
+[299:07:56.260] Browser LOG     null user
+[299:07:56.410] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/login color: rgb(120, 120, 120) color: inherit {"dp":"/login","o":"http://localhost:3000/login","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1767581163918}
+[299:08:08.022] Browser LOG     {"City":"","SchoolName":"MEMHSP","School_Name":"Montessori English Medium High School, Panchalingala","State":"","address":"","email":"","id":10,"mobile":"","name":"","user_type":"Admin","username":"Panchalingala@GMAIL.COM"} user
+[299:08:08.022] Browser LOG     {"City":"","SchoolName":"MEMHSP","School_Name":"Montessori English Medium High School, Panchalingala","State":"","address":"","email":"","id":10,"mobile":"","name":"","user_type":"Admin","username":"Panchalingala@GMAIL.COM"} user
+[299:08:08.022] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/dashboard color: rgb(120, 120, 120) color: inherit {"dp":"/dashboard","o":"http://localhost:3000/dashboard","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1767581175437}
+[299:08:12.864] Server  LOG     null "user"
+[299:08:13.216] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[299:08:13.451] Browser LOG     null user
+[299:08:13.451] Browser LOG     null user
+[299:08:13.451] Browser LOG     {"City":"","SchoolName":"MEMHSP","School_Name":"Montessori English Medium High School, Panchalingala","State":"","address":"","email":"","id":10,"mobile":"","name":"","user_type":"Admin","username":"Panchalingala@GMAIL.COM"} user
+[299:08:13.451] Browser LOG     {"City":"","SchoolName":"MEMHSP","School_Name":"Montessori English Medium High School, Panchalingala","State":"","address":"","email":"","id":10,"mobile":"","name":"","user_type":"Admin","username":"Panchalingala@GMAIL.COM"} user
+[299:08:13.451] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[299:08:13.451] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/dashboard","route":"/dashboard"}
+[299:08:13.451] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/dashboard color: rgb(120, 120, 120) color: inherit {"dp":"/dashboard","o":"http://localhost:3000/dashboard","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1767581180965}
+[299:08:39.390] Browser LOG     null user
+[299:08:39.390] Browser LOG     null user
+[299:08:39.579] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/login color: rgb(120, 120, 120) color: inherit {"dp":"/login","o":"http://localhost:3000/login","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1767581207089}
+[299:08:51.229] Server  LOG     null "user"
+[299:08:51.563] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[299:08:51.788] Browser LOG     null user
+[299:08:51.788] Browser LOG     null user
+[299:08:51.788] Browser LOG     {"City":"","SchoolName":"","School_Name":"","State":"","address":"","email":"","id":15,"mobile":"","name":"","user_type":"Super Admin","username":"montesraj@yahoo.com"} user
+[299:08:51.788] Browser LOG     {"City":"","SchoolName":"","School_Name":"","State":"","address":"","email":"","id":15,"mobile":"","name":"","user_type":"Super Admin","username":"montesraj@yahoo.com"} user
+[299:08:51.936] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[299:08:51.936] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/dashboard","route":"/dashboard"}
+[299:08:51.936] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/dashboard color: rgb(120, 120, 120) color: inherit {"dp":"/dashboard","o":"http://localhost:3000/dashboard","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1767581219391}
+[299:08:55.157] Browser LOG     null user
+[299:08:55.157] Browser LOG     null user
+[299:08:55.339] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/login color: rgb(120, 120, 120) color: inherit {"dp":"/login","o":"http://localhost:3000/login","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1767581222850}
+[299:09:06.332] Server  LOG     null "user"
+[299:09:06.707] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[299:09:06.981] Browser LOG     null user
+[299:09:06.981] Browser LOG     null user
+[299:09:06.981] Browser LOG     {"City":"","SchoolName":"MEMHSP","School_Name":"Montessori English Medium High School, Panchalingala","State":"","address":"","email":"","id":10,"mobile":"","name":"","user_type":"Admin","username":"Panchalingala@GMAIL.COM"} user
+[299:09:06.981] Browser LOG     {"City":"","SchoolName":"MEMHSP","School_Name":"Montessori English Medium High School, Panchalingala","State":"","address":"","email":"","id":10,"mobile":"","name":"","user_type":"Admin","username":"Panchalingala@GMAIL.COM"} user
+[299:09:06.981] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[299:09:06.981] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/dashboard","route":"/dashboard"}
+[299:09:06.981] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/dashboard color: rgb(120, 120, 120) color: inherit {"dp":"/dashboard","o":"http://localhost:3000/dashboard","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1767581234436}
+[299:10:02.593] Server  LOG      ✓ Compiled in 610ms
+[299:10:02.780] Browser LOG     {"City":"","SchoolName":"MEMHSP","School_Name":"Montessori English Medium High School, Panchalingala","State":"","address":"","email":"","id":10,"mobile":"","name":"","user_type":"Admin","username":"Panchalingala@GMAIL.COM"} user
+[299:10:02.780] Browser LOG     {"City":"","SchoolName":"MEMHSP","School_Name":"Montessori English Medium High School, Panchalingala","State":"","address":"","email":"","id":10,"mobile":"","name":"","user_type":"Admin","username":"Panchalingala@GMAIL.COM"} user
+[299:10:05.859] Server  LOG      ✓ Compiled in 288ms
+[299:10:06.831] Browser LOG     {"City":"","SchoolName":"MEMHSP","School_Name":"Montessori English Medium High School, Panchalingala","State":"","address":"","email":"","id":10,"mobile":"","name":"","user_type":"Admin","username":"Panchalingala@GMAIL.COM"} user
+[299:10:06.832] Browser LOG     {"City":"","SchoolName":"MEMHSP","School_Name":"Montessori English Medium High School, Panchalingala","State":"","address":"","email":"","id":10,"mobile":"","name":"","user_type":"Admin","username":"Panchalingala@GMAIL.COM"} user
+[299:11:03.146] Server  LOG      ✓ Compiled in 301ms
+[299:11:05.366] Server  ERROR    ⨯ ReferenceError: calendar1 is not defined
+[299:11:05.883] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[299:11:06.804] Browser ERROR   uncaughtError: ReferenceError: calendar1 is not defined
+[299:11:11.522] Server  LOG      ✓ Compiled in 3s
+[299:11:11.554] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[299:11:11.574] Server  WARN     ⚠ Fast Refresh had to perform a full reload when ./Desktop/MONTESSORI/Montessori-frontend/components/admin/admin-sidebar.tsx changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[299:11:11.581] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[299:11:15.543] Server  LOG     null "user"
+[299:11:20.872] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[299:11:22.155] Browser LOG     null user
+[299:11:22.155] Browser LOG     null user
+[299:11:22.155] Browser LOG     {"City":"","SchoolName":"MEMHSP","School_Name":"Montessori English Medium High School, Panchalingala","State":"","address":"","email":"","id":10,"mobile":"","name":"","user_type":"Admin","username":"Panchalingala@GMAIL.COM"} user
+[299:11:22.155] Browser LOG     {"City":"","SchoolName":"MEMHSP","School_Name":"Montessori English Medium High School, Panchalingala","State":"","address":"","email":"","id":10,"mobile":"","name":"","user_type":"Admin","username":"Panchalingala@GMAIL.COM"} user
+[299:11:22.155] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[299:11:22.155] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/dashboard","route":"/dashboard"}
+[299:11:22.155] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/dashboard color: rgb(120, 120, 120) color: inherit {"dp":"/dashboard","o":"http://localhost:3000/dashboard","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1767581369082}
+[299:11:50.090] Server  LOG      ✓ Compiled in 3.2s
+[299:11:50.825] Browser LOG     {"City":"","SchoolName":"MEMHSP","School_Name":"Montessori English Medium High School, Panchalingala","State":"","address":"","email":"","id":10,"mobile":"","name":"","user_type":"Admin","username":"Panchalingala@GMAIL.COM"} user
+[299:11:50.828] Browser LOG     {"City":"","SchoolName":"MEMHSP","School_Name":"Montessori English Medium High School, Panchalingala","State":"","address":"","email":"","id":10,"mobile":"","name":"","user_type":"Admin","username":"Panchalingala@GMAIL.COM"} user
+[299:12:03.149] Server  LOG      ✓ Compiled in 413ms
+[299:12:03.791] Browser LOG     {"City":"","SchoolName":"MEMHSP","School_Name":"Montessori English Medium High School, Panchalingala","State":"","address":"","email":"","id":10,"mobile":"","name":"","user_type":"Admin","username":"Panchalingala@GMAIL.COM"} user
+[299:12:03.793] Browser LOG     {"City":"","SchoolName":"MEMHSP","School_Name":"Montessori English Medium High School, Panchalingala","State":"","address":"","email":"","id":10,"mobile":"","name":"","user_type":"Admin","username":"Panchalingala@GMAIL.COM"} user
+[299:12:24.653] Server  LOG      ✓ Compiled in 730ms
+[299:12:25.827] Browser LOG     {"City":"","SchoolName":"MEMHSP","School_Name":"Montessori English Medium High School, Panchalingala","State":"","address":"","email":"","id":10,"mobile":"","name":"","user_type":"Admin","username":"Panchalingala@GMAIL.COM"} user
+[299:12:25.828] Browser LOG     {"City":"","SchoolName":"MEMHSP","School_Name":"Montessori English Medium High School, Panchalingala","State":"","address":"","email":"","id":10,"mobile":"","name":"","user_type":"Admin","username":"Panchalingala@GMAIL.COM"} user
+[299:12:45.268] Server  LOG      ✓ Compiled in 160ms
+[299:12:45.776] Browser LOG     {"City":"","SchoolName":"MEMHSP","School_Name":"Montessori English Medium High School, Panchalingala","State":"","address":"","email":"","id":10,"mobile":"","name":"","user_type":"Admin","username":"Panchalingala@GMAIL.COM"} user
+[299:12:45.776] Browser LOG     {"City":"","SchoolName":"MEMHSP","School_Name":"Montessori English Medium High School, Panchalingala","State":"","address":"","email":"","id":10,"mobile":"","name":"","user_type":"Admin","username":"Panchalingala@GMAIL.COM"} user
+[299:12:47.028] Server  LOG      ✓ Compiled in 129ms
+[299:12:47.777] Browser LOG     {"City":"","SchoolName":"MEMHSP","School_Name":"Montessori English Medium High School, Panchalingala","State":"","address":"","email":"","id":10,"mobile":"","name":"","user_type":"Admin","username":"Panchalingala@GMAIL.COM"} user
+[299:12:47.777] Browser LOG     {"City":"","SchoolName":"MEMHSP","School_Name":"Montessori English Medium High School, Panchalingala","State":"","address":"","email":"","id":10,"mobile":"","name":"","user_type":"Admin","username":"Panchalingala@GMAIL.COM"} user
+[299:12:56.170] Server  LOG      ✓ Compiled in 88ms
+[299:12:56.786] Browser LOG     {"City":"","SchoolName":"MEMHSP","School_Name":"Montessori English Medium High School, Panchalingala","State":"","address":"","email":"","id":10,"mobile":"","name":"","user_type":"Admin","username":"Panchalingala@GMAIL.COM"} user
+[299:12:56.786] Browser LOG     {"City":"","SchoolName":"MEMHSP","School_Name":"Montessori English Medium High School, Panchalingala","State":"","address":"","email":"","id":10,"mobile":"","name":"","user_type":"Admin","username":"Panchalingala@GMAIL.COM"} user
+[299:13:03.342] Server  LOG      ✓ Compiled in 91ms
+[299:13:03.776] Browser LOG     {"City":"","SchoolName":"MEMHSP","School_Name":"Montessori English Medium High School, Panchalingala","State":"","address":"","email":"","id":10,"mobile":"","name":"","user_type":"Admin","username":"Panchalingala@GMAIL.COM"} user
+[299:13:03.777] Browser LOG     {"City":"","SchoolName":"MEMHSP","School_Name":"Montessori English Medium High School, Panchalingala","State":"","address":"","email":"","id":10,"mobile":"","name":"","user_type":"Admin","username":"Panchalingala@GMAIL.COM"} user
+[299:13:20.405] Server  LOG      ✓ Compiled in 213ms
+[299:13:20.777] Browser LOG     {"City":"","SchoolName":"MEMHSP","School_Name":"Montessori English Medium High School, Panchalingala","State":"","address":"","email":"","id":10,"mobile":"","name":"","user_type":"Admin","username":"Panchalingala@GMAIL.COM"} user
+[299:13:20.777] Browser LOG     {"City":"","SchoolName":"MEMHSP","School_Name":"Montessori English Medium High School, Panchalingala","State":"","address":"","email":"","id":10,"mobile":"","name":"","user_type":"Admin","username":"Panchalingala@GMAIL.COM"} user
+[299:13:48.374] Server  LOG      ✓ Compiled in 213ms
+[299:13:48.788] Browser LOG     {"City":"","SchoolName":"MEMHSP","School_Name":"Montessori English Medium High School, Panchalingala","State":"","address":"","email":"","id":10,"mobile":"","name":"","user_type":"Admin","username":"Panchalingala@GMAIL.COM"} user
+[299:13:48.788] Browser LOG     {"City":"","SchoolName":"MEMHSP","School_Name":"Montessori English Medium High School, Panchalingala","State":"","address":"","email":"","id":10,"mobile":"","name":"","user_type":"Admin","username":"Panchalingala@GMAIL.COM"} user
+[299:13:50.359] Server  LOG      ✓ Compiled in 86ms
+[299:13:50.777] Browser LOG     {"City":"","SchoolName":"MEMHSP","School_Name":"Montessori English Medium High School, Panchalingala","State":"","address":"","email":"","id":10,"mobile":"","name":"","user_type":"Admin","username":"Panchalingala@GMAIL.COM"} user
+[299:13:50.778] Browser LOG     {"City":"","SchoolName":"MEMHSP","School_Name":"Montessori English Medium High School, Panchalingala","State":"","address":"","email":"","id":10,"mobile":"","name":"","user_type":"Admin","username":"Panchalingala@GMAIL.COM"} user
+[299:14:07.123] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[299:14:07.310] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[299:14:07.310] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/attendance","route":"/attendance"}
+[299:14:07.310] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/attendance color: rgb(120, 120, 120) color: inherit {"dp":"/attendance","o":"http://localhost:3000/attendance","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1767581534824}
+[299:14:09.989] Server  LOG     null "user"
+[299:14:10.530] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[299:14:10.732] Browser LOG     null user
+[299:14:10.732] Browser LOG     null user
+[299:14:10.732] Browser LOG     {"City":"","SchoolName":"MEMHSP","School_Name":"Montessori English Medium High School, Panchalingala","State":"","address":"","email":"","id":10,"mobile":"","name":"","user_type":"Admin","username":"Panchalingala@GMAIL.COM"} user
+[299:14:10.732] Browser LOG     {"City":"","SchoolName":"MEMHSP","School_Name":"Montessori English Medium High School, Panchalingala","State":"","address":"","email":"","id":10,"mobile":"","name":"","user_type":"Admin","username":"Panchalingala@GMAIL.COM"} user
+[299:14:10.841] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[299:14:10.841] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/dashboard","route":"/dashboard"}
+[299:14:10.841] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/dashboard color: rgb(120, 120, 120) color: inherit {"dp":"/dashboard","o":"http://localhost:3000/dashboard","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1767581538349}
+[299:14:13.789] Browser LOG     {"City":"","SchoolName":"MEMHSP","School_Name":"Montessori English Medium High School, Panchalingala","State":"","address":"","email":"","id":10,"mobile":"","name":"","user_type":"Admin","username":"Panchalingala@GMAIL.COM"} user
+[299:14:13.789] Browser LOG     {"City":"","SchoolName":"MEMHSP","School_Name":"Montessori English Medium High School, Panchalingala","State":"","address":"","email":"","id":10,"mobile":"","name":"","user_type":"Admin","username":"Panchalingala@GMAIL.COM"} user
+[299:14:13.789] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/bulkUpload color: rgb(120, 120, 120) color: inherit {"dp":"/bulkUpload","o":"http://localhost:3000/bulkUpload","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1767581541264}
+[299:14:15.222] Browser LOG     {"City":"","SchoolName":"MEMHSP","School_Name":"Montessori English Medium High School, Panchalingala","State":"","address":"","email":"","id":10,"mobile":"","name":"","user_type":"Admin","username":"Panchalingala@GMAIL.COM"} user
+[299:14:15.222] Browser LOG     {"City":"","SchoolName":"MEMHSP","School_Name":"Montessori English Medium High School, Panchalingala","State":"","address":"","email":"","id":10,"mobile":"","name":"","user_type":"Admin","username":"Panchalingala@GMAIL.COM"} user
+[299:14:15.222] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1767581542628}
+[299:14:16.462] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[299:14:16.609] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[299:14:16.609] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/events","route":"/events"}
+[299:14:16.609] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/events color: rgb(120, 120, 120) color: inherit {"dp":"/events","o":"http://localhost:3000/events","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1767581544121}
+[299:18:16.210] Server  LOG     null "user"
+[299:18:16.932] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[299:18:17.069] Browser LOG     null user
+[299:18:17.069] Browser LOG     null user
+[299:18:17.194] Browser LOG     {"City":"","SchoolName":"MEMHSP","School_Name":"Montessori English Medium High School, Panchalingala","State":"","address":"","email":"","id":10,"mobile":"","name":"","user_type":"Admin","username":"Panchalingala@GMAIL.COM"} user
+[299:18:17.194] Browser LOG     {"City":"","SchoolName":"MEMHSP","School_Name":"Montessori English Medium High School, Panchalingala","State":"","address":"","email":"","id":10,"mobile":"","name":"","user_type":"Admin","username":"Panchalingala@GMAIL.COM"} user
+[299:18:17.390] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[299:18:17.390] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/students","route":"/students"}
+[299:18:17.390] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1767581784805}
+[299:19:31.945] Server  LOG      ✓ Compiled in 1048ms
+[299:19:37.945] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/bulkUpload color: rgb(120, 120, 120) color: inherit {"dp":"/bulkUpload","o":"http://localhost:3000/bulkUpload","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1767581865370}
+[299:19:40.946] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/dashboard color: rgb(120, 120, 120) color: inherit {"dp":"/dashboard","o":"http://localhost:3000/dashboard","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1767581868354}
+[299:19:43.633] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1767581871082}
