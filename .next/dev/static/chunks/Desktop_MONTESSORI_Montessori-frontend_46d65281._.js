@@ -473,7 +473,6 @@ function LoginPage() {
     const [email, setEmail] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])("");
     const [password, setPassword] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])("");
     const router = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRouter"])();
-    const searchParams = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useSearchParams"])();
     const { toast } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$hooks$2f$use$2d$toast$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useToast"])();
     const { login } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$store$2f$auth$2e$store$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useAuthStore"])();
     const [isPrefilledEmail, setIsPrefilledEmail] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
@@ -537,12 +536,12 @@ function LoginPage() {
                     className: "object-contain"
                 }, void 0, false, {
                     fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/components/login-page.tsx",
-                    lineNumber: 91,
+                    lineNumber: 90,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/components/login-page.tsx",
-                lineNumber: 90,
+                lineNumber: 89,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("header", {
@@ -558,7 +557,7 @@ function LoginPage() {
                             className: "object-contain"
                         }, void 0, false, {
                             fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/components/login-page.tsx",
-                            lineNumber: 103,
+                            lineNumber: 102,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -568,7 +567,7 @@ function LoginPage() {
                                     children: "Montessori"
                                 }, void 0, false, {
                                     fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/components/login-page.tsx",
-                                    lineNumber: 111,
+                                    lineNumber: 110,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -576,24 +575,24 @@ function LoginPage() {
                                     children: "Student Records Management Portal"
                                 }, void 0, false, {
                                     fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/components/login-page.tsx",
-                                    lineNumber: 112,
+                                    lineNumber: 111,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/components/login-page.tsx",
-                            lineNumber: 110,
+                            lineNumber: 109,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/components/login-page.tsx",
-                    lineNumber: 102,
+                    lineNumber: 101,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/components/login-page.tsx",
-                lineNumber: 101,
+                lineNumber: 100,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("main", {
@@ -609,7 +608,7 @@ function LoginPage() {
                                     children: "Centralized Student Records Management"
                                 }, void 0, false, {
                                     fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/components/login-page.tsx",
-                                    lineNumber: 124,
+                                    lineNumber: 123,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -622,7 +621,7 @@ function LoginPage() {
                                                     className: "w-5 h-5 text-primary"
                                                 }, void 0, false, {
                                                     fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/components/login-page.tsx",
-                                                    lineNumber: 130,
+                                                    lineNumber: 129,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -632,7 +631,7 @@ function LoginPage() {
                                                             children: "Secure & Scalable"
                                                         }, void 0, false, {
                                                             fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/components/login-page.tsx",
-                                                            lineNumber: 132,
+                                                            lineNumber: 131,
                                                             columnNumber: 19
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -640,19 +639,19 @@ function LoginPage() {
                                                             children: "Role-based access and data privacy"
                                                         }, void 0, false, {
                                                             fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/components/login-page.tsx",
-                                                            lineNumber: 133,
+                                                            lineNumber: 132,
                                                             columnNumber: 19
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/components/login-page.tsx",
-                                                    lineNumber: 131,
+                                                    lineNumber: 130,
                                                     columnNumber: 17
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/components/login-page.tsx",
-                                            lineNumber: 129,
+                                            lineNumber: 128,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -662,7 +661,7 @@ function LoginPage() {
                                                     className: "w-5 h-5 text-accent"
                                                 }, void 0, false, {
                                                     fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/components/login-page.tsx",
-                                                    lineNumber: 140,
+                                                    lineNumber: 139,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -672,7 +671,7 @@ function LoginPage() {
                                                             children: "Bulk Data Management"
                                                         }, void 0, false, {
                                                             fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/components/login-page.tsx",
-                                                            lineNumber: 142,
+                                                            lineNumber: 141,
                                                             columnNumber: 19
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -680,31 +679,31 @@ function LoginPage() {
                                                             children: "CSV & Excel upload support"
                                                         }, void 0, false, {
                                                             fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/components/login-page.tsx",
-                                                            lineNumber: 143,
+                                                            lineNumber: 142,
                                                             columnNumber: 19
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/components/login-page.tsx",
-                                                    lineNumber: 141,
+                                                    lineNumber: 140,
                                                     columnNumber: 17
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/components/login-page.tsx",
-                                            lineNumber: 139,
+                                            lineNumber: 138,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/components/login-page.tsx",
-                                    lineNumber: 128,
+                                    lineNumber: 127,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/components/login-page.tsx",
-                            lineNumber: 123,
+                            lineNumber: 122,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Card"], {
@@ -718,20 +717,20 @@ function LoginPage() {
                                             children: "Welcome Back"
                                         }, void 0, false, {
                                             fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/components/login-page.tsx",
-                                            lineNumber: 154,
+                                            lineNumber: 153,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CardDescription"], {
                                             children: "Sign in to access the portal"
                                         }, void 0, false, {
                                             fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/components/login-page.tsx",
-                                            lineNumber: 155,
+                                            lineNumber: 154,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/components/login-page.tsx",
-                                    lineNumber: 153,
+                                    lineNumber: 152,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CardContent"], {
@@ -745,12 +744,12 @@ function LoginPage() {
                                                     children: "Admin Login"
                                                 }, void 0, false, {
                                                     fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/components/login-page.tsx",
-                                                    lineNumber: 161,
+                                                    lineNumber: 160,
                                                     columnNumber: 19
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/components/login-page.tsx",
-                                                lineNumber: 160,
+                                                lineNumber: 159,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$components$2f$ui$2f$tabs$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["TabsContent"], {
@@ -765,7 +764,7 @@ function LoginPage() {
                                                                     children: "Email"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/components/login-page.tsx",
-                                                                    lineNumber: 168,
+                                                                    lineNumber: 167,
                                                                     columnNumber: 23
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -775,7 +774,7 @@ function LoginPage() {
                                                                             className: "absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/components/login-page.tsx",
-                                                                            lineNumber: 170,
+                                                                            lineNumber: 169,
                                                                             columnNumber: 25
                                                                         }, this),
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$components$2f$ui$2f$input$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Input"], {
@@ -787,19 +786,19 @@ function LoginPage() {
                                                                             disabled: isPrefilledEmail
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/components/login-page.tsx",
-                                                                            lineNumber: 171,
+                                                                            lineNumber: 170,
                                                                             columnNumber: 25
                                                                         }, this)
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/components/login-page.tsx",
-                                                                    lineNumber: 169,
+                                                                    lineNumber: 168,
                                                                     columnNumber: 23
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/components/login-page.tsx",
-                                                            lineNumber: 167,
+                                                            lineNumber: 166,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -809,7 +808,7 @@ function LoginPage() {
                                                                     children: "Password"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/components/login-page.tsx",
-                                                                    lineNumber: 189,
+                                                                    lineNumber: 188,
                                                                     columnNumber: 23
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -819,7 +818,7 @@ function LoginPage() {
                                                                             className: "absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/components/login-page.tsx",
-                                                                            lineNumber: 191,
+                                                                            lineNumber: 190,
                                                                             columnNumber: 25
                                                                         }, this),
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$components$2f$ui$2f$input$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Input"], {
@@ -829,19 +828,19 @@ function LoginPage() {
                                                                             className: "pl-10"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/components/login-page.tsx",
-                                                                            lineNumber: 192,
+                                                                            lineNumber: 191,
                                                                             columnNumber: 25
                                                                         }, this)
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/components/login-page.tsx",
-                                                                    lineNumber: 190,
+                                                                    lineNumber: 189,
                                                                     columnNumber: 23
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/components/login-page.tsx",
-                                                            lineNumber: 188,
+                                                            lineNumber: 187,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
@@ -850,7 +849,7 @@ function LoginPage() {
                                                             children: "Sign in as Admin"
                                                         }, void 0, false, {
                                                             fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/components/login-page.tsx",
-                                                            lineNumber: 201,
+                                                            lineNumber: 200,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -860,46 +859,46 @@ function LoginPage() {
                                                             children: "Register here"
                                                         }, void 0, false, {
                                                             fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/components/login-page.tsx",
-                                                            lineNumber: 205,
+                                                            lineNumber: 204,
                                                             columnNumber: 21
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/components/login-page.tsx",
-                                                    lineNumber: 166,
+                                                    lineNumber: 165,
                                                     columnNumber: 19
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/components/login-page.tsx",
-                                                lineNumber: 165,
+                                                lineNumber: 164,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/components/login-page.tsx",
-                                        lineNumber: 159,
+                                        lineNumber: 158,
                                         columnNumber: 15
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/components/login-page.tsx",
-                                    lineNumber: 158,
+                                    lineNumber: 157,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/components/login-page.tsx",
-                            lineNumber: 152,
+                            lineNumber: 151,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/components/login-page.tsx",
-                    lineNumber: 121,
+                    lineNumber: 120,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/components/login-page.tsx",
-                lineNumber: 120,
+                lineNumber: 119,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("footer", {
@@ -909,25 +908,24 @@ function LoginPage() {
                     children: "© 2025 Montessori Education. All rights reserved."
                 }, void 0, false, {
                     fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/components/login-page.tsx",
-                    lineNumber: 228,
+                    lineNumber: 227,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/components/login-page.tsx",
-                lineNumber: 227,
+                lineNumber: 226,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/components/login-page.tsx",
-        lineNumber: 88,
+        lineNumber: 87,
         columnNumber: 5
     }, this);
 }
-_s(LoginPage, "sqg44sI0EPN+r1zhA3wKmtkvJ1w=", false, function() {
+_s(LoginPage, "NAQkCKjfRk85liSo3cg0OMvlvpk=", false, function() {
     return [
         __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRouter"],
-        __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useSearchParams"],
         __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$hooks$2f$use$2d$toast$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useToast"],
         __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$store$2f$auth$2e$store$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useAuthStore"]
     ];

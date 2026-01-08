@@ -20,7 +20,7 @@ import {
   Lock,
 } from "lucide-react";
 import type { UserRole } from "@/app/page";
-import { useRouter, useSearchParams } from "next/navigation";
+import { useRouter } from "next/navigation";
 import { useToast } from "@/hooks/use-toast";
 import { useAuthStore } from "@/store/auth.store";
 
@@ -33,7 +33,6 @@ export function LoginPage() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const router = useRouter();
-  const searchParams = useSearchParams();
   const { toast } = useToast();
   const { login } = useAuthStore();
   const [isPrefilledEmail, setIsPrefilledEmail] = useState(false);
