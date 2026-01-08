@@ -4,6 +4,7 @@ import { useState } from "react"
 import { LoginPage } from "@/components/login-page"
 import { AdminDashboard } from "@/components/admin/admin-dashboard"
 import { StudentDashboard } from "@/components/student/student-dashboard"
+import Schools from "./home/page"
 
 export type UserRole = "admin" | "student" | null
 
@@ -22,7 +23,7 @@ export default function Home() {
   }
 
   if (!userRole) {
-    return <LoginPage  />
+    return <Schools  />
   }
 
   if (userRole === "admin") {
