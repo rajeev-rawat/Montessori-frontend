@@ -8433,78 +8433,84 @@ var _s = __turbopack_context__.k.signature();
 ;
 const schools = [
     {
-        "id": 9,
-        "name": "Montessori Invictus, Hyderabad",
-        'email': "invitictus10@gmail.com",
-        "SchoolName": "MIH"
+        id: 9,
+        name: "Montessori Invictus, Hyderabad",
+        email: "invitictus10@gmail.com",
+        SchoolName: "MIH"
     },
     {
-        "id": 8,
-        "name": "Sproutz School, Khanamit, Hyderabad",
-        'email': "contact@sproutzschool.in",
-        "SchoolName": "SSKH"
+        id: 8,
+        name: "Sproutz School, Khanamit, Hyderabad",
+        email: "contact@sproutzschool.in",
+        SchoolName: "SSKH"
     },
     {
-        "id": 7,
-        "name": "Monte International School, NH-44, Kallur",
-        'email': "office.cbmonte@gmail.com",
-        "SchoolName": "MISNHK"
+        id: 7,
+        name: "Monte International School, NH-44, Kallur",
+        email: "office.cbmonte@gmail.com",
+        SchoolName: "MISNHK"
     },
     {
-        "id": 6,
-        "name": "Montessori Elite EM School, Anantapur",
-        'email': "Admin@montessorieliteschool.com",
-        "SchoolName": "MEEMSA"
+        id: 6,
+        name: "Montessori Elite EM School, Anantapur",
+        email: "Admin@montessorieliteschool.com",
+        SchoolName: "MEEMSA"
     },
     {
-        "id": 5,
-        "name": "Montessori English Medium High School, Panchalingala",
-        'email': "Panchalingala@GMAIL.COM",
-        "SchoolName": "MEMHSP"
+        id: 5,
+        name: "Montessori English Medium High School, Panchalingala",
+        email: "Panchalingala@GMAIL.COM",
+        SchoolName: "MEMHSP"
     },
     {
-        "id": 4,
-        "name": "Montessori Indus Residential School, NH-44, Kallur",
-        'email': "indusschool10@gmail.com",
-        "SchoolName": "MIRSNHK"
+        id: 4,
+        name: "Montessori Indus Residential School, NH-44, Kallur",
+        email: "indusschool10@gmail.com",
+        SchoolName: "MIRSNHK"
     },
     {
-        "id": 3,
-        "name": "Montessori Senior Secondary School, A-Camp, Kurnool",
-        "email": "montescbse17@gmail.com",
-        "SchoolName": "MSSSACK"
+        id: 3,
+        name: "Montessori Senior Secondary School, A-Camp, Kurnool",
+        email: "montescbse17@gmail.com",
+        SchoolName: "MSSSACK"
     },
     {
-        "id": 2,
-        "name": "Montessori High School, Alampur",
-        "email": "alampur123@gmail.com",
-        "SchoolName": "MHSA"
+        id: 2,
+        name: "Montessori High School, Alampur",
+        email: "alampur123@gmail.com",
+        SchoolName: "MHSA"
     },
     {
-        "id": 1,
-        "name": "Montessori EM High School, Vidya Nagar, Kurnool",
-        "email": "montessorividyanagar1974@gmail.com",
-        "SchoolName": "MEMHSVNK"
+        id: 1,
+        name: "Montessori EM High School, Vidya Nagar, Kurnool",
+        email: "montessorividyanagar1974@gmail.com",
+        SchoolName: "MEMHSVNK"
     },
     {
-        "id": 10,
-        "name": "Super Admin",
-        "email": "",
-        "SchoolName": ""
+        id: 10,
+        name: "Super Admin",
+        email: "",
+        SchoolName: ""
     }
 ];
 function Schools() {
     _s();
     const router = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRouter"])();
-    //   const { schools, fetchSchools } = useSchoolStore();
-    //   useEffect(() => {
-    //     fetchSchools();
-    //   }, []);
-    const handleSelect = (email)=>{
-        router.push(`/login?email=${encodeURIComponent(email)}`);
+    /* ================= HANDLE SELECT ================= */ const handleSelect = (email, schoolName)=>{
+        // Clear old data
+        sessionStorage.removeItem("login_email");
+        sessionStorage.removeItem("login_school");
+        // Save only if available
+        if (email) {
+            sessionStorage.setItem("login_email", email);
+        }
+        if (schoolName) {
+            sessionStorage.setItem("login_school", schoolName);
+        }
+        router.push("/login");
     };
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-        className: "min-h-screen bg-background",
+        className: "relative min-h-screen bg-background",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "pointer-events-none absolute inset-0 flex items-center justify-center opacity-[0.05]",
@@ -8516,13 +8522,13 @@ function Schools() {
                     className: "object-contain"
                 }, void 0, false, {
                     fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/app/home/page.tsx",
-                    lineNumber: 88,
-                    columnNumber: 13
+                    lineNumber: 94,
+                    columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/app/home/page.tsx",
-                lineNumber: 87,
-                columnNumber: 11
+                lineNumber: 93,
+                columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("header", {
                 className: "relative z-10 border-b bg-card",
@@ -8537,8 +8543,8 @@ function Schools() {
                             className: "object-contain"
                         }, void 0, false, {
                             fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/app/home/page.tsx",
-                            lineNumber: 100,
-                            columnNumber: 15
+                            lineNumber: 106,
+                            columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             children: [
@@ -8547,83 +8553,96 @@ function Schools() {
                                     children: "Montessori"
                                 }, void 0, false, {
                                     fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/app/home/page.tsx",
-                                    lineNumber: 108,
-                                    columnNumber: 17
+                                    lineNumber: 114,
+                                    columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                     className: "text-xs text-muted-foreground",
                                     children: "Student Records Management Portal"
                                 }, void 0, false, {
                                     fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/app/home/page.tsx",
-                                    lineNumber: 109,
-                                    columnNumber: 17
+                                    lineNumber: 115,
+                                    columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/app/home/page.tsx",
-                            lineNumber: 107,
-                            columnNumber: 15
+                            lineNumber: 113,
+                            columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/app/home/page.tsx",
-                    lineNumber: 99,
-                    columnNumber: 13
-                }, this)
-            }, void 0, false, {
-                fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/app/home/page.tsx",
-                lineNumber: 98,
-                columnNumber: 11
-            }, this),
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("main", {
-                className: "container mx-auto px-4 py-12",
-                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6",
-                    children: schools.map((school)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                            onClick: ()=>handleSelect(school.email),
-                            className: "border rounded-xl p-6 bg-card text-left hover:shadow-lg hover:border-primary transition-all",
-                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                                className: "text-lg font-semibold",
-                                children: school.name
-                            }, void 0, false, {
-                                fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/app/home/page.tsx",
-                                lineNumber: 125,
-                                columnNumber: 15
-                            }, this)
-                        }, school.id, false, {
-                            fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/app/home/page.tsx",
-                            lineNumber: 120,
-                            columnNumber: 13
-                        }, this))
-                }, void 0, false, {
-                    fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/app/home/page.tsx",
-                    lineNumber: 118,
+                    lineNumber: 105,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/app/home/page.tsx",
-                lineNumber: 117,
+                lineNumber: 104,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("main", {
+                className: "relative z-10 container mx-auto px-4 py-12",
+                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    className: "grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6",
+                    children: schools.map((school)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                            onClick: ()=>handleSelect(school.email, school.SchoolName),
+                            className: "border rounded-xl p-6 bg-card text-left hover:shadow-lg hover:border-primary transition-all",
+                            children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
+                                    className: "text-lg font-semibold",
+                                    children: school.name
+                                }, void 0, false, {
+                                    fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/app/home/page.tsx",
+                                    lineNumber: 133,
+                                    columnNumber: 15
+                                }, this),
+                                school.SchoolName && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                    className: "text-xs text-muted-foreground mt-1",
+                                    children: [
+                                        "Code: ",
+                                        school.SchoolName
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/app/home/page.tsx",
+                                    lineNumber: 136,
+                                    columnNumber: 17
+                                }, this)
+                            ]
+                        }, school.id, true, {
+                            fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/app/home/page.tsx",
+                            lineNumber: 126,
+                            columnNumber: 13
+                        }, this))
+                }, void 0, false, {
+                    fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/app/home/page.tsx",
+                    lineNumber: 124,
+                    columnNumber: 9
+                }, this)
+            }, void 0, false, {
+                fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/app/home/page.tsx",
+                lineNumber: 123,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("footer", {
-                className: "border-t",
+                className: "border-t relative z-10",
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                     className: "container mx-auto px-4 py-6 text-center text-sm text-muted-foreground",
                     children: "© 2025 Montessori Education. All rights reserved."
                 }, void 0, false, {
                     fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/app/home/page.tsx",
-                    lineNumber: 135,
+                    lineNumber: 146,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/app/home/page.tsx",
-                lineNumber: 134,
+                lineNumber: 145,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/app/home/page.tsx",
-        lineNumber: 85,
+        lineNumber: 91,
         columnNumber: 5
     }, this);
 }

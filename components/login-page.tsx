@@ -66,16 +66,15 @@ export function LoginPage() {
     }
   };
 
-  // 🔹 Prefill email from school selection
-  useEffect(() => {
-  const prefillEmail = searchParams.get("email");
-  if (prefillEmail) {
-    setEmail(prefillEmail);
-    setIsPrefilledEmail(true);
-  } else {
-    setIsPrefilledEmail(false);
-  }
-}, [searchParams]);
+ useEffect(() => {
+    const storedEmail = sessionStorage.getItem("login_email");
+    if (storedEmail) {
+      setEmail(storedEmail);
+      setIsPrefilledEmail(true);
+      // optional cleanup
+      sessionStorage.removeItem("login_email");
+    }
+  }, []);
 
   // 🔹 Already logged in
   useEffect(() => {
