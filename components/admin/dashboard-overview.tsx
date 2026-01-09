@@ -101,7 +101,7 @@ export function DashboardOverview() {
       </div>
 
       {/* School Dropdown */}
-      <div className="max-w-sm">
+      <div className="max-w-sm bg-white">
         <SchoolSelect value={selectedSchool} onChange={setSelectedSchool} />
       </div>
 

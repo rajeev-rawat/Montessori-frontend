@@ -6,7 +6,8 @@ import { useToast } from "@/hooks/use-toast"
 import { useSchoolStore } from "@/store/school.store"
 import { useAuthStore } from "@/store/auth.store"
 import { SchoolSelect } from "@/components/dropdown/dropdown"
-import Image from "next/image";
+import { YearDropdown } from "@/components/dropdown/year-dropdown"
+import Image from "next/image"
 
 import {
   Card,
@@ -42,16 +43,18 @@ export function BulkUploadModule() {
   const [uploadStatus, setUploadStatus] = useState<UploadStatus>("idle")
   const [progress, setProgress] = useState(0)
   const [dragActive, setDragActive] = useState(false)
-  const [selectedSchool, setSelectedSchool] = useState<string>("")
+
+  const [selectedSchool, setSelectedSchool] = useState("")
+  const [selectedYear, setSelectedYear] = useState("")
+  const [selectedFile, setSelectedFile] = useState<File | null>(null)
+
   const user = useAuthStore((state) => state.user)
   const fileInputRef = useRef<HTMLInputElement>(null)
 
   const { upload, response, report, reset } = useBulkUploadStore()
   const { toast } = useToast()
-
   const { schools, fetchSchools } = useSchoolStore()
 
-  // Fetch schools on load
   useEffect(() => {
     if (user?.SchoolName && schools.length === 0) {
       fetchSchools(user.SchoolName)
@@ -62,15 +65,23 @@ export function BulkUploadModule() {
     reset()
     setUploadStatus("idle")
     setProgress(0)
+    setSelectedFile(null)
   }
 
-  const handleFileUpload = async (file?: File) => {
+  const handleFileSelect = (file?: File) => {
     if (!file) return
+    setSelectedFile(file)
+  }
+  const handleUpload = async () => {
+    if (!selectedFile) return
+
     if (!selectedSchool) {
-      toast({
-        variant: "destructive",
-        title: "Select a school first",
-      })
+      toast({ variant: "destructive", title: "Select school first" })
+      return
+    }
+
+    if (!selectedYear) {
+      toast({ variant: "destructive", title: "Select academic year" })
       return
     }
 
@@ -78,24 +89,20 @@ export function BulkUploadModule() {
     setProgress(40)
 
     try {
-      await upload(file, selectedSchool) // Pass school info to your store if needed
+      await upload(selectedFile, selectedSchool, selectedYear)
       setProgress(100)
       setUploadStatus("preview")
 
       const res = useBulkUploadStore.getState().response
       if (!res) return
 
-      if (res.errors_count > 0 || res.duplicates_inserted > 0) {
-        toast({
-          title: "Upload completed with issues",
-          description: `${res.inserted_total} inserted, ${res.duplicates_inserted} duplicates, ${res.errors_count} errors`,
-        })
-      } else {
-        toast({
-          title: "Bulk upload successful",
-          description: `${res.inserted_total} records uploaded successfully`,
-        })
-      }
+      toast({
+        title:
+          res.errors_count > 0 || res.duplicates_inserted > 0
+            ? "Upload completed with issues"
+            : "Bulk upload successful",
+        description: `${res.inserted_total} inserted, ${res.duplicates_inserted} duplicates, ${res.errors_count} errors`,
+      })
     } catch (err: any) {
       toast({
         variant: "destructive",
@@ -108,34 +115,26 @@ export function BulkUploadModule() {
 
   return (
     <div className="p-6 space-y-6">
-       {/* ================= WATERMARK (ADDED ONLY) ================= */}
-          <div className="pointer-events-none absolute inset-0 flex items-center justify-center opacity-[0.05]">
-            <Image
-              src="/logo.png"
-              alt="Watermark Logo"
-              width={600}
-              height={600}
-              className="object-contain"
-              priority
-            />
-          </div>
-      {/* Header */}
+      {/* WATERMARK */}
+      <div className="pointer-events-none absolute inset-0 flex items-center justify-center opacity-[0.05]">
+        <Image src="/logo.png" alt="Watermark" width={600} height={600} />
+      </div>
+
       <div>
-        <h1 className="text-2xl font-bold text-foreground">Bulk Upload</h1>
+        <h1 className="text-2xl font-bold">Bulk Upload</h1>
         <p className="text-muted-foreground">
           Upload CSV or Excel files to add multiple student records
         </p>
       </div>
 
-      {/* School Dropdown */}
-      <div className="max-w-sm mb-4">
+      {/* DROPDOWNS */}
+      <div className="flex bg-white flex-col sm:flex-row gap-4 max-w-xl">
         <SchoolSelect value={selectedSchool} onChange={setSelectedSchool} />
+        <YearDropdown value={selectedYear} onChange={setSelectedYear} />
       </div>
 
       <div className="grid gap-6 lg:grid-cols-3">
-        {/* LEFT SECTION */}
         <div className="lg:col-span-2 space-y-6">
-          {/* Upload Card */}
           <Card>
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
@@ -143,95 +142,88 @@ export function BulkUploadModule() {
                 Upload File
               </CardTitle>
               <CardDescription>
-                Supported formats: CSV, XLS, XLSX (Max 10MB)
+                Supported formats: CSV, XLS, XLSX
               </CardDescription>
             </CardHeader>
 
             <CardContent>
               {uploadStatus === "idle" && (
                 <div
-                  className={`border-2 border-dashed rounded-lg p-8 text-center transition-colors ${
-                    dragActive ? "border-primary bg-primary/5" : "border-border"
+                  className={`border-2 border-dashed rounded-lg p-8 text-center ${
+                    dragActive ? "border-primary bg-primary/5" : ""
                   }`}
                   onDragEnter={(e) => {
                     e.preventDefault()
                     setDragActive(true)
                   }}
-                  onDragOver={(e) => e.preventDefault()}
                   onDragLeave={(e) => {
                     e.preventDefault()
                     setDragActive(false)
                   }}
+                  onDragOver={(e) => e.preventDefault()}
                   onDrop={(e) => {
                     e.preventDefault()
                     setDragActive(false)
-                    handleFileUpload(e.dataTransfer.files[0])
+                    handleFileSelect(e.dataTransfer.files[0])
                   }}
                 >
-                  <FileSpreadsheet className="w-12 h-12 mx-auto text-muted-foreground mb-4" />
-                  <p className="text-foreground font-medium mb-2">
-                    Drag and drop your file here
-                  </p>
-                  <p className="text-sm text-muted-foreground mb-4">or</p>
+                  <FileSpreadsheet className="w-12 h-12 mx-auto mb-4" />
 
-                  <Button onClick={() => fileInputRef.current?.click()}>
-                    Browse Files
-                  </Button>
+                  {selectedFile ? (
+                    <p className="font-medium mb-4">
+                      Selected: {selectedFile.name}
+                    </p>
+                  ) : (
+                    <p className="mb-4">Drag & drop file here</p>
+                  )}
+
+                  <div className="flex justify-center gap-3">
+                    <Button onClick={() => fileInputRef.current?.click()}>
+                      Choose File
+                    </Button>
+
+                  </div>
 
                   <input
                     ref={fileInputRef}
-                    type="file"
                     hidden
+                    type="file"
                     accept=".csv,.xls,.xlsx"
                     onChange={(e) =>
                       e.target.files &&
-                      handleFileUpload(e.target.files[0])
+                      handleFileSelect(e.target.files[0])
                     }
                   />
                 </div>
               )}
 
               {uploadStatus === "uploading" && (
-                <div className="p-8 text-center space-y-4">
-                  <FileSpreadsheet className="w-12 h-12 mx-auto text-primary" />
-                  <p className="font-medium text-foreground">
-                    Uploading & validating records...
-                  </p>
-                  <Progress
-                    value={progress}
-                    className="w-full max-w-xs mx-auto"
-                  />
+                <div className="space-y-4 text-center">
+                  <Progress value={progress} />
+                  <p>Uploading and validating data…</p>
                 </div>
               )}
 
               {uploadStatus === "error" && (
-                <div className="p-8 text-center space-y-4">
-                  <XCircle className="w-12 h-12 mx-auto text-destructive" />
-                  <p className="font-medium text-foreground">
-                    Upload failed
-                  </p>
-                  <Button onClick={resetUpload}>Upload New File</Button>
-                </div>
+                <Button onClick={resetUpload}>Retry</Button>
               )}
+               <div className="flex justify-end gap-3 mt-5">
+              <Button
+                onClick={handleUpload}
+                disabled={!selectedFile || !selectedSchool || !selectedYear}
+              >
+                Upload Now
+              </Button>
+            </div>
             </CardContent>
+           
           </Card>
 
-          {/* Preview */}
           {uploadStatus === "preview" && response && (
             <Card>
               <CardHeader>
-                <CardTitle className="flex items-center gap-2">
-                  <Eye className="w-5 h-5" />
-                  Preview Data
-                </CardTitle>
-                <CardDescription>
-                  Total: {response.total_rows} | Inserted:{" "}
-                  {response.inserted_total} | Duplicates:{" "}
-                  {response.duplicates_inserted} | Errors:{" "}
-                  {response.errors_count}
-                </CardDescription>
+                <CardTitle>Preview</CardTitle>
               </CardHeader>
-
               <CardContent>
                 <Table>
                   <TableHeader>
@@ -241,75 +233,31 @@ export function BulkUploadModule() {
                       <TableHead>Message</TableHead>
                     </TableRow>
                   </TableHeader>
-
                   <TableBody>
                     {report.map((row) => (
                       <TableRow key={row.row}>
-                        <TableCell className="font-mono">
-                          {row.AdmissionNo}
-                        </TableCell>
-                        <TableCell>
-                          {row.status === "duplicate" && (
-                            <span className="flex items-center gap-1 text-warning">
-                              <AlertTriangle className="w-4 h-4" /> Duplicate
-                            </span>
-                          )}
-                          {row.status === "error" && (
-                            <span className="flex items-center gap-1 text-destructive">
-                              <XCircle className="w-4 h-4" /> Error
-                            </span>
-                          )}
-                          {row.status === "valid" && (
-                            <span className="flex items-center gap-1 text-success">
-                              <CheckCircle className="w-4 h-4" /> Valid
-                            </span>
-                          )}
-                        </TableCell>
+                        <TableCell>{row.AdmissionNo}</TableCell>
+                        <TableCell>{row.status}</TableCell>
                         <TableCell>{row.error || "-"}</TableCell>
                       </TableRow>
                     ))}
                   </TableBody>
                 </Table>
-
-                <div className="flex gap-3 mt-4">
-                  <Button variant="outline" onClick={resetUpload}>
-                    Upload New File
-                  </Button>
-                </div>
               </CardContent>
             </Card>
           )}
         </div>
 
-        {/* RIGHT SECTION – UNCHANGED */}
-        <div className="space-y-6">
+        <div>
           <Card>
             <CardHeader>
-              <CardTitle className="text-base">Template</CardTitle>
+              <CardTitle>Template</CardTitle>
             </CardHeader>
             <CardContent>
-              <Button
-                variant="outline"
-                className="w-full bg-transparent"
-                size="sm"
-              >
+              <Button variant="outline" className="w-full">
                 <Download className="w-4 h-4 mr-2" />
                 Download Template
               </Button>
-            </CardContent>
-          </Card>
-
-          <Card>
-            <CardHeader>
-              <CardTitle className="text-base">Upload History</CardTitle>
-            </CardHeader>
-            <CardContent className="space-y-3">
-              <div className="p-3 rounded-lg bg-muted/50">
-                <div className="flex justify-between">
-                  <span className="text-sm font-medium">batch_2024.csv</span>
-                  <Trash2 className="w-4 h-4" />
-                </div>
-              </div>
             </CardContent>
           </Card>
         </div>
@@ -317,4 +265,5 @@ export function BulkUploadModule() {
     </div>
   )
 }
+
 export default BulkUploadModule

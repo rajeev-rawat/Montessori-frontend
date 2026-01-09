@@ -21,7 +21,8 @@ interface StudentStore {
 
   search: string
   status: string
-  school: string // ✅ ADDED
+  school: string
+  year: string // ✅ ADDED
 
   viewModalOpen: boolean
   editModalOpen: boolean
@@ -33,7 +34,8 @@ interface StudentStore {
   setPage: (page: number) => void
   setSearch: (search: string) => void
   setStatus: (status: string) => void
-  setSchool: (school: string) => void // ✅ ADDED
+  setSchool: (school: string) => void
+  setYear: (year: string) => void // ✅ ADDED
 
   openViewModal: (student: Student) => void
   openEditModal: (student: Student) => void
@@ -55,7 +57,8 @@ export const useStudentStore = create<StudentStore>((set, get) => ({
 
   search: "",
   status: "",
-  school: "", // ✅ ADDED
+  school: "",
+  year: "",
 
   viewModalOpen: false,
   editModalOpen: false,
@@ -69,7 +72,7 @@ export const useStudentStore = create<StudentStore>((set, get) => ({
     try {
       set({ loading: true })
 
-      const { page, limit, search, status, school } = get()
+      const { page, limit, search, status, school, year } = get()
 
       const res = await getStudentsApi(
         {
@@ -78,6 +81,7 @@ export const useStudentStore = create<StudentStore>((set, get) => ({
           search,
           status,
           school,
+          year,
         },
         token
       )
@@ -103,7 +107,9 @@ export const useStudentStore = create<StudentStore>((set, get) => ({
 
   setStatus: (status) => set({ status, page: 1 }),
 
-  setSchool: (school) => set({ school, page: 1 }), // ✅ ADDED
+  setSchool: (school) => set({ school, page: 1 }),
+
+  setYear: (year) => set({ year, page: 1 }), // ✅ ADDED
 
   openViewModal: (student) =>
     set({ viewModalOpen: true, selectedStudent: student }),
@@ -122,43 +128,43 @@ export const useStudentStore = create<StudentStore>((set, get) => ({
       selectedStudent: null,
     }),
 
-addStudent: async (student) => {
-  const token = localStorage.getItem("auth_token")
-  if (!token) return
+  addStudent: async (student) => {
+    const token = localStorage.getItem("auth_token")
+    if (!token) return
 
-  try {
-    const { school } = get()
-    await addStudentApi({ ...student, SchoolName: school }, token) // send SchoolName
-    toast({ title: "Success", description: "Student added successfully" })
-    get().fetchStudents()
-    get().closeModals()
-  } catch (error: any) {
-    toast({
-      title: "Error",
-      description: error.message,
-      variant: "destructive",
-    })
-  }
-},
+    try {
+      const { school } = get()
+      await addStudentApi({ ...student, SchoolName: school }, token)
+      toast({ title: "Success", description: "Student added successfully" })
+      get().fetchStudents()
+      get().closeModals()
+    } catch (error: any) {
+      toast({
+        title: "Error",
+        description: error.message,
+        variant: "destructive",
+      })
+    }
+  },
 
- updateStudent: async (student) => {
-  const token = localStorage.getItem("auth_token")
-  if (!token) return
+  updateStudent: async (student) => {
+    const token = localStorage.getItem("auth_token")
+    if (!token) return
 
-  try {
-    const { school } = get()
-    await updateStudentApi({ ...student, SchoolName: school }, token) // send SchoolName
-    toast({ title: "Success", description: "Student updated successfully" })
-    get().fetchStudents()
-    get().closeModals()
-  } catch (error: any) {
-    toast({
-      title: "Error",
-      description: error.message,
-      variant: "destructive",
-    })
-  }
-},
+    try {
+      const { school } = get()
+      await updateStudentApi({ ...student, SchoolName: school }, token)
+      toast({ title: "Success", description: "Student updated successfully" })
+      get().fetchStudents()
+      get().closeModals()
+    } catch (error: any) {
+      toast({
+        title: "Error",
+        description: error.message,
+        variant: "destructive",
+      })
+    }
+  },
 
   deleteStudent: async (student) => {
     const token = localStorage.getItem("auth_token")
