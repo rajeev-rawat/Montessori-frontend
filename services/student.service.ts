@@ -26,8 +26,9 @@ export interface Student {
   DateOfLeaving?: string
   ReasonOfLeaving?: string
   NoAndDateTransferCertificate?: string
-  EntryDate?: string,
-  SchoolName?:string
+  EntryDate?: string
+  SchoolName?: string
+  year?: string // ✅ ADDED (SAFE, OPTIONAL)
 }
 
 interface GetStudentsParams {
@@ -35,7 +36,8 @@ interface GetStudentsParams {
   limit?: number
   search?: string
   status?: string
-  school?: string 
+  school?: string
+  year?: string // ✅ ADDED
 }
 
 export async function getStudentsApi(
@@ -48,6 +50,7 @@ export async function getStudentsApi(
     search: params.search || "",
     status: params.status || "",
     SchoolName: params.school || "",
+    year: params.year || "",
   })
 
   const res = await fetch(`${BASE_URL}/student_list?${query}`, {

@@ -28,11 +28,13 @@ const API_KEY = process.env.NEXT_PUBLIC_API_KEY!
 export async function bulkUploadApi(
   file: File,
   token: string,
-  schoolSchoolName: string
+  schoolSchoolName: string,
+selectedYear: string
 ): Promise<BulkUploadApiResponse> {
   const formData = new FormData()
   formData.append("file", file)
   formData.append("SchoolName", schoolSchoolName)
+  formData.append("AcademicYear", selectedYear)
 
   const res = await fetch(`${BASE_URL}/student_bulk_upload`, {
     method: "POST",
