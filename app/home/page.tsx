@@ -61,7 +61,7 @@ const schools = [
   {
     id: 10,
     name: "Super Admin",
-    email: "",
+    email: "montesraj@yahoo.com",
     SchoolName: "",
   },
 ];
