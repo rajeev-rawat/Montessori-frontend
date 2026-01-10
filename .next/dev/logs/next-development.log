@@ -155,3 +155,130 @@ Import traces:
 [16:48:37.857] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/bulkUpload color: rgb(120, 120, 120) color: inherit {"dp":"/bulkUpload","o":"http://localhost:3000/bulkUpload","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1767945169614}
 [16:48:47.972] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/dashboard color: rgb(120, 120, 120) color: inherit {"dp":"/dashboard","o":"http://localhost:3000/dashboard","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1767945179852}
 [16:49:23.352] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/bulkUpload color: rgb(120, 120, 120) color: inherit {"dp":"/bulkUpload","o":"http://localhost:3000/bulkUpload","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1767945215100}
+[35:21:14.460] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[35:21:15.300] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[35:21:15.300] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/bulkUpload","route":"/bulkUpload"}
+[35:21:15.300] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/bulkUpload color: rgb(120, 120, 120) color: inherit {"dp":"/bulkUpload","o":"http://localhost:3000/bulkUpload","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1768011925248}
+[35:21:15.300] Browser WARN    Image with src "http://localhost:3000/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[35:21:16.481] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1768011926049}
+[35:23:53.615] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/bulkUpload color: rgb(120, 120, 120) color: inherit {"dp":"/bulkUpload","o":"http://localhost:3000/bulkUpload","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1768012082959}
+[35:24:13.875] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1768012103574}
+[35:29:52.783] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[35:29:53.865] Browser WARN    Image with src "http://localhost:3000/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[35:29:53.866] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[35:29:53.866] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/students","route":"/students"}
+[35:29:53.866] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1768012443766}
+[35:31:44.721] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[35:31:45.535] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[35:31:45.536] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/students","route":"/students"}
+[35:31:45.536] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1768012555393}
+[35:31:45.536] Browser WARN    Image with src "http://localhost:3000/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[35:32:46.456] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[35:32:47.338] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[35:32:47.338] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/students","route":"/students"}
+[35:32:47.339] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1768012617091}
+[35:32:47.339] Browser WARN    Image with src "http://localhost:3000/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[35:33:05.573] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[35:33:05.573] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[35:33:41.464] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[35:33:41.465] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[35:34:02.433] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/bulkUpload color: rgb(120, 120, 120) color: inherit {"dp":"/bulkUpload","o":"http://localhost:3000/bulkUpload","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1768012691989}
+[35:38:41.747] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1768012971402}
+[35:38:46.614] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[35:38:47.725] Browser WARN    Image with src "http://localhost:3000/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[35:38:47.725] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[35:38:47.725] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/students","route":"/students"}
+[35:38:47.725] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1768012977606}
+[35:38:50.337] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/bulkUpload color: rgb(120, 120, 120) color: inherit {"dp":"/bulkUpload","o":"http://localhost:3000/bulkUpload","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1768012979907}
+[35:39:32.269] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[35:39:32.977] Browser WARN    Image with src "http://localhost:3000/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[35:39:32.977] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[35:39:32.977] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/bulkUpload","route":"/bulkUpload"}
+[35:39:32.977] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/bulkUpload color: rgb(120, 120, 120) color: inherit {"dp":"/bulkUpload","o":"http://localhost:3000/bulkUpload","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1768013022864}
+[35:39:34.018] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1768013023729}
+[35:39:37.988] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/bulkUpload color: rgb(120, 120, 120) color: inherit {"dp":"/bulkUpload","o":"http://localhost:3000/bulkUpload","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1768013027691}
+[35:43:27.562] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1768013257256}
+[35:44:02.263] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/dashboard color: rgb(120, 120, 120) color: inherit {"dp":"/dashboard","o":"http://localhost:3000/dashboard","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1768013292027}
+[35:44:02.915] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1768013292648}
+[35:44:09.134] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/bulkUpload color: rgb(120, 120, 120) color: inherit {"dp":"/bulkUpload","o":"http://localhost:3000/bulkUpload","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1768013298815}
+[35:44:50.999] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[35:44:51.623] Browser WARN    Image with src "http://localhost:3000/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[35:44:51.624] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[35:44:51.624] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/bulkUpload","route":"/bulkUpload"}
+[35:44:51.624] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/bulkUpload color: rgb(120, 120, 120) color: inherit {"dp":"/bulkUpload","o":"http://localhost:3000/bulkUpload","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1768013341535}
+[35:45:49.751] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[35:45:50.477] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[35:45:50.477] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/bulkUpload","route":"/bulkUpload"}
+[35:45:50.478] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/bulkUpload color: rgb(120, 120, 120) color: inherit {"dp":"/bulkUpload","o":"http://localhost:3000/bulkUpload","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1768013400386}
+[35:45:50.478] Browser WARN    Image with src "http://localhost:3000/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[35:46:31.596] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[35:46:32.467] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[35:46:32.467] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/bulkUpload","route":"/bulkUpload"}
+[35:46:32.467] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/bulkUpload color: rgb(120, 120, 120) color: inherit {"dp":"/bulkUpload","o":"http://localhost:3000/bulkUpload","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1768013442361}
+[35:46:32.467] Browser WARN    Image with src "http://localhost:3000/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[35:48:44.149] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[35:48:45.251] Browser WARN    Image with src "http://localhost:3000/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[35:48:45.251] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[35:48:45.251] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/bulkUpload","route":"/bulkUpload"}
+[35:48:45.251] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/bulkUpload color: rgb(120, 120, 120) color: inherit {"dp":"/bulkUpload","o":"http://localhost:3000/bulkUpload","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1768013575156}
+[35:55:34.913] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1768013984465}
+[36:00:51.749] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[36:00:53.339] Browser WARN    Image with src "http://localhost:3000/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[36:00:53.341] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[36:00:53.342] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/students","route":"/students"}
+[36:00:53.342] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1768014303085}
+[36:41:08.204] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[36:41:09.401] Browser WARN    Image with src "http://localhost:3000/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[36:41:09.402] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[36:41:09.402] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/students","route":"/students"}
+[36:41:09.402] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1768016719117}
+[36:42:51.443] Server  LOG      ✓ Compiled in 659ms
+[36:42:52.055] Browser ERROR   uncaughtError: Error: A <Select.Item /> must have a value prop that is not an empty string. This is because the Select value can be set to an empty string to clear the selection and show the placeholder.
+[36:43:03.867] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[36:43:03.868] Server  LOG      ✓ Compiled in 396ms
+[36:43:05.093] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[36:43:06.044] Browser ERROR   uncaughtError: Error: A <Select.Item /> must have a value prop that is not an empty string. This is because the Select value can be set to an empty string to clear the selection and show the placeholder.
+[36:43:07.627] Server  LOG      ✓ Compiled in 278ms
+[36:43:07.646] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[36:43:09.763] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[36:43:12.133] Browser ERROR   uncaughtError: Error: A <Select.Item /> must have a value prop that is not an empty string. This is because the Select value can be set to an empty string to clear the selection and show the placeholder.
+[36:43:42.396] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[36:43:42.414] Server  LOG      ✓ Compiled in 115ms
+[36:43:43.522] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[36:43:45.523] Browser WARN    Image with src "http://localhost:3000/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[36:43:45.523] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[36:43:45.524] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/students","route":"/students"}
+[36:43:45.524] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1768016875335}
+[36:43:57.551] Server  LOG      ✓ Compiled in 109ms
+[36:43:58.186] Browser ERROR   uncaughtError: Error: A <Select.Item /> must have a value prop that is not an empty string. This is because the Select value can be set to an empty string to clear the selection and show the placeholder.
+[36:44:10.823] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[36:44:10.843] Server  LOG      ✓ Compiled in 74ms
+[36:44:12.235] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[36:44:12.667] Browser ERROR   uncaughtError: Error: A <Select.Item /> must have a value prop that is not an empty string. This is because the Select value can be set to an empty string to clear the selection and show the placeholder.
+[36:44:18.292] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[36:44:18.305] Server  LOG      ✓ Compiled in 105ms
+[36:44:19.055] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[36:44:19.738] Browser ERROR   uncaughtError: Error: A <Select.Item /> must have a value prop that is not an empty string. This is because the Select value can be set to an empty string to clear the selection and show the placeholder.
+[36:45:01.511] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[36:45:01.521] Server  LOG      ✓ Compiled in 126ms
+[36:45:02.268] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[36:45:04.057] Browser WARN    Image with src "http://localhost:3000/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[36:45:04.058] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[36:45:04.059] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/students","route":"/students"}
+[36:45:04.059] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1768016953790}
+[36:45:04.787] Browser WARN    Image with src "/logo.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[36:45:22.282] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/bulkUpload color: rgb(120, 120, 120) color: inherit {"dp":"/bulkUpload","o":"http://localhost:3000/bulkUpload","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1768016971711}
+[36:46:42.345] Server  LOG      ✓ Compiled in 131ms
+[36:46:54.110] Server  LOG      ✓ Compiled in 95ms
+[36:46:56.075] Server  LOG      ✓ Compiled in 156ms
+[36:47:10.683] Server  LOG      ✓ Compiled in 195ms
+[36:47:20.186] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1768017089700}
+[36:47:30.211] Server  LOG      ✓ Compiled in 90ms
+[36:47:38.461] Server  LOG      ✓ Compiled in 58ms
+[36:47:59.746] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/bulkUpload color: rgb(120, 120, 120) color: inherit {"dp":"/bulkUpload","o":"http://localhost:3000/bulkUpload","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1768017129491}
+[36:48:06.289] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[36:48:06.581] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[36:48:06.581] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/bulkUpload","route":"/bulkUpload"}
+[36:48:06.581] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/bulkUpload color: rgb(120, 120, 120) color: inherit {"dp":"/bulkUpload","o":"http://localhost:3000/bulkUpload","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1768017136333}
+[36:48:06.581] Browser WARN    Image with src "http://localhost:3000/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.

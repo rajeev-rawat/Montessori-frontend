@@ -2030,14 +2030,72 @@ if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelper
 
 __turbopack_context__.s([
     "YearDropdown",
-    ()=>YearDropdown
+    ()=>YearDropdown,
+    "YearDropdownWithoutAll",
+    ()=>YearDropdownWithoutAll
 ]);
 var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/MONTESSORI/Montessori-frontend/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/MONTESSORI/Montessori-frontend/components/ui/select.tsx [app-client] (ecmascript)");
 "use client";
 ;
 ;
+const ALL_VALUE = "ALL";
 function YearDropdown({ value, onChange }) {
+    const currentYear = new Date().getFullYear();
+    const startYear = 1975;
+    const years = Array.from({
+        length: currentYear - startYear + 1
+    }, (_, i)=>(currentYear - i).toString());
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Select"], {
+        value: value || ALL_VALUE,
+        onValueChange: (val)=>onChange(val === ALL_VALUE ? "" : val),
+        children: [
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SelectTrigger"], {
+                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SelectValue"], {
+                    placeholder: "All Students"
+                }, void 0, false, {
+                    fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/components/dropdown/year-dropdown.tsx",
+                    lineNumber: 35,
+                    columnNumber: 9
+                }, this)
+            }, void 0, false, {
+                fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/components/dropdown/year-dropdown.tsx",
+                lineNumber: 34,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SelectContent"], {
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SelectItem"], {
+                        value: ALL_VALUE,
+                        children: "All Years"
+                    }, void 0, false, {
+                        fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/components/dropdown/year-dropdown.tsx",
+                        lineNumber: 38,
+                        columnNumber: 9
+                    }, this),
+                    years.map((year)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SelectItem"], {
+                            value: year,
+                            children: year
+                        }, year, false, {
+                            fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/components/dropdown/year-dropdown.tsx",
+                            lineNumber: 42,
+                            columnNumber: 11
+                        }, this))
+                ]
+            }, void 0, true, {
+                fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/components/dropdown/year-dropdown.tsx",
+                lineNumber: 37,
+                columnNumber: 7
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/components/dropdown/year-dropdown.tsx",
+        lineNumber: 28,
+        columnNumber: 5
+    }, this);
+}
+_c = YearDropdown;
+function YearDropdownWithoutAll({ value, onChange }) {
     const currentYear = new Date().getFullYear();
     const startYear = 1975;
     const years = Array.from({
@@ -2052,12 +2110,12 @@ function YearDropdown({ value, onChange }) {
                     placeholder: "Select Academic Year"
                 }, void 0, false, {
                     fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/components/dropdown/year-dropdown.tsx",
-                    lineNumber: 22,
+                    lineNumber: 64,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/components/dropdown/year-dropdown.tsx",
-                lineNumber: 21,
+                lineNumber: 63,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SelectContent"], {
@@ -2066,24 +2124,25 @@ function YearDropdown({ value, onChange }) {
                         children: year
                     }, year, false, {
                         fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/components/dropdown/year-dropdown.tsx",
-                        lineNumber: 26,
+                        lineNumber: 68,
                         columnNumber: 11
                     }, this))
             }, void 0, false, {
                 fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/components/dropdown/year-dropdown.tsx",
-                lineNumber: 24,
+                lineNumber: 66,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/components/dropdown/year-dropdown.tsx",
-        lineNumber: 20,
+        lineNumber: 62,
         columnNumber: 5
     }, this);
 }
-_c = YearDropdown;
-var _c;
+_c1 = YearDropdownWithoutAll;
+var _c, _c1;
 __turbopack_context__.k.register(_c, "YearDropdown");
+__turbopack_context__.k.register(_c1, "YearDropdownWithoutAll");
 if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
     __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
 }
