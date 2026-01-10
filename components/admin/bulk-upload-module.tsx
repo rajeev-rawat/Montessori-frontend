@@ -6,7 +6,7 @@ import { useToast } from "@/hooks/use-toast"
 import { useSchoolStore } from "@/store/school.store"
 import { useAuthStore } from "@/store/auth.store"
 import { SchoolSelect } from "@/components/dropdown/dropdown"
-import { YearDropdown } from "@/components/dropdown/year-dropdown"
+import { YearDropdown, YearDropdownWithoutAll } from "@/components/dropdown/year-dropdown"
 import Image from "next/image"
 
 import {
@@ -130,7 +130,7 @@ export function BulkUploadModule() {
       {/* DROPDOWNS */}
       <div className="flex bg-white flex-col sm:flex-row gap-4 max-w-xl">
         <SchoolSelect value={selectedSchool} onChange={setSelectedSchool} />
-        <YearDropdown value={selectedYear} onChange={setSelectedYear} />
+        <YearDropdownWithoutAll value={selectedYear} onChange={setSelectedYear} />
       </div>
 
       <div className="grid gap-6 lg:grid-cols-3">
