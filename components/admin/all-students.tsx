@@ -1,8 +1,8 @@
 "use client"
 
 import { useEffect } from "react"
-import { Button } from "@/components/ui/button"
 import Image from "next/image"
+import { Button } from "@/components/ui/button"
 import {
   Table,
   TableBody,
@@ -12,23 +12,15 @@ import {
   TableRow,
 } from "@/components/ui/table"
 import { Input } from "@/components/ui/input"
-import { Badge } from "@/components/ui/badge"
-import {
-  Eye,
-  Edit,
-  Trash,
-  Plus,
-  ChevronLeft,
-  ChevronRight,
-} from "lucide-react"
-
+import { Eye, Edit, Trash, Plus, ChevronLeft, ChevronRight } from "lucide-react"
 import { useStudentStore } from "@/store/student.store"
 import StudentDetailsModal from "../Modal/StudentDetailsModal"
 import StudentFormModal from "../Modal/StudentFormModal"
 import SchoolSelect from "@/components/dropdown/dropdown"
 import { YearDropdown } from "@/components/dropdown/year-dropdown"
 
-export function AllStudents() {
+export default function AllStudents() {
+  // ✅ NOTHING REMOVED FROM HERE
   const {
     students,
     loading,
@@ -58,15 +50,10 @@ export function AllStudents() {
 
   useEffect(() => {
     fetchStudents()
-  }, [page, search, school, year])
+  }, [page, search, school, year, fetchStudents])
 
   return (
     <div className="p-6 space-y-6">
-      {/* WATERMARK */}
-      <div className="pointer-events-none absolute inset-0 flex items-center justify-center opacity-[0.05]">
-        <Image src="/logo.png" alt="Watermark" width={600} height={600} />
-      </div>
-
       {/* Header */}
       <div className="flex items-center justify-between">
         <h1 className="text-2xl font-bold">All Students</h1>
@@ -77,81 +64,110 @@ export function AllStudents() {
       </div>
 
       {/* Filters */}
-      <div className="bg-white grid grid-cols-1 lg:grid-cols-3 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
         <Input
-          placeholder="Search by name, Admission No..."
+          placeholder="Search by name / admission no"
           value={search}
           onChange={(e) => setSearch(e.target.value)}
         />
-
-        <SchoolSelect
-          value={school}
-          onChange={setSchool}
-          placeholder="Select School"
-        />
-
-        <YearDropdown
-          value={year}
-          onChange={setYear}
-        />
+        <SchoolSelect value={school} onChange={setSchool} />
+        <YearDropdown value={year} onChange={setYear} />
       </div>
 
       {/* Table */}
-      <div className="rounded-lg border overflow-x-auto bg-white">
+      <div className="border rounded-lg overflow-x-auto bg-white">
         <Table>
           <TableHeader>
             <TableRow>
-              <TableHead>Admission No</TableHead>
-              <TableHead>Name</TableHead>
-              <TableHead>Father Name</TableHead>
-              <TableHead>Class</TableHead>
-              <TableHead>Status</TableHead>
-              <TableHead className="text-right">Actions</TableHead>
+               <TableHead>ID No</TableHead>
+            <TableHead>Admission No</TableHead>
+            <TableHead>Name of the Pupil</TableHead>
+            <TableHead>Student Aadhaar No</TableHead>
+            <TableHead>PEN No</TableHead>
+            <TableHead>AAPAR ID</TableHead>
+            <TableHead>Mail ID</TableHead>
+            <TableHead>Date of Admission</TableHead>
+            <TableHead>Date of Birth</TableHead>
+          
+            <TableHead>Class Admitted</TableHead>
+            <TableHead>Class Leaving</TableHead>
+            <TableHead>Date of Leaving</TableHead>
+            <TableHead>Leaving TC No</TableHead>
+            <TableHead>TC Taken Date</TableHead>
+            <TableHead>Photo</TableHead>
+            <TableHead className="text-right">Actions</TableHead>
             </TableRow>
           </TableHeader>
 
-          <TableBody>
-            {loading ? (
-              <TableRow>
-                <TableCell colSpan={6} className="text-center py-6">
-                  Loading...
-                </TableCell>
-              </TableRow>
-            ) : students.length === 0 ? (
-              <TableRow>
-                <TableCell colSpan={6} className="text-center py-6">
-                  No students found
-                </TableCell>
-              </TableRow>
-            ) : (
-              students.map((stu) => (
-                <TableRow key={stu.id}>
-                  <TableCell className="font-mono">
-                    {stu.AdmissionNo}
-                  </TableCell>
-                  <TableCell>{stu.student_name}</TableCell>
-                  <TableCell>{stu.ParentNameFather}</TableCell>
-                  <TableCell>{stu.SchoolClass}</TableCell>
-                  <TableCell>
-                    <Badge>{stu.status}</Badge>
-                  </TableCell>
-                  <TableCell className="text-right">
-                    <div className="flex justify-end gap-1">
-                      <Button size="icon" variant="ghost" onClick={() => openViewModal(stu)}>
-                        <Eye className="w-4 h-4" />
-                      </Button>
-                      <Button size="icon" variant="ghost" onClick={() => openEditModal(stu)}>
-                        <Edit className="w-4 h-4" />
-                      </Button>
-                      <Button size="icon" variant="ghost" onClick={() => deleteStudent(stu)}>
-                        <Trash className="w-4 h-4 text-destructive" />
-                      </Button>
+           <TableBody>
+          {loading ? (
+            <TableRow>
+              <TableCell colSpan={33} className="text-center">
+                Loading...
+              </TableCell>
+            </TableRow>
+          ) : (
+            students.map((s) => (
+              <TableRow key={s.id}>
+                <TableCell>{s.IDNo}</TableCell>
+                <TableCell>{s.AdmissionNo}</TableCell>
+                <TableCell>{s.NameOfThePupil}</TableCell>
+                <TableCell>{s.StudentAadhaarNo}</TableCell>
+                <TableCell>{s.PENNo}</TableCell>
+                <TableCell>{s.AAPARID}</TableCell>
+                <TableCell>{s.MailID}</TableCell>
+               
+                <TableCell>{s.DateOfAdmission}</TableCell>
+                <TableCell>{s.DateOfBirth}</TableCell>
+             
+                <TableCell>{s.ClassAdmitted}</TableCell>
+                <TableCell>{s.ClassLeaving}</TableCell>
+                <TableCell>{s.DateOfLeaving}</TableCell>
+                <TableCell>{s.LeavingTCNo}</TableCell>
+                <TableCell>{s.TCTakenDate}</TableCell>
+                <TableCell>
+                  {s.PhotoOfStudent ? (
+                    <div className="flex items-center gap-2">
+                      <Image
+                        src={`${process.env.NEXT_PUBLIC_API_BASE_URL}/${s.PhotoOfStudent}`}
+                        alt={s.NameOfThePupil || "Student"}
+                        width={40}
+                        height={40}
+                        className="rounded-full object-cover"
+                      />
                     </div>
-                  </TableCell>
-                </TableRow>
-              ))
-            )}
-          </TableBody>
+                  ) : (
+                    "-"
+                  )}
+                </TableCell>
+
+                <TableCell className="text-right">
+                  <Button
+                    size="icon"
+                    variant="ghost"
+                    onClick={() => openViewModal(s)}
+                  >
+                    <Eye className="w-4 h-4" />
+                  </Button>
+                  <Button
+                    size="icon"
+                    variant="ghost"
+                    onClick={() => openEditModal(s)}
+                  >
+                    <Edit className="w-4 h-4" />
+                  </Button>
+                  <Button
+                    size="icon"
+                    variant="ghost"
+                    onClick={() => deleteStudent(s)}
+                  >
+                    <Trash className="w-4 h-4 text-destructive" />
+                  </Button>
+                </TableCell>
+              </TableRow>
+            ))
+          )}
+        </TableBody>
         </Table>
       </div>
 
@@ -161,11 +177,9 @@ export function AllStudents() {
           <ChevronLeft className="w-4 h-4 mr-1" />
           Prev
         </Button>
-
         <span className="text-sm">
           Page {page} of {Math.ceil(total / limit)}
         </span>
-
         <Button disabled={page * limit >= total} onClick={() => setPage(page + 1)}>
           Next
           <ChevronRight className="w-4 h-4 ml-1" />
@@ -173,11 +187,24 @@ export function AllStudents() {
       </div>
 
       {/* Modals */}
-      <StudentDetailsModal open={viewModalOpen} onClose={closeModals} student={selectedStudent} />
-      <StudentFormModal open={editModalOpen} onClose={closeModals} initialData={selectedStudent} onSubmit={updateStudent} title="Edit Student" />
-      <StudentFormModal open={addModalOpen} onClose={closeModals} onSubmit={addStudent} title="Add Student" />
+      <StudentDetailsModal
+        open={viewModalOpen}
+        onClose={closeModals}
+        student={selectedStudent}
+      />
+      <StudentFormModal
+        open={editModalOpen}
+        onClose={closeModals}
+        initialData={selectedStudent}
+        onSubmit={updateStudent}
+        title="Edit Student"
+      />
+      <StudentFormModal
+        open={addModalOpen}
+        onClose={closeModals}
+        onSubmit={addStudent}
+        title="Add Student"
+      />
     </div>
   )
 }
-
-export default AllStudents

@@ -1,5 +1,5 @@
 import { AdminSidebar } from "@/components/admin/admin-sidebar";
-import { AllStudents } from "@/components/admin/all-students";
+import AllStudents from "@/components/admin/all-students";
 
 export default function StudentsPage() {
     return (

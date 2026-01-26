@@ -50,28 +50,28 @@ export function DashboardOverview() {
   const stats = [
     {
       label: "Total Students",
-      value: counts ? counts.total_students.toLocaleString() : "0",
+      value: counts ? counts.total_students?.toLocaleString() : "0",
       icon: Users,
       trend: "+2.5%",
       color: "bg-primary",
     },
     {
       label: "Uploads This Month",
-      value: counts ? counts.uploads_this_month.toLocaleString() : "0",
+      value: counts ? counts.uploads_this_month?.toLocaleString() : "0",
       icon: Upload,
       trend: "+12%",
       color: "bg-accent",
     },
     {
       label: "Records Verified",
-      value: counts ? counts.records_verified.toLocaleString() : "0",
+      value: counts ? counts.records_verified?.toLocaleString() : "0",
       icon: FileCheck,
       trend: "+1.2%",
       color: "bg-success",
     },
     {
       label: "Pending Reviews",
-      value: counts ? counts.pending_reviews.toLocaleString() : "0",
+      value: counts ? counts.pending_reviews?.toLocaleString() : "0",
       icon: AlertCircle,
       trend: "-5%",
       color: "bg-warning",

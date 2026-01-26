@@ -1091,28 +1091,28 @@ function DashboardOverview() {
     const stats = [
         {
             label: "Total Students",
-            value: counts ? counts.total_students.toLocaleString() : "0",
+            value: counts ? counts.total_students?.toLocaleString() : "0",
             icon: __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$users$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Users$3e$__["Users"],
             trend: "+2.5%",
             color: "bg-primary"
         },
         {
             label: "Uploads This Month",
-            value: counts ? counts.uploads_this_month.toLocaleString() : "0",
+            value: counts ? counts.uploads_this_month?.toLocaleString() : "0",
             icon: __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$upload$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Upload$3e$__["Upload"],
             trend: "+12%",
             color: "bg-accent"
         },
         {
             label: "Records Verified",
-            value: counts ? counts.records_verified.toLocaleString() : "0",
+            value: counts ? counts.records_verified?.toLocaleString() : "0",
             icon: __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$file$2d$check$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__FileCheck$3e$__["FileCheck"],
             trend: "+1.2%",
             color: "bg-success"
         },
         {
             label: "Pending Reviews",
-            value: counts ? counts.pending_reviews.toLocaleString() : "0",
+            value: counts ? counts.pending_reviews?.toLocaleString() : "0",
             icon: __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$circle$2d$alert$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__AlertCircle$3e$__["AlertCircle"],
             trend: "-5%",
             color: "bg-warning"
