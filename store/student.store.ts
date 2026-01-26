@@ -40,10 +40,8 @@ interface StudentStore {
   openAddModal: () => void
   closeModals: () => void
 
-  // 🔥 FormData payload
   addStudent: (data: FormData) => Promise<void>
   updateStudent: (data: FormData) => Promise<void>
-
   deleteStudent: (s: Student) => Promise<void>
 }
 
@@ -74,26 +72,50 @@ export const useStudentStore = create<StudentStore>((set, get) => ({
       set({
         students: res.data,
         total: res.pagination.total,
-        loading: false,
       })
     } catch (e: any) {
-      set({ loading: false })
       toast({
         title: "Error",
         description: e.message,
         variant: "destructive",
       })
+    } finally {
+      set({ loading: false })
     }
   },
 
-  setPage: (page) => set({ page }),
-  setSearch: (search) => set({ search, page: 1 }),
-  setSchool: (school) => set({ school, page: 1 }),
-  setYear: (year) => set({ year, page: 1 }),
+  setPage: (page) => {
+    if (page !== get().page) set({ page })
+  },
 
-  openViewModal: (s) => set({ viewModalOpen: true, selectedStudent: s }),
-  openEditModal: (s) => set({ editModalOpen: true, selectedStudent: s }),
-  openAddModal: () => set({ addModalOpen: true, selectedStudent: null }),
+  // ✅ reset page ONLY if value actually changed
+  setSearch: (search) => {
+    if (search !== get().search) {
+      set({ search, page: 1 })
+    }
+  },
+
+  setSchool: (school) => {
+    if (school !== get().school) {
+      set({ school, page: 1 })
+    }
+  },
+
+  setYear: (year) => {
+    if (year !== get().year) {
+      set({ year, page: 1 })
+    }
+  },
+
+  openViewModal: (s) =>
+    set({ viewModalOpen: true, selectedStudent: s }),
+
+  openEditModal: (s) =>
+    set({ editModalOpen: true, selectedStudent: s }),
+
+  openAddModal: () =>
+    set({ addModalOpen: true, selectedStudent: null }),
+
   closeModals: () =>
     set({
       viewModalOpen: false,
@@ -102,63 +124,37 @@ export const useStudentStore = create<StudentStore>((set, get) => ({
       selectedStudent: null,
     }),
 
-  // ✅ ADD (FormData)
   addStudent: async (formData) => {
     const token = localStorage.getItem("auth_token")
     if (!token) return
 
-    try {
-      await addStudentApi(formData, token)
-      toast({ title: "Student added successfully" })
-      get().fetchStudents()
-      get().closeModals()
-    } catch (e: any) {
-      toast({
-        title: "Add failed",
-        description: e.message,
-        variant: "destructive",
-      })
-    }
+    await addStudentApi(formData, token)
+    toast({ title: "Student added successfully" })
+    get().fetchStudents()
+    get().closeModals()
   },
 
-  // ✅ UPDATE (FormData)
   updateStudent: async (formData) => {
     const token = localStorage.getItem("auth_token")
     if (!token) return
 
-    try {
-      await updateStudentApi(formData, token)
-      toast({ title: "Student updated successfully" })
-      get().fetchStudents()
-      get().closeModals()
-    } catch (e: any) {
-      toast({
-        title: "Update failed",
-        description: e.message,
-        variant: "destructive",
-      })
-    }
+    await updateStudentApi(formData, token)
+    toast({ title: "Student updated successfully" })
+    get().fetchStudents()
+    get().closeModals()
   },
 
   deleteStudent: async (student) => {
     const token = localStorage.getItem("auth_token")
     if (!token) return
 
-    try {
-      if (student.status === "duplicate") {
-        await deleteDuplicateApi(student.AdmissionNo, token)
-        toast({ title: "Duplicate student deleted" })
-      } else {
-        await deleteStudentApi(student.AdmissionNo, token)
-        toast({ title: "Student deleted successfully" })
-      }
-      get().fetchStudents()
-    } catch (e: any) {
-      toast({
-        title: "Delete failed",
-        description: e.message,
-        variant: "destructive",
-      })
+    if (student.status === "duplicate") {
+      await deleteDuplicateApi(student.AdmissionNo, token)
+    } else {
+      await deleteStudentApi(student.AdmissionNo, token)
     }
+
+    toast({ title: "Student deleted successfully" })
+    get().fetchStudents()
   },
 }))

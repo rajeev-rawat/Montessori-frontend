@@ -574,3 +574,2766 @@ Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
 [02:17:16.655] Server  LOG      ✓ Compiled in 465ms
 [02:17:32.455] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
 [02:17:32.458] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[02:26:15.352] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[02:26:15.939] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[02:26:15.939] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/students","route":"/students"}
+[02:26:15.939] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1769433087209}
+[02:39:19.357] Server  LOG      ✓ Compiled in 409ms
+[02:39:26.911] Server  LOG      ✓ Compiled in 123ms
+[02:39:29.594] Server  LOG      ✓ Compiled in 126ms
+[02:39:35.652] Server  LOG      ✓ Compiled in 101ms
+[02:42:11.042] Server  ERROR    ⨯ ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts:2:1
+Module not found: Can't resolve 'axios'
+  1 | import { create } from "zustand"
+> 2 | import axios from "axios"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | type Student = {
+  5 |   id: number
+
+
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/admin-dashboard.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/admin-dashboard.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[02:42:11.078] Server  ERROR    ⨯ ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts:2:1
+Module not found: Can't resolve 'axios'
+  1 | import { create } from "zustand"
+> 2 | import axios from "axios"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | type Student = {
+  5 |   id: number
+
+
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/admin-dashboard.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/admin-dashboard.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[02:42:11.093] Server  ERROR    ⨯ ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts:2:1
+Module not found: Can't resolve 'axios'
+  1 | import { create } from "zustand"
+> 2 | import axios from "axios"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | type Student = {
+  5 |   id: number
+
+
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/admin-dashboard.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/admin-dashboard.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[02:42:11.096] Server  ERROR    ⨯ ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts:2:1
+Module not found: Can't resolve 'axios'
+  1 | import { create } from "zustand"
+> 2 | import axios from "axios"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | type Student = {
+  5 |   id: number
+
+
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/admin-dashboard.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/admin-dashboard.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[02:42:11.122] Server  ERROR    ⨯ ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts:2:1
+Module not found: Can't resolve 'axios'
+  1 | import { create } from "zustand"
+> 2 | import axios from "axios"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | type Student = {
+  5 |   id: number
+
+
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/admin-dashboard.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/admin-dashboard.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[02:42:11.122] Server  ERROR    ⨯ ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts:2:1
+Module not found: Can't resolve 'axios'
+  1 | import { create } from "zustand"
+> 2 | import axios from "axios"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | type Student = {
+  5 |   id: number
+
+
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/admin-dashboard.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/admin-dashboard.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[02:42:11.130] Server  ERROR    ⨯ ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts:2:1
+Module not found: Can't resolve 'axios'
+  1 | import { create } from "zustand"
+> 2 | import axios from "axios"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | type Student = {
+  5 |   id: number
+
+
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/admin-dashboard.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/admin-dashboard.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[02:42:11.140] Server  ERROR    ⨯ ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts:2:1
+Module not found: Can't resolve 'axios'
+  1 | import { create } from "zustand"
+> 2 | import axios from "axios"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | type Student = {
+  5 |   id: number
+
+
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/admin-dashboard.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/admin-dashboard.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[02:42:11.159] Server  ERROR    ⨯ ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts:2:1
+Module not found: Can't resolve 'axios'
+  1 | import { create } from "zustand"
+> 2 | import axios from "axios"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | type Student = {
+  5 |   id: number
+
+
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/admin-dashboard.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/admin-dashboard.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[02:42:11.169] Server  ERROR    ⨯ ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts:2:1
+Module not found: Can't resolve 'axios'
+  1 | import { create } from "zustand"
+> 2 | import axios from "axios"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | type Student = {
+  5 |   id: number
+
+
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/admin-dashboard.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/admin-dashboard.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[02:42:11.187] Server  ERROR    ⨯ ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts:2:1
+Module not found: Can't resolve 'axios'
+  1 | import { create } from "zustand"
+> 2 | import axios from "axios"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | type Student = {
+  5 |   id: number
+
+
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/admin-dashboard.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/admin-dashboard.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[02:42:11.189] Server  ERROR    ⨯ ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts:2:1
+Module not found: Can't resolve 'axios'
+  1 | import { create } from "zustand"
+> 2 | import axios from "axios"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | type Student = {
+  5 |   id: number
+
+
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/admin-dashboard.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/admin-dashboard.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[02:42:11.205] Server  ERROR    ⨯ ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts:2:1
+Module not found: Can't resolve 'axios'
+  1 | import { create } from "zustand"
+> 2 | import axios from "axios"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | type Student = {
+  5 |   id: number
+
+
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/admin-dashboard.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/admin-dashboard.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[02:42:11.225] Server  ERROR    ⨯ ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts:2:1
+Module not found: Can't resolve 'axios'
+  1 | import { create } from "zustand"
+> 2 | import axios from "axios"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | type Student = {
+  5 |   id: number
+
+
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/admin-dashboard.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/admin-dashboard.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[02:42:11.227] Server  ERROR    ⨯ ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts:2:1
+Module not found: Can't resolve 'axios'
+  1 | import { create } from "zustand"
+> 2 | import axios from "axios"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | type Student = {
+  5 |   id: number
+
+
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/admin-dashboard.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/admin-dashboard.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[02:42:11.234] Server  ERROR    ⨯ ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts:2:1
+Module not found: Can't resolve 'axios'
+  1 | import { create } from "zustand"
+> 2 | import axios from "axios"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | type Student = {
+  5 |   id: number
+
+
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/admin-dashboard.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/admin-dashboard.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[02:42:11.243] Server  ERROR    ⨯ ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts:2:1
+Module not found: Can't resolve 'axios'
+  1 | import { create } from "zustand"
+> 2 | import axios from "axios"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | type Student = {
+  5 |   id: number
+
+
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Server Component]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/students/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Server Component]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/students/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[02:42:11.254] Server  ERROR    ⨯ ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts:2:1
+Module not found: Can't resolve 'axios'
+  1 | import { create } from "zustand"
+> 2 | import axios from "axios"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | type Student = {
+  5 |   id: number
+
+
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Server Component]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/students/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Server Component]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/students/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[02:42:11.267] Server  ERROR    ⨯ ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts:2:1
+Module not found: Can't resolve 'axios'
+  1 | import { create } from "zustand"
+> 2 | import axios from "axios"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | type Student = {
+  5 |   id: number
+
+
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Server Component]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/students/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Server Component]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/students/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[02:42:11.272] Server  ERROR    ⨯ ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts:2:1
+Module not found: Can't resolve 'axios'
+  1 | import { create } from "zustand"
+> 2 | import axios from "axios"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | type Student = {
+  5 |   id: number
+
+
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Server Component]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/students/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Server Component]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/students/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[02:42:11.280] Server  ERROR    ⨯ ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts:2:1
+Module not found: Can't resolve 'axios'
+  1 | import { create } from "zustand"
+> 2 | import axios from "axios"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | type Student = {
+  5 |   id: number
+
+
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Server Component]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/students/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Server Component]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/students/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[02:42:11.281] Server  ERROR    ⨯ ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts:2:1
+Module not found: Can't resolve 'axios'
+  1 | import { create } from "zustand"
+> 2 | import axios from "axios"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | type Student = {
+  5 |   id: number
+
+
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Server Component]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/students/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Server Component]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/students/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[02:42:11.285] Server  ERROR    ⨯ ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts:2:1
+Module not found: Can't resolve 'axios'
+  1 | import { create } from "zustand"
+> 2 | import axios from "axios"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | type Student = {
+  5 |   id: number
+
+
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Server Component]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/students/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Server Component]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/students/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[02:42:11.290] Server  ERROR    ⨯ ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts:2:1
+Module not found: Can't resolve 'axios'
+  1 | import { create } from "zustand"
+> 2 | import axios from "axios"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | type Student = {
+  5 |   id: number
+
+
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Server Component]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/students/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Server Component]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/students/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[02:42:11.306] Server  ERROR    ⨯ ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts:2:1
+Module not found: Can't resolve 'axios'
+  1 | import { create } from "zustand"
+> 2 | import axios from "axios"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | type Student = {
+  5 |   id: number
+
+
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/admin-dashboard.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/admin-dashboard.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[02:42:11.309] Server  ERROR    ⨯ ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts:2:1
+Module not found: Can't resolve 'axios'
+  1 | import { create } from "zustand"
+> 2 | import axios from "axios"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | type Student = {
+  5 |   id: number
+
+
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/admin-dashboard.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/admin-dashboard.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[02:42:11.314] Server  ERROR    ⨯ ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts:2:1
+Module not found: Can't resolve 'axios'
+  1 | import { create } from "zustand"
+> 2 | import axios from "axios"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | type Student = {
+  5 |   id: number
+
+
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/admin-dashboard.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/admin-dashboard.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[02:42:11.315] Server  ERROR    ⨯ ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts:2:1
+Module not found: Can't resolve 'axios'
+  1 | import { create } from "zustand"
+> 2 | import axios from "axios"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | type Student = {
+  5 |   id: number
+
+
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/admin-dashboard.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/admin-dashboard.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[02:42:11.317] Server  ERROR    ⨯ ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts:2:1
+Module not found: Can't resolve 'axios'
+  1 | import { create } from "zustand"
+> 2 | import axios from "axios"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | type Student = {
+  5 |   id: number
+
+
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/admin-dashboard.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/admin-dashboard.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[02:42:11.329] Server  ERROR    ⨯ ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts:2:1
+Module not found: Can't resolve 'axios'
+  1 | import { create } from "zustand"
+> 2 | import axios from "axios"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | type Student = {
+  5 |   id: number
+
+
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/admin-dashboard.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/admin-dashboard.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[02:42:11.330] Server  ERROR    ⨯ ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts:2:1
+Module not found: Can't resolve 'axios'
+  1 | import { create } from "zustand"
+> 2 | import axios from "axios"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | type Student = {
+  5 |   id: number
+
+
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/admin-dashboard.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/admin-dashboard.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[02:42:11.331] Server  ERROR    ⨯ ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts:2:1
+Module not found: Can't resolve 'axios'
+  1 | import { create } from "zustand"
+> 2 | import axios from "axios"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | type Student = {
+  5 |   id: number
+
+
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/admin-dashboard.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/admin-dashboard.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[02:42:11.344] Server  ERROR    ⨯ ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts:2:1
+Module not found: Can't resolve 'axios'
+  1 | import { create } from "zustand"
+> 2 | import axios from "axios"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | type Student = {
+  5 |   id: number
+
+
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/admin-dashboard.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/admin-dashboard.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[02:42:11.351] Server  ERROR    ⨯ ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts:2:1
+Module not found: Can't resolve 'axios'
+  1 | import { create } from "zustand"
+> 2 | import axios from "axios"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | type Student = {
+  5 |   id: number
+
+
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/admin-dashboard.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/admin-dashboard.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[02:42:11.353] Server  ERROR    ⨯ ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts:2:1
+Module not found: Can't resolve 'axios'
+  1 | import { create } from "zustand"
+> 2 | import axios from "axios"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | type Student = {
+  5 |   id: number
+
+
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/admin-dashboard.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/admin-dashboard.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[02:42:11.357] Server  ERROR    ⨯ ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts:2:1
+Module not found: Can't resolve 'axios'
+  1 | import { create } from "zustand"
+> 2 | import axios from "axios"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | type Student = {
+  5 |   id: number
+
+
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/admin-dashboard.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/admin-dashboard.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[02:42:11.358] Server  ERROR    ⨯ ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts:2:1
+Module not found: Can't resolve 'axios'
+  1 | import { create } from "zustand"
+> 2 | import axios from "axios"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | type Student = {
+  5 |   id: number
+
+
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/admin-dashboard.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/admin-dashboard.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[02:42:11.359] Server  ERROR    ⨯ ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts:2:1
+Module not found: Can't resolve 'axios'
+  1 | import { create } from "zustand"
+> 2 | import axios from "axios"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | type Student = {
+  5 |   id: number
+
+
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/admin-dashboard.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/admin-dashboard.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[02:42:11.362] Server  ERROR    ⨯ ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts:2:1
+Module not found: Can't resolve 'axios'
+  1 | import { create } from "zustand"
+> 2 | import axios from "axios"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | type Student = {
+  5 |   id: number
+
+
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/admin-dashboard.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/admin-dashboard.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[02:42:11.364] Server  ERROR    ⨯ ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts:2:1
+Module not found: Can't resolve 'axios'
+  1 | import { create } from "zustand"
+> 2 | import axios from "axios"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | type Student = {
+  5 |   id: number
+
+
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/admin-dashboard.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/admin-dashboard.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[02:42:11.367] Server  ERROR    ⨯ ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts:2:1
+Module not found: Can't resolve 'axios'
+  1 | import { create } from "zustand"
+> 2 | import axios from "axios"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | type Student = {
+  5 |   id: number
+
+
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Server Component]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/students/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Server Component]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/students/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[02:42:11.377] Server  ERROR    ⨯ ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts:2:1
+Module not found: Can't resolve 'axios'
+  1 | import { create } from "zustand"
+> 2 | import axios from "axios"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | type Student = {
+  5 |   id: number
+
+
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Server Component]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/students/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Server Component]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/students/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[02:42:11.378] Server  ERROR    ⨯ ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts:2:1
+Module not found: Can't resolve 'axios'
+  1 | import { create } from "zustand"
+> 2 | import axios from "axios"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | type Student = {
+  5 |   id: number
+
+
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Server Component]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/students/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Server Component]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/students/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[02:42:11.379] Server  ERROR    ⨯ ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts:2:1
+Module not found: Can't resolve 'axios'
+  1 | import { create } from "zustand"
+> 2 | import axios from "axios"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | type Student = {
+  5 |   id: number
+
+
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Server Component]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/students/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Server Component]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/students/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[02:42:11.383] Server  ERROR    ⨯ ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts:2:1
+Module not found: Can't resolve 'axios'
+  1 | import { create } from "zustand"
+> 2 | import axios from "axios"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | type Student = {
+  5 |   id: number
+
+
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Server Component]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/students/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Server Component]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/students/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[02:42:11.385] Server  ERROR    ⨯ ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts:2:1
+Module not found: Can't resolve 'axios'
+  1 | import { create } from "zustand"
+> 2 | import axios from "axios"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | type Student = {
+  5 |   id: number
+
+
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Server Component]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/students/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Server Component]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/students/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[02:42:11.388] Server  ERROR    ⨯ ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts:2:1
+Module not found: Can't resolve 'axios'
+  1 | import { create } from "zustand"
+> 2 | import axios from "axios"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | type Student = {
+  5 |   id: number
+
+
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Server Component]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/students/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Server Component]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/students/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[02:42:11.400] Server  ERROR    ⨯ ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts:2:1
+Module not found: Can't resolve 'axios'
+  1 | import { create } from "zustand"
+> 2 | import axios from "axios"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | type Student = {
+  5 |   id: number
+
+
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Server Component]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/students/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Server Component]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/students/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[02:42:11.405] Server  ERROR    ⨯ ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts:2:1
+Module not found: Can't resolve 'axios'
+  1 | import { create } from "zustand"
+> 2 | import axios from "axios"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | type Student = {
+  5 |   id: number
+
+
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/admin-dashboard.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/admin-dashboard.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[02:42:11.406] Server  ERROR    ⨯ ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts:2:1
+Module not found: Can't resolve 'axios'
+  1 | import { create } from "zustand"
+> 2 | import axios from "axios"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | type Student = {
+  5 |   id: number
+
+
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/admin-dashboard.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/admin-dashboard.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[02:42:11.409] Server  ERROR    ⨯ ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts:2:1
+Module not found: Can't resolve 'axios'
+  1 | import { create } from "zustand"
+> 2 | import axios from "axios"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | type Student = {
+  5 |   id: number
+
+
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/admin-dashboard.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/admin-dashboard.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[02:42:11.410] Server  ERROR    ⨯ ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts:2:1
+Module not found: Can't resolve 'axios'
+  1 | import { create } from "zustand"
+> 2 | import axios from "axios"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | type Student = {
+  5 |   id: number
+
+
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/admin-dashboard.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/admin-dashboard.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[02:42:11.413] Server  ERROR    ⨯ ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts:2:1
+Module not found: Can't resolve 'axios'
+  1 | import { create } from "zustand"
+> 2 | import axios from "axios"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | type Student = {
+  5 |   id: number
+
+
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/admin-dashboard.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/admin-dashboard.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[02:42:11.418] Server  ERROR    ⨯ ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts:2:1
+Module not found: Can't resolve 'axios'
+  1 | import { create } from "zustand"
+> 2 | import axios from "axios"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | type Student = {
+  5 |   id: number
+
+
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/admin-dashboard.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/admin-dashboard.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[02:42:11.419] Server  ERROR    ⨯ ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts:2:1
+Module not found: Can't resolve 'axios'
+  1 | import { create } from "zustand"
+> 2 | import axios from "axios"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | type Student = {
+  5 |   id: number
+
+
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/admin-dashboard.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/admin-dashboard.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[02:42:11.420] Server  ERROR    ⨯ ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts:2:1
+Module not found: Can't resolve 'axios'
+  1 | import { create } from "zustand"
+> 2 | import axios from "axios"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | type Student = {
+  5 |   id: number
+
+
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/admin-dashboard.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/admin-dashboard.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[02:42:11.425] Server  ERROR    ⨯ ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts:2:1
+Module not found: Can't resolve 'axios'
+  1 | import { create } from "zustand"
+> 2 | import axios from "axios"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | type Student = {
+  5 |   id: number
+
+
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/admin-dashboard.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/admin-dashboard.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[02:42:11.426] Server  ERROR    ⨯ ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts:2:1
+Module not found: Can't resolve 'axios'
+  1 | import { create } from "zustand"
+> 2 | import axios from "axios"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | type Student = {
+  5 |   id: number
+
+
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/admin-dashboard.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/admin-dashboard.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[02:42:11.426] Server  ERROR    ⨯ ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts:2:1
+Module not found: Can't resolve 'axios'
+  1 | import { create } from "zustand"
+> 2 | import axios from "axios"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | type Student = {
+  5 |   id: number
+
+
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/admin-dashboard.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/admin-dashboard.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[02:42:11.434] Server  ERROR    ⨯ ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts:2:1
+Module not found: Can't resolve 'axios'
+  1 | import { create } from "zustand"
+> 2 | import axios from "axios"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | type Student = {
+  5 |   id: number
+
+
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/admin-dashboard.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/admin-dashboard.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[02:42:11.436] Server  ERROR    ⨯ ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts:2:1
+Module not found: Can't resolve 'axios'
+  1 | import { create } from "zustand"
+> 2 | import axios from "axios"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | type Student = {
+  5 |   id: number
+
+
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/admin-dashboard.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/admin-dashboard.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[02:42:11.436] Server  ERROR    ⨯ ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts:2:1
+Module not found: Can't resolve 'axios'
+  1 | import { create } from "zustand"
+> 2 | import axios from "axios"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | type Student = {
+  5 |   id: number
+
+
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/admin-dashboard.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/admin-dashboard.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[02:42:11.437] Server  ERROR    ⨯ ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts:2:1
+Module not found: Can't resolve 'axios'
+  1 | import { create } from "zustand"
+> 2 | import axios from "axios"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | type Student = {
+  5 |   id: number
+
+
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/admin-dashboard.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/admin-dashboard.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[02:42:11.438] Server  ERROR    ⨯ ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts:2:1
+Module not found: Can't resolve 'axios'
+  1 | import { create } from "zustand"
+> 2 | import axios from "axios"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | type Student = {
+  5 |   id: number
+
+
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/admin-dashboard.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/admin-dashboard.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[02:42:11.440] Server  ERROR    ⨯ ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts:2:1
+Module not found: Can't resolve 'axios'
+  1 | import { create } from "zustand"
+> 2 | import axios from "axios"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | type Student = {
+  5 |   id: number
+
+
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Server Component]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/students/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Server Component]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/students/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[02:42:11.442] Server  ERROR    ⨯ ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts:2:1
+Module not found: Can't resolve 'axios'
+  1 | import { create } from "zustand"
+> 2 | import axios from "axios"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | type Student = {
+  5 |   id: number
+
+
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Server Component]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/students/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Server Component]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/students/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[02:42:11.442] Server  ERROR    ⨯ ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts:2:1
+Module not found: Can't resolve 'axios'
+  1 | import { create } from "zustand"
+> 2 | import axios from "axios"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | type Student = {
+  5 |   id: number
+
+
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Server Component]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/students/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Server Component]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/students/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[02:42:11.443] Server  ERROR    ⨯ ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts:2:1
+Module not found: Can't resolve 'axios'
+  1 | import { create } from "zustand"
+> 2 | import axios from "axios"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | type Student = {
+  5 |   id: number
+
+
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Server Component]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/students/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Server Component]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/students/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[02:42:11.445] Server  ERROR    ⨯ ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts:2:1
+Module not found: Can't resolve 'axios'
+  1 | import { create } from "zustand"
+> 2 | import axios from "axios"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | type Student = {
+  5 |   id: number
+
+
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Server Component]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/students/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Server Component]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/students/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[02:42:11.446] Server  ERROR    ⨯ ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts:2:1
+Module not found: Can't resolve 'axios'
+  1 | import { create } from "zustand"
+> 2 | import axios from "axios"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | type Student = {
+  5 |   id: number
+
+
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Server Component]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/students/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Server Component]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/students/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[02:42:11.446] Server  ERROR    ⨯ ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts:2:1
+Module not found: Can't resolve 'axios'
+  1 | import { create } from "zustand"
+> 2 | import axios from "axios"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | type Student = {
+  5 |   id: number
+
+
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Server Component]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/students/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Server Component]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/students/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[02:42:11.451] Server  ERROR    ⨯ ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts:2:1
+Module not found: Can't resolve 'axios'
+  1 | import { create } from "zustand"
+> 2 | import axios from "axios"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | type Student = {
+  5 |   id: number
+
+
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Server Component]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/students/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Server Component]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/students/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[02:42:11.452] Server  ERROR    ⨯ ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts:2:1
+Module not found: Can't resolve 'axios'
+  1 | import { create } from "zustand"
+> 2 | import axios from "axios"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | type Student = {
+  5 |   id: number
+
+
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/admin-dashboard.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/admin-dashboard.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[02:42:11.453] Server  ERROR    ⨯ ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts:2:1
+Module not found: Can't resolve 'axios'
+  1 | import { create } from "zustand"
+> 2 | import axios from "axios"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | type Student = {
+  5 |   id: number
+
+
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/admin-dashboard.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/admin-dashboard.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[02:42:11.453] Server  ERROR    ⨯ ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts:2:1
+Module not found: Can't resolve 'axios'
+  1 | import { create } from "zustand"
+> 2 | import axios from "axios"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | type Student = {
+  5 |   id: number
+
+
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/admin-dashboard.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/admin-dashboard.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[02:42:11.454] Server  ERROR    ⨯ ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts:2:1
+Module not found: Can't resolve 'axios'
+  1 | import { create } from "zustand"
+> 2 | import axios from "axios"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | type Student = {
+  5 |   id: number
+
+
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/admin-dashboard.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/admin-dashboard.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[02:42:11.456] Server  ERROR    ⨯ ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts:2:1
+Module not found: Can't resolve 'axios'
+  1 | import { create } from "zustand"
+> 2 | import axios from "axios"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | type Student = {
+  5 |   id: number
+
+
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Server Component]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/students/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Server Component]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/students/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[02:42:11.459] Server  ERROR    ⨯ ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts:2:1
+Module not found: Can't resolve 'axios'
+  1 | import { create } from "zustand"
+> 2 | import axios from "axios"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | type Student = {
+  5 |   id: number
+
+
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Server Component]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/students/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Server Component]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/students/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[02:42:11.460] Server  ERROR    ⨯ ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts:2:1
+Module not found: Can't resolve 'axios'
+  1 | import { create } from "zustand"
+> 2 | import axios from "axios"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | type Student = {
+  5 |   id: number
+
+
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Server Component]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/students/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Server Component]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/students/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[02:42:11.461] Server  ERROR    ⨯ ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts:2:1
+Module not found: Can't resolve 'axios'
+  1 | import { create } from "zustand"
+> 2 | import axios from "axios"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | type Student = {
+  5 |   id: number
+
+
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Server Component]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/students/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Server Component]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/students/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[02:42:11.499] Browser ERROR   ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts:2:1
+Module not found: Can't resolve 'axios'
+  1 | import { create } from "zustand"
+> 2 | import axios from "axios"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | type Student = {
+  5 |   id: number
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/admin-dashboard.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/admin-dashboard.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[02:42:11.499] Browser ERROR   ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts:2:1
+Module not found: Can't resolve 'axios'
+  1 | import { create } from "zustand"
+> 2 | import axios from "axios"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | type Student = {
+  5 |   id: number
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/admin-dashboard.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/admin-dashboard.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[02:42:11.500] Browser ERROR   ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts:2:1
+Module not found: Can't resolve 'axios'
+  1 | import { create } from "zustand"
+> 2 | import axios from "axios"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | type Student = {
+  5 |   id: number
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/admin-dashboard.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/admin-dashboard.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[02:42:35.944] Server  LOG      ✓ Compiled in 14ms
+[02:42:36.512] Browser ERROR   ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts:2:1
+Module not found: Can't resolve 'axios'
+  1 | import { create } from "zustand"
+> 2 | import axios from "axios"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | type Student = {
+  5 |   id: number
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/admin-dashboard.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/admin-dashboard.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[02:42:36.512] Browser ERROR   ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts:2:1
+Module not found: Can't resolve 'axios'
+  1 | import { create } from "zustand"
+> 2 | import axios from "axios"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | type Student = {
+  5 |   id: number
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/admin-dashboard.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/admin-dashboard.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[02:42:36.512] Browser ERROR   ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts:2:1
+Module not found: Can't resolve 'axios'
+  1 | import { create } from "zustand"
+> 2 | import axios from "axios"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | type Student = {
+  5 |   id: number
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/admin-dashboard.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/admin-dashboard.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[02:42:36.513] Browser ERROR   ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts:2:1
+Module not found: Can't resolve 'axios'
+  1 | import { create } from "zustand"
+> 2 | import axios from "axios"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | type Student = {
+  5 |   id: number
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/admin-dashboard.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/admin-dashboard.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[02:42:36.513] Browser ERROR   ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts:2:1
+Module not found: Can't resolve 'axios'
+  1 | import { create } from "zustand"
+> 2 | import axios from "axios"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | type Student = {
+  5 |   id: number
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/admin-dashboard.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/admin-dashboard.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[02:42:36.513] Browser ERROR   ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts:2:1
+Module not found: Can't resolve 'axios'
+  1 | import { create } from "zustand"
+> 2 | import axios from "axios"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | type Student = {
+  5 |   id: number
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/admin-dashboard.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/admin-dashboard.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[02:42:36.515] Browser ERROR   ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts:2:1
+Module not found: Can't resolve 'axios'
+  1 | import { create } from "zustand"
+> 2 | import axios from "axios"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | type Student = {
+  5 |   id: number
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/admin-dashboard.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/admin-dashboard.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[02:42:36.515] Browser ERROR   ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts:2:1
+Module not found: Can't resolve 'axios'
+  1 | import { create } from "zustand"
+> 2 | import axios from "axios"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | type Student = {
+  5 |   id: number
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/admin-dashboard.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/admin-dashboard.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[02:42:36.515] Browser ERROR   ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts:2:1
+Module not found: Can't resolve 'axios'
+  1 | import { create } from "zustand"
+> 2 | import axios from "axios"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | type Student = {
+  5 |   id: number
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/admin-dashboard.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Client Component Browser]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/admin-dashboard.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Client Component SSR]
+    ./Desktop/MONTESSORI/Montessori-frontend/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[02:43:35.266] Server  LOG      ✓ Compiled in 189ms
+[02:45:16.933] Server  LOG      ✓ Compiled in 119ms
+[02:45:43.714] Server  LOG      ✓ Compiled in 93ms
+[02:45:44.498] Browser ERROR   The final argument passed to %s changed size between renders. The order and size of this array must remain constant.
+
+Previous: %s
+Incoming: %s useEffect [1, , MSSSACK, , async ()=>{
+            const token = localStorage.getItem("auth_token");
+            if (!token) return;
+            set({
+                loading: true
+            });
+            try {
+                const res = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$services$2f$student$2e$service$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["getStudentsApi"])(get(), token);
+                set({
+                    students: res.data,
+                    total: res.pagination.total
+                });
+            } catch (e) {
+                (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$hooks$2f$use$2d$toast$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["toast"])({
+                    title: "Error",
+                    description: e.message,
+                    variant: "destructive"
+                });
+            } finally{
+                set({
+                    loading: false
+                });
+            }
+        }] [1, , MSSSACK, ]
+[02:45:44.499] Browser ERROR   The final argument passed to %s changed size between renders. The order and size of this array must remain constant.
+
+Previous: %s
+Incoming: %s useEffect [1, , MSSSACK, , async ()=>{
+            const token = localStorage.getItem("auth_token");
+            if (!token) return;
+            set({
+                loading: true
+            });
+            try {
+                const res = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$services$2f$student$2e$service$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["getStudentsApi"])(get(), token);
+                set({
+                    students: res.data,
+                    total: res.pagination.total
+                });
+            } catch (e) {
+                (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$hooks$2f$use$2d$toast$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["toast"])({
+                    title: "Error",
+                    description: e.message,
+                    variant: "destructive"
+                });
+            } finally{
+                set({
+                    loading: false
+                });
+            }
+        }] [1, , MSSSACK, ]
+[02:45:53.131] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[02:45:54.506] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[02:45:54.506] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/students","route":"/students"}
+[02:45:54.506] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1769434265124}
+[02:45:58.330] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[02:45:58.802] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[02:45:58.803] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/students","route":"/students"}
+[02:45:58.803] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1769434270075}
+[02:46:07.242] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[02:46:07.243] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[02:46:14.918] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[02:46:14.918] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[02:46:26.100] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[02:46:26.101] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[02:49:01.795] Server  LOG      ✓ Compiled in 465ms
+[02:49:03.536] Browser WARN    Image with src "https://warrantyindia.co.in/student/api/uploads/students/987_6977653a75e2f5.23783425.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[02:49:03.536] Browser WARN    Image with src "https://warrantyindia.co.in/student/api/uploads/students/1234455_69776a4d555592.38530797.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[02:49:03.536] Browser WARN    Image with src "https://warrantyindia.co.in/student/api/uploads/students/11060_6977635a0a1b43.70027485.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[02:49:03.537] Browser WARN    Image with src "https://warrantyindia.co.in/student/api/uploads/students/987_6977653a75e2f5.23783425.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[02:49:03.537] Browser WARN    Image with src "https://warrantyindia.co.in/student/api/uploads/students/1234455_69776a4d555592.38530797.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[02:49:03.537] Browser WARN    Image with src "https://warrantyindia.co.in/student/api/uploads/students/987_6977653a75e2f5.23783425.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[02:49:03.537] Browser WARN    Image with src "https://warrantyindia.co.in/student/api/uploads/students/1234455_69776a4d555592.38530797.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[02:49:03.537] Browser WARN    Image with src "https://warrantyindia.co.in/student/api/uploads/students/11060_6977635a0a1b43.70027485.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[02:49:11.929] Server  LOG      ✓ Compiled in 129ms
+[02:49:12.569] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[02:49:13.163] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[02:49:13.163] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/students","route":"/students"}
+[02:49:13.163] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1769434464429}
+[02:49:14.851] Browser WARN    Image with src "https://warrantyindia.co.in/student/api/uploads/students/987_6977653a75e2f5.23783425.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[02:49:14.852] Browser WARN    Image with src "https://warrantyindia.co.in/student/api/uploads/students/1234455_69776a4d555592.38530797.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[02:49:14.852] Browser WARN    Image with src "https://warrantyindia.co.in/student/api/uploads/students/11060_6977635a0a1b43.70027485.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[02:49:20.779] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[02:49:20.780] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[02:49:28.062] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[02:49:28.063] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[02:49:41.893] Server  LOG      ✓ Compiled in 189ms
+[02:49:53.996] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[02:49:54.787] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[02:49:54.787] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/students","route":"/students"}
+[02:49:54.787] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1769434505822}
+[02:50:04.660] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[02:50:04.661] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[02:50:55.251] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[02:50:55.252] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[02:51:02.937] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[02:51:02.937] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[02:51:13.710] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[02:51:13.710] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[02:51:38.541] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[02:51:38.541] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[02:51:54.195] Server  LOG      ✓ Compiled in 180ms
+[02:51:54.663] Browser ERROR   The final argument passed to %s changed size between renders. The order and size of this array must remain constant.
+
+Previous: %s
+Incoming: %s useEffect [1, , MSSSACK, ] [, MSSSACK, ]
+[02:51:55.248] Browser ERROR   The final argument passed to %s changed size between renders. The order and size of this array must remain constant.
+
+Previous: %s
+Incoming: %s useEffect [1, , MSSSACK, ] [, MSSSACK, ]
+[02:51:55.294] Browser ERROR   The final argument passed to %s changed size between renders. The order and size of this array must remain constant.
+
+Previous: %s
+Incoming: %s useEffect [1, , MSSSACK, ] [, MSSSACK, ]
+[02:52:03.624] Server  LOG      ✓ Compiled in 106ms
+[02:52:04.267] Browser ERROR   The final argument passed to %s changed size between renders. The order and size of this array must remain constant.
+
+Previous: %s
+Incoming: %s useEffect [, MSSSACK, ] [1, , MSSSACK, ]
+[02:52:04.695] Browser ERROR   The final argument passed to %s changed size between renders. The order and size of this array must remain constant.
+
+Previous: %s
+Incoming: %s useEffect [, MSSSACK, ] [1, , MSSSACK, ]
+[02:52:04.709] Browser ERROR   The final argument passed to %s changed size between renders. The order and size of this array must remain constant.
+
+Previous: %s
+Incoming: %s useEffect [, MSSSACK, ] [1, , MSSSACK, ]
+[02:52:06.342] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[02:52:06.941] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[02:52:06.941] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/students","route":"/students"}
+[02:52:06.941] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1769434638205}
+[02:52:10.669] Server  LOG      ✓ Compiled in 103ms
+[02:52:11.503] Browser ERROR   The final argument passed to %s changed size between renders. The order and size of this array must remain constant.
+
+Previous: %s
+Incoming: %s useEffect [1, , MSSSACK, ] [, MSSSACK, ]
+[02:52:11.505] Browser ERROR   The final argument passed to %s changed size between renders. The order and size of this array must remain constant.
+
+Previous: %s
+Incoming: %s useEffect [1, , MSSSACK, ] [, MSSSACK, ]
+[02:52:11.619] Browser ERROR   The final argument passed to %s changed size between renders. The order and size of this array must remain constant.
+
+Previous: %s
+Incoming: %s useEffect [1, , MSSSACK, ] [, MSSSACK, ]
+[02:52:14.782] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[02:52:15.257] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[02:52:15.263] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/students","route":"/students"}
+[02:52:15.265] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1769434646513}
+[02:52:28.779] Server  LOG      ✓ Compiled in 116ms
+[02:52:29.500] Browser ERROR   The final argument passed to %s changed size between renders. The order and size of this array must remain constant.
+
+Previous: %s
+Incoming: %s useEffect [, MSSSACK, ] [1, , MSSSACK, ]
+[02:52:29.570] Browser ERROR   The final argument passed to %s changed size between renders. The order and size of this array must remain constant.
+
+Previous: %s
+Incoming: %s useEffect [, MSSSACK, ] [4, , MSSSACK, ]
+[02:52:29.609] Browser ERROR   The final argument passed to %s changed size between renders. The order and size of this array must remain constant.
+
+Previous: %s
+Incoming: %s useEffect [, MSSSACK, ] [1, , MSSSACK, ]
+[02:52:53.361] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[02:52:54.224] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[02:52:54.224] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/students","route":"/students"}
+[02:52:54.224] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1769434685487}
+[02:53:03.355] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[02:53:03.356] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[02:53:14.158] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[02:53:14.167] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[02:53:56.373] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[02:53:57.323] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[02:53:57.323] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/students","route":"/students"}
+[02:53:57.323] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1769434748554}
+[02:59:37.360] Server  LOG      ✓ Compiled in 249ms
+[03:00:06.367] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[03:00:07.234] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[03:00:07.235] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/students","route":"/students"}
+[03:00:07.235] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1769435118479}
+[03:00:13.751] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[03:00:13.751] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[03:00:23.431] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[03:00:23.431] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[03:00:30.626] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[03:00:30.626] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.

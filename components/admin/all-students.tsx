@@ -50,7 +50,7 @@ export default function AllStudents() {
 
   useEffect(() => {
     fetchStudents()
-  }, [page, search, school, year, fetchStudents])
+  }, [page, search, school, year])
 
   return (
     <div className="p-6 space-y-6">
@@ -79,14 +79,12 @@ export default function AllStudents() {
         <Table>
           <TableHeader>
             <TableRow>
-               <TableHead>ID No</TableHead>
+             <TableHead>ID No</TableHead>
             <TableHead>Admission No</TableHead>
             <TableHead>Name of the Pupil</TableHead>
             <TableHead>Student Aadhaar No</TableHead>
-           
             <TableHead>Date of Admission</TableHead>
             <TableHead>Date of Birth</TableHead>
-          
             <TableHead>Class Admitted</TableHead>
             <TableHead>Class Leaving</TableHead>
             <TableHead>Date of Leaving</TableHead>
@@ -110,11 +108,9 @@ export default function AllStudents() {
                 <TableCell>{s.IDNo}</TableCell>
                 <TableCell>{s.AdmissionNo}</TableCell>
                 <TableCell>{s.NameOfThePupil}</TableCell>
-                <TableCell>{s.StudentAadhaarNo}</TableCell>
-            
+                <TableCell>{s.StudentAadhaarNo}</TableCell>       
                 <TableCell>{s.DateOfAdmission}</TableCell>
                 <TableCell>{s.DateOfBirth}</TableCell>
-             
                 <TableCell>{s.ClassAdmitted}</TableCell>
                 <TableCell>{s.ClassLeaving}</TableCell>
                 <TableCell>{s.DateOfLeaving}</TableCell>
