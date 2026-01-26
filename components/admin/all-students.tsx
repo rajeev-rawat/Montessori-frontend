@@ -83,9 +83,7 @@ export default function AllStudents() {
             <TableHead>Admission No</TableHead>
             <TableHead>Name of the Pupil</TableHead>
             <TableHead>Student Aadhaar No</TableHead>
-            <TableHead>PEN No</TableHead>
-            <TableHead>AAPAR ID</TableHead>
-            <TableHead>Mail ID</TableHead>
+           
             <TableHead>Date of Admission</TableHead>
             <TableHead>Date of Birth</TableHead>
           
@@ -113,10 +111,7 @@ export default function AllStudents() {
                 <TableCell>{s.AdmissionNo}</TableCell>
                 <TableCell>{s.NameOfThePupil}</TableCell>
                 <TableCell>{s.StudentAadhaarNo}</TableCell>
-                <TableCell>{s.PENNo}</TableCell>
-                <TableCell>{s.AAPARID}</TableCell>
-                <TableCell>{s.MailID}</TableCell>
-               
+            
                 <TableCell>{s.DateOfAdmission}</TableCell>
                 <TableCell>{s.DateOfBirth}</TableCell>
              

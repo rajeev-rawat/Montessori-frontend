@@ -1,7 +1,13 @@
 "use client"
 
 import { useState, useEffect } from "react"
-import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogFooter } from "@/components/ui/dialog"
+import {
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+  DialogFooter,
+} from "@/components/ui/dialog"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Button } from "@/components/ui/button"
@@ -12,7 +18,7 @@ import { useStudentStore } from "@/store/student.store"
 interface StudentFormModalProps {
   open: boolean
   onClose: () => void
-  onSubmit: (student: Student) => Promise<void>
+  onSubmit: (data: FormData) => Promise<void>
   initialData?: Student | null
   title: string
 }
@@ -55,7 +61,13 @@ const defaultStudent: Student = {
   AcademicYear: "",
 }
 
-export function StudentFormModal({ open, onClose, onSubmit, initialData, title }: StudentFormModalProps) {
+export function StudentFormModal({
+  open,
+  onClose,
+  onSubmit,
+  initialData,
+  title,
+}: StudentFormModalProps) {
   const [formData, setFormData] = useState<Student>(defaultStudent)
   const { school: selectedSchool, setSchool } = useStudentStore()
 
@@ -69,12 +81,28 @@ export function StudentFormModal({ open, onClose, onSubmit, initialData, title }
   }, [initialData, setSchool])
 
   const handleChange = (key: keyof Student, value: any) => {
-    setFormData({ ...formData, [key]: value })
+    setFormData((prev) => ({ ...prev, [key]: value }))
   }
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    await onSubmit({ ...formData, SchoolName: selectedSchool })
+    const payload = new FormData()
+    Object.entries(formData).forEach(([key, value]) => {
+      if (key === "PhotoOfStudent") {
+        if (value instanceof File) {
+          payload.append("PhotoOfStudent", value)
+        }
+      } else if (value !== undefined && value !== null) {
+        payload.append(key, String(value))
+      }
+    })
+
+    // 🔥 Add selected school
+    if (selectedSchool) {
+      payload.append("SchoolName", selectedSchool)
+    }
+
+    await onSubmit(payload)
   }
 
   return (
@@ -88,23 +116,44 @@ export function StudentFormModal({ open, onClose, onSubmit, initialData, title }
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs sm:text-sm">
             <div className="space-y-1">
               <Label>School</Label>
-              <SchoolSelect value={selectedSchool} onChange={setSchool} placeholder="Select school" />
+              <SchoolSelect
+                value={selectedSchool}
+                onChange={setSchool}
+                placeholder="Select school"
+              />
             </div>
 
             {Object.entries(formData).map(([key, value]) => {
-              if (key === "id" || key === "EntryDate" ||   key === "SchoolName") return null
+              if (key === "id" || key === "EntryDate" || key === "SchoolName")
+                return null
+
               const isAdmissionNo = key === "AdmissionNo"
               const disabled = !!initialData && isAdmissionNo
 
               return (
                 <div key={key} className="space-y-1">
                   <Label>{key.replace(/([A-Z])/g, " $1")}</Label>
+
                   {key === "PhotoOfStudent" ? (
-                    <Input type="file" onChange={(e) => handleChange(key as keyof Student, e.target.files?.[0])} />
+                    <Input
+                      type="file"
+                      accept="image/*"
+                      onChange={(e) =>
+                        handleChange(
+                          key as keyof Student,
+                          e.target.files?.[0]
+                        )
+                      }
+                    />
                   ) : (
                     <Input
                       value={value || ""}
-                      onChange={(e) => handleChange(key as keyof Student, e.target.value)}
+                      onChange={(e) =>
+                        handleChange(
+                          key as keyof Student,
+                          e.target.value
+                        )
+                      }
                       disabled={disabled}
                     />
                   )}
@@ -114,7 +163,9 @@ export function StudentFormModal({ open, onClose, onSubmit, initialData, title }
           </div>
 
           <DialogFooter className="mt-6 flex justify-end gap-2">
-            <Button variant="outline" type="button" onClick={onClose}>Cancel</Button>
+            <Button variant="outline" type="button" onClick={onClose}>
+              Cancel
+            </Button>
             <Button type="submit">{title}</Button>
           </DialogFooter>
         </form>

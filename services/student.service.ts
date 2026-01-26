@@ -87,8 +87,9 @@ export async function getStudentsApi(
   return data
 }
 
+// ✅ ADD STUDENT — USING FORMDATA
 export async function addStudentApi(
-  student: Partial<Student>,
+  student: FormData,
   token: string
 ) {
   const res = await fetch(`${BASE_URL}/student_insert`, {
@@ -96,9 +97,9 @@ export async function addStudentApi(
     headers: {
       Authorization: `Bearer ${token}`,
       "X-Api-Key": API_KEY,
-      "Content-Type": "application/json",
+      // ❌ Do NOT set Content-Type; browser sets multipart/form-data automatically
     },
-    body: JSON.stringify(student),
+    body: student,
   })
 
   const data = await res.json()
@@ -106,8 +107,9 @@ export async function addStudentApi(
   return data
 }
 
+// ✅ UPDATE STUDENT — USING FORMDATA
 export async function updateStudentApi(
-  student: Partial<Student>,
+  student: FormData,
   token: string
 ) {
   const res = await fetch(`${BASE_URL}/student_update`, {
@@ -115,9 +117,9 @@ export async function updateStudentApi(
     headers: {
       Authorization: `Bearer ${token}`,
       "X-Api-Key": API_KEY,
-      "Content-Type": "application/json",
+      // ❌ Do NOT set Content-Type; browser sets multipart/form-data automatically
     },
-    body: JSON.stringify(student),
+    body: student,
   })
 
   const data = await res.json()
@@ -147,7 +149,7 @@ export async function deleteStudentApi(
   return data
 }
 
-/* ✅ DUPLICATE DELETE — RESTORED */
+// ✅ DELETE DUPLICATE
 export async function deleteDuplicateApi(
   admissionNo: string,
   token: string

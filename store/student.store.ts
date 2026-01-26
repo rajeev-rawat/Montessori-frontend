@@ -40,8 +40,10 @@ interface StudentStore {
   openAddModal: () => void
   closeModals: () => void
 
-  addStudent: (s: Student) => Promise<void>
-  updateStudent: (s: Student) => Promise<void>
+  // 🔥 FormData payload
+  addStudent: (data: FormData) => Promise<void>
+  updateStudent: (data: FormData) => Promise<void>
+
   deleteStudent: (s: Student) => Promise<void>
 }
 
@@ -100,24 +102,42 @@ export const useStudentStore = create<StudentStore>((set, get) => ({
       selectedStudent: null,
     }),
 
-  addStudent: async (student) => {
+  // ✅ ADD (FormData)
+  addStudent: async (formData) => {
     const token = localStorage.getItem("auth_token")
     if (!token) return
 
-    await addStudentApi(student, token)
-    toast({ title: "Student added successfully" })
-    get().fetchStudents()
-    get().closeModals()
+    try {
+      await addStudentApi(formData, token)
+      toast({ title: "Student added successfully" })
+      get().fetchStudents()
+      get().closeModals()
+    } catch (e: any) {
+      toast({
+        title: "Add failed",
+        description: e.message,
+        variant: "destructive",
+      })
+    }
   },
 
-  updateStudent: async (student) => {
+  // ✅ UPDATE (FormData)
+  updateStudent: async (formData) => {
     const token = localStorage.getItem("auth_token")
     if (!token) return
 
-    await updateStudentApi(student, token)
-    toast({ title: "Student updated successfully" })
-    get().fetchStudents()
-    get().closeModals()
+    try {
+      await updateStudentApi(formData, token)
+      toast({ title: "Student updated successfully" })
+      get().fetchStudents()
+      get().closeModals()
+    } catch (e: any) {
+      toast({
+        title: "Update failed",
+        description: e.message,
+        variant: "destructive",
+      })
+    }
   },
 
   deleteStudent: async (student) => {
