@@ -1735,7 +1735,7 @@ function BulkUploadModule() {
                                                         ref: fileInputRef,
                                                         hidden: true,
                                                         type: "file",
-                                                        accept: ".csv,.xls,.xlsx",
+                                                        // accept=".csv,.xls,.xlsx"
                                                         onChange: (e)=>e.target.files && handleFileSelect(e.target.files[0])
                                                     }, void 0, false, {
                                                         fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/components/admin/bulk-upload-module.tsx",

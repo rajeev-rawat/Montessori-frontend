@@ -2,12 +2,12 @@
 
 import { create } from "zustand"
 import {
+  Student,
   getStudentsApi,
   addStudentApi,
   updateStudentApi,
   deleteStudentApi,
   deleteDuplicateApi,
-  Student,
 } from "@/services/student.service"
 import { toast } from "@/hooks/use-toast"
 
@@ -20,9 +20,8 @@ interface StudentStore {
   total: number
 
   search: string
-  status: string
   school: string
-  year: string // ✅ ADDED
+  year: string
 
   viewModalOpen: boolean
   editModalOpen: boolean
@@ -33,18 +32,19 @@ interface StudentStore {
 
   setPage: (page: number) => void
   setSearch: (search: string) => void
-  setStatus: (status: string) => void
   setSchool: (school: string) => void
-  setYear: (year: string) => void // ✅ ADDED
+  setYear: (year: string) => void
 
-  openViewModal: (student: Student) => void
-  openEditModal: (student: Student) => void
+  openViewModal: (s: Student) => void
+  openEditModal: (s: Student) => void
   openAddModal: () => void
   closeModals: () => void
 
-  addStudent: (student: Student) => Promise<void>
-  updateStudent: (student: Student) => Promise<void>
-  deleteStudent: (student: Student) => Promise<void>
+  // 🔥 FormData payload
+  addStudent: (data: FormData) => Promise<void>
+  updateStudent: (data: FormData) => Promise<void>
+
+  deleteStudent: (s: Student) => Promise<void>
 }
 
 export const useStudentStore = create<StudentStore>((set, get) => ({
@@ -56,7 +56,6 @@ export const useStudentStore = create<StudentStore>((set, get) => ({
   total: 0,
 
   search: "",
-  status: "",
   school: "",
   year: "",
 
@@ -69,57 +68,32 @@ export const useStudentStore = create<StudentStore>((set, get) => ({
     const token = localStorage.getItem("auth_token")
     if (!token) return
 
+    set({ loading: true })
     try {
-      set({ loading: true })
-
-      const { page, limit, search, status, school, year } = get()
-
-      const res = await getStudentsApi(
-        {
-          page,
-          limit,
-          search,
-          status,
-          school,
-          year,
-        },
-        token
-      )
-
+      const res = await getStudentsApi(get(), token)
       set({
         students: res.data,
         total: res.pagination.total,
         loading: false,
       })
-    } catch (error: any) {
+    } catch (e: any) {
       set({ loading: false })
       toast({
         title: "Error",
-        description: error.message,
+        description: e.message,
         variant: "destructive",
       })
     }
   },
 
   setPage: (page) => set({ page }),
-
   setSearch: (search) => set({ search, page: 1 }),
-
-  setStatus: (status) => set({ status, page: 1 }),
-
   setSchool: (school) => set({ school, page: 1 }),
+  setYear: (year) => set({ year, page: 1 }),
 
-  setYear: (year) => set({ year, page: 1 }), // ✅ ADDED
-
-  openViewModal: (student) =>
-    set({ viewModalOpen: true, selectedStudent: student }),
-
-  openEditModal: (student) =>
-    set({ editModalOpen: true, selectedStudent: student }),
-
-  openAddModal: () =>
-    set({ addModalOpen: true, selectedStudent: null }),
-
+  openViewModal: (s) => set({ viewModalOpen: true, selectedStudent: s }),
+  openEditModal: (s) => set({ editModalOpen: true, selectedStudent: s }),
+  openAddModal: () => set({ addModalOpen: true, selectedStudent: null }),
   closeModals: () =>
     set({
       viewModalOpen: false,
@@ -128,39 +102,39 @@ export const useStudentStore = create<StudentStore>((set, get) => ({
       selectedStudent: null,
     }),
 
-  addStudent: async (student) => {
+  // ✅ ADD (FormData)
+  addStudent: async (formData) => {
     const token = localStorage.getItem("auth_token")
     if (!token) return
 
     try {
-      const { school } = get()
-      await addStudentApi({ ...student, SchoolName: school }, token)
-      toast({ title: "Success", description: "Student added successfully" })
+      await addStudentApi(formData, token)
+      toast({ title: "Student added successfully" })
       get().fetchStudents()
       get().closeModals()
-    } catch (error: any) {
+    } catch (e: any) {
       toast({
-        title: "Error",
-        description: error.message,
+        title: "Add failed",
+        description: e.message,
         variant: "destructive",
       })
     }
   },
 
-  updateStudent: async (student) => {
+  // ✅ UPDATE (FormData)
+  updateStudent: async (formData) => {
     const token = localStorage.getItem("auth_token")
     if (!token) return
 
     try {
-      const { school } = get()
-      await updateStudentApi({ ...student, SchoolName: school }, token)
-      toast({ title: "Success", description: "Student updated successfully" })
+      await updateStudentApi(formData, token)
+      toast({ title: "Student updated successfully" })
       get().fetchStudents()
       get().closeModals()
-    } catch (error: any) {
+    } catch (e: any) {
       toast({
-        title: "Error",
-        description: error.message,
+        title: "Update failed",
+        description: e.message,
         variant: "destructive",
       })
     }
@@ -173,16 +147,16 @@ export const useStudentStore = create<StudentStore>((set, get) => ({
     try {
       if (student.status === "duplicate") {
         await deleteDuplicateApi(student.AdmissionNo, token)
-        toast({ title: "Success", description: "Duplicate student deleted" })
+        toast({ title: "Duplicate student deleted" })
       } else {
         await deleteStudentApi(student.AdmissionNo, token)
-        toast({ title: "Success", description: "Student deleted successfully" })
+        toast({ title: "Student deleted successfully" })
       }
       get().fetchStudents()
-    } catch (error: any) {
+    } catch (e: any) {
       toast({
-        title: "Error",
-        description: error.message,
+        title: "Delete failed",
+        description: e.message,
         variant: "destructive",
       })
     }

@@ -188,7 +188,7 @@ export function BulkUploadModule() {
                     ref={fileInputRef}
                     hidden
                     type="file"
-                    accept=".csv,.xls,.xlsx"
+                    // accept=".csv,.xls,.xlsx"
                     onChange={(e) =>
                       e.target.files &&
                       handleFileSelect(e.target.files[0])

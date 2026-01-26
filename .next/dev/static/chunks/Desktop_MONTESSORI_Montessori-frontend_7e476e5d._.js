@@ -757,28 +757,25 @@ __turbopack_context__.s([
     ()=>updateStudentApi
 ]);
 var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$node_modules$2f$next$2f$dist$2f$build$2f$polyfills$2f$process$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = /*#__PURE__*/ __turbopack_context__.i("[project]/Desktop/MONTESSORI/Montessori-frontend/node_modules/next/dist/build/polyfills/process.js [app-client] (ecmascript)");
+"use client";
 const BASE_URL = ("TURBOPACK compile-time value", "https://warrantyindia.co.in/student/api");
 const API_KEY = ("TURBOPACK compile-time value", "asdtfyghjklcghvhbjknlmfxcghbjknlmgcvhbjnkml");
 async function getStudentsApi(params, token) {
     const query = new URLSearchParams({
-        page: params.page?.toString() || "1",
-        limit: params.limit?.toString() || "10",
+        page: String(params.page || 1),
+        limit: String(params.limit || 10),
         search: params.search || "",
-        status: params.status || "",
         SchoolName: params.school || "",
-        year: params.year || ""
+        AcademicYear: params.year || ""
     });
     const res = await fetch(`${BASE_URL}/student_list?${query}`, {
         headers: {
             Authorization: `Bearer ${token}`,
-            "X-Api-Key": API_KEY,
-            "Content-Type": "application/json"
+            "X-Api-Key": API_KEY
         }
     });
     const data = await res.json();
-    if (!data.status) {
-        throw new Error(data.message || "Failed to fetch students");
-    }
+    if (!data.status) throw new Error(data.message);
     return data;
 }
 async function addStudentApi(student, token) {
@@ -792,9 +789,7 @@ async function addStudentApi(student, token) {
         body: JSON.stringify(student)
     });
     const data = await res.json();
-    if (!data.status) {
-        throw new Error(data.message || "Failed to add student");
-    }
+    if (!data.status) throw new Error(data.message);
     return data;
 }
 async function updateStudentApi(student, token) {
@@ -808,9 +803,7 @@ async function updateStudentApi(student, token) {
         body: JSON.stringify(student)
     });
     const data = await res.json();
-    if (!data.status) {
-        throw new Error(data.message || "Failed to update student");
-    }
+    if (!data.status) throw new Error(data.message);
     return data;
 }
 async function deleteStudentApi(admissionNo, token) {
@@ -827,9 +820,7 @@ async function deleteStudentApi(admissionNo, token) {
         })
     });
     const data = await res.json();
-    if (!data.status) {
-        throw new Error(data.message || "Failed to delete student");
-    }
+    if (!data.status) throw new Error(data.message);
     return data;
 }
 async function deleteDuplicateApi(admissionNo, token) {
@@ -845,9 +836,7 @@ async function deleteDuplicateApi(admissionNo, token) {
         })
     });
     const data = await res.json();
-    if (!data.status) {
-        throw new Error(data.message || "Failed to delete duplicate");
-    }
+    if (!data.status) throw new Error(data.message);
     return data;
 }
 if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
@@ -875,7 +864,6 @@ const useStudentStore = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desk
         limit: 10,
         total: 0,
         search: "",
-        status: "",
         school: "",
         year: "",
         viewModalOpen: false,
@@ -885,31 +873,23 @@ const useStudentStore = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desk
         fetchStudents: async ()=>{
             const token = localStorage.getItem("auth_token");
             if (!token) return;
+            set({
+                loading: true
+            });
             try {
-                set({
-                    loading: true
-                });
-                const { page, limit, search, status, school, year } = get();
-                const res = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$services$2f$student$2e$service$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["getStudentsApi"])({
-                    page,
-                    limit,
-                    search,
-                    status,
-                    school,
-                    year
-                }, token);
+                const res = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$services$2f$student$2e$service$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["getStudentsApi"])(get(), token);
                 set({
                     students: res.data,
                     total: res.pagination.total,
                     loading: false
                 });
-            } catch (error) {
+            } catch (e) {
                 set({
                     loading: false
                 });
                 (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$hooks$2f$use$2d$toast$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["toast"])({
                     title: "Error",
-                    description: error.message,
+                    description: e.message,
                     variant: "destructive"
                 });
             }
@@ -921,10 +901,6 @@ const useStudentStore = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desk
                 search,
                 page: 1
             }),
-        setStatus: (status)=>set({
-                status,
-                page: 1
-            }),
         setSchool: (school)=>set({
                 school,
                 page: 1
@@ -933,13 +909,13 @@ const useStudentStore = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desk
                 year,
                 page: 1
             }),
-        openViewModal: (student)=>set({
+        openViewModal: (s)=>set({
                 viewModalOpen: true,
-                selectedStudent: student
+                selectedStudent: s
             }),
-        openEditModal: (student)=>set({
+        openEditModal: (s)=>set({
                 editModalOpen: true,
-                selectedStudent: student
+                selectedStudent: s
             }),
         openAddModal: ()=>set({
                 addModalOpen: true,
@@ -954,48 +930,22 @@ const useStudentStore = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desk
         addStudent: async (student)=>{
             const token = localStorage.getItem("auth_token");
             if (!token) return;
-            try {
-                const { school } = get();
-                await (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$services$2f$student$2e$service$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["addStudentApi"])({
-                    ...student,
-                    SchoolName: school
-                }, token);
-                (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$hooks$2f$use$2d$toast$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["toast"])({
-                    title: "Success",
-                    description: "Student added successfully"
-                });
-                get().fetchStudents();
-                get().closeModals();
-            } catch (error) {
-                (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$hooks$2f$use$2d$toast$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["toast"])({
-                    title: "Error",
-                    description: error.message,
-                    variant: "destructive"
-                });
-            }
+            await (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$services$2f$student$2e$service$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["addStudentApi"])(student, token);
+            (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$hooks$2f$use$2d$toast$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["toast"])({
+                title: "Student added successfully"
+            });
+            get().fetchStudents();
+            get().closeModals();
         },
         updateStudent: async (student)=>{
             const token = localStorage.getItem("auth_token");
             if (!token) return;
-            try {
-                const { school } = get();
-                await (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$services$2f$student$2e$service$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["updateStudentApi"])({
-                    ...student,
-                    SchoolName: school
-                }, token);
-                (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$hooks$2f$use$2d$toast$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["toast"])({
-                    title: "Success",
-                    description: "Student updated successfully"
-                });
-                get().fetchStudents();
-                get().closeModals();
-            } catch (error) {
-                (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$hooks$2f$use$2d$toast$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["toast"])({
-                    title: "Error",
-                    description: error.message,
-                    variant: "destructive"
-                });
-            }
+            await (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$services$2f$student$2e$service$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["updateStudentApi"])(student, token);
+            (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$hooks$2f$use$2d$toast$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["toast"])({
+                title: "Student updated successfully"
+            });
+            get().fetchStudents();
+            get().closeModals();
         },
         deleteStudent: async (student)=>{
             const token = localStorage.getItem("auth_token");
@@ -1004,21 +954,19 @@ const useStudentStore = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desk
                 if (student.status === "duplicate") {
                     await (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$services$2f$student$2e$service$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["deleteDuplicateApi"])(student.AdmissionNo, token);
                     (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$hooks$2f$use$2d$toast$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["toast"])({
-                        title: "Success",
-                        description: "Duplicate student deleted"
+                        title: "Duplicate student deleted"
                     });
                 } else {
                     await (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$services$2f$student$2e$service$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["deleteStudentApi"])(student.AdmissionNo, token);
                     (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$hooks$2f$use$2d$toast$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["toast"])({
-                        title: "Success",
-                        description: "Student deleted successfully"
+                        title: "Student deleted successfully"
                     });
                 }
                 get().fetchStudents();
-            } catch (error) {
+            } catch (e) {
                 (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$hooks$2f$use$2d$toast$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["toast"])({
-                    title: "Error",
-                    description: error.message,
+                    title: "Delete failed",
+                    description: e.message,
                     variant: "destructive"
                 });
             }

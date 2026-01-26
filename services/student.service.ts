@@ -1,43 +1,66 @@
+"use client"
+
 const BASE_URL = process.env.NEXT_PUBLIC_API_BASE_URL!
 const API_KEY = process.env.NEXT_PUBLIC_API_KEY!
 
 export interface Student {
   id?: number
+
+  IDNo: string
   AdmissionNo: string
-  student_name: string
-  ParentNameFather: string
-  Mother?: string
-  SchoolClass: string
-  mobile?: string
-  address?: string
-  AdharNo?: string
-  AdmissionDate?: string
-  DateOfBirth?: string
-  email?: string
-  status?: string
-  Nationlty?: string
-  Relegion?: string
-  Caste?: string
-  MotherToung?: string
-  ClassStudentAdmitted?: string
-  TCNo?: string
-  OccupationFather?: string
-  LeavingClass?: string
-  DateOfLeaving?: string
-  ReasonOfLeaving?: string
-  NoAndDateTransferCertificate?: string
-  EntryDate?: string
-  SchoolName?: string
-  year?: string // ✅ ADDED (SAFE, OPTIONAL)
+  NameOfThePupil: string
+
+  StudentAadhaarNo: string
+  PENNo: string
+  AAPARID: string
+
+  FatherName: string
+  FatherAadhaarNo: string
+  FatherMobileNumber: string
+  ParentOccupation: string
+
+  MotherName: string
+  MotherAadharNo: string
+  MotherMobileNo: string
+  MotherBankAccountNo: string
+
+  MailID: string
+  ResidenceAddress: string
+  BankIFSCCode: string
+
+  PreviousSchoolClass: string
+  ClassAdmitted: string
+  ClassLeaving: string
+
+  TCNumber: string
+  LeavingTCNo: string
+  TCTakenDate: string
+
+  DateOfAdmission: string
+  DateOfBirth: string
+  DateOfLeaving: string
+
+  Nationality: string
+  Religion: string
+  Caste: string
+  SubCaste: string
+  MotherTongue: string
+
+  PhotoOfStudent: string
+  EntryDate: string
+
+  SchoolName: string
+  AcademicYear: string
+
+  status?: "valid" | "duplicate"
 }
 
 interface GetStudentsParams {
   page?: number
   limit?: number
   search?: string
-  status?: string
   school?: string
-  year?: string // ✅ ADDED
+  year?: string
 }
 
 export async function getStudentsApi(
@@ -45,31 +68,28 @@ export async function getStudentsApi(
   token: string
 ) {
   const query = new URLSearchParams({
-    page: params.page?.toString() || "1",
-    limit: params.limit?.toString() || "10",
+    page: String(params.page || 1),
+    limit: String(params.limit || 10),
     search: params.search || "",
-    status: params.status || "",
     SchoolName: params.school || "",
-    year: params.year || "",
+    AcademicYear: params.year || "",
   })
 
   const res = await fetch(`${BASE_URL}/student_list?${query}`, {
     headers: {
       Authorization: `Bearer ${token}`,
       "X-Api-Key": API_KEY,
-      "Content-Type": "application/json",
     },
   })
 
   const data = await res.json()
-  if (!data.status) {
-    throw new Error(data.message || "Failed to fetch students")
-  }
+  if (!data.status) throw new Error(data.message)
   return data
 }
 
+// ✅ ADD STUDENT — USING FORMDATA
 export async function addStudentApi(
-  student: Partial<Student>,
+  student: FormData,
   token: string
 ) {
   const res = await fetch(`${BASE_URL}/student_insert`, {
@@ -77,20 +97,19 @@ export async function addStudentApi(
     headers: {
       Authorization: `Bearer ${token}`,
       "X-Api-Key": API_KEY,
-      "Content-Type": "application/json",
+      // ❌ Do NOT set Content-Type; browser sets multipart/form-data automatically
     },
-    body: JSON.stringify(student),
+    body: student,
   })
 
   const data = await res.json()
-  if (!data.status) {
-    throw new Error(data.message || "Failed to add student")
-  }
+  if (!data.status) throw new Error(data.message)
   return data
 }
 
+// ✅ UPDATE STUDENT — USING FORMDATA
 export async function updateStudentApi(
-  student: Partial<Student>,
+  student: FormData,
   token: string
 ) {
   const res = await fetch(`${BASE_URL}/student_update`, {
@@ -98,15 +117,13 @@ export async function updateStudentApi(
     headers: {
       Authorization: `Bearer ${token}`,
       "X-Api-Key": API_KEY,
-      "Content-Type": "application/json",
+      // ❌ Do NOT set Content-Type; browser sets multipart/form-data automatically
     },
-    body: JSON.stringify(student),
+    body: student,
   })
 
   const data = await res.json()
-  if (!data.status) {
-    throw new Error(data.message || "Failed to update student")
-  }
+  if (!data.status) throw new Error(data.message)
   return data
 }
 
@@ -128,12 +145,11 @@ export async function deleteStudentApi(
   })
 
   const data = await res.json()
-  if (!data.status) {
-    throw new Error(data.message || "Failed to delete student")
-  }
+  if (!data.status) throw new Error(data.message)
   return data
 }
 
+// ✅ DELETE DUPLICATE
 export async function deleteDuplicateApi(
   admissionNo: string,
   token: string
@@ -149,8 +165,6 @@ export async function deleteDuplicateApi(
   })
 
   const data = await res.json()
-  if (!data.status) {
-    throw new Error(data.message || "Failed to delete duplicate")
-  }
+  if (!data.status) throw new Error(data.message)
   return data
 }

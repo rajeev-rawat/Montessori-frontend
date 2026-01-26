@@ -4,9 +4,9 @@ import { AdminSidebar } from "./admin-sidebar"
 import { DashboardOverview } from "./dashboard-overview"
 import { BulkUploadModule } from "./bulk-upload-module"
 import { SearchRecords } from "./search-records"
-import { AllStudents } from "./all-students"
 import { ReportsModule } from "./reports-module"
 import { SettingsModule } from "./settings-module"
+import AllStudents from "./all-students"
 
 interface AdminDashboardProps {
   currentView: string
