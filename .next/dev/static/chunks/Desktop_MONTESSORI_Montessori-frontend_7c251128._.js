@@ -689,106 +689,6 @@ if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelper
     __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
 }
 }),
-"[project]/Desktop/MONTESSORI/Montessori-frontend/services/student.service.ts [app-client] (ecmascript)", ((__turbopack_context__) => {
-"use strict";
-
-__turbopack_context__.s([
-    "addStudentApi",
-    ()=>addStudentApi,
-    "deleteDuplicateApi",
-    ()=>deleteDuplicateApi,
-    "deleteStudentApi",
-    ()=>deleteStudentApi,
-    "getStudentsApi",
-    ()=>getStudentsApi,
-    "updateStudentApi",
-    ()=>updateStudentApi
-]);
-var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$node_modules$2f$next$2f$dist$2f$build$2f$polyfills$2f$process$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = /*#__PURE__*/ __turbopack_context__.i("[project]/Desktop/MONTESSORI/Montessori-frontend/node_modules/next/dist/build/polyfills/process.js [app-client] (ecmascript)");
-"use client";
-const BASE_URL = ("TURBOPACK compile-time value", "https://warrantyindia.co.in/student/api");
-const API_KEY = ("TURBOPACK compile-time value", "asdtfyghjklcghvhbjknlmfxcghbjknlmgcvhbjnkml");
-async function getStudentsApi(params, token) {
-    const query = new URLSearchParams({
-        page: String(params.page || 1),
-        limit: String(params.limit || 10),
-        search: params.search || "",
-        SchoolName: params.school || "",
-        AcademicYear: params.year || ""
-    });
-    const res = await fetch(`${BASE_URL}/student_list?${query}`, {
-        headers: {
-            Authorization: `Bearer ${token}`,
-            "X-Api-Key": API_KEY
-        }
-    });
-    const data = await res.json();
-    if (!data.status) throw new Error(data.message);
-    return data;
-}
-async function addStudentApi(student, token) {
-    const res = await fetch(`${BASE_URL}/student_insert`, {
-        method: "POST",
-        headers: {
-            Authorization: `Bearer ${token}`,
-            "X-Api-Key": API_KEY
-        },
-        body: student
-    });
-    const data = await res.json();
-    if (!data.status) throw new Error(data.message);
-    return data;
-}
-async function updateStudentApi(student, token) {
-    const res = await fetch(`${BASE_URL}/student_update`, {
-        method: "POST",
-        headers: {
-            Authorization: `Bearer ${token}`,
-            "X-Api-Key": API_KEY
-        },
-        body: student
-    });
-    const data = await res.json();
-    if (!data.status) throw new Error(data.message);
-    return data;
-}
-async function deleteStudentApi(admissionNo, token) {
-    const res = await fetch(`${BASE_URL}/delete_student.php`, {
-        method: "POST",
-        headers: {
-            Authorization: `Bearer ${token}`,
-            "X-Api-Key": API_KEY,
-            "Content-Type": "application/json"
-        },
-        body: JSON.stringify({
-            AdmissionNo: admissionNo,
-            confirm: "DELETE"
-        })
-    });
-    const data = await res.json();
-    if (!data.status) throw new Error(data.message);
-    return data;
-}
-async function deleteDuplicateApi(admissionNo, token) {
-    const res = await fetch(`${BASE_URL}/delete_duplicates_by_admission`, {
-        method: "POST",
-        headers: {
-            Authorization: `Bearer ${token}`,
-            "X-Api-Key": API_KEY,
-            "Content-Type": "application/json"
-        },
-        body: JSON.stringify({
-            AdmissionNo: admissionNo
-        })
-    });
-    const data = await res.json();
-    if (!data.status) throw new Error(data.message);
-    return data;
-}
-if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
-    __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
-}
-}),
 "[project]/Desktop/MONTESSORI/Montessori-frontend/store/student.store.ts [app-client] (ecmascript)", ((__turbopack_context__) => {
 "use strict";
 
@@ -796,11 +696,13 @@ __turbopack_context__.s([
     "useStudentStore",
     ()=>useStudentStore
 ]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$node_modules$2f$next$2f$dist$2f$build$2f$polyfills$2f$process$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = /*#__PURE__*/ __turbopack_context__.i("[project]/Desktop/MONTESSORI/Montessori-frontend/node_modules/next/dist/build/polyfills/process.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$node_modules$2f$zustand$2f$esm$2f$react$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/MONTESSORI/Montessori-frontend/node_modules/zustand/esm/react.mjs [app-client] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$services$2f$student$2e$service$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/MONTESSORI/Montessori-frontend/services/student.service.ts [app-client] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$hooks$2f$use$2d$toast$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/MONTESSORI/Montessori-frontend/hooks/use-toast.ts [app-client] (ecmascript)");
-"use client";
-;
+(()=>{
+    const e = new Error("Cannot find module 'axios'");
+    e.code = 'MODULE_NOT_FOUND';
+    throw e;
+})();
 ;
 ;
 const useStudentStore = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$node_modules$2f$zustand$2f$esm$2f$react$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["create"])((set, get)=>({
@@ -816,71 +718,63 @@ const useStudentStore = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desk
         editModalOpen: false,
         addModalOpen: false,
         selectedStudent: null,
+        // ✅ FETCH STUDENTS (NO PAGE RESET HERE)
         fetchStudents: async ()=>{
-            const token = localStorage.getItem("auth_token");
-            if (!token) return;
+            const { page, limit, search, school, year } = get();
             set({
                 loading: true
             });
             try {
-                const res = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$services$2f$student$2e$service$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["getStudentsApi"])(get(), token);
+                const res = await axios.get(`${("TURBOPACK compile-time value", "https://warrantyindia.co.in/student/api")}/students`, {
+                    params: {
+                        page,
+                        limit,
+                        search,
+                        school,
+                        year
+                    }
+                });
                 set({
-                    students: res.data,
-                    total: res.pagination.total
+                    students: res.data.data,
+                    total: res.data.total
                 });
-            } catch (e) {
-                (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$hooks$2f$use$2d$toast$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["toast"])({
-                    title: "Error",
-                    description: e.message,
-                    variant: "destructive"
-                });
+            } catch (error) {
+                console.error("Fetch students failed", error);
             } finally{
                 set({
                     loading: false
                 });
             }
         },
-        setPage: (page)=>{
-            if (page !== get().page) set({
+        // ✅ PAGINATION
+        setPage: (page)=>set({
                 page
-            });
-        },
-        // ✅ reset page ONLY if value actually changed
-        setSearch: (search)=>{
-            if (search !== get().search) {
-                set({
-                    search,
-                    page: 1
-                });
-            }
-        },
-        setSchool: (school)=>{
-            if (school !== get().school) {
-                set({
-                    school,
-                    page: 1
-                });
-            }
-        },
-        setYear: (year)=>{
-            if (year !== get().year) {
-                set({
-                    year,
-                    page: 1
-                });
-            }
-        },
+            }),
+        // ✅ FILTERS RESET PAGE
+        setSearch: (val)=>set({
+                search: val,
+                page: 1
+            }),
+        setSchool: (val)=>set({
+                school: val,
+                page: 1
+            }),
+        setYear: (val)=>set({
+                year: val,
+                page: 1
+            }),
+        // ✅ MODALS (NO FETCH / NO PAGE RESET)
         openViewModal: (s)=>set({
-                viewModalOpen: true,
-                selectedStudent: s
+                selectedStudent: s,
+                viewModalOpen: true
             }),
         openEditModal: (s)=>set({
-                editModalOpen: true,
-                selectedStudent: s
+                selectedStudent: s,
+                editModalOpen: true
             }),
         openAddModal: ()=>set({
-                addModalOpen: true,
-                selectedStudent: null
+                selectedStudent: null,
+                addModalOpen: true
             }),
         closeModals: ()=>set({
                 viewModalOpen: false,
@@ -888,37 +782,17 @@ const useStudentStore = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desk
                 addModalOpen: false,
                 selectedStudent: null
             }),
-        addStudent: async (formData)=>{
-            const token = localStorage.getItem("auth_token");
-            if (!token) return;
-            await (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$services$2f$student$2e$service$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["addStudentApi"])(formData, token);
-            (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$hooks$2f$use$2d$toast$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["toast"])({
-                title: "Student added successfully"
-            });
+        // CRUD
+        addStudent: async (data)=>{
+            await axios.post(`${("TURBOPACK compile-time value", "https://warrantyindia.co.in/student/api")}/students`, data);
             get().fetchStudents();
-            get().closeModals();
         },
-        updateStudent: async (formData)=>{
-            const token = localStorage.getItem("auth_token");
-            if (!token) return;
-            await (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$services$2f$student$2e$service$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["updateStudentApi"])(formData, token);
-            (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$hooks$2f$use$2d$toast$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["toast"])({
-                title: "Student updated successfully"
-            });
+        updateStudent: async (data)=>{
+            await axios.put(`${("TURBOPACK compile-time value", "https://warrantyindia.co.in/student/api")}/students/${data.id}`, data);
             get().fetchStudents();
-            get().closeModals();
         },
-        deleteStudent: async (student)=>{
-            const token = localStorage.getItem("auth_token");
-            if (!token) return;
-            if (student.status === "duplicate") {
-                await (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$services$2f$student$2e$service$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["deleteDuplicateApi"])(student.AdmissionNo, token);
-            } else {
-                await (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$services$2f$student$2e$service$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["deleteStudentApi"])(student.AdmissionNo, token);
-            }
-            (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$hooks$2f$use$2d$toast$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["toast"])({
-                title: "Student deleted successfully"
-            });
+        deleteStudent: async (s)=>{
+            await axios.delete(`${("TURBOPACK compile-time value", "https://warrantyindia.co.in/student/api")}/students/${s.id}`);
             get().fetchStudents();
         }
     }));
@@ -2197,7 +2071,8 @@ function AllStudents() {
         page,
         search,
         school,
-        year
+        year,
+        fetchStudents
     ]);
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
         className: "p-6 space-y-6",
@@ -2686,4 +2561,4 @@ if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelper
 }),
 ]);
 
-//# sourceMappingURL=Desktop_MONTESSORI_Montessori-frontend_5fc52c09._.js.map
+//# sourceMappingURL=Desktop_MONTESSORI_Montessori-frontend_7c251128._.js.map
