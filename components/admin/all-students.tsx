@@ -66,7 +66,7 @@ export default function AllStudents() {
       {/* Filters */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
         <Input
-          placeholder="Search by name / admission no"
+          placeholder="Search by Aadhaar no"
           value={search}
           onChange={(e) => setSearch(e.target.value)}
         />
