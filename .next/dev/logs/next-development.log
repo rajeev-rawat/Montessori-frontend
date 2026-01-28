@@ -3337,3 +3337,5 @@ Incoming: %s useEffect [, MSSSACK, ] [1, , MSSSACK, ]
 [03:00:23.431] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
 [03:00:30.626] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
 [03:00:30.626] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[53:01:59.363] Server  LOG      ✓ Compiled in 872ms
+[53:02:31.557] Server  LOG      ✓ Compiled in 184ms
