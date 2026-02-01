@@ -9,7 +9,6 @@ export interface User {
   name: string
   mobile: string
   user_type: string
-  SchoolName:string,
   SchoolName?: string
   City: string
   State: string
