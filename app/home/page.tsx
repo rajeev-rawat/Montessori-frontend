@@ -2,6 +2,7 @@
 
 import { useRouter } from "next/navigation";
 import Image from "next/image";
+import { useEffect, useState } from "react";
 
 const schools = [
   {
@@ -68,7 +69,7 @@ const schools = [
 
 export default function Schools() {
   const router = useRouter();
-
+  const [authChecked, setAuthChecked] = useState(false);
   /* ================= HANDLE SELECT ================= */
   const handleSelect = (email: string, schoolName: string) => {
     // Clear old data
@@ -86,7 +87,6 @@ export default function Schools() {
 
     router.push("/login");
   };
-
   return (
     <div className="relative min-h-screen bg-background">
       {/* Watermark */}
