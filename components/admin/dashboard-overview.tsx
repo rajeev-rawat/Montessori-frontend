@@ -8,7 +8,7 @@ import { useDashboardStore } from "@/store/dashboard.store"
 import { SchoolSelect } from "@/components/dropdown/dropdown"
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
-import { Users, Upload, ArrowRight, FileCheck, AlertCircle, TrendingUp, User } from "lucide-react"
+import { Users, Upload, ArrowRight, FileCheck, AlertCircle, TrendingUp } from "lucide-react"
 import Image from "next/image";
 export function DashboardOverview() {
   const router = useRouter()
@@ -136,17 +136,6 @@ export function DashboardOverview() {
             <CardDescription>Common tasks you can perform</CardDescription>
           </CardHeader>
           <CardContent className="space-y-3">
-            <Button
-              className="w-full justify-between bg-transparent"
-              variant="outline"
-             onClick={() => router.push("/students/add-student")}
-            >
-              <span className="flex items-center gap-2">
-                <User className="w-4 h-4" />
-                Add Student
-              </span>
-              <ArrowRight className="w-4 h-4" />
-            </Button>
             <Button
               className="w-full justify-between bg-transparent"
               variant="outline"
