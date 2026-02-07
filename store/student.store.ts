@@ -26,6 +26,7 @@ interface StudentStore {
   viewModalOpen: boolean
   editModalOpen: boolean
   addModalOpen: boolean
+
   selectedStudent: Student | null
 
   fetchStudents: () => Promise<void>
@@ -35,10 +36,14 @@ interface StudentStore {
   setSchool: (school: string) => void
   setYear: (year: string) => void
 
+  // modal usage
   openViewModal: (s: Student) => void
   openEditModal: (s: Student) => void
   openAddModal: () => void
   closeModals: () => void
+
+  // 🔥 page-safe usage
+  setSelectedStudent: (s: Student | null) => void
 
   addStudent: (data: FormData) => Promise<void>
   updateStudent: (data: FormData) => Promise<void>
@@ -50,7 +55,7 @@ export const useStudentStore = create<StudentStore>((set, get) => ({
   loading: false,
 
   page: 1,
-  limit: 10,
+  limit: 50,
   total: 0,
 
   search: "",
@@ -60,6 +65,7 @@ export const useStudentStore = create<StudentStore>((set, get) => ({
   viewModalOpen: false,
   editModalOpen: false,
   addModalOpen: false,
+
   selectedStudent: null,
 
   fetchStudents: async () => {
@@ -88,7 +94,6 @@ export const useStudentStore = create<StudentStore>((set, get) => ({
     if (page !== get().page) set({ page })
   },
 
-  // ✅ reset page ONLY if value actually changed
   setSearch: (search) => {
     if (search !== get().search) {
       set({ search, page: 1 })
@@ -107,6 +112,8 @@ export const useStudentStore = create<StudentStore>((set, get) => ({
     }
   },
 
+  /* ---------------- MODALS ---------------- */
+
   openViewModal: (s) =>
     set({ viewModalOpen: true, selectedStudent: s }),
 
@@ -121,8 +128,13 @@ export const useStudentStore = create<StudentStore>((set, get) => ({
       viewModalOpen: false,
       editModalOpen: false,
       addModalOpen: false,
-      selectedStudent: null,
     }),
+
+  /* ---------------- PAGE SAFE ---------------- */
+
+  setSelectedStudent: (s) => set({ selectedStudent: s }),
+
+  /* ---------------- CRUD ---------------- */
 
   addStudent: async (formData) => {
     const token = localStorage.getItem("auth_token")
@@ -130,25 +142,33 @@ export const useStudentStore = create<StudentStore>((set, get) => ({
 
     await addStudentApi(formData, token)
     toast({ title: "Student added successfully" })
-    get().fetchStudents()
-    get().closeModals()
+    await get().fetchStudents()
   },
 
   updateStudent: async (formData) => {
     const token = localStorage.getItem("auth_token")
     if (!token) return
 
+    const selected = get().selectedStudent
+    if (!selected) {
+      toast({
+        title: "Error",
+        description: "No student selected for update",
+        variant: "destructive",
+      })
+      return
+    }
     await updateStudentApi(formData, token)
     toast({ title: "Student updated successfully" })
-    get().fetchStudents()
-    get().closeModals()
+    await get().fetchStudents()
+    set({ selectedStudent: null })
   },
 
   deleteStudent: async (student) => {
     const token = localStorage.getItem("auth_token")
     if (!token) return
 
-    if (student.status === "duplicate") {
+    if ((student as any).status === "duplicate") {
       await deleteDuplicateApi(student.AdmissionNo, token)
     } else {
       await deleteStudentApi(student.AdmissionNo, token)
