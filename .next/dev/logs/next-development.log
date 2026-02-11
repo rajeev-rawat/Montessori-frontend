@@ -1,890 +1,151 @@
-[00:00:00.693] Server  WARN     ⚠ The "middleware" file convention is deprecated. Please use "proxy" instead. Learn more: https://nextjs.org/docs/messages/middleware-to-proxy
-[00:00:00.779] Server  LOG      ✓ Ready in 564ms
-[00:00:04.865] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:06.101] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:00:06.101] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/dashboard","route":"/dashboard"}
-[00:00:06.101] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/dashboard color: rgb(120, 120, 120) color: inherit {"dp":"/dashboard","o":"http://localhost:3000/dashboard","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770455360077}
-[00:00:06.101] Browser WARN    Image with src "http://localhost:3000/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:00:10.793] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770455365240}
-[00:00:47.907] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
-[00:00:47.907] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
-[00:01:18.831] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:01:18.985] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:01:18.985] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/add-student","route":"/add-student"}
-[00:01:18.985] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/add-student color: rgb(120, 120, 120) color: inherit {"dp":"/add-student","o":"http://localhost:3000/add-student","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770455433797}
-[00:01:43.181] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:01:43.346] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:01:43.346] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/add-student","route":"/add-student"}
-[00:01:43.346] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/add-student color: rgb(120, 120, 120) color: inherit {"dp":"/add-student","o":"http://localhost:3000/add-student","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770455458157}
-[00:01:47.761] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:01:47.933] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:01:47.933] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/students/AddStudentPage","route":"/students/AddStudentPage"}
-[00:01:47.933] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students/AddStudentPage color: rgb(120, 120, 120) color: inherit {"dp":"/students/AddStudentPage","o":"http://localhost:3000/students/AddStudentPage","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770455462744}
-[00:01:57.632] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:01:57.871] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:01:57.871] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/students/add-student","route":"/students/add-student"}
-[00:01:57.871] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students/add-student color: rgb(120, 120, 120) color: inherit {"dp":"/students/add-student","o":"http://localhost:3000/students/add-student","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770455472675}
-[00:02:05.714] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770455480240}
-[00:04:11.461] Server  LOG      ✓ Compiled in 104ms
-[00:08:12.139] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:08:12.139] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:08:12.139] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/students/add-student","route":"/students/add-student"}
-[00:08:12.139] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students/add-student color: rgb(120, 120, 120) color: inherit {"dp":"/students/add-student","o":"http://localhost:3000/students/add-student","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770455614509}
-[00:09:50.812] Server  LOG      ✓ Compiled in 113ms
-[00:10:27.759] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770455982310}
-[00:12:53.983] Server  LOG      ✓ Compiled in 88ms
-[00:13:30.716] Server  LOG      ✓ Compiled in 110ms
-[00:13:41.811] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
-[00:13:41.812] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
-[00:13:42.473] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students/edit-student/4519 color: rgb(120, 120, 120) color: inherit {"dp":"/students/edit-student/[id]","o":"http://localhost:3000/students/edit-student/4519","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770456177157}
-[00:13:46.128] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
-[00:13:46.128] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
-[00:13:46.129] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770456180774}
-[00:13:47.425] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:13:48.127] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:13:48.127] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/students","route":"/students"}
-[00:13:48.127] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770456182921}
-[00:14:10.300] Server  LOG      ✓ Compiled in 72ms
-[00:14:13.367] Server  LOG      ✓ Compiled in 30ms
-[00:14:21.101] Server  LOG      ✓ Compiled in 65ms
-[00:14:36.133] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:14:37.090] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:14:37.090] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/students","route":"/students"}
-[00:14:37.090] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770456231723}
-[00:14:53.080] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students/edit-student/4519 color: rgb(120, 120, 120) color: inherit {"dp":"/students/edit-student/[id]","o":"http://localhost:3000/students/edit-student/4519","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770456247818}
-[00:15:01.811] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770456256564}
-[00:16:14.719] Server  LOG      ✓ Compiled in 183ms
-[00:16:18.345] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students/add-student color: rgb(120, 120, 120) color: inherit {"dp":"/students/add-student","o":"http://localhost:3000/students/add-student","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770456333112}
-[00:16:38.826] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770456353550}
-[00:16:50.575] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students/add-student color: rgb(120, 120, 120) color: inherit {"dp":"/students/add-student","o":"http://localhost:3000/students/add-student","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770456365337}
-[00:17:01.954] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770456376714}
-[00:17:03.964] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students/edit-student/4519 color: rgb(120, 120, 120) color: inherit {"dp":"/students/edit-student/[id]","o":"http://localhost:3000/students/edit-student/4519","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770456378754}
-[00:17:08.686] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770456383338}
-[00:17:21.557] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students/edit-student/4504 color: rgb(120, 120, 120) color: inherit {"dp":"/students/edit-student/[id]","o":"http://localhost:3000/students/edit-student/4504","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770456396345}
-[00:17:26.403] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770456401159}
-[00:18:11.033] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students/edit-student/4515 color: rgb(120, 120, 120) color: inherit {"dp":"/students/edit-student/[id]","o":"http://localhost:3000/students/edit-student/4515","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770456445821}
-[00:19:32.250] Server  LOG      ✓ Compiled in 95ms
-[00:19:40.761] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:19:40.964] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:19:40.964] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/students/edit-student/4515","route":"/students/edit-student/[id]"}
-[00:19:40.964] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students/edit-student/4515 color: rgb(120, 120, 120) color: inherit {"dp":"/students/edit-student/[id]","o":"http://localhost:3000/students/edit-student/4515","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770456535746}
-[00:19:42.324] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770456536920}
-[00:19:47.660] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students/edit-student/4518 color: rgb(120, 120, 120) color: inherit {"dp":"/students/edit-student/[id]","o":"http://localhost:3000/students/edit-student/4518","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770456542445}
-[00:19:50.255] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:19:50.423] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:19:50.423] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/students/edit-student/4518","route":"/students/edit-student/[id]"}
-[00:19:50.423] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students/edit-student/4518 color: rgb(120, 120, 120) color: inherit {"dp":"/students/edit-student/[id]","o":"http://localhost:3000/students/edit-student/4518","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770456545208}
-[00:20:00.580] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770456555063}
-[00:20:08.901] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students/edit-student/4487 color: rgb(120, 120, 120) color: inherit {"dp":"/students/edit-student/[id]","o":"http://localhost:3000/students/edit-student/4487","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770456563633}
-[00:20:28.976] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770456583722}
-[00:20:36.361] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students/edit-student/4492 color: rgb(120, 120, 120) color: inherit {"dp":"/students/edit-student/[id]","o":"http://localhost:3000/students/edit-student/4492","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770456591099}
-[00:20:38.668] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770456593418}
-[00:20:42.013] Server  LOG      ✓ Compiled in 49ms
-[00:20:49.743] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:20:50.316] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:20:50.316] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/students","route":"/students"}
-[00:20:50.316] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770456605097}
-[00:21:14.881] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students/edit-student/4518 color: rgb(120, 120, 120) color: inherit {"dp":"/students/edit-student/[id]","o":"http://localhost:3000/students/edit-student/4518","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770456629663}
-[00:21:18.845] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770456633587}
-[00:21:23.667] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students/edit-student/4503 color: rgb(120, 120, 120) color: inherit {"dp":"/students/edit-student/[id]","o":"http://localhost:3000/students/edit-student/4503","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770456638450}
-[00:21:25.973] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770456640720}
-[00:21:30.765] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students/edit-student/4397 color: rgb(120, 120, 120) color: inherit {"dp":"/students/edit-student/[id]","o":"http://localhost:3000/students/edit-student/4397","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770456645548}
-[00:21:37.510] Server  LOG      ✓ Compiled in 67ms
-[00:21:43.028] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770456657666}
-[00:21:45.175] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:21:45.843] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:21:45.843] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/students","route":"/students"}
-[00:21:45.843] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770456660623}
-[00:21:56.713] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students/edit-student/4516 color: rgb(120, 120, 120) color: inherit {"dp":"/students/edit-student/[id]","o":"http://localhost:3000/students/edit-student/4516","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770456671495}
-[00:21:59.607] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770456674323}
-[00:22:02.226] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students/edit-student/4502 color: rgb(120, 120, 120) color: inherit {"dp":"/students/edit-student/[id]","o":"http://localhost:3000/students/edit-student/4502","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770456677008}
-[00:22:04.517] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770456679268}
-[00:22:06.292] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students/edit-student/4480 color: rgb(120, 120, 120) color: inherit {"dp":"/students/edit-student/[id]","o":"http://localhost:3000/students/edit-student/4480","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770456681073}
-[00:22:08.547] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:22:08.729] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:22:08.729] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/students/edit-student/4480","route":"/students/edit-student/[id]"}
-[00:22:08.729] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students/edit-student/4480 color: rgb(120, 120, 120) color: inherit {"dp":"/students/edit-student/[id]","o":"http://localhost:3000/students/edit-student/4480","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770456683508}
-[00:22:10.615] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770456685072}
-[00:22:14.468] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students/edit-student/4373 color: rgb(120, 120, 120) color: inherit {"dp":"/students/edit-student/[id]","o":"http://localhost:3000/students/edit-student/4373","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770456689249}
-[00:22:36.603] Server  LOG      ✓ Compiled in 56ms
-[00:22:40.011] Server  LOG      ✓ Compiled in 31ms
-[00:22:49.054] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:22:49.296] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:22:49.296] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/students/edit-student/4373","route":"/students/edit-student/[id]"}
-[00:22:49.296] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students/edit-student/4373 color: rgb(120, 120, 120) color: inherit {"dp":"/students/edit-student/[id]","o":"http://localhost:3000/students/edit-student/4373","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770456724025}
-[00:22:50.369] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770456724855}
-[00:22:55.210] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:22:55.719] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:22:55.719] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/students","route":"/students"}
-[00:22:55.719] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770456730501}
-[00:23:12.023] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students/edit-student/4518 color: rgb(120, 120, 120) color: inherit {"dp":"/students/edit-student/[id]","o":"http://localhost:3000/students/edit-student/4518","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770456746803}
-[00:23:16.895] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770456751638}
-[00:23:26.719] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students/edit-student/4506 color: rgb(120, 120, 120) color: inherit {"dp":"/students/edit-student/[id]","o":"http://localhost:3000/students/edit-student/4506","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770456761452}
-[00:23:29.536] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770456764174}
-[00:23:32.947] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students/edit-student/4518 color: rgb(120, 120, 120) color: inherit {"dp":"/students/edit-student/[id]","o":"http://localhost:3000/students/edit-student/4518","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770456767682}
-[00:23:34.883] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770456769629}
-[00:23:37.405] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students/edit-student/4519 color: rgb(120, 120, 120) color: inherit {"dp":"/students/edit-student/[id]","o":"http://localhost:3000/students/edit-student/4519","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770456772140}
-[00:23:39.290] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770456774037}
-[00:23:45.518] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:23:46.162] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:23:46.162] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/students","route":"/students"}
-[00:23:46.162] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770456780942}
-[00:23:53.668] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students/edit-student/4519 color: rgb(120, 120, 120) color: inherit {"dp":"/students/edit-student/[id]","o":"http://localhost:3000/students/edit-student/4519","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770456788448}
-[00:23:56.136] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770456790877}
-[00:23:59.021] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students/edit-student/4518 color: rgb(120, 120, 120) color: inherit {"dp":"/students/edit-student/[id]","o":"http://localhost:3000/students/edit-student/4518","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770456793800}
-[00:24:00.971] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770456795715}
-[00:24:03.495] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students/edit-student/4517 color: rgb(120, 120, 120) color: inherit {"dp":"/students/edit-student/[id]","o":"http://localhost:3000/students/edit-student/4517","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770456798274}
-[00:24:05.486] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770456800235}
-[00:24:58.119] Server  LOG      ✓ Compiled in 59ms
-[00:25:07.566] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students/edit-student/4471 color: rgb(120, 120, 120) color: inherit {"dp":"/students/edit-student/[id]","o":"http://localhost:3000/students/edit-student/4471","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770456862272}
-[00:25:10.247] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770456864871}
-[00:25:13.757] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students/edit-student/4519 color: rgb(120, 120, 120) color: inherit {"dp":"/students/edit-student/[id]","o":"http://localhost:3000/students/edit-student/4519","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770456868469}
-[00:25:17.374] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770456872006}
-[00:25:21.808] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students/edit-student/4518 color: rgb(120, 120, 120) color: inherit {"dp":"/students/edit-student/[id]","o":"http://localhost:3000/students/edit-student/4518","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770456876515}
-[00:25:43.580] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770456898212}
-[00:25:47.998] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students/add-student color: rgb(120, 120, 120) color: inherit {"dp":"/students/add-student","o":"http://localhost:3000/students/add-student","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770456902735}
-[00:28:44.618] Server  LOG      ✓ Compiled in 125ms
-[00:29:14.291] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770457108790}
-[00:29:16.410] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students/edit-student/4518 color: rgb(120, 120, 120) color: inherit {"dp":"/students/edit-student/[id]","o":"http://localhost:3000/students/edit-student/4518","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770457111115}
-[00:29:43.749] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770457138375}
-[00:30:11.876] Browser ERROR   unhandledRejection: Error: AdmissionNo is required
-[00:30:22.136] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students/edit-student/4519 color: rgb(120, 120, 120) color: inherit {"dp":"/students/edit-student/[id]","o":"http://localhost:3000/students/edit-student/4519","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770457176890}
-[00:30:24.564] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770457179179}
-[00:30:27.157] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students/edit-student/4518 color: rgb(120, 120, 120) color: inherit {"dp":"/students/edit-student/[id]","o":"http://localhost:3000/students/edit-student/4518","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770457181910}
-[00:30:31.894] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770457186518}
-[00:30:37.506] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students/edit-student/4518 color: rgb(120, 120, 120) color: inherit {"dp":"/students/edit-student/[id]","o":"http://localhost:3000/students/edit-student/4518","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770457192259}
-[00:30:44.132] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770457198758}
-[00:30:46.863] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students/edit-student/4514 color: rgb(120, 120, 120) color: inherit {"dp":"/students/edit-student/[id]","o":"http://localhost:3000/students/edit-student/4514","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770457201617}
-[00:30:52.082] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770457206712}
-[00:30:57.951] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students/edit-student/4487 color: rgb(120, 120, 120) color: inherit {"dp":"/students/edit-student/[id]","o":"http://localhost:3000/students/edit-student/4487","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770457212704}
-[00:31:28.292] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770457242909}
-[00:31:32.162] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students/edit-student/4493 color: rgb(120, 120, 120) color: inherit {"dp":"/students/edit-student/[id]","o":"http://localhost:3000/students/edit-student/4493","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770457246915}
-[00:31:35.186] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770457249781}
-[00:31:46.649] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students/edit-student/4513 color: rgb(120, 120, 120) color: inherit {"dp":"/students/edit-student/[id]","o":"http://localhost:3000/students/edit-student/4513","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770457261401}
-[00:37:13.324] Server  LOG      ✓ Compiled in 54ms
-[00:37:39.152] Server  LOG      ✓ Compiled in 52ms
-[00:37:48.450] Server  LOG      ✓ Compiled in 34ms
-[00:37:56.639] Server  LOG      ✓ Compiled in 27ms
-[00:38:09.843] Server  LOG      ✓ Compiled in 28ms
-[00:38:56.106] Server  LOG      ✓ Compiled in 64ms
-[00:39:18.358] Server  LOG      ✓ Compiled in 65ms
-[00:39:24.196] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770457718699}
-[00:39:26.578] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students/edit-student/null color: rgb(120, 120, 120) color: inherit {"dp":"/students/edit-student/[id]","o":"http://localhost:3000/students/edit-student/null","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770457721274}
-[00:39:29.291] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770457723909}
-[00:39:32.200] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students/edit-student/null color: rgb(120, 120, 120) color: inherit {"dp":"/students/edit-student/[id]","o":"http://localhost:3000/students/edit-student/null","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770457726897}
-[00:39:59.424] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770457754009}
-[00:41:19.588] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students/edit-student/null color: rgb(120, 120, 120) color: inherit {"dp":"/students/edit-student/[id]","o":"http://localhost:3000/students/edit-student/null","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770457834282}
-[00:41:32.612] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770457847219}
-[00:42:00.961] Browser ERROR   unhandledRejection: Error: AdmissionNo is required
-[00:42:12.852] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students/edit-student/null color: rgb(120, 120, 120) color: inherit {"dp":"/students/edit-student/[id]","o":"http://localhost:3000/students/edit-student/null","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770457887545}
-[00:42:18.037] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770457892658}
-[00:42:59.261] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students/edit-student/null color: rgb(120, 120, 120) color: inherit {"dp":"/students/edit-student/[id]","o":"http://localhost:3000/students/edit-student/null","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770457933950}
-[00:43:10.425] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770457945025}
-[00:43:12.929] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students/edit-student/null color: rgb(120, 120, 120) color: inherit {"dp":"/students/edit-student/[id]","o":"http://localhost:3000/students/edit-student/null","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770457947623}
-[00:43:21.397] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770457956022}
-[00:43:55.218] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students/add-student color: rgb(120, 120, 120) color: inherit {"dp":"/students/add-student","o":"http://localhost:3000/students/add-student","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770457989932}
-[00:44:00.364] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770457994981}
-[00:44:09.321] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students/edit-student/87654345678 color: rgb(120, 120, 120) color: inherit {"dp":"/students/edit-student/[id]","o":"http://localhost:3000/students/edit-student/87654345678","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770458004014}
-[00:44:24.919] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770458019541}
-[00:46:38.228] Server  LOG      ✓ Compiled in 58ms
-[00:46:54.898] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students/edit-student/null color: rgb(120, 120, 120) color: inherit {"dp":"/students/edit-student/[id]","o":"http://localhost:3000/students/edit-student/null","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770458169498}
-[00:47:22.602] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770458197167}
-[00:47:38.136] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students/edit-student/null color: rgb(120, 120, 120) color: inherit {"dp":"/students/edit-student/[id]","o":"http://localhost:3000/students/edit-student/null","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770458212812}
-[00:47:42.996] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770458217601}
-[00:47:57.125] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:47:57.676] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:47:57.676] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/students","route":"/students"}
-[00:47:57.676] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770458232386}
-[00:48:09.656] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students/edit-student/null color: rgb(120, 120, 120) color: inherit {"dp":"/students/edit-student/[id]","o":"http://localhost:3000/students/edit-student/null","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770458244333}
-[00:48:48.549] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770458283076}
-[00:49:47.188] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students/edit-student/null color: rgb(120, 120, 120) color: inherit {"dp":"/students/edit-student/[id]","o":"http://localhost:3000/students/edit-student/null","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770458341861}
-[00:50:05.712] Server  LOG      ✓ Compiled in 68ms
-[00:50:09.814] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770458364411}
-[00:50:14.331] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students/edit-student/null color: rgb(120, 120, 120) color: inherit {"dp":"/students/edit-student/[id]","o":"http://localhost:3000/students/edit-student/null","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770458369002}
-[00:50:18.476] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770458373111}
-[00:52:18.734] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students/add-student color: rgb(120, 120, 120) color: inherit {"dp":"/students/add-student","o":"http://localhost:3000/students/add-student","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770458493414}
-[00:54:29.702] Server  LOG      ✓ Compiled in 226ms
-[00:54:54.573] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:54:54.923] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:54:54.923] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/students/add-student","route":"/students/add-student"}
-[00:54:54.924] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students/add-student color: rgb(120, 120, 120) color: inherit {"dp":"/students/add-student","o":"http://localhost:3000/students/add-student","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770458649640}
-[00:56:06.601] Server  LOG      ✓ Compiled in 58ms
-[00:56:12.563] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770458727040}
-[00:56:16.537] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students/edit-student/null color: rgb(120, 120, 120) color: inherit {"dp":"/students/edit-student/[id]","o":"http://localhost:3000/students/edit-student/null","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770458731221}
-[01:00:43.570] Server  LOG      ✓ Compiled in 146ms
-[01:00:44.098] Browser ERROR   ./Desktop/MONTESSORI/Montessori-frontend/components/admin/StudentForm.tsx:205:1
-Parsing ecmascript source code failed
-  203 |           </div>
-  204 |         </section>
-> 205 |
-      | ^
-
-Expected '</', got '<eof>'
-
-Import traces:
-  Client Component Browser:
-    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/StudentForm.tsx [Client Component Browser]
-    ./Desktop/MONTESSORI/Montessori-frontend/app/students/add-student/page.tsx [Client Component Browser]
-    ./Desktop/MONTESSORI/Montessori-frontend/app/students/add-student/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./Desktop/MONTESSORI/Montessori-frontend/components/admin/StudentForm.tsx [Client Component SSR]
-    ./Desktop/MONTESSORI/Montessori-frontend/app/students/add-student/page.tsx [Client Component SSR]
-    ./Desktop/MONTESSORI/Montessori-frontend/app/students/add-student/page.tsx [Server Component]
-[01:01:02.289] Server  LOG      ✓ Compiled in 42ms
-[01:01:10.877] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770459025444}
-[01:01:13.332] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students/add-student color: rgb(120, 120, 120) color: inherit {"dp":"/students/add-student","o":"http://localhost:3000/students/add-student","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770459028042}
-[01:01:36.212] Server  LOG      ✓ Compiled in 58ms
-[01:01:41.515] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770459056106}
-[01:01:44.015] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students/edit-student/87654345678 color: rgb(120, 120, 120) color: inherit {"dp":"/students/edit-student/[id]","o":"http://localhost:3000/students/edit-student/87654345678","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770459058696}
-[01:01:49.920] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770459064530}
-[01:03:40.155] Server  LOG      ✓ Compiled in 68ms
-[01:04:35.647] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students/edit-student/87654345678 color: rgb(120, 120, 120) color: inherit {"dp":"/students/edit-student/[id]","o":"http://localhost:3000/students/edit-student/87654345678","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770459230318}
-[01:04:49.571] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770459244157}
-[01:04:50.588] Browser WARN    Image with src "https://warrantyindia.co.in/student/api/uploads/students/87654345678_6987106a6f12d3.40671435.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[01:04:59.581] Server  LOG      ✓ Compiled in 106ms
-[01:05:30.292] Server  ERROR    ⨯ ./Desktop/MONTESSORI/Montessori-frontend/app/students/edit-student/[id]/page.tsx:5:1
-Module not found: Can't resolve '@/components/student/StudentForm'
-  3 | import { useEffect } from "react"
-  4 | import { useParams } from "next/navigation"
-> 5 | import StudentForm from "@/components/student/StudentForm"
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  6 | import { useStudentStore } from "@/store/student.store"
-  7 |
-  8 | export default function ViewStudentPage() {
-
-Import map: aliased to relative './components/student/StudentForm' inside of [project]/Desktop/MONTESSORI/Montessori-frontend
-
-
-Import traces:
-  Client Component Browser:
-    ./Desktop/MONTESSORI/Montessori-frontend/app/students/edit-student/[id]/page.tsx [Client Component Browser]
-    ./Desktop/MONTESSORI/Montessori-frontend/app/students/edit-student/[id]/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./Desktop/MONTESSORI/Montessori-frontend/app/students/edit-student/[id]/page.tsx [Client Component SSR]
-    ./Desktop/MONTESSORI/Montessori-frontend/app/students/edit-student/[id]/page.tsx [Server Component]
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[01:05:30.293] Server  ERROR    ⨯ ./Desktop/MONTESSORI/Montessori-frontend/app/students/edit-student/[id]/page.tsx:5:1
-Module not found: Can't resolve '@/components/student/StudentForm'
-  3 | import { useEffect } from "react"
-  4 | import { useParams } from "next/navigation"
-> 5 | import StudentForm from "@/components/student/StudentForm"
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  6 | import { useStudentStore } from "@/store/student.store"
-  7 |
-  8 | export default function ViewStudentPage() {
-
-Import map: aliased to relative './components/student/StudentForm' inside of [project]/Desktop/MONTESSORI/Montessori-frontend
-
-
-Import traces:
-  Client Component Browser:
-    ./Desktop/MONTESSORI/Montessori-frontend/app/students/edit-student/[id]/page.tsx [Client Component Browser]
-    ./Desktop/MONTESSORI/Montessori-frontend/app/students/edit-student/[id]/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./Desktop/MONTESSORI/Montessori-frontend/app/students/edit-student/[id]/page.tsx [Client Component SSR]
-    ./Desktop/MONTESSORI/Montessori-frontend/app/students/edit-student/[id]/page.tsx [Server Component]
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[01:05:30.295] Server  ERROR    ⨯ ./Desktop/MONTESSORI/Montessori-frontend/app/students/edit-student/[id]/page.tsx:5:1
-Module not found: Can't resolve '@/components/student/StudentForm'
-  3 | import { useEffect } from "react"
-  4 | import { useParams } from "next/navigation"
-> 5 | import StudentForm from "@/components/student/StudentForm"
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  6 | import { useStudentStore } from "@/store/student.store"
-  7 |
-  8 | export default function ViewStudentPage() {
-
-Import map: aliased to relative './components/student/StudentForm' inside of [project]/Desktop/MONTESSORI/Montessori-frontend
-
-
-Import traces:
-  Client Component Browser:
-    ./Desktop/MONTESSORI/Montessori-frontend/app/students/edit-student/[id]/page.tsx [Client Component Browser]
-    ./Desktop/MONTESSORI/Montessori-frontend/app/students/edit-student/[id]/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./Desktop/MONTESSORI/Montessori-frontend/app/students/edit-student/[id]/page.tsx [Client Component SSR]
-    ./Desktop/MONTESSORI/Montessori-frontend/app/students/edit-student/[id]/page.tsx [Server Component]
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[01:05:30.295] Server  ERROR    ⨯ ./Desktop/MONTESSORI/Montessori-frontend/app/students/edit-student/[id]/page.tsx:5:1
-Module not found: Can't resolve '@/components/student/StudentForm'
-  3 | import { useEffect } from "react"
-  4 | import { useParams } from "next/navigation"
-> 5 | import StudentForm from "@/components/student/StudentForm"
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  6 | import { useStudentStore } from "@/store/student.store"
-  7 |
-  8 | export default function ViewStudentPage() {
-
-Import map: aliased to relative './components/student/StudentForm' inside of [project]/Desktop/MONTESSORI/Montessori-frontend
-
-
-Import traces:
-  Client Component Browser:
-    ./Desktop/MONTESSORI/Montessori-frontend/app/students/edit-student/[id]/page.tsx [Client Component Browser]
-    ./Desktop/MONTESSORI/Montessori-frontend/app/students/edit-student/[id]/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./Desktop/MONTESSORI/Montessori-frontend/app/students/edit-student/[id]/page.tsx [Client Component SSR]
-    ./Desktop/MONTESSORI/Montessori-frontend/app/students/edit-student/[id]/page.tsx [Server Component]
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[01:05:30.298] Server  ERROR    ⨯ ./Desktop/MONTESSORI/Montessori-frontend/app/students/edit-student/[id]/page.tsx:5:1
-Module not found: Can't resolve '@/components/student/StudentForm'
-  3 | import { useEffect } from "react"
-  4 | import { useParams } from "next/navigation"
-> 5 | import StudentForm from "@/components/student/StudentForm"
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  6 | import { useStudentStore } from "@/store/student.store"
-  7 |
-  8 | export default function ViewStudentPage() {
-
-Import map: aliased to relative './components/student/StudentForm' inside of [project]/Desktop/MONTESSORI/Montessori-frontend
-
-
-Import traces:
-  Client Component Browser:
-    ./Desktop/MONTESSORI/Montessori-frontend/app/students/edit-student/[id]/page.tsx [Client Component Browser]
-    ./Desktop/MONTESSORI/Montessori-frontend/app/students/edit-student/[id]/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./Desktop/MONTESSORI/Montessori-frontend/app/students/edit-student/[id]/page.tsx [Client Component SSR]
-    ./Desktop/MONTESSORI/Montessori-frontend/app/students/edit-student/[id]/page.tsx [Server Component]
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[01:05:30.304] Server  ERROR    ⨯ ./Desktop/MONTESSORI/Montessori-frontend/app/students/edit-student/[id]/page.tsx:5:1
-Module not found: Can't resolve '@/components/student/StudentForm'
-  3 | import { useEffect } from "react"
-  4 | import { useParams } from "next/navigation"
-> 5 | import StudentForm from "@/components/student/StudentForm"
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  6 | import { useStudentStore } from "@/store/student.store"
-  7 |
-  8 | export default function ViewStudentPage() {
-
-Import map: aliased to relative './components/student/StudentForm' inside of [project]/Desktop/MONTESSORI/Montessori-frontend
-
-
-Import traces:
-  Client Component Browser:
-    ./Desktop/MONTESSORI/Montessori-frontend/app/students/edit-student/[id]/page.tsx [Client Component Browser]
-    ./Desktop/MONTESSORI/Montessori-frontend/app/students/edit-student/[id]/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./Desktop/MONTESSORI/Montessori-frontend/app/students/edit-student/[id]/page.tsx [Client Component SSR]
-    ./Desktop/MONTESSORI/Montessori-frontend/app/students/edit-student/[id]/page.tsx [Server Component]
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[01:05:30.306] Server  ERROR    ⨯ ./Desktop/MONTESSORI/Montessori-frontend/app/students/edit-student/[id]/page.tsx:5:1
-Module not found: Can't resolve '@/components/student/StudentForm'
-  3 | import { useEffect } from "react"
-  4 | import { useParams } from "next/navigation"
-> 5 | import StudentForm from "@/components/student/StudentForm"
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  6 | import { useStudentStore } from "@/store/student.store"
-  7 |
-  8 | export default function ViewStudentPage() {
-
-Import map: aliased to relative './components/student/StudentForm' inside of [project]/Desktop/MONTESSORI/Montessori-frontend
-
-
-Import traces:
-  Client Component Browser:
-    ./Desktop/MONTESSORI/Montessori-frontend/app/students/edit-student/[id]/page.tsx [Client Component Browser]
-    ./Desktop/MONTESSORI/Montessori-frontend/app/students/edit-student/[id]/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./Desktop/MONTESSORI/Montessori-frontend/app/students/edit-student/[id]/page.tsx [Client Component SSR]
-    ./Desktop/MONTESSORI/Montessori-frontend/app/students/edit-student/[id]/page.tsx [Server Component]
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[01:05:30.306] Server  ERROR    ⨯ ./Desktop/MONTESSORI/Montessori-frontend/app/students/edit-student/[id]/page.tsx:5:1
-Module not found: Can't resolve '@/components/student/StudentForm'
-  3 | import { useEffect } from "react"
-  4 | import { useParams } from "next/navigation"
-> 5 | import StudentForm from "@/components/student/StudentForm"
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  6 | import { useStudentStore } from "@/store/student.store"
-  7 |
-  8 | export default function ViewStudentPage() {
-
-Import map: aliased to relative './components/student/StudentForm' inside of [project]/Desktop/MONTESSORI/Montessori-frontend
-
-
-Import traces:
-  Client Component Browser:
-    ./Desktop/MONTESSORI/Montessori-frontend/app/students/edit-student/[id]/page.tsx [Client Component Browser]
-    ./Desktop/MONTESSORI/Montessori-frontend/app/students/edit-student/[id]/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./Desktop/MONTESSORI/Montessori-frontend/app/students/edit-student/[id]/page.tsx [Client Component SSR]
-    ./Desktop/MONTESSORI/Montessori-frontend/app/students/edit-student/[id]/page.tsx [Server Component]
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[01:05:30.307] Server  ERROR    ⨯ ./Desktop/MONTESSORI/Montessori-frontend/app/students/edit-student/[id]/page.tsx:5:1
-Module not found: Can't resolve '@/components/student/StudentForm'
-  3 | import { useEffect } from "react"
-  4 | import { useParams } from "next/navigation"
-> 5 | import StudentForm from "@/components/student/StudentForm"
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  6 | import { useStudentStore } from "@/store/student.store"
-  7 |
-  8 | export default function ViewStudentPage() {
-
-Import map: aliased to relative './components/student/StudentForm' inside of [project]/Desktop/MONTESSORI/Montessori-frontend
-
-
-Import traces:
-  Client Component Browser:
-    ./Desktop/MONTESSORI/Montessori-frontend/app/students/edit-student/[id]/page.tsx [Client Component Browser]
-    ./Desktop/MONTESSORI/Montessori-frontend/app/students/edit-student/[id]/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./Desktop/MONTESSORI/Montessori-frontend/app/students/edit-student/[id]/page.tsx [Client Component SSR]
-    ./Desktop/MONTESSORI/Montessori-frontend/app/students/edit-student/[id]/page.tsx [Server Component]
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[01:05:30.309] Server  ERROR    ⨯ ./Desktop/MONTESSORI/Montessori-frontend/app/students/edit-student/[id]/page.tsx:5:1
-Module not found: Can't resolve '@/components/student/StudentForm'
-  3 | import { useEffect } from "react"
-  4 | import { useParams } from "next/navigation"
-> 5 | import StudentForm from "@/components/student/StudentForm"
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  6 | import { useStudentStore } from "@/store/student.store"
-  7 |
-  8 | export default function ViewStudentPage() {
-
-Import map: aliased to relative './components/student/StudentForm' inside of [project]/Desktop/MONTESSORI/Montessori-frontend
-
-
-Import traces:
-  Client Component Browser:
-    ./Desktop/MONTESSORI/Montessori-frontend/app/students/edit-student/[id]/page.tsx [Client Component Browser]
-    ./Desktop/MONTESSORI/Montessori-frontend/app/students/edit-student/[id]/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./Desktop/MONTESSORI/Montessori-frontend/app/students/edit-student/[id]/page.tsx [Client Component SSR]
-    ./Desktop/MONTESSORI/Montessori-frontend/app/students/edit-student/[id]/page.tsx [Server Component]
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[01:05:30.310] Server  ERROR    ⨯ ./Desktop/MONTESSORI/Montessori-frontend/app/students/edit-student/[id]/page.tsx:5:1
-Module not found: Can't resolve '@/components/student/StudentForm'
-  3 | import { useEffect } from "react"
-  4 | import { useParams } from "next/navigation"
-> 5 | import StudentForm from "@/components/student/StudentForm"
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  6 | import { useStudentStore } from "@/store/student.store"
-  7 |
-  8 | export default function ViewStudentPage() {
-
-Import map: aliased to relative './components/student/StudentForm' inside of [project]/Desktop/MONTESSORI/Montessori-frontend
-
-
-Import traces:
-  Client Component Browser:
-    ./Desktop/MONTESSORI/Montessori-frontend/app/students/edit-student/[id]/page.tsx [Client Component Browser]
-    ./Desktop/MONTESSORI/Montessori-frontend/app/students/edit-student/[id]/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./Desktop/MONTESSORI/Montessori-frontend/app/students/edit-student/[id]/page.tsx [Client Component SSR]
-    ./Desktop/MONTESSORI/Montessori-frontend/app/students/edit-student/[id]/page.tsx [Server Component]
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[01:05:30.311] Server  ERROR    ⨯ ./Desktop/MONTESSORI/Montessori-frontend/app/students/edit-student/[id]/page.tsx:5:1
-Module not found: Can't resolve '@/components/student/StudentForm'
-  3 | import { useEffect } from "react"
-  4 | import { useParams } from "next/navigation"
-> 5 | import StudentForm from "@/components/student/StudentForm"
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  6 | import { useStudentStore } from "@/store/student.store"
-  7 |
-  8 | export default function ViewStudentPage() {
-
-Import map: aliased to relative './components/student/StudentForm' inside of [project]/Desktop/MONTESSORI/Montessori-frontend
-
-
-Import traces:
-  Client Component Browser:
-    ./Desktop/MONTESSORI/Montessori-frontend/app/students/edit-student/[id]/page.tsx [Client Component Browser]
-    ./Desktop/MONTESSORI/Montessori-frontend/app/students/edit-student/[id]/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./Desktop/MONTESSORI/Montessori-frontend/app/students/edit-student/[id]/page.tsx [Client Component SSR]
-    ./Desktop/MONTESSORI/Montessori-frontend/app/students/edit-student/[id]/page.tsx [Server Component]
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[01:05:30.325] Server  LOG      ✓ Compiled in 118ms
-[01:05:31.098] Browser ERROR   ./Desktop/MONTESSORI/Montessori-frontend/app/students/edit-student/[id]/page.tsx:5:1
-Module not found: Can't resolve '@/components/student/StudentForm'
-  3 | import { useEffect } from "react"
-  4 | import { useParams } from "next/navigation"
-> 5 | import StudentForm from "@/components/student/StudentForm"
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  6 | import { useStudentStore } from "@/store/student.store"
-  7 |
-  8 | export default function ViewStudentPage() {
-
-Import map: aliased to relative './components/student/StudentForm' inside of [project]/Desktop/MONTESSORI/Montessori-frontend
-
-Import traces:
-  Client Component Browser:
-    ./Desktop/MONTESSORI/Montessori-frontend/app/students/edit-student/[id]/page.tsx [Client Component Browser]
-    ./Desktop/MONTESSORI/Montessori-frontend/app/students/edit-student/[id]/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./Desktop/MONTESSORI/Montessori-frontend/app/students/edit-student/[id]/page.tsx [Client Component SSR]
-    ./Desktop/MONTESSORI/Montessori-frontend/app/students/edit-student/[id]/page.tsx [Server Component]
-
-https://nextjs.org/docs/messages/module-not-found
-[01:05:31.099] Browser ERROR   ./Desktop/MONTESSORI/Montessori-frontend/app/students/edit-student/[id]/page.tsx:5:1
-Module not found: Can't resolve '@/components/student/StudentForm'
-  3 | import { useEffect } from "react"
-  4 | import { useParams } from "next/navigation"
-> 5 | import StudentForm from "@/components/student/StudentForm"
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  6 | import { useStudentStore } from "@/store/student.store"
-  7 |
-  8 | export default function ViewStudentPage() {
-
-Import map: aliased to relative './components/student/StudentForm' inside of [project]/Desktop/MONTESSORI/Montessori-frontend
-
-Import traces:
-  Client Component Browser:
-    ./Desktop/MONTESSORI/Montessori-frontend/app/students/edit-student/[id]/page.tsx [Client Component Browser]
-    ./Desktop/MONTESSORI/Montessori-frontend/app/students/edit-student/[id]/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./Desktop/MONTESSORI/Montessori-frontend/app/students/edit-student/[id]/page.tsx [Client Component SSR]
-    ./Desktop/MONTESSORI/Montessori-frontend/app/students/edit-student/[id]/page.tsx [Server Component]
-
-https://nextjs.org/docs/messages/module-not-found
-[01:05:46.258] Server  LOG      ✓ Compiled in 77ms
-[01:05:46.260] Server  WARN     ⚠ Fast Refresh had to perform a full reload when ./Desktop/MONTESSORI/Montessori-frontend/app/students/edit-student/[id]/page.tsx changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
-[01:05:46.597] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:05:48.099] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[01:05:48.100] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/students","route":"/students"}
-[01:05:48.100] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770459302448}
-[01:05:48.100] Browser WARN    Image with src "https://warrantyindia.co.in/student/api/uploads/students/87654345678_6987106a6f12d3.40671435.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[01:05:59.917] Server  LOG      ✓ Compiled in 89ms
-[01:09:14.342] Server  LOG      ✓ Compiled in 59ms
-[01:09:17.887] Server  LOG      ✓ Compiled in 32ms
-[01:09:37.828] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students/view/null color: rgb(120, 120, 120) color: inherit {"dp":"/students/view/[id]","o":"http://localhost:3000/students/view/null","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770459532547}
-[01:09:46.211] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:09:46.474] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[01:09:46.474] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/students/view/null","route":"/students/view/[id]"}
-[01:09:46.474] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students/view/null color: rgb(120, 120, 120) color: inherit {"dp":"/students/view/[id]","o":"http://localhost:3000/students/view/null","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770459541094}
-[01:09:58.428] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770459552953}
-[01:09:59.453] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:10:00.486] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[01:10:00.486] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/students","route":"/students"}
-[01:10:00.486] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770459555184}
-[01:10:01.193] Browser WARN    Image with src "https://warrantyindia.co.in/student/api/uploads/students/87654345678_6987106a6f12d3.40671435.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[01:10:02.752] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students/view/null color: rgb(120, 120, 120) color: inherit {"dp":"/students/view/[id]","o":"http://localhost:3000/students/view/null","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770459557470}
-[01:10:14.514] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770459569071}
-[01:10:17.888] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students/view/87654345678 color: rgb(120, 120, 120) color: inherit {"dp":"/students/view/[id]","o":"http://localhost:3000/students/view/87654345678","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770459572547}
-[01:10:57.074] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770459611656}
-[01:10:59.857] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students/edit-student/87654345678 color: rgb(120, 120, 120) color: inherit {"dp":"/students/edit-student/[id]","o":"http://localhost:3000/students/edit-student/87654345678","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770459614513}
-[01:11:05.175] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770459619753}
-[01:11:08.120] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students/edit-student/null color: rgb(120, 120, 120) color: inherit {"dp":"/students/edit-student/[id]","o":"http://localhost:3000/students/edit-student/null","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770459622780}
-[01:11:11.760] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770459626346}
-[01:11:15.736] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students/view/null color: rgb(120, 120, 120) color: inherit {"dp":"/students/view/[id]","o":"http://localhost:3000/students/view/null","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770459630381}
-[01:11:18.826] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770459633412}
-[01:11:20.624] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:11:21.187] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[01:11:21.187] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/students","route":"/students"}
-[01:11:21.187] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770459635887}
-[01:11:21.865] Browser WARN    Image with src "https://warrantyindia.co.in/student/api/uploads/students/87654345678_6987106a6f12d3.40671435.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[01:11:25.870] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students/view/null color: rgb(120, 120, 120) color: inherit {"dp":"/students/view/[id]","o":"http://localhost:3000/students/view/null","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770459640570}
-[01:11:28.057] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770459642633}
-[01:11:32.494] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students/edit-student/null color: rgb(120, 120, 120) color: inherit {"dp":"/students/edit-student/[id]","o":"http://localhost:3000/students/edit-student/null","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770459647147}
-[01:11:34.618] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770459649198}
-[01:12:04.196] Server  LOG      ✓ Compiled in 66ms
-[01:12:07.717] Server  LOG      ✓ Compiled in 25ms
-[01:12:11.220] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students/edit-student/87654345678 color: rgb(120, 120, 120) color: inherit {"dp":"/students/edit-student/[id]","o":"http://localhost:3000/students/edit-student/87654345678","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770459685856}
-[01:12:12.801] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770459687361}
-[01:12:16.466] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:12:17.712] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[01:12:17.712] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/students","route":"/students"}
-[01:12:17.712] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770459692296}
-[01:12:17.712] Browser WARN    Image with src "https://warrantyindia.co.in/student/api/uploads/students/87654345678_6987106a6f12d3.40671435.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[01:12:18.789] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students/view/4519 color: rgb(120, 120, 120) color: inherit {"dp":"/students/view/[id]","o":"http://localhost:3000/students/view/4519","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770459693486}
-[01:12:28.079] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770459702637}
-[01:12:31.196] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students/view/4517 color: rgb(120, 120, 120) color: inherit {"dp":"/students/view/[id]","o":"http://localhost:3000/students/view/4517","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770459705894}
-[01:13:02.940] Server  LOG      ✓ Compiled in 68ms
-[01:13:04.130] Server  LOG      ✓ Compiled in 32ms
-[01:13:25.893] Server  LOG      ✓ Compiled in 29ms
-[01:13:29.605] Server  LOG      ✓ Compiled in 29ms
-[01:13:35.842] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770459770348}
-[01:13:39.004] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students/view/4519 color: rgb(120, 120, 120) color: inherit {"dp":"/students/view/[id]","o":"http://localhost:3000/students/view/4519","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770459773700}
-[01:13:40.903] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:13:41.089] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[01:13:41.089] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/students/view/4519","route":"/students/view/[id]"}
-[01:13:41.089] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students/view/4519 color: rgb(120, 120, 120) color: inherit {"dp":"/students/view/[id]","o":"http://localhost:3000/students/view/4519","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770459775768}
-[01:15:10.806] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:15:11.135] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[01:15:11.135] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/students/view/4519","route":"/students/view/[id]"}
-[01:15:11.135] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students/view/4519 color: rgb(120, 120, 120) color: inherit {"dp":"/students/view/[id]","o":"http://localhost:3000/students/view/4519","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770459865827}
-[01:15:12.346] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770459866698}
-[01:15:12.609] Browser WARN    Image with src "https://warrantyindia.co.in/student/api/uploads/students/87654345678_6987106a6f12d3.40671435.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[01:15:16.321] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students/view/4520 color: rgb(120, 120, 120) color: inherit {"dp":"/students/view/[id]","o":"http://localhost:3000/students/view/4520","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770459871016}
-[01:15:18.213] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770459872778}
-[01:15:45.153] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students/edit-student/4519 color: rgb(120, 120, 120) color: inherit {"dp":"/students/edit-student/[id]","o":"http://localhost:3000/students/edit-student/4519","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770459899799}
-[01:15:48.780] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770459903335}
-[01:15:51.190] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students/edit-student/4500 color: rgb(120, 120, 120) color: inherit {"dp":"/students/edit-student/[id]","o":"http://localhost:3000/students/edit-student/4500","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770459905834}
-[01:15:55.989] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770459910550}
-[01:16:08.038] Server  LOG      ✓ Compiled in 79ms
-[01:16:09.785] Server  LOG      ✓ Compiled in 42ms
-[01:16:17.161] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students/view/4519 color: rgb(120, 120, 120) color: inherit {"dp":"/students/view/[id]","o":"http://localhost:3000/students/view/4519","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770459931772}
-[01:16:20.806] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770459935371}
-[01:16:24.313] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students/view/4514 color: rgb(120, 120, 120) color: inherit {"dp":"/students/view/[id]","o":"http://localhost:3000/students/view/4514","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770459938942}
-[01:16:30.677] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770459945241}
-[01:16:33.250] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students/view/4495 color: rgb(120, 120, 120) color: inherit {"dp":"/students/view/[id]","o":"http://localhost:3000/students/view/4495","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770459947882}
-[01:16:43.340] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770459957899}
-[01:16:46.127] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students/view/4473 color: rgb(120, 120, 120) color: inherit {"dp":"/students/view/[id]","o":"http://localhost:3000/students/view/4473","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770459960745}
-[01:17:24.847] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770459999318}
-[01:17:27.498] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students/add-student color: rgb(120, 120, 120) color: inherit {"dp":"/students/add-student","o":"http://localhost:3000/students/add-student","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770460002152}
-[01:17:30.421] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770460004976}
-[01:17:35.884] Browser ERROR   unhandledRejection: Error: AdmissionNo is required
-[01:17:38.744] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students/edit-student/4521 color: rgb(120, 120, 120) color: inherit {"dp":"/students/edit-student/[id]","o":"http://localhost:3000/students/edit-student/4521","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770460013392}
-[01:17:43.551] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770460018160}
-[01:17:46.236] Browser ERROR   unhandledRejection: Error: AdmissionNo is required
-[01:17:57.142] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students/add-student color: rgb(120, 120, 120) color: inherit {"dp":"/students/add-student","o":"http://localhost:3000/students/add-student","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770460031803}
-[01:18:30.180] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770460064734}
-[01:18:47.856] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students/add-student color: rgb(120, 120, 120) color: inherit {"dp":"/students/add-student","o":"http://localhost:3000/students/add-student","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770460082494}
-[01:18:57.765] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770460092304}
-[01:20:30.760] Server  LOG      ✓ Compiled in 122ms
-[01:20:49.090] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:20:50.294] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[01:20:50.294] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/students","route":"/students"}
-[01:20:50.294] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770460204933}
-[01:20:50.394] Browser WARN    Image with src "https://warrantyindia.co.in/student/api/uploads/students/87654345678_6987106a6f12d3.40671435.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[01:23:36.519] Server  LOG      ✓ Compiled in 145ms
-[01:23:46.147] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students/add-student color: rgb(120, 120, 120) color: inherit {"dp":"/students/add-student","o":"http://localhost:3000/students/add-student","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770460380694}
-[01:23:47.442] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770460381997}
-[01:24:30.464] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students/view/4473 color: rgb(120, 120, 120) color: inherit {"dp":"/students/view/[id]","o":"http://localhost:3000/students/view/4473","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770460425145}
-[01:24:39.377] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770460434001}
-[01:24:41.001] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students/edit-student/4520 color: rgb(120, 120, 120) color: inherit {"dp":"/students/edit-student/[id]","o":"http://localhost:3000/students/edit-student/4520","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770460435675}
-[01:24:42.759] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770460437395}
-[01:24:58.498] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students/view/4520 color: rgb(120, 120, 120) color: inherit {"dp":"/students/view/[id]","o":"http://localhost:3000/students/view/4520","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770460453178}
-[01:25:00.087] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:25:00.215] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[01:25:00.215] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/students/view/4520","route":"/students/view/[id]"}
-[01:25:00.215] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students/view/4520 color: rgb(120, 120, 120) color: inherit {"dp":"/students/view/[id]","o":"http://localhost:3000/students/view/4520","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770460454894}
-[01:25:03.342] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770460457940}
-[01:25:03.528] Browser WARN    Image with src "https://warrantyindia.co.in/student/api/uploads/students/87654345678_6987106a6f12d3.40671435.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[01:25:05.216] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students/edit-student/4519 color: rgb(120, 120, 120) color: inherit {"dp":"/students/edit-student/[id]","o":"http://localhost:3000/students/edit-student/4519","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770460459889}
-[01:25:35.166] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770460489779}
-[01:25:36.736] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students/edit-student/4518 color: rgb(120, 120, 120) color: inherit {"dp":"/students/edit-student/[id]","o":"http://localhost:3000/students/edit-student/4518","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770460491409}
-[01:25:41.010] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770460495642}
-[01:25:42.735] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students/edit-student/4516 color: rgb(120, 120, 120) color: inherit {"dp":"/students/edit-student/[id]","o":"http://localhost:3000/students/edit-student/4516","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770460497406}
-[01:25:48.638] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770460503260}
-[01:25:52.888] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students/edit-student/4496 color: rgb(120, 120, 120) color: inherit {"dp":"/students/edit-student/[id]","o":"http://localhost:3000/students/edit-student/4496","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770460507560}
-[01:25:57.922] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770460512558}
-[01:25:59.501] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students/edit-student/4479 color: rgb(120, 120, 120) color: inherit {"dp":"/students/edit-student/[id]","o":"http://localhost:3000/students/edit-student/4479","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770460514173}
-[01:26:06.598] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770460521225}
-[01:26:09.660] Server  LOG      ✓ Compiled in 57ms
-[01:26:15.741] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students/view/4477 color: rgb(120, 120, 120) color: inherit {"dp":"/students/view/[id]","o":"http://localhost:3000/students/view/4477","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770460530430}
-[01:26:17.300] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770460531939}
-[01:26:18.632] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students/view/4516 color: rgb(120, 120, 120) color: inherit {"dp":"/students/view/[id]","o":"http://localhost:3000/students/view/4516","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770460533327}
-[01:26:20.123] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770460534779}
-[01:26:21.543] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students/edit-student/4517 color: rgb(120, 120, 120) color: inherit {"dp":"/students/edit-student/[id]","o":"http://localhost:3000/students/edit-student/4517","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770460536236}
-[01:26:28.706] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770460543370}
-[01:26:29.768] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:26:30.047] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[01:26:30.047] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/students","route":"/students"}
-[01:26:30.047] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770460544739}
-[01:26:30.213] Browser WARN    Image with src "https://warrantyindia.co.in/student/api/uploads/students/87654345678_6987106a6f12d3.40671435.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[01:26:31.408] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students/edit-student/4519 color: rgb(120, 120, 120) color: inherit {"dp":"/students/edit-student/[id]","o":"http://localhost:3000/students/edit-student/4519","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770460546111}
-[01:26:37.201] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770460551866}
-[01:26:40.136] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students/edit-student/4514 color: rgb(120, 120, 120) color: inherit {"dp":"/students/edit-student/[id]","o":"http://localhost:3000/students/edit-student/4514","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770460554845}
-[01:26:47.776] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770460562445}
-[01:27:11.430] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students/edit-student/4496 color: rgb(120, 120, 120) color: inherit {"dp":"/students/edit-student/[id]","o":"http://localhost:3000/students/edit-student/4496","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770460586144}
-[01:27:15.943] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770460590605}
-[01:27:18.796] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students/edit-student/4518 color: rgb(120, 120, 120) color: inherit {"dp":"/students/edit-student/[id]","o":"http://localhost:3000/students/edit-student/4518","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770460593511}
-[01:27:21.625] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770460596303}
-[01:27:22.408] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:27:22.663] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[01:27:22.663] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/students","route":"/students"}
-[01:27:22.663] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770460597384}
-[01:27:23.401] Browser WARN    Image with src "https://warrantyindia.co.in/student/api/uploads/students/87654345678_6987106a6f12d3.40671435.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[01:27:24.566] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students/edit-student/4517 color: rgb(120, 120, 120) color: inherit {"dp":"/students/edit-student/[id]","o":"http://localhost:3000/students/edit-student/4517","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770460599282}
-[01:27:26.980] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770460601657}
-[01:27:31.840] Server  LOG      ✓ Compiled in 73ms
-[01:27:38.736] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students/edit-student/4519 color: rgb(120, 120, 120) color: inherit {"dp":"/students/edit-student/[id]","o":"http://localhost:3000/students/edit-student/4519","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770460613451}
-[01:27:43.284] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770460617936}
-[01:27:47.195] Server  LOG      ✓ Compiled in 90ms
-[01:27:54.833] Server  LOG      ✓ Compiled in 39ms
-[01:28:00.697] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students/edit-student/4520 color: rgb(120, 120, 120) color: inherit {"dp":"/students/edit-student/[id]","o":"http://localhost:3000/students/edit-student/4520","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770460635411}
-[01:28:04.678] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770460639350}
-[01:28:09.666] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students/view/4519 color: rgb(120, 120, 120) color: inherit {"dp":"/students/view/[id]","o":"http://localhost:3000/students/view/4519","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770460644386}
-[01:28:11.478] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:28:11.593] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[01:28:11.593] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/students/view/4519","route":"/students/view/[id]"}
-[01:28:11.593] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students/view/4519 color: rgb(120, 120, 120) color: inherit {"dp":"/students/view/[id]","o":"http://localhost:3000/students/view/4519","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770460646315}
-[01:28:13.131] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770460647783}
-[01:28:13.412] Browser WARN    Image with src "https://warrantyindia.co.in/student/api/uploads/students/87654345678_6987106a6f12d3.40671435.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[01:29:06.015] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students/view/4518 color: rgb(120, 120, 120) color: inherit {"dp":"/students/view/[id]","o":"http://localhost:3000/students/view/4518","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770460700735}
-[01:31:28.029] Server  LOG      ✓ Compiled in 63ms
-[01:32:04.295] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770460878936}
-[01:32:06.920] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students/view/4519 color: rgb(120, 120, 120) color: inherit {"dp":"/students/view/[id]","o":"http://localhost:3000/students/view/4519","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770460881616}
-[01:32:15.636] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770460890305}
-[01:32:18.965] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students/edit-student/4505 color: rgb(120, 120, 120) color: inherit {"dp":"/students/edit-student/[id]","o":"http://localhost:3000/students/edit-student/4505","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770460893662}
-[01:33:49.091] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770460983746}
-[01:33:57.935] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students/edit-student/4520 color: rgb(120, 120, 120) color: inherit {"dp":"/students/edit-student/[id]","o":"http://localhost:3000/students/edit-student/4520","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770460992633}
-[01:34:53.067] Server  LOG      ✓ Compiled in 63ms
-[01:34:57.866] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770461052510}
-[01:35:07.736] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students/edit-student/4519 color: rgb(120, 120, 120) color: inherit {"dp":"/students/edit-student/[id]","o":"http://localhost:3000/students/edit-student/4519","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770461062431}
-[01:35:14.319] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770461068993}
-[01:35:25.790] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students/add-student color: rgb(120, 120, 120) color: inherit {"dp":"/students/add-student","o":"http://localhost:3000/students/add-student","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770461080464}
-[01:35:31.122] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770461085790}
-[01:35:37.761] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students/add-student color: rgb(120, 120, 120) color: inherit {"dp":"/students/add-student","o":"http://localhost:3000/students/add-student","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770461092467}
-[01:35:39.566] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770461094237}
-[01:35:56.856] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students/add-student color: rgb(120, 120, 120) color: inherit {"dp":"/students/add-student","o":"http://localhost:3000/students/add-student","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770461111558}
-[01:36:01.387] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770461115960}
-[01:37:27.098] Server  LOG      ✓ Compiled in 67ms
-[01:37:32.009] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students/add-student color: rgb(120, 120, 120) color: inherit {"dp":"/students/add-student","o":"http://localhost:3000/students/add-student","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770461206662}
-[01:37:34.289] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:37:34.592] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[01:37:34.592] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/students/add-student","route":"/students/add-student"}
-[01:37:34.592] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students/add-student color: rgb(120, 120, 120) color: inherit {"dp":"/students/add-student","o":"http://localhost:3000/students/add-student","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770461209297}
-[01:37:36.315] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770461210737}
-[01:37:36.513] Browser WARN    Image with src "https://warrantyindia.co.in/student/api/uploads/students/87654345678_6987106a6f12d3.40671435.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[01:37:40.117] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students/add-student color: rgb(120, 120, 120) color: inherit {"dp":"/students/add-student","o":"http://localhost:3000/students/add-student","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770461214802}
-[01:37:42.613] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770461217200}
-[01:38:02.152] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students/view/4519 color: rgb(120, 120, 120) color: inherit {"dp":"/students/view/[id]","o":"http://localhost:3000/students/view/4519","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770461236742}
-[01:39:23.101] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770461317651}
-[01:39:28.493] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students/view/4520 color: rgb(120, 120, 120) color: inherit {"dp":"/students/view/[id]","o":"http://localhost:3000/students/view/4520","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770461323110}
-[01:39:33.066] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770461327651}
-[01:39:39.561] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students/edit-student/4520 color: rgb(120, 120, 120) color: inherit {"dp":"/students/edit-student/[id]","o":"http://localhost:3000/students/edit-student/4520","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770461334174}
-[01:43:34.490] Server  LOG      ✓ Compiled in 197ms
-[01:43:56.164] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770461590699}
-[01:43:59.578] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students/edit-student/4520 color: rgb(120, 120, 120) color: inherit {"dp":"/students/edit-student/[id]","o":"http://localhost:3000/students/edit-student/4520","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770461594247}
-[01:44:37.397] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770461631967}
-[01:44:39.478] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students/view/4520 color: rgb(120, 120, 120) color: inherit {"dp":"/students/view/[id]","o":"http://localhost:3000/students/view/4520","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770461634150}
-[01:44:50.708] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770461645291}
-[01:44:52.806] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students/view/4520 color: rgb(120, 120, 120) color: inherit {"dp":"/students/view/[id]","o":"http://localhost:3000/students/view/4520","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770461647476}
-[01:44:56.960] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770461651534}
-[01:44:58.356] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students/edit-student/4520 color: rgb(120, 120, 120) color: inherit {"dp":"/students/edit-student/[id]","o":"http://localhost:3000/students/edit-student/4520","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770461653025}
-[01:45:06.289] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770461660865}
-[01:45:08.306] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students/view/4520 color: rgb(120, 120, 120) color: inherit {"dp":"/students/view/[id]","o":"http://localhost:3000/students/view/4520","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770461662976}
-[01:45:12.989] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770461667566}
-[01:45:14.906] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students/edit-student/4520 color: rgb(120, 120, 120) color: inherit {"dp":"/students/edit-student/[id]","o":"http://localhost:3000/students/edit-student/4520","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770461669578}
-[01:46:06.206] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770461720754}
-[01:46:10.505] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students/view/4520 color: rgb(120, 120, 120) color: inherit {"dp":"/students/view/[id]","o":"http://localhost:3000/students/view/4520","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770461725174}
-[01:46:16.134] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770461730703}
-[01:46:17.787] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students/edit-student/4520 color: rgb(120, 120, 120) color: inherit {"dp":"/students/edit-student/[id]","o":"http://localhost:3000/students/edit-student/4520","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770461732457}
-[01:47:47.821] Server  LOG      ✓ Compiled in 125ms
-[01:48:36.403] Server  LOG      ✓ Compiled in 205ms
-[01:50:18.525] Server  LOG      ✓ Compiled in 119ms
-[01:50:32.220] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770461986732}
-[01:50:36.402] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students/view/4520 color: rgb(120, 120, 120) color: inherit {"dp":"/students/view/[id]","o":"http://localhost:3000/students/view/4520","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770461991066}
-[01:50:59.790] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770462014429}
-[01:51:07.474] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students/view/4520 color: rgb(120, 120, 120) color: inherit {"dp":"/students/view/[id]","o":"http://localhost:3000/students/view/4520","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770462022167}
-[01:51:10.033] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770462024693}
-[01:51:11.406] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students/edit-student/4520 color: rgb(120, 120, 120) color: inherit {"dp":"/students/edit-student/[id]","o":"http://localhost:3000/students/edit-student/4520","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770462026087}
-[01:52:05.996] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770462080646}
-[01:52:09.750] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students/view/4520 color: rgb(120, 120, 120) color: inherit {"dp":"/students/view/[id]","o":"http://localhost:3000/students/view/4520","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770462084440}
-[01:52:15.970] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770462090616}
-[01:52:17.453] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students/edit-student/4520 color: rgb(120, 120, 120) color: inherit {"dp":"/students/edit-student/[id]","o":"http://localhost:3000/students/edit-student/4520","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770462092132}
-[01:52:21.333] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770462095989}
-[01:52:23.768] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students/view/4501 color: rgb(120, 120, 120) color: inherit {"dp":"/students/view/[id]","o":"http://localhost:3000/students/view/4501","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770462098459}
-[01:52:39.816] Server  LOG      ✓ Compiled in 60ms
-[01:52:42.037] Server  LOG      ✓ Compiled in 47ms
-[01:52:47.648] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770462122261}
-[01:52:50.112] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students/edit-student/4520 color: rgb(120, 120, 120) color: inherit {"dp":"/students/edit-student/[id]","o":"http://localhost:3000/students/edit-student/4520","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770462124795}
-[01:52:51.879] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770462126533}
-[01:53:05.320] Server  LOG      ✓ Compiled in 94ms
-[01:53:09.183] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students/edit-student/4522 color: rgb(120, 120, 120) color: inherit {"dp":"/students/edit-student/[id]","o":"http://localhost:3000/students/edit-student/4522","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770462143867}
-[01:53:12.681] Server  LOG      ✓ Compiled in 35ms
-[01:53:15.670] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770462150313}
-[01:53:18.492] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students/view/4518 color: rgb(120, 120, 120) color: inherit {"dp":"/students/view/[id]","o":"http://localhost:3000/students/view/4518","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770462153181}
-[01:53:21.472] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770462156127}
-[01:53:45.714] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students/add-student color: rgb(120, 120, 120) color: inherit {"dp":"/students/add-student","o":"http://localhost:3000/students/add-student","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770462180405}
-[01:54:22.537] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/dashboard color: rgb(120, 120, 120) color: inherit {"dp":"/dashboard","o":"http://localhost:3000/dashboard","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770462217088}
-[01:54:22.537] Browser WARN    Image with src "http://localhost:3000/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[01:54:26.258] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/bulkUpload color: rgb(120, 120, 120) color: inherit {"dp":"/bulkUpload","o":"http://localhost:3000/bulkUpload","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770462220912}
-[01:54:28.658] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/dashboard color: rgb(120, 120, 120) color: inherit {"dp":"/dashboard","o":"http://localhost:3000/dashboard","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770462223331}
-[01:54:57.900] Server  LOG      ✓ Compiled in 83ms
-[01:55:26.738] Server  LOG      ✓ Compiled in 46ms
-[01:55:27.097] Browser ERROR   uncaughtError: ReferenceError: User is not defined
-[01:55:31.007] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[01:55:31.056] Server  LOG      ✓ Compiled in 101ms
-[01:55:31.441] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:55:31.930] Browser WARN    Image with src "http://localhost:3000/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[01:55:31.930] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[01:55:31.930] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/dashboard","route":"/dashboard"}
-[01:55:31.930] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/dashboard color: rgb(120, 120, 120) color: inherit {"dp":"/dashboard","o":"http://localhost:3000/dashboard","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770462286331}
-[01:55:34.801] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/bulkUpload color: rgb(120, 120, 120) color: inherit {"dp":"/bulkUpload","o":"http://localhost:3000/bulkUpload","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770462289402}
-[01:56:15.511] Server  LOG      ✓ Compiled in 89ms
-[01:56:19.647] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/dashboard color: rgb(120, 120, 120) color: inherit {"dp":"/dashboard","o":"http://localhost:3000/dashboard","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770462334304}
-[01:56:21.382] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students/add-student color: rgb(120, 120, 120) color: inherit {"dp":"/students/add-student","o":"http://localhost:3000/students/add-student","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770462336041}
-[01:56:27.684] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/dashboard color: rgb(120, 120, 120) color: inherit {"dp":"/dashboard","o":"http://localhost:3000/dashboard","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770462342351}
-[01:56:34.345] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students/add-student color: rgb(120, 120, 120) color: inherit {"dp":"/students/add-student","o":"http://localhost:3000/students/add-student","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770462349034}
-[01:56:44.118] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770462358751}
-[01:56:44.365] Browser WARN    Image with src "https://warrantyindia.co.in/student/api/uploads/students/87654345678_6987106a6f12d3.40671435.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[01:59:06.811] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students/view/4520 color: rgb(120, 120, 120) color: inherit {"dp":"/students/view/[id]","o":"http://localhost:3000/students/view/4520","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770462501494}
-[01:59:28.886] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770462523513}
-[01:59:31.295] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students/edit-student/4520 color: rgb(120, 120, 120) color: inherit {"dp":"/students/edit-student/[id]","o":"http://localhost:3000/students/edit-student/4520","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770462525968}
-[02:00:08.021] Server  LOG      ✓ Compiled in 84ms
-[02:00:15.550] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770462570173}
-[02:01:19.145] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[02:01:20.050] Browser WARN    Image with src "https://warrantyindia.co.in/student/api/uploads/students/87654345678_6987106a6f12d3.40671435.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[02:01:20.050] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[02:01:20.050] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/students","route":"/students"}
-[02:01:20.050] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770462634742}
-[02:03:00.927] Server  LOG      ✓ Compiled in 75ms
-[02:03:23.280] Server  LOG      ✓ Compiled in 71ms
-[02:03:53.506] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[02:03:54.017] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[02:03:54.017] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/students","route":"/students"}
-[02:03:54.017] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770462788706}
-[02:03:55.073] Browser WARN    Image with src "https://warrantyindia.co.in/student/api/uploads/students/87654345678_6987106a6f12d3.40671435.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[02:04:17.682] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students/edit-student/4520 color: rgb(120, 120, 120) color: inherit {"dp":"/students/edit-student/[id]","o":"http://localhost:3000/students/edit-student/4520","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770462812224}
-[02:04:38.304] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770462832832}
-[02:04:42.240] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students/edit-student/4518 color: rgb(120, 120, 120) color: inherit {"dp":"/students/edit-student/[id]","o":"http://localhost:3000/students/edit-student/4518","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770462836827}
-[02:05:21.974] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770462876522}
-[02:05:50.312] Browser WARN    Image with src "https://warrantyindia.co.in/student/api/uploads/students/11060_6977635a0a1b43.70027485.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[02:06:32.248] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/dashboard color: rgb(120, 120, 120) color: inherit {"dp":"/dashboard","o":"http://localhost:3000/dashboard","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770462946836}
-[02:06:32.410] Browser WARN    Image with src "http://localhost:3000/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[02:06:35.440] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770462949935}
-[02:08:26.798] Server  LOG      ✓ Compiled in 91ms
-[02:08:58.034] Server  LOG      ✓ Compiled in 57ms
-[02:09:03.134] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[02:09:03.609] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[02:09:03.609] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/students","route":"/students"}
-[02:09:03.609] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770463098294}
-[02:09:04.294] Browser WARN    Image with src "https://warrantyindia.co.in/student/api/uploads/students/87654345678_6987106a6f12d3.40671435.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[02:09:23.629] Server  LOG      ✓ Compiled in 68ms
-[02:09:38.414] Server  LOG      ✓ Compiled in 44ms
-[02:09:59.704] Server  LOG      ✓ Compiled in 64ms
-[02:10:08.499] Server  LOG      ✓ Compiled in 55ms
+[00:00:01.032] Server  WARN     ⚠ The "middleware" file convention is deprecated. Please use "proxy" instead. Learn more: https://nextjs.org/docs/messages/middleware-to-proxy
+[00:00:01.135] Server  LOG      ✓ Ready in 920ms
+[00:00:05.786] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:06.035] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:00:06.035] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:00:06.035] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770825654186}
+[00:00:06.035] Browser WARN    Image with src "/logo.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[00:00:06.035] Browser WARN    Image with src "http://localhost:3000/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:00:17.630] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:17.942] Browser WARN    Image with src "/logo.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[00:00:17.942] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:00:17.942] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:00:17.942] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770825666094}
+[00:00:17.942] Browser WARN    Image with src "http://localhost:3000/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:00:20.616] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/login color: rgb(120, 120, 120) color: inherit {"dp":"/login","o":"http://localhost:3000/login","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770825668811}
+[00:00:23.412] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:23.986] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:00:23.986] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/dashboard","route":"/dashboard"}
+[00:00:23.986] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/dashboard color: rgb(120, 120, 120) color: inherit {"dp":"/dashboard","o":"http://localhost:3000/dashboard","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770825672141}
+[00:00:23.986] Browser WARN    Image with src "http://localhost:3000/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:00:27.293] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/bulkUpload color: rgb(120, 120, 120) color: inherit {"dp":"/bulkUpload","o":"http://localhost:3000/bulkUpload","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770825675207}
+[00:10:23.448] Server  LOG      ✓ Compiled in 175ms
+[00:12:06.334] Server  LOG      ✓ Compiled in 249ms
+[00:12:15.247] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:12:15.422] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:12:15.422] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/students/photo-bulk-upload","route":"/students/photo-bulk-upload"}
+[00:12:15.422] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students/photo-bulk-upload color: rgb(120, 120, 120) color: inherit {"dp":"/students/photo-bulk-upload","o":"http://localhost:3000/students/photo-bulk-upload","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770826383611}
+[00:12:19.238] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:12:20.088] Browser WARN    Image with src "http://localhost:3000/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:12:20.088] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:12:20.088] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/bulkUpload","route":"/bulkUpload"}
+[00:12:20.089] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/bulkUpload color: rgb(120, 120, 120) color: inherit {"dp":"/bulkUpload","o":"http://localhost:3000/bulkUpload","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770826388278}
+[00:12:34.934] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:12:35.145] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:12:35.145] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/students/photo-bulk-upload","route":"/students/photo-bulk-upload"}
+[00:12:35.145] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students/photo-bulk-upload color: rgb(120, 120, 120) color: inherit {"dp":"/students/photo-bulk-upload","o":"http://localhost:3000/students/photo-bulk-upload","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770826403336}
+[00:12:37.252] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:12:37.971] Browser WARN    Image with src "http://localhost:3000/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:12:37.972] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:12:37.972] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/bulkUpload","route":"/bulkUpload"}
+[00:12:37.972] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/bulkUpload color: rgb(120, 120, 120) color: inherit {"dp":"/bulkUpload","o":"http://localhost:3000/bulkUpload","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770826406160}
+[00:12:44.350] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:12:44.527] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:12:44.527] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/students/photo-bulk-upload","route":"/students/photo-bulk-upload"}
+[00:12:44.528] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students/photo-bulk-upload color: rgb(120, 120, 120) color: inherit {"dp":"/students/photo-bulk-upload","o":"http://localhost:3000/students/photo-bulk-upload","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770826412717}
+[00:12:46.492] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:12:47.303] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:12:47.305] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/bulkUpload","route":"/bulkUpload"}
+[00:12:47.305] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/bulkUpload color: rgb(120, 120, 120) color: inherit {"dp":"/bulkUpload","o":"http://localhost:3000/bulkUpload","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770826415467}
+[00:12:47.662] Browser WARN    Image with src "http://localhost:3000/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:13:11.069] Server  LOG      ✓ Compiled in 88ms
+[00:13:15.174] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/photo-bulk-upload color: rgb(120, 120, 120) color: inherit {"dp":"/photo-bulk-upload","o":"http://localhost:3000/photo-bulk-upload","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770826443362}
+[00:14:40.069] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770826527804}
+[00:14:40.243] Browser WARN    Image with src "https://warrantyindia.co.in/student/api/uploads/students/87654345678_6987106a6f12d3.40671435.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:14:43.244] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/bulkUpload color: rgb(120, 120, 120) color: inherit {"dp":"/bulkUpload","o":"http://localhost:3000/bulkUpload","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770826531170}
+[00:14:44.761] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/photo-bulk-upload color: rgb(120, 120, 120) color: inherit {"dp":"/photo-bulk-upload","o":"http://localhost:3000/photo-bulk-upload","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770826532944}
+[00:15:02.691] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770826550617}
+[00:15:03.073] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/bulkUpload color: rgb(120, 120, 120) color: inherit {"dp":"/bulkUpload","o":"http://localhost:3000/bulkUpload","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770826551238}
+[00:15:07.371] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/photo-bulk-upload color: rgb(120, 120, 120) color: inherit {"dp":"/photo-bulk-upload","o":"http://localhost:3000/photo-bulk-upload","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770826555554}
+[00:15:18.978] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/bulkUpload color: rgb(120, 120, 120) color: inherit {"dp":"/bulkUpload","o":"http://localhost:3000/bulkUpload","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770826566900}
+[00:15:26.858] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770826574826}
+[00:15:28.119] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/bulkUpload color: rgb(120, 120, 120) color: inherit {"dp":"/bulkUpload","o":"http://localhost:3000/bulkUpload","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770826576105}
+[00:15:29.121] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/photo-bulk-upload color: rgb(120, 120, 120) color: inherit {"dp":"/photo-bulk-upload","o":"http://localhost:3000/photo-bulk-upload","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770826577304}
+[00:16:15.262] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/bulkUpload color: rgb(120, 120, 120) color: inherit {"dp":"/bulkUpload","o":"http://localhost:3000/bulkUpload","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770826623180}
+[00:16:16.827] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/photo-bulk-upload color: rgb(120, 120, 120) color: inherit {"dp":"/photo-bulk-upload","o":"http://localhost:3000/photo-bulk-upload","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770826625008}
+[00:16:19.082] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/bulkUpload color: rgb(120, 120, 120) color: inherit {"dp":"/bulkUpload","o":"http://localhost:3000/bulkUpload","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770826626978}
+[00:18:01.054] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/photo-bulk-upload color: rgb(120, 120, 120) color: inherit {"dp":"/photo-bulk-upload","o":"http://localhost:3000/photo-bulk-upload","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770826729218}
+[00:19:46.566] Server  LOG      ✓ Compiled in 184ms
+[00:20:09.166] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/bulkUpload color: rgb(120, 120, 120) color: inherit {"dp":"/bulkUpload","o":"http://localhost:3000/bulkUpload","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770826857112}
+[00:20:12.661] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/dashboard color: rgb(120, 120, 120) color: inherit {"dp":"/dashboard","o":"http://localhost:3000/dashboard","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770826860736}
+[00:20:18.492] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students/add-student color: rgb(120, 120, 120) color: inherit {"dp":"/students/add-student","o":"http://localhost:3000/students/add-student","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770826866613}
+[00:20:33.456] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/dashboard color: rgb(120, 120, 120) color: inherit {"dp":"/dashboard","o":"http://localhost:3000/dashboard","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770826881567}
+[00:20:36.708] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770826884673}
+[00:20:41.564] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students/view/4524 color: rgb(120, 120, 120) color: inherit {"dp":"/students/view/[id]","o":"http://localhost:3000/students/view/4524","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770826889663}
+[00:20:46.456] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770826894417}
+[00:20:49.942] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students/view/4503 color: rgb(120, 120, 120) color: inherit {"dp":"/students/view/[id]","o":"http://localhost:3000/students/view/4503","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770826898074}
+[00:20:54.002] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770826902026}
+[00:20:58.063] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students/view/4520 color: rgb(120, 120, 120) color: inherit {"dp":"/students/view/[id]","o":"http://localhost:3000/students/view/4520","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770826906199}
+[00:21:01.713] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770826909753}
+[00:21:04.813] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/bulkUpload color: rgb(120, 120, 120) color: inherit {"dp":"/bulkUpload","o":"http://localhost:3000/bulkUpload","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770826912813}
+[00:23:07.263] Server  LOG      ✓ Compiled in 181ms
+[00:23:09.579] Server  LOG      ✓ Compiled in 79ms
+[00:23:16.507] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:23:17.371] Browser WARN    Image with src "http://localhost:3000/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:23:17.374] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:23:17.374] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/bulkUpload","route":"/bulkUpload"}
+[00:23:17.374] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/bulkUpload color: rgb(120, 120, 120) color: inherit {"dp":"/bulkUpload","o":"http://localhost:3000/bulkUpload","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770827045549}
+[00:23:34.933] Server  LOG      ✓ Compiled in 78ms
+[00:25:27.886] Server  LOG      ✓ Compiled in 175ms
+[00:25:35.501] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/photo-bulk-upload color: rgb(120, 120, 120) color: inherit {"dp":"/photo-bulk-upload","o":"http://localhost:3000/photo-bulk-upload","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770827183696}
+[00:26:56.045] Server  LOG      ✓ Compiled in 115ms
+[00:27:01.226] Server  LOG      ✓ Compiled in 96ms
+[00:27:26.497] Server  LOG      ✓ Compiled in 78ms
+[00:27:29.684] Server  LOG      ✓ Compiled in 67ms
+[00:27:38.361] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/bulkUpload color: rgb(120, 120, 120) color: inherit {"dp":"/bulkUpload","o":"http://localhost:3000/bulkUpload","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770827306074}
+[00:27:41.984] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/dashboard color: rgb(120, 120, 120) color: inherit {"dp":"/dashboard","o":"http://localhost:3000/dashboard","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770827310045}
+[00:27:50.135] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/bulkUpload color: rgb(120, 120, 120) color: inherit {"dp":"/bulkUpload","o":"http://localhost:3000/bulkUpload","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770827317883}
+[00:27:58.136] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/photo-bulk-upload color: rgb(120, 120, 120) color: inherit {"dp":"/photo-bulk-upload","o":"http://localhost:3000/photo-bulk-upload","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770827326322}
+[00:27:59.870] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/bulkUpload color: rgb(120, 120, 120) color: inherit {"dp":"/bulkUpload","o":"http://localhost:3000/bulkUpload","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770827327864}
+[00:28:00.894] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/photo-bulk-upload color: rgb(120, 120, 120) color: inherit {"dp":"/photo-bulk-upload","o":"http://localhost:3000/photo-bulk-upload","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770827329085}
+[00:28:02.180] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/bulkUpload color: rgb(120, 120, 120) color: inherit {"dp":"/bulkUpload","o":"http://localhost:3000/bulkUpload","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770827330191}
+[00:28:03.624] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/photo-bulk-upload color: rgb(120, 120, 120) color: inherit {"dp":"/photo-bulk-upload","o":"http://localhost:3000/photo-bulk-upload","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770827331813}
+[00:28:09.869] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/bulkUpload color: rgb(120, 120, 120) color: inherit {"dp":"/bulkUpload","o":"http://localhost:3000/bulkUpload","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770827337862}
+[00:28:13.635] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/photo-bulk-upload color: rgb(120, 120, 120) color: inherit {"dp":"/photo-bulk-upload","o":"http://localhost:3000/photo-bulk-upload","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770827341818}
+[00:28:18.562] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/bulkUpload color: rgb(120, 120, 120) color: inherit {"dp":"/bulkUpload","o":"http://localhost:3000/bulkUpload","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770827346569}
+[00:28:22.839] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770827350670}
+[00:28:22.955] Browser WARN    Image with src "https://warrantyindia.co.in/student/api/uploads/students/87654345678_6987106a6f12d3.40671435.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:28:25.025] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/bulkUpload color: rgb(120, 120, 120) color: inherit {"dp":"/bulkUpload","o":"http://localhost:3000/bulkUpload","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770827352953}
+[00:28:53.903] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770827381856}
+[00:28:59.612] Server  LOG      ✓ Compiled in 204ms
+[00:29:31.923] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/bulkUpload color: rgb(120, 120, 120) color: inherit {"dp":"/bulkUpload","o":"http://localhost:3000/bulkUpload","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770827419838}
+[00:29:36.250] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770827424182}
+[00:30:11.830] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students/add-student color: rgb(120, 120, 120) color: inherit {"dp":"/students/add-student","o":"http://localhost:3000/students/add-student","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770827459793}
+[00:30:15.837] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770827463851}
+[00:36:37.818] Server  LOG      ✓ Compiled in 247ms
+[00:37:27.513] Server  LOG      ✓ Compiled in 93ms
+[00:37:44.709] Server  LOG      ✓ Compiled in 58ms
+[00:37:48.549] Server  LOG      ✓ Compiled in 62ms
+[00:38:04.060] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students/view/4524 color: rgb(120, 120, 120) color: inherit {"dp":"/students/view/[id]","o":"http://localhost:3000/students/view/4524","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770827931962}
+[00:38:18.551] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770827946538}
+[00:38:19.856] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students/add-student color: rgb(120, 120, 120) color: inherit {"dp":"/students/add-student","o":"http://localhost:3000/students/add-student","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770827948005}
+[00:38:39.808] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770827967746}
+[00:38:42.834] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students/view/4524 color: rgb(120, 120, 120) color: inherit {"dp":"/students/view/[id]","o":"http://localhost:3000/students/view/4524","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770827970974}
+[00:38:46.442] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770827974446}
+[00:41:37.371] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students/add-student color: rgb(120, 120, 120) color: inherit {"dp":"/students/add-student","o":"http://localhost:3000/students/add-student","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770828145515}
+[00:45:26.989] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770828374762}
+[00:45:36.004] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/bulkUpload color: rgb(120, 120, 120) color: inherit {"dp":"/bulkUpload","o":"http://localhost:3000/bulkUpload","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770828383983}
+[00:45:36.905] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/photo-bulk-upload color: rgb(120, 120, 120) color: inherit {"dp":"/photo-bulk-upload","o":"http://localhost:3000/photo-bulk-upload","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770828385075}
+[00:45:43.953] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/bulkUpload color: rgb(120, 120, 120) color: inherit {"dp":"/bulkUpload","o":"http://localhost:3000/bulkUpload","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770828391991}
+[00:45:59.129] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770828407065}
+[00:46:34.657] Server  LOG      ✓ Compiled in 242ms
+[00:46:55.232] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students/edit-student/4324 color: rgb(120, 120, 120) color: inherit {"dp":"/students/edit-student/[id]","o":"http://localhost:3000/students/edit-student/4324","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770828463152}
+[00:46:58.933] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770828466741}
+[00:47:05.609] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students/view/4262 color: rgb(120, 120, 120) color: inherit {"dp":"/students/view/[id]","o":"http://localhost:3000/students/view/4262","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770828473652}
+[00:47:08.536] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770828476674}
+[00:47:17.083] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students/edit-student/4324 color: rgb(120, 120, 120) color: inherit {"dp":"/students/edit-student/[id]","o":"http://localhost:3000/students/edit-student/4324","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770828485148}
+[00:47:22.342] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770828490419}
+[00:47:30.958] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students/view/4324 color: rgb(120, 120, 120) color: inherit {"dp":"/students/view/[id]","o":"http://localhost:3000/students/view/4324","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770828499084}
+[00:48:19.604] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770828547702}
+[00:48:19.803] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/bulkUpload color: rgb(120, 120, 120) color: inherit {"dp":"/bulkUpload","o":"http://localhost:3000/bulkUpload","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770828547950}
+[00:48:21.081] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/photo-bulk-upload color: rgb(120, 120, 120) color: inherit {"dp":"/photo-bulk-upload","o":"http://localhost:3000/photo-bulk-upload","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770828549244}
+[00:48:37.491] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770828565585}
+[00:48:39.494] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students/add-student color: rgb(120, 120, 120) color: inherit {"dp":"/students/add-student","o":"http://localhost:3000/students/add-student","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770828567639}
+[00:49:12.357] Server  LOG      ✓ Compiled in 115ms
+[00:49:19.896] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770828607986}
+[00:49:22.063] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students/view/4324 color: rgb(120, 120, 120) color: inherit {"dp":"/students/view/[id]","o":"http://localhost:3000/students/view/4324","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770828610192}
+[00:49:23.252] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770828611383}
+[00:49:25.491] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students/edit-student/4324 color: rgb(120, 120, 120) color: inherit {"dp":"/students/edit-student/[id]","o":"http://localhost:3000/students/edit-student/4324","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770828613558}
+[00:49:26.889] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/students color: rgb(120, 120, 120) color: inherit {"dp":"/students","o":"http://localhost:3000/students","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770828614953}

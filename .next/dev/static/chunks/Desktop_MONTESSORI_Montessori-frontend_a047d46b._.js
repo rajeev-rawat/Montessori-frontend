@@ -1470,6 +1470,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Mon
 var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$components$2f$dropdown$2f$dropdown$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/MONTESSORI/Montessori-frontend/components/dropdown/dropdown.tsx [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$components$2f$dropdown$2f$year$2d$dropdown$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/MONTESSORI/Montessori-frontend/components/dropdown/year-dropdown.tsx [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/MONTESSORI/Montessori-frontend/node_modules/next/image.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/MONTESSORI/Montessori-frontend/node_modules/next/navigation.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/MONTESSORI/Montessori-frontend/components/ui/card.tsx [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/MONTESSORI/Montessori-frontend/components/ui/button.tsx [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$components$2f$ui$2f$progress$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/MONTESSORI/Montessori-frontend/components/ui/progress.tsx [app-client] (ecmascript)");
@@ -1480,6 +1481,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Mon
 ;
 var _s = __turbopack_context__.k.signature();
 "use client";
+;
 ;
 ;
 ;
@@ -1508,6 +1510,7 @@ function BulkUploadModule() {
     const { upload, response, report, reset } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$store$2f$bulk$2d$upload$2e$store$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useBulkUploadStore"])();
     const { toast } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$hooks$2f$use$2d$toast$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useToast"])();
     const { schools, fetchSchools } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$store$2f$school$2e$store$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useSchoolStore"])();
+    const router = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRouter"])();
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
         "BulkUploadModule.useEffect": ()=>{
             if (user?.SchoolName && schools.length === 0) {
@@ -1578,12 +1581,12 @@ function BulkUploadModule() {
                     height: 600
                 }, void 0, false, {
                     fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/components/admin/bulk-upload-module.tsx",
-                    lineNumber: 120,
+                    lineNumber: 122,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/components/admin/bulk-upload-module.tsx",
-                lineNumber: 119,
+                lineNumber: 121,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1593,7 +1596,7 @@ function BulkUploadModule() {
                         children: "Bulk Upload"
                     }, void 0, false, {
                         fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/components/admin/bulk-upload-module.tsx",
-                        lineNumber: 124,
+                        lineNumber: 126,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1601,38 +1604,63 @@ function BulkUploadModule() {
                         children: "Upload CSV or Excel files to add multiple student records"
                     }, void 0, false, {
                         fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/components/admin/bulk-upload-module.tsx",
-                        lineNumber: 125,
+                        lineNumber: 127,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/components/admin/bulk-upload-module.tsx",
-                lineNumber: 123,
+                lineNumber: 125,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "flex bg-white flex-col sm:flex-row gap-4 max-w-xl",
+                className: "flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4 bg-white p-4 rounded-lg shadow-sm",
                 children: [
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$components$2f$dropdown$2f$dropdown$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SchoolSelect"], {
-                        value: selectedSchool,
-                        onChange: setSelectedSchool
-                    }, void 0, false, {
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "flex flex-col sm:flex-row gap-4 w-full lg:w-auto",
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$components$2f$dropdown$2f$dropdown$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SchoolSelect"], {
+                                value: selectedSchool,
+                                onChange: setSelectedSchool
+                            }, void 0, false, {
+                                fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/components/admin/bulk-upload-module.tsx",
+                                lineNumber: 138,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$components$2f$dropdown$2f$year$2d$dropdown$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["YearDropdownWithoutAll"], {
+                                value: selectedYear,
+                                onChange: setSelectedYear
+                            }, void 0, false, {
+                                fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/components/admin/bulk-upload-module.tsx",
+                                lineNumber: 142,
+                                columnNumber: 11
+                            }, this)
+                        ]
+                    }, void 0, true, {
                         fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/components/admin/bulk-upload-module.tsx",
-                        lineNumber: 132,
+                        lineNumber: 137,
                         columnNumber: 9
                     }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$components$2f$dropdown$2f$year$2d$dropdown$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["YearDropdownWithoutAll"], {
-                        value: selectedYear,
-                        onChange: setSelectedYear
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "flex justify-start lg:justify-end",
+                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
+                            onClick: ()=>router.push("/photo-bulk-upload"),
+                            className: "whitespace-nowrap",
+                            children: "Student Photo Bulk Upload"
+                        }, void 0, false, {
+                            fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/components/admin/bulk-upload-module.tsx",
+                            lineNumber: 150,
+                            columnNumber: 11
+                        }, this)
                     }, void 0, false, {
                         fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/components/admin/bulk-upload-module.tsx",
-                        lineNumber: 133,
+                        lineNumber: 149,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/components/admin/bulk-upload-module.tsx",
-                lineNumber: 131,
+                lineNumber: 134,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1652,27 +1680,27 @@ function BulkUploadModule() {
                                                         className: "w-5 h-5"
                                                     }, void 0, false, {
                                                         fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/components/admin/bulk-upload-module.tsx",
-                                                        lineNumber: 141,
+                                                        lineNumber: 166,
                                                         columnNumber: 17
                                                     }, this),
                                                     "Upload File"
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/components/admin/bulk-upload-module.tsx",
-                                                lineNumber: 140,
+                                                lineNumber: 165,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CardDescription"], {
                                                 children: "Supported formats: CSV, XLS, XLSX"
                                             }, void 0, false, {
                                                 fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/components/admin/bulk-upload-module.tsx",
-                                                lineNumber: 144,
+                                                lineNumber: 169,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/components/admin/bulk-upload-module.tsx",
-                                        lineNumber: 139,
+                                        lineNumber: 164,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CardContent"], {
@@ -1698,7 +1726,7 @@ function BulkUploadModule() {
                                                         className: "w-12 h-12 mx-auto mb-4"
                                                     }, void 0, false, {
                                                         fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/components/admin/bulk-upload-module.tsx",
-                                                        lineNumber: 170,
+                                                        lineNumber: 194,
                                                         columnNumber: 19
                                                     }, this),
                                                     selectedFile ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1709,14 +1737,14 @@ function BulkUploadModule() {
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/components/admin/bulk-upload-module.tsx",
-                                                        lineNumber: 173,
+                                                        lineNumber: 197,
                                                         columnNumber: 21
                                                     }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                                         className: "mb-4",
                                                         children: "Drag & drop file here"
                                                     }, void 0, false, {
                                                         fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/components/admin/bulk-upload-module.tsx",
-                                                        lineNumber: 177,
+                                                        lineNumber: 201,
                                                         columnNumber: 21
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1726,12 +1754,12 @@ function BulkUploadModule() {
                                                             children: "Choose File"
                                                         }, void 0, false, {
                                                             fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/components/admin/bulk-upload-module.tsx",
-                                                            lineNumber: 181,
+                                                            lineNumber: 205,
                                                             columnNumber: 21
                                                         }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/components/admin/bulk-upload-module.tsx",
-                                                        lineNumber: 180,
+                                                        lineNumber: 204,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -1742,13 +1770,13 @@ function BulkUploadModule() {
                                                         onChange: (e)=>e.target.files && handleFileSelect(e.target.files[0])
                                                     }, void 0, false, {
                                                         fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/components/admin/bulk-upload-module.tsx",
-                                                        lineNumber: 187,
+                                                        lineNumber: 211,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/components/admin/bulk-upload-module.tsx",
-                                                lineNumber: 151,
+                                                lineNumber: 176,
                                                 columnNumber: 17
                                             }, this),
                                             uploadStatus === "uploading" && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1758,20 +1786,20 @@ function BulkUploadModule() {
                                                         value: progress
                                                     }, void 0, false, {
                                                         fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/components/admin/bulk-upload-module.tsx",
-                                                        lineNumber: 202,
+                                                        lineNumber: 226,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                                         children: "Uploading and validating data…"
                                                     }, void 0, false, {
                                                         fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/components/admin/bulk-upload-module.tsx",
-                                                        lineNumber: 203,
+                                                        lineNumber: 227,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/components/admin/bulk-upload-module.tsx",
-                                                lineNumber: 201,
+                                                lineNumber: 225,
                                                 columnNumber: 17
                                             }, this),
                                             uploadStatus === "error" && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
@@ -1779,7 +1807,7 @@ function BulkUploadModule() {
                                                 children: "Retry"
                                             }, void 0, false, {
                                                 fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/components/admin/bulk-upload-module.tsx",
-                                                lineNumber: 208,
+                                                lineNumber: 232,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1790,24 +1818,24 @@ function BulkUploadModule() {
                                                     children: "Upload Now"
                                                 }, void 0, false, {
                                                     fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/components/admin/bulk-upload-module.tsx",
-                                                    lineNumber: 211,
-                                                    columnNumber: 15
+                                                    lineNumber: 235,
+                                                    columnNumber: 17
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/components/admin/bulk-upload-module.tsx",
-                                                lineNumber: 210,
-                                                columnNumber: 16
+                                                lineNumber: 234,
+                                                columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/components/admin/bulk-upload-module.tsx",
-                                        lineNumber: 149,
+                                        lineNumber: 174,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/components/admin/bulk-upload-module.tsx",
-                                lineNumber: 138,
+                                lineNumber: 163,
                                 columnNumber: 11
                             }, this),
                             uploadStatus === "preview" && response && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Card"], {
@@ -1817,12 +1845,12 @@ function BulkUploadModule() {
                                             children: "Preview"
                                         }, void 0, false, {
                                             fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/components/admin/bulk-upload-module.tsx",
-                                            lineNumber: 225,
+                                            lineNumber: 249,
                                             columnNumber: 17
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/components/admin/bulk-upload-module.tsx",
-                                        lineNumber: 224,
+                                        lineNumber: 248,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CardContent"], {
@@ -1835,32 +1863,32 @@ function BulkUploadModule() {
                                                                 children: "Admission No"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/components/admin/bulk-upload-module.tsx",
-                                                                lineNumber: 231,
+                                                                lineNumber: 255,
                                                                 columnNumber: 23
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["TableHead"], {
                                                                 children: "Status"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/components/admin/bulk-upload-module.tsx",
-                                                                lineNumber: 232,
+                                                                lineNumber: 256,
                                                                 columnNumber: 23
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["TableHead"], {
                                                                 children: "Message"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/components/admin/bulk-upload-module.tsx",
-                                                                lineNumber: 233,
+                                                                lineNumber: 257,
                                                                 columnNumber: 23
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/components/admin/bulk-upload-module.tsx",
-                                                        lineNumber: 230,
+                                                        lineNumber: 254,
                                                         columnNumber: 21
                                                     }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/components/admin/bulk-upload-module.tsx",
-                                                    lineNumber: 229,
+                                                    lineNumber: 253,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["TableBody"], {
@@ -1870,55 +1898,55 @@ function BulkUploadModule() {
                                                                     children: row.AdmissionNo
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/components/admin/bulk-upload-module.tsx",
-                                                                    lineNumber: 239,
+                                                                    lineNumber: 263,
                                                                     columnNumber: 25
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["TableCell"], {
                                                                     children: row.status
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/components/admin/bulk-upload-module.tsx",
-                                                                    lineNumber: 240,
+                                                                    lineNumber: 264,
                                                                     columnNumber: 25
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["TableCell"], {
                                                                     children: row.error || "-"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/components/admin/bulk-upload-module.tsx",
-                                                                    lineNumber: 241,
+                                                                    lineNumber: 265,
                                                                     columnNumber: 25
                                                                 }, this)
                                                             ]
                                                         }, row.row, true, {
                                                             fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/components/admin/bulk-upload-module.tsx",
-                                                            lineNumber: 238,
+                                                            lineNumber: 262,
                                                             columnNumber: 23
                                                         }, this))
                                                 }, void 0, false, {
                                                     fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/components/admin/bulk-upload-module.tsx",
-                                                    lineNumber: 236,
+                                                    lineNumber: 260,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/components/admin/bulk-upload-module.tsx",
-                                            lineNumber: 228,
+                                            lineNumber: 252,
                                             columnNumber: 17
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/components/admin/bulk-upload-module.tsx",
-                                        lineNumber: 227,
+                                        lineNumber: 251,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/components/admin/bulk-upload-module.tsx",
-                                lineNumber: 223,
+                                lineNumber: 247,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/components/admin/bulk-upload-module.tsx",
-                        lineNumber: 137,
+                        lineNumber: 162,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1929,12 +1957,12 @@ function BulkUploadModule() {
                                         children: "Template"
                                     }, void 0, false, {
                                         fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/components/admin/bulk-upload-module.tsx",
-                                        lineNumber: 254,
+                                        lineNumber: 278,
                                         columnNumber: 15
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/components/admin/bulk-upload-module.tsx",
-                                    lineNumber: 253,
+                                    lineNumber: 277,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CardContent"], {
@@ -1946,51 +1974,52 @@ function BulkUploadModule() {
                                                 className: "w-4 h-4 mr-2"
                                             }, void 0, false, {
                                                 fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/components/admin/bulk-upload-module.tsx",
-                                                lineNumber: 258,
+                                                lineNumber: 282,
                                                 columnNumber: 17
                                             }, this),
                                             "Download Template"
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/components/admin/bulk-upload-module.tsx",
-                                        lineNumber: 257,
+                                        lineNumber: 281,
                                         columnNumber: 15
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/components/admin/bulk-upload-module.tsx",
-                                    lineNumber: 256,
+                                    lineNumber: 280,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/components/admin/bulk-upload-module.tsx",
-                            lineNumber: 252,
+                            lineNumber: 276,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/components/admin/bulk-upload-module.tsx",
-                        lineNumber: 251,
+                        lineNumber: 275,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/components/admin/bulk-upload-module.tsx",
-                lineNumber: 136,
+                lineNumber: 161,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/components/admin/bulk-upload-module.tsx",
-        lineNumber: 117,
+        lineNumber: 119,
         columnNumber: 5
     }, this);
 }
-_s(BulkUploadModule, "BwGwuUMxC5RORJasswIvB+1l6UU=", false, function() {
+_s(BulkUploadModule, "q7cTwjUPg+9XAbefkKh6l+iuNKo=", false, function() {
     return [
         __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$store$2f$auth$2e$store$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useAuthStore"],
         __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$store$2f$bulk$2d$upload$2e$store$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useBulkUploadStore"],
         __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$hooks$2f$use$2d$toast$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useToast"],
-        __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$store$2f$school$2e$store$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useSchoolStore"]
+        __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$store$2f$school$2e$store$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useSchoolStore"],
+        __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRouter"]
     ];
 });
 _c = BulkUploadModule;

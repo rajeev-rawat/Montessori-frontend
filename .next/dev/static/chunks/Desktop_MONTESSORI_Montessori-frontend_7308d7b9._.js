@@ -1120,7 +1120,7 @@ const useStudentStore = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desk
         students: [],
         loading: false,
         page: 1,
-        limit: 50,
+        limit: 200,
         total: 0,
         search: "",
         school: "",
@@ -1286,11 +1286,15 @@ const defaultStudent = {
     FatherName: "",
     FatherAadhaarNo: "",
     FatherMobileNumber: "",
-    ParentOccupation: "",
+    FatherQualification: "",
+    FatherOccupation: "",
     MotherName: "",
     MotherAadharNo: "",
     MotherMobileNo: "",
     MotherBankAccountNo: "",
+    MotherQualification: "",
+    MotherOccupation: "",
+    MotherMailID: "",
     MailID: "",
     ResidenceAddress: "",
     BankIFSCCode: "",
@@ -1361,7 +1365,7 @@ function StudentForm({ initialData, title, onSubmit, mode = "create" }) {
             children: value || "-"
         }, void 0, false, {
             fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/components/admin/StudentForm.tsx",
-            lineNumber: 102,
+            lineNumber: 106,
             columnNumber: 9
         }, this);
     const renderField = (key, value)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1372,7 +1376,7 @@ function StudentForm({ initialData, title, onSubmit, mode = "create" }) {
                     children: key.replace(/([A-Z])/g, " $1")
                 }, void 0, false, {
                     fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/components/admin/StudentForm.tsx",
-                    lineNumber: 109,
+                    lineNumber: 113,
                     columnNumber: 13
                 }, this),
                 key === "PhotoOfStudent" ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1384,14 +1388,14 @@ function StudentForm({ initialData, title, onSubmit, mode = "create" }) {
                             className: "w-32 h-32 rounded-lg object-cover border"
                         }, void 0, false, {
                             fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/components/admin/StudentForm.tsx",
-                            lineNumber: 117,
+                            lineNumber: 121,
                             columnNumber: 25
                         }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             className: "text-sm text-muted-foreground",
                             children: "No photo available"
                         }, void 0, false, {
                             fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/components/admin/StudentForm.tsx",
-                            lineNumber: 127,
+                            lineNumber: 131,
                             columnNumber: 25
                         }, this),
                         !isViewMode && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$components$2f$ui$2f$input$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Input"], {
@@ -1400,26 +1404,26 @@ function StudentForm({ initialData, title, onSubmit, mode = "create" }) {
                             onChange: (e)=>handleChange(key, e.target.files?.[0])
                         }, void 0, false, {
                             fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/components/admin/StudentForm.tsx",
-                            lineNumber: 134,
+                            lineNumber: 138,
                             columnNumber: 25
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/components/admin/StudentForm.tsx",
-                    lineNumber: 115,
+                    lineNumber: 119,
                     columnNumber: 17
                 }, this) : readOnly ? renderValue(value) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$components$2f$ui$2f$input$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Input"], {
                     value: value || "",
                     onChange: (e)=>handleChange(key, e.target.value)
                 }, void 0, false, {
                     fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/components/admin/StudentForm.tsx",
-                    lineNumber: 149,
+                    lineNumber: 153,
                     columnNumber: 17
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/components/admin/StudentForm.tsx",
-            lineNumber: 108,
+            lineNumber: 112,
             columnNumber: 9
         }, this);
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1433,23 +1437,22 @@ function StudentForm({ initialData, title, onSubmit, mode = "create" }) {
                         children: title
                     }, void 0, false, {
                         fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/components/admin/StudentForm.tsx",
-                        lineNumber: 163,
+                        lineNumber: 167,
                         columnNumber: 17
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
                         type: "button",
-                        variant: "outline",
                         onClick: ()=>router.back(),
                         children: "Back"
                     }, void 0, false, {
                         fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/components/admin/StudentForm.tsx",
-                        lineNumber: 164,
+                        lineNumber: 168,
                         columnNumber: 17
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/components/admin/StudentForm.tsx",
-                lineNumber: 162,
+                lineNumber: 166,
                 columnNumber: 13
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("form", {
@@ -1464,7 +1467,7 @@ function StudentForm({ initialData, title, onSubmit, mode = "create" }) {
                                 children: "Student Details"
                             }, void 0, false, {
                                 fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/components/admin/StudentForm.tsx",
-                                lineNumber: 172,
+                                lineNumber: 176,
                                 columnNumber: 21
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1478,7 +1481,7 @@ function StudentForm({ initialData, title, onSubmit, mode = "create" }) {
                                                 children: "School"
                                             }, void 0, false, {
                                                 fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/components/admin/StudentForm.tsx",
-                                                lineNumber: 178,
+                                                lineNumber: 182,
                                                 columnNumber: 29
                                             }, this),
                                             readOnly ? renderValue(selectedSchool) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$components$2f$dropdown$2f$dropdown$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -1486,13 +1489,13 @@ function StudentForm({ initialData, title, onSubmit, mode = "create" }) {
                                                 onChange: setSchool
                                             }, void 0, false, {
                                                 fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/components/admin/StudentForm.tsx",
-                                                lineNumber: 182,
+                                                lineNumber: 186,
                                                 columnNumber: 33
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/components/admin/StudentForm.tsx",
-                                        lineNumber: 177,
+                                        lineNumber: 181,
                                         columnNumber: 25
                                     }, this),
                                     Object.entries(formData).map(([key, value])=>{
@@ -1501,20 +1504,20 @@ function StudentForm({ initialData, title, onSubmit, mode = "create" }) {
                                             children: renderField(key, value)
                                         }, key, false, {
                                             fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/components/admin/StudentForm.tsx",
-                                            lineNumber: 196,
+                                            lineNumber: 200,
                                             columnNumber: 36
                                         }, this);
                                     })
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/components/admin/StudentForm.tsx",
-                                lineNumber: 176,
+                                lineNumber: 180,
                                 columnNumber: 21
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/components/admin/StudentForm.tsx",
-                        lineNumber: 171,
+                        lineNumber: 175,
                         columnNumber: 17
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -1525,7 +1528,7 @@ function StudentForm({ initialData, title, onSubmit, mode = "create" }) {
                                 children: "Father Details"
                             }, void 0, false, {
                                 fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/components/admin/StudentForm.tsx",
-                                lineNumber: 203,
+                                lineNumber: 207,
                                 columnNumber: 21
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1534,23 +1537,24 @@ function StudentForm({ initialData, title, onSubmit, mode = "create" }) {
                                     "FatherName",
                                     "FatherAadhaarNo",
                                     "FatherMobileNumber",
-                                    "ParentOccupation"
+                                    "FatherQualification",
+                                    "FatherOccupation"
                                 ].map((key)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                         children: renderField(key, formData[key])
                                     }, key, false, {
                                         fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/components/admin/StudentForm.tsx",
-                                        lineNumber: 214,
+                                        lineNumber: 219,
                                         columnNumber: 29
                                     }, this))
                             }, void 0, false, {
                                 fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/components/admin/StudentForm.tsx",
-                                lineNumber: 207,
+                                lineNumber: 211,
                                 columnNumber: 21
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/components/admin/StudentForm.tsx",
-                        lineNumber: 202,
+                        lineNumber: 206,
                         columnNumber: 17
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -1561,7 +1565,7 @@ function StudentForm({ initialData, title, onSubmit, mode = "create" }) {
                                 children: "Mother Details"
                             }, void 0, false, {
                                 fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/components/admin/StudentForm.tsx",
-                                lineNumber: 223,
+                                lineNumber: 228,
                                 columnNumber: 21
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1570,23 +1574,26 @@ function StudentForm({ initialData, title, onSubmit, mode = "create" }) {
                                     "MotherName",
                                     "MotherAadharNo",
                                     "MotherMobileNo",
-                                    "MotherBankAccountNo"
+                                    "MotherBankAccountNo",
+                                    "MotherQualification",
+                                    "MotherOccupation",
+                                    "MotherMailID"
                                 ].map((key)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                         children: renderField(key, formData[key])
                                     }, key, false, {
                                         fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/components/admin/StudentForm.tsx",
-                                        lineNumber: 234,
+                                        lineNumber: 242,
                                         columnNumber: 29
                                     }, this))
                             }, void 0, false, {
                                 fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/components/admin/StudentForm.tsx",
-                                lineNumber: 227,
+                                lineNumber: 232,
                                 columnNumber: 21
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/components/admin/StudentForm.tsx",
-                        lineNumber: 222,
+                        lineNumber: 227,
                         columnNumber: 17
                     }, this),
                     !isViewMode && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1599,7 +1606,7 @@ function StudentForm({ initialData, title, onSubmit, mode = "create" }) {
                                 children: "Back"
                             }, void 0, false, {
                                 fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/components/admin/StudentForm.tsx",
-                                lineNumber: 244,
+                                lineNumber: 252,
                                 columnNumber: 25
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
@@ -1608,25 +1615,25 @@ function StudentForm({ initialData, title, onSubmit, mode = "create" }) {
                                 children: title
                             }, void 0, false, {
                                 fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/components/admin/StudentForm.tsx",
-                                lineNumber: 247,
+                                lineNumber: 255,
                                 columnNumber: 25
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/components/admin/StudentForm.tsx",
-                        lineNumber: 243,
+                        lineNumber: 251,
                         columnNumber: 21
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/components/admin/StudentForm.tsx",
-                lineNumber: 169,
+                lineNumber: 173,
                 columnNumber: 13
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/components/admin/StudentForm.tsx",
-        lineNumber: 160,
+        lineNumber: 164,
         columnNumber: 9
     }, this);
 }

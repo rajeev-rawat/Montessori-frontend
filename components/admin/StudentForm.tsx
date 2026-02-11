@@ -26,11 +26,15 @@ const defaultStudent: Student = {
     FatherName: "",
     FatherAadhaarNo: "",
     FatherMobileNumber: "",
-    ParentOccupation: "",
+    FatherQualification: "",
+    FatherOccupation: "",
     MotherName: "",
     MotherAadharNo: "",
     MotherMobileNo: "",
     MotherBankAccountNo: "",
+    MotherQualification: "",
+    MotherOccupation: "",
+    MotherMailID: "",
     MailID: "",
     ResidenceAddress: "",
     BankIFSCCode: "",
@@ -161,7 +165,7 @@ export default function StudentForm({
             {/* HEADER */}
             <div className="flex items-center justify-between mb-8">
                 <h1 className="text-3xl font-semibold">{title}</h1>
-                <Button type="button" variant="outline" onClick={() => router.back()}>
+                <Button type="button"  onClick={() => router.back()}>
                     Back
                 </Button>
             </div>
@@ -209,7 +213,8 @@ export default function StudentForm({
                             "FatherName",
                             "FatherAadhaarNo",
                             "FatherMobileNumber",
-                            "ParentOccupation",
+                            "FatherQualification",
+                            "FatherOccupation",
                         ].map((key) => (
                             <div key={key}>
                                 {renderField(key, (formData as any)[key])}
@@ -230,6 +235,9 @@ export default function StudentForm({
                             "MotherAadharNo",
                             "MotherMobileNo",
                             "MotherBankAccountNo",
+                            "MotherQualification",
+                            "MotherOccupation",
+                            "MotherMailID",
                         ].map((key) => (
                             <div key={key}>
                                 {renderField(key, (formData as any)[key])}

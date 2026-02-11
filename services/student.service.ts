@@ -17,12 +17,17 @@ export interface Student {
   FatherName: string
   FatherAadhaarNo: string
   FatherMobileNumber: string
-  ParentOccupation: string
+  FatherQualification: string
+  FatherOccupation: string
 
   MotherName: string
   MotherAadharNo: string
   MotherMobileNo: string
   MotherBankAccountNo: string
+  MotherQualification: string
+  MotherOccupation: string
+  MotherMailID: string
+
 
   MailID: string
   ResidenceAddress: string

@@ -55,7 +55,7 @@ export const useStudentStore = create<StudentStore>((set, get) => ({
   loading: false,
 
   page: 1,
-  limit: 50,
+  limit: 200,
   total: 0,
 
   search: "",

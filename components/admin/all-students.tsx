@@ -105,11 +105,15 @@ export default function AllStudents() {
   "FatherName",
   "FatherAadhaarNo",
   "FatherMobileNumber",
-  "ParentOccupation",
+  "FatherQualification",
+  "FatherOccupation",
   "MotherName",
   "MotherAadharNo",
   "MotherMobileNo",
   "MotherBankAccountNo",
+  "MotherQualification",
+  "MotherOccupation",
+  "MotherMailID",
   "MailID",
   "ResidenceAddress",
   "BankIFSCCode",
@@ -173,7 +177,7 @@ export default function AllStudents() {
       </div>
 
       {/* Filters */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+      <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4 bg-white p-4 rounded-lg shadow-sm">
         <Input
           placeholder="Search by Aadhaar no"
           value={search}

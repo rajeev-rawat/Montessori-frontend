@@ -740,7 +740,7 @@ const useStudentStore = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desk
         students: [],
         loading: false,
         page: 1,
-        limit: 50,
+        limit: 200,
         total: 0,
         search: "",
         school: "",
@@ -1455,11 +1455,15 @@ function AllStudents() {
         "FatherName",
         "FatherAadhaarNo",
         "FatherMobileNumber",
-        "ParentOccupation",
+        "FatherQualification",
+        "FatherOccupation",
         "MotherName",
         "MotherAadharNo",
         "MotherMobileNo",
         "MotherBankAccountNo",
+        "MotherQualification",
+        "MotherOccupation",
+        "MotherMailID",
         "MailID",
         "ResidenceAddress",
         "BankIFSCCode",
@@ -1503,7 +1507,7 @@ function AllStudents() {
                         children: "All Students"
                     }, void 0, false, {
                         fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx",
-                        lineNumber: 160,
+                        lineNumber: 164,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1517,14 +1521,14 @@ function AllStudents() {
                                         className: "w-4 h-4 mr-2"
                                     }, void 0, false, {
                                         fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx",
-                                        lineNumber: 164,
+                                        lineNumber: 168,
                                         columnNumber: 13
                                     }, this),
                                     "Export"
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx",
-                                lineNumber: 163,
+                                lineNumber: 167,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Button"], {
@@ -1534,30 +1538,30 @@ function AllStudents() {
                                         className: "w-4 h-4 mr-2"
                                     }, void 0, false, {
                                         fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx",
-                                        lineNumber: 169,
+                                        lineNumber: 173,
                                         columnNumber: 13
                                     }, this),
                                     "Add Student"
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx",
-                                lineNumber: 168,
+                                lineNumber: 172,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx",
-                        lineNumber: 162,
+                        lineNumber: 166,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx",
-                lineNumber: 159,
+                lineNumber: 163,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "grid grid-cols-1 md:grid-cols-3 gap-4",
+                className: "flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4 bg-white p-4 rounded-lg shadow-sm",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$components$2f$ui$2f$input$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Input"], {
                         placeholder: "Search by Aadhaar no",
@@ -1565,7 +1569,7 @@ function AllStudents() {
                         onChange: (e)=>setSearch(e.target.value)
                     }, void 0, false, {
                         fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx",
-                        lineNumber: 177,
+                        lineNumber: 181,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$components$2f$dropdown$2f$dropdown$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
@@ -1573,7 +1577,7 @@ function AllStudents() {
                         onChange: setSchool
                     }, void 0, false, {
                         fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx",
-                        lineNumber: 182,
+                        lineNumber: 186,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$components$2f$dropdown$2f$year$2d$dropdown$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["YearDropdown"], {
@@ -1581,13 +1585,13 @@ function AllStudents() {
                         onChange: setYear
                     }, void 0, false, {
                         fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx",
-                        lineNumber: 183,
+                        lineNumber: 187,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx",
-                lineNumber: 176,
+                lineNumber: 180,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1605,7 +1609,7 @@ function AllStudents() {
                                             children: "ID No"
                                         }, void 0, false, {
                                             fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx",
-                                            lineNumber: 192,
+                                            lineNumber: 196,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["TableHead"], {
@@ -1617,7 +1621,7 @@ function AllStudents() {
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx",
-                                            lineNumber: 194,
+                                            lineNumber: 198,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["TableHead"], {
@@ -1629,42 +1633,42 @@ function AllStudents() {
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx",
-                                            lineNumber: 201,
+                                            lineNumber: 205,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["TableHead"], {
                                             children: "Student Aadhaar"
                                         }, void 0, false, {
                                             fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx",
-                                            lineNumber: 208,
+                                            lineNumber: 212,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["TableHead"], {
                                             children: "Date of Admission"
                                         }, void 0, false, {
                                             fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx",
-                                            lineNumber: 209,
+                                            lineNumber: 213,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["TableHead"], {
                                             children: "Date of Birth"
                                         }, void 0, false, {
                                             fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx",
-                                            lineNumber: 210,
+                                            lineNumber: 214,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["TableHead"], {
                                             children: "Class Admitted"
                                         }, void 0, false, {
                                             fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx",
-                                            lineNumber: 211,
+                                            lineNumber: 215,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["TableHead"], {
                                             children: "Photo"
                                         }, void 0, false, {
                                             fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx",
-                                            lineNumber: 212,
+                                            lineNumber: 216,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["TableHead"], {
@@ -1672,18 +1676,18 @@ function AllStudents() {
                                             children: "Actions"
                                         }, void 0, false, {
                                             fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx",
-                                            lineNumber: 213,
+                                            lineNumber: 217,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx",
-                                    lineNumber: 191,
+                                    lineNumber: 195,
                                     columnNumber: 15
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx",
-                                lineNumber: 190,
+                                lineNumber: 194,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["TableBody"], {
@@ -1694,12 +1698,12 @@ function AllStudents() {
                                         children: "Loading..."
                                     }, void 0, false, {
                                         fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx",
-                                        lineNumber: 220,
+                                        lineNumber: 224,
                                         columnNumber: 19
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx",
-                                    lineNumber: 219,
+                                    lineNumber: 223,
                                     columnNumber: 17
                                 }, this) : sortedStudents.map((s)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["TableRow"], {
                                         className: "hover:bg-muted/40",
@@ -1708,49 +1712,49 @@ function AllStudents() {
                                                 children: s.IDNo || "-"
                                             }, void 0, false, {
                                                 fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx",
-                                                lineNumber: 227,
+                                                lineNumber: 231,
                                                 columnNumber: 21
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["TableCell"], {
                                                 children: s.AdmissionNo || "-"
                                             }, void 0, false, {
                                                 fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx",
-                                                lineNumber: 228,
+                                                lineNumber: 232,
                                                 columnNumber: 21
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["TableCell"], {
                                                 children: s.NameOfThePupil
                                             }, void 0, false, {
                                                 fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx",
-                                                lineNumber: 229,
+                                                lineNumber: 233,
                                                 columnNumber: 21
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["TableCell"], {
                                                 children: s.StudentAadhaarNo || "-"
                                             }, void 0, false, {
                                                 fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx",
-                                                lineNumber: 230,
+                                                lineNumber: 234,
                                                 columnNumber: 21
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["TableCell"], {
                                                 children: s.DateOfAdmission || "-"
                                             }, void 0, false, {
                                                 fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx",
-                                                lineNumber: 231,
+                                                lineNumber: 235,
                                                 columnNumber: 21
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["TableCell"], {
                                                 children: s.DateOfBirth || "-"
                                             }, void 0, false, {
                                                 fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx",
-                                                lineNumber: 232,
+                                                lineNumber: 236,
                                                 columnNumber: 21
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["TableCell"], {
                                                 children: s.ClassAdmitted || "-"
                                             }, void 0, false, {
                                                 fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx",
-                                                lineNumber: 233,
+                                                lineNumber: 237,
                                                 columnNumber: 21
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["TableCell"], {
@@ -1762,12 +1766,12 @@ function AllStudents() {
                                                     className: "rounded-full object-cover"
                                                 }, void 0, false, {
                                                     fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx",
-                                                    lineNumber: 236,
+                                                    lineNumber: 240,
                                                     columnNumber: 25
                                                 }, this) : "-"
                                             }, void 0, false, {
                                                 fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx",
-                                                lineNumber: 234,
+                                                lineNumber: 238,
                                                 columnNumber: 21
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["TableCell"], {
@@ -1781,12 +1785,12 @@ function AllStudents() {
                                                             className: "w-4 h-4"
                                                         }, void 0, false, {
                                                             fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx",
-                                                            lineNumber: 253,
+                                                            lineNumber: 257,
                                                             columnNumber: 25
                                                         }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx",
-                                                        lineNumber: 248,
+                                                        lineNumber: 252,
                                                         columnNumber: 23
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Button"], {
@@ -1797,12 +1801,12 @@ function AllStudents() {
                                                             className: "w-4 h-4"
                                                         }, void 0, false, {
                                                             fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx",
-                                                            lineNumber: 263,
+                                                            lineNumber: 267,
                                                             columnNumber: 25
                                                         }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx",
-                                                        lineNumber: 256,
+                                                        lineNumber: 260,
                                                         columnNumber: 23
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Button"], {
@@ -1813,45 +1817,45 @@ function AllStudents() {
                                                             className: "w-4 h-4 text-destructive"
                                                         }, void 0, false, {
                                                             fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx",
-                                                            lineNumber: 271,
+                                                            lineNumber: 275,
                                                             columnNumber: 25
                                                         }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx",
-                                                        lineNumber: 266,
+                                                        lineNumber: 270,
                                                         columnNumber: 23
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx",
-                                                lineNumber: 247,
+                                                lineNumber: 251,
                                                 columnNumber: 21
                                             }, this)
                                         ]
                                     }, s.id, true, {
                                         fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx",
-                                        lineNumber: 226,
+                                        lineNumber: 230,
                                         columnNumber: 19
                                     }, this))
                             }, void 0, false, {
                                 fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx",
-                                lineNumber: 217,
+                                lineNumber: 221,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx",
-                        lineNumber: 189,
+                        lineNumber: 193,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx",
-                    lineNumber: 188,
+                    lineNumber: 192,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx",
-                lineNumber: 187,
+                lineNumber: 191,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1865,14 +1869,14 @@ function AllStudents() {
                                 className: "w-4 h-4 mr-1"
                             }, void 0, false, {
                                 fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx",
-                                lineNumber: 285,
+                                lineNumber: 289,
                                 columnNumber: 11
                             }, this),
                             "Prev"
                         ]
                     }, void 0, true, {
                         fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx",
-                        lineNumber: 284,
+                        lineNumber: 288,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1885,7 +1889,7 @@ function AllStudents() {
                         ]
                     }, void 0, true, {
                         fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx",
-                        lineNumber: 289,
+                        lineNumber: 293,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$MONTESSORI$2f$Montessori$2d$frontend$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Button"], {
@@ -1897,25 +1901,25 @@ function AllStudents() {
                                 className: "w-4 h-4 ml-1"
                             }, void 0, false, {
                                 fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx",
-                                lineNumber: 298,
+                                lineNumber: 302,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx",
-                        lineNumber: 293,
+                        lineNumber: 297,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx",
-                lineNumber: 283,
+                lineNumber: 287,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/Desktop/MONTESSORI/Montessori-frontend/components/admin/all-students.tsx",
-        lineNumber: 157,
+        lineNumber: 161,
         columnNumber: 5
     }, this);
 }
