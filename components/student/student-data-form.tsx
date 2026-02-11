@@ -59,10 +59,10 @@ export function StudentDataForm() {
             </CardHeader>
             <CardContent className="space-y-4">
               <div className="space-y-2">
-                <Label htmlFor="fullName">
+                <Label htmlFor="SchoolName">
                   Full Name <span className="text-destructive">*</span>
                 </Label>
-                <Input id="fullName" placeholder="Enter your full name" required />
+                <Input id="SchoolName" placeholder="Enter your full name" required />
               </div>
               <div className="grid grid-cols-2 gap-4">
                 <div className="space-y-2">

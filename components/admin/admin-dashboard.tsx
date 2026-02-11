@@ -4,15 +4,16 @@ import { AdminSidebar } from "./admin-sidebar"
 import { DashboardOverview } from "./dashboard-overview"
 import { BulkUploadModule } from "./bulk-upload-module"
 import { SearchRecords } from "./search-records"
-import { AllStudents } from "./all-students"
 import { ReportsModule } from "./reports-module"
 import { SettingsModule } from "./settings-module"
+import AllStudents from "./all-students"
 
 interface AdminDashboardProps {
   currentView: string
   setCurrentView: (view: string) => void
   onLogout: () => void
 }
+
 
 export function AdminDashboard({ currentView, setCurrentView, onLogout }: AdminDashboardProps) {
   const renderContent = () => {
@@ -28,13 +29,13 @@ export function AdminDashboard({ currentView, setCurrentView, onLogout }: AdminD
       case "settings":
         return <SettingsModule />
       default:
-        return <DashboardOverview setCurrentView={setCurrentView} />
+        return <DashboardOverview  />
     }
   }
 
   return (
     <div className="flex h-screen overflow-hidden">
-      <AdminSidebar currentView={currentView} setCurrentView={setCurrentView} onLogout={onLogout} />
+      <AdminSidebar />
       <main className="flex-1 overflow-auto bg-background">{renderContent()}</main>
     </div>
   )

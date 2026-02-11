@@ -1,212 +1,307 @@
 "use client"
 
-import { useState } from "react"
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { Input } from "@/components/ui/input"
+import { useEffect, useMemo, useState } from "react"
+import Image from "next/image"
+import { useRouter } from "next/navigation"
 import { Button } from "@/components/ui/button"
-import { Badge } from "@/components/ui/badge"
-import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table"
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
-import { Search, Filter, Download, ChevronLeft, ChevronRight, Eye, Edit } from "lucide-react"
+import {
+  Table,
+  TableBody,
+  TableCell,
+  TableHead,
+  TableHeader,
+  TableRow,
+} from "@/components/ui/table"
+import { Input } from "@/components/ui/input"
+import {
+  Eye,
+  Edit,
+  Trash,
+  Plus,
+  ChevronLeft,
+  ChevronRight,
+  Download,
+} from "lucide-react"
+import { useStudentStore } from "@/store/student.store"
+import SchoolSelect from "@/components/dropdown/dropdown"
+import { YearDropdown } from "@/components/dropdown/year-dropdown"
 
-const students = [
-  {
-    id: "STU2020CSE001",
-    name: "Rahul Sharma",
-    email: "rahul@email.com",
-    course: "B.Tech CSE",
-    year: "2024",
-    status: "verified",
-  },
-  {
-    id: "STU2020ECE012",
-    name: "Priya Patel",
-    email: "priya@email.com",
-    course: "B.Tech ECE",
-    year: "2024",
-    status: "verified",
-  },
-  { id: "STU2019MBA045", name: "Amit Kumar", email: "amit@email.com", course: "MBA", year: "2021", status: "pending" },
-  {
-    id: "STU2021ME089",
-    name: "Sneha Reddy",
-    email: "sneha@email.com",
-    course: "B.Tech ME",
-    year: "2025",
-    status: "verified",
-  },
-  {
-    id: "STU2020CSE102",
-    name: "Vikram Singh",
-    email: "vikram@email.com",
-    course: "B.Tech CSE",
-    year: "2024",
-    status: "verified",
-  },
-  {
-    id: "STU2019EE034",
-    name: "Anjali Gupta",
-    email: "anjali@email.com",
-    course: "B.Tech EE",
-    year: "2023",
-    status: "pending",
-  },
-  {
-    id: "STU2021CSE201",
-    name: "Rohan Mehta",
-    email: "rohan@email.com",
-    course: "B.Tech CSE",
-    year: "2025",
-    status: "verified",
-  },
-  {
-    id: "STU2020IT078",
-    name: "Kavya Nair",
-    email: "kavya@email.com",
-    course: "B.Tech IT",
-    year: "2024",
-    status: "verified",
-  },
+type SortKey = "NameOfThePupil" | "AdmissionNo" | null
+type SortOrder = "asc" | "desc"
+
+export default function AllStudents() {
+  const router = useRouter()
+
+  const {
+    students,
+    loading,
+    page,
+    limit,
+    total,
+    search,
+    school,
+    year,
+    fetchStudents,
+    setPage,
+    setSearch,
+    setSchool,
+    setYear,
+    deleteStudent,
+  } = useStudentStore()
+
+  const [sortKey, setSortKey] = useState<SortKey>(null)
+  const [sortOrder, setSortOrder] = useState<SortOrder>("asc")
+
+  useEffect(() => {
+    fetchStudents()
+  }, [page, search, school, year])
+
+  const handleSort = (key: SortKey) => {
+    if (sortKey === key) {
+      setSortOrder(sortOrder === "asc" ? "desc" : "asc")
+    } else {
+      setSortKey(key)
+      setSortOrder("asc")
+    }
+  }
+
+  const sortedStudents = useMemo(() => {
+    if (!sortKey) return students
+    return [...students].sort((a: any, b: any) => {
+      const aVal = (a[sortKey] || "").toString().toLowerCase()
+      const bVal = (b[sortKey] || "").toString().toLowerCase()
+      if (aVal < bVal) return sortOrder === "asc" ? -1 : 1
+      if (aVal > bVal) return sortOrder === "asc" ? 1 : -1
+      return 0
+    })
+  }, [students, sortKey, sortOrder])
+
+  const arrow = (key: SortKey) =>
+    sortKey === key ? (sortOrder === "asc" ? " ↑" : " ↓") : ""
+
+  /* =========================
+     EXPORT CSV LOGIC
+  ========================= */
+
+  const EXPORT_FIELDS = [
+  "IDNo",
+  "AdmissionNo",
+  "NameOfThePupil",
+  "StudentAadhaarNo",
+  "PENNo",
+  "AAPARID",
+  "SchoolName",
+  "AcademicYear",
+  "DateOfAdmission",
+  "DateOfBirth",
+  "ClassAdmitted",
+  "ClassLeaving",
+  "PreviousSchoolClass",
+  "Nationality",
+  "Religion",
+  "Caste",
+  "SubCaste",
+  "MotherTongue",
+  "FatherName",
+  "FatherAadhaarNo",
+  "FatherMobileNumber",
+  "FatherQualification",
+  "FatherOccupation",
+  "MotherName",
+  "MotherAadharNo",
+  "MotherMobileNo",
+  "MotherBankAccountNo",
+  "MotherQualification",
+  "MotherOccupation",
+  "MotherMailID",
+  "MailID",
+  "ResidenceAddress",
+  "BankIFSCCode",
+  "TCNumber",
+  "LeavingTCNo",
+  "TCTakenDate",
+  "DateOfLeaving",
 ]
+  const handleExport = () => {
+  if (!sortedStudents.length) return
 
-export function AllStudents() {
-  const [searchQuery, setSearchQuery] = useState("")
-  const [courseFilter, setCourseFilter] = useState("all")
-  const [statusFilter, setStatusFilter] = useState("all")
+  const headers = EXPORT_FIELDS.map((key) =>
+    key.replace(/([A-Z])/g, " $1").trim()
+  )
 
-  const filteredStudents = students.filter((student) => {
-    const matchesSearch =
-      student.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
-      student.id.toLowerCase().includes(searchQuery.toLowerCase()) ||
-      student.email.toLowerCase().includes(searchQuery.toLowerCase())
-    const matchesCourse = courseFilter === "all" || student.course.includes(courseFilter)
-    const matchesStatus = statusFilter === "all" || student.status === statusFilter
-    return matchesSearch && matchesCourse && matchesStatus
+  const rows = sortedStudents.map((student: any) =>
+    EXPORT_FIELDS.map((field) => {
+      const value = student[field]
+      return value === null || value === undefined ? "" : value
+    })
+  )
+
+  const csvContent =
+    [headers, ...rows]
+      .map((row) =>
+        row.map((cell) => `"${String(cell).replace(/"/g, '""')}"`).join(",")
+      )
+      .join("\n")
+
+  const blob = new Blob([csvContent], {
+    type: "text/csv;charset=utf-8;",
   })
+
+  const url = URL.createObjectURL(blob)
+  const link = document.createElement("a")
+  link.href = url
+  link.download = "students_export.csv"
+  document.body.appendChild(link)
+  link.click()
+  document.body.removeChild(link)
+}
+
 
   return (
     <div className="p-6 space-y-6">
       {/* Header */}
       <div className="flex items-center justify-between">
-        <div>
-          <h1 className="text-2xl font-bold text-foreground">All Students</h1>
-          <p className="text-muted-foreground">View and manage all student records</p>
+        <h1 className="text-2xl font-bold">All Students</h1>
+
+        <div className="flex gap-2">
+          <Button variant="outline" onClick={handleExport}>
+            <Download className="w-4 h-4 mr-2" />
+            Export
+          </Button>
+
+          <Button onClick={() => router.push("/students/add-student")}>
+            <Plus className="w-4 h-4 mr-2" />
+            Add Student
+          </Button>
         </div>
-        <Button>
-          <Download className="w-4 h-4 mr-2" />
-          Export All
-        </Button>
       </div>
 
       {/* Filters */}
-      <Card>
-        <CardContent className="p-4">
-          <div className="flex flex-wrap gap-4">
-            <div className="flex-1 min-w-[200px]">
-              <div className="relative">
-                <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-muted-foreground" />
-                <Input
-                  placeholder="Search by name, ID, or email..."
-                  className="pl-10"
-                  value={searchQuery}
-                  onChange={(e) => setSearchQuery(e.target.value)}
-                />
-              </div>
-            </div>
-            <Select value={courseFilter} onValueChange={setCourseFilter}>
-              <SelectTrigger className="w-[180px]">
-                <Filter className="w-4 h-4 mr-2" />
-                <SelectValue placeholder="Course" />
-              </SelectTrigger>
-              <SelectContent>
-                <SelectItem value="all">All Courses</SelectItem>
-                <SelectItem value="CSE">B.Tech CSE</SelectItem>
-                <SelectItem value="ECE">B.Tech ECE</SelectItem>
-                <SelectItem value="ME">B.Tech ME</SelectItem>
-                <SelectItem value="EE">B.Tech EE</SelectItem>
-                <SelectItem value="IT">B.Tech IT</SelectItem>
-                <SelectItem value="MBA">MBA</SelectItem>
-              </SelectContent>
-            </Select>
-            <Select value={statusFilter} onValueChange={setStatusFilter}>
-              <SelectTrigger className="w-[180px]">
-                <SelectValue placeholder="Status" />
-              </SelectTrigger>
-              <SelectContent>
-                <SelectItem value="all">All Status</SelectItem>
-                <SelectItem value="verified">Verified</SelectItem>
-                <SelectItem value="pending">Pending</SelectItem>
-              </SelectContent>
-            </Select>
-          </div>
-        </CardContent>
-      </Card>
+      <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4 bg-white p-4 rounded-lg shadow-sm">
+        <Input
+          placeholder="Search by Aadhaar no"
+          value={search}
+          onChange={(e) => setSearch(e.target.value)}
+        />
+        <SchoolSelect value={school} onChange={setSchool} />
+        <YearDropdown value={year} onChange={setYear} />
+      </div>
 
       {/* Table */}
-      <Card>
-        <CardHeader>
-          <CardTitle>Student Records</CardTitle>
-          <CardDescription>
-            Showing {filteredStudents.length} of {students.length} students
-          </CardDescription>
-        </CardHeader>
-        <CardContent>
-          <div className="rounded-lg border overflow-hidden">
-            <Table>
-              <TableHeader>
+      <div className="border rounded-xl bg-white overflow-hidden">
+        <div className="max-h-[70vh] overflow-y-auto">
+          <Table className="w-full">
+            <TableHeader className="top-0 z-20 bg-white shadow-sm  table-fixed">
+              <TableRow>
+                <TableHead>ID No</TableHead>
+
+                <TableHead
+                  className="cursor-pointer"
+                  onClick={() => handleSort("AdmissionNo")}
+                >
+                  Admission No{arrow("AdmissionNo")}
+                </TableHead>
+
+                <TableHead
+                  className="cursor-pointer"
+                  onClick={() => handleSort("NameOfThePupil")}
+                >
+                  Name of the Pupil{arrow("NameOfThePupil")}
+                </TableHead>
+
+                <TableHead>Student Aadhaar</TableHead>
+                <TableHead>Date of Admission</TableHead>
+                <TableHead>Date of Birth</TableHead>
+                <TableHead>Class Admitted</TableHead>
+                <TableHead>Photo</TableHead>
+                <TableHead className="text-right">Actions</TableHead>
+              </TableRow>
+            </TableHeader>
+
+            <TableBody>
+              {loading ? (
                 <TableRow>
-                  <TableHead>Student ID</TableHead>
-                  <TableHead>Name</TableHead>
-                  <TableHead>Email</TableHead>
-                  <TableHead>Course</TableHead>
-                  <TableHead>Passing Year</TableHead>
-                  <TableHead>Status</TableHead>
-                  <TableHead className="text-right">Actions</TableHead>
+                  <TableCell colSpan={9} className="text-center py-10">
+                    Loading...
+                  </TableCell>
                 </TableRow>
-              </TableHeader>
-              <TableBody>
-                {filteredStudents.map((student) => (
-                  <TableRow key={student.id}>
-                    <TableCell className="font-mono text-sm">{student.id}</TableCell>
-                    <TableCell className="font-medium">{student.name}</TableCell>
-                    <TableCell className="text-muted-foreground">{student.email}</TableCell>
-                    <TableCell>{student.course}</TableCell>
-                    <TableCell>{student.year}</TableCell>
+              ) : (
+                sortedStudents.map((s: any) => (
+                  <TableRow key={s.id} className="hover:bg-muted/40">
+                    <TableCell>{s.IDNo || "-"}</TableCell>
+                    <TableCell>{s.AdmissionNo || "-"}</TableCell>
+                    <TableCell>{s.NameOfThePupil}</TableCell>
+                    <TableCell>{s.StudentAadhaarNo || "-"}</TableCell>
+                    <TableCell>{s.DateOfAdmission || "-"}</TableCell>
+                    <TableCell>{s.DateOfBirth || "-"}</TableCell>
+                    <TableCell>{s.ClassAdmitted || "-"}</TableCell>
                     <TableCell>
-                      <Badge variant={student.status === "verified" ? "default" : "secondary"}>{student.status}</Badge>
+                      {s.PhotoOfStudent ? (
+                        <Image
+                          src={`${process.env.NEXT_PUBLIC_API_BASE_URL}/${s.PhotoOfStudent}`}
+                          alt="student"
+                          width={36}
+                          height={36}
+                          className="rounded-full object-cover"
+                        />
+                      ) : (
+                        "-"
+                      )}
                     </TableCell>
-                    <TableCell className="text-right">
-                      <div className="flex justify-end gap-2">
-                        <Button variant="ghost" size="icon" className="h-8 w-8">
-                          <Eye className="w-4 h-4" />
-                        </Button>
-                        <Button variant="ghost" size="icon" className="h-8 w-8">
-                          <Edit className="w-4 h-4" />
-                        </Button>
-                      </div>
+                    <TableCell className="text-right space-x-1">
+                      <Button
+                        size="icon"
+                        variant="ghost"
+                        onClick={() => router.push(`/students/view/${s.id}`)}
+                      >
+                        <Eye className="w-4 h-4" />
+                      </Button>
+
+                      <Button
+                        size="icon"
+                        variant="ghost"
+                        onClick={() =>
+                          router.push(`/students/edit-student/${s.id}`)
+                        }
+                      >
+                        <Edit className="w-4 h-4" />
+                      </Button>
+
+                      <Button
+                        size="icon"
+                        variant="ghost"
+                        onClick={() => deleteStudent(s)}
+                      >
+                        <Trash className="w-4 h-4 text-destructive" />
+                      </Button>
                     </TableCell>
                   </TableRow>
-                ))}
-              </TableBody>
-            </Table>
-          </div>
+                ))
+              )}
+            </TableBody>
+          </Table>
+        </div>
+      </div>
 
-          {/* Pagination */}
-          <div className="flex items-center justify-between mt-4">
-            <p className="text-sm text-muted-foreground">Page 1 of 23,457</p>
-            <div className="flex gap-2">
-              <Button variant="outline" size="sm" disabled>
-                <ChevronLeft className="w-4 h-4 mr-1" />
-                Previous
-              </Button>
-              <Button variant="outline" size="sm">
-                Next
-                <ChevronRight className="w-4 h-4 ml-1" />
-              </Button>
-            </div>
-          </div>
-        </CardContent>
-      </Card>
+      {/* Pagination */}
+      <div className="flex items-center justify-between">
+        <Button disabled={page === 1} onClick={() => setPage(page - 1)}>
+          <ChevronLeft className="w-4 h-4 mr-1" />
+          Prev
+        </Button>
+
+        <span className="text-sm">
+          Page {page} of {Math.ceil(total / limit)}
+        </span>
+
+        <Button
+          disabled={page * limit >= total}
+          onClick={() => setPage(page + 1)}
+        >
+          Next
+          <ChevronRight className="w-4 h-4 ml-1" />
+        </Button>
+      </div>
     </div>
   )
 }

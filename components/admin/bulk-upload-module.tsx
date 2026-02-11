@@ -1,253 +1,287 @@
 "use client"
 
-import { useState } from "react"
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
+import { useRef, useState, useEffect } from "react"
+import { useBulkUploadStore } from "@/store/bulk-upload.store"
+import { useToast } from "@/hooks/use-toast"
+import { useSchoolStore } from "@/store/school.store"
+import { useAuthStore } from "@/store/auth.store"
+import { SchoolSelect } from "@/components/dropdown/dropdown"
+import { YearDropdown, YearDropdownWithoutAll } from "@/components/dropdown/year-dropdown"
+import Image from "next/image"
+import { useRouter } from "next/navigation"
+
+
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Progress } from "@/components/ui/progress"
-import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table"
-import { Upload, FileSpreadsheet, CheckCircle, XCircle, AlertTriangle, Download, Eye, Trash2 } from "lucide-react"
+import {
+  Table,
+  TableBody,
+  TableCell,
+  TableHead,
+  TableHeader,
+  TableRow,
+} from "@/components/ui/table"
+import {
+  Upload,
+  FileSpreadsheet,
+  CheckCircle,
+  XCircle,
+  AlertTriangle,
+  Download,
+  Eye,
+  Trash2,
+} from "lucide-react"
 
-type UploadStatus = "idle" | "uploading" | "validating" | "preview" | "complete" | "error"
-
-const samplePreviewData = [
-  { id: "STU001", name: "Rahul Sharma", email: "rahul@email.com", course: "B.Tech CSE", year: "2020", status: "valid" },
-  { id: "STU002", name: "Priya Patel", email: "priya@email.com", course: "B.Tech ECE", year: "2021", status: "valid" },
-  { id: "STU003", name: "Amit Kumar", email: "", course: "MBA", year: "2019", status: "error" },
-  { id: "STU004", name: "Sneha Reddy", email: "sneha@email.com", course: "B.Tech ME", year: "2022", status: "valid" },
-  {
-    id: "STU001",
-    name: "Duplicate Entry",
-    email: "dup@email.com",
-    course: "B.Tech CSE",
-    year: "2020",
-    status: "duplicate",
-  },
-]
-
-const uploadHistory = [
-  { id: 1, filename: "batch_2024.csv", date: "2024-01-15", total: 1250, success: 1230, failed: 20 },
-  { id: 2, filename: "alumni_dec.xlsx", date: "2024-01-14", total: 890, success: 845, failed: 45 },
-  { id: 3, filename: "engineering.csv", date: "2024-01-13", total: 2100, success: 2100, failed: 0 },
-]
+type UploadStatus = "idle" | "uploading" | "preview" | "complete" | "error"
 
 export function BulkUploadModule() {
   const [uploadStatus, setUploadStatus] = useState<UploadStatus>("idle")
   const [progress, setProgress] = useState(0)
   const [dragActive, setDragActive] = useState(false)
 
-  const handleFileUpload = () => {
-    setUploadStatus("uploading")
-    setProgress(0)
+  const [selectedSchool, setSelectedSchool] = useState("")
+  const [selectedYear, setSelectedYear] = useState("")
+  const [selectedFile, setSelectedFile] = useState<File | null>(null)
 
-    const interval = setInterval(() => {
-      setProgress((prev) => {
-        if (prev >= 100) {
-          clearInterval(interval)
-          setUploadStatus("validating")
-          setTimeout(() => setUploadStatus("preview"), 1500)
-          return 100
-        }
-        return prev + 10
-      })
-    }, 200)
-  }
+  const user = useAuthStore((state) => state.user)
+  const fileInputRef = useRef<HTMLInputElement>(null)
 
-  const handleConfirmUpload = () => {
-    setUploadStatus("complete")
-  }
+  const { upload, response, report, reset } = useBulkUploadStore()
+  const { toast } = useToast()
+  const { schools, fetchSchools } = useSchoolStore()
+  const router = useRouter()
+  useEffect(() => {
+    if (user?.SchoolName && schools.length === 0) {
+      fetchSchools(user.SchoolName)
+    }
+  }, [user?.SchoolName, schools.length, fetchSchools])
 
-  const handleReset = () => {
+  const resetUpload = () => {
+    reset()
     setUploadStatus("idle")
     setProgress(0)
+    setSelectedFile(null)
+  }
+
+  const handleFileSelect = (file?: File) => {
+    if (!file) return
+    setSelectedFile(file)
+  }
+  const handleUpload = async () => {
+    if (!selectedFile) return
+
+    if (!selectedSchool) {
+      toast({ variant: "destructive", title: "Select school first" })
+      return
+    }
+
+    if (!selectedYear) {
+      toast({ variant: "destructive", title: "Select academic year" })
+      return
+    }
+
+    setUploadStatus("uploading")
+    setProgress(40)
+
+    try {
+      await upload(selectedFile, selectedSchool, selectedYear)
+      setProgress(100)
+      setUploadStatus("preview")
+
+      const res = useBulkUploadStore.getState().response
+      if (!res) return
+
+      toast({
+        title:
+          res.errors_count > 0 || res.duplicates_inserted > 0
+            ? "Upload completed with issues"
+            : "Bulk upload successful",
+        description: `${res.inserted_total} inserted, ${res.duplicates_inserted} duplicates, ${res.errors_count} errors`,
+      })
+    } catch (err: any) {
+      toast({
+        variant: "destructive",
+        title: "Upload failed",
+        description: err.message || "Something went wrong",
+      })
+      setUploadStatus("error")
+    }
   }
 
   return (
     <div className="p-6 space-y-6">
-      {/* Header */}
-      <div>
-        <h1 className="text-2xl font-bold text-foreground">Bulk Upload</h1>
-        <p className="text-muted-foreground">Upload CSV or Excel files to add multiple student records</p>
+      {/* WATERMARK */}
+      <div className="pointer-events-none absolute inset-0 flex items-center justify-center opacity-[0.05]">
+        <Image src="/logo.png" alt="Watermark" width={600} height={600} />
       </div>
 
+      <div>
+        <h1 className="text-2xl font-bold">Bulk Upload</h1>
+        <p className="text-muted-foreground">
+          Upload CSV or Excel files to add multiple student records
+        </p>
+      </div>
+
+      {/* DROPDOWNS */}
+      {/* DROPDOWNS + ACTION BUTTON */}
+      <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4 bg-white p-4 rounded-lg shadow-sm">
+
+        {/* Left Side - Dropdowns */}
+        <div className="flex flex-col sm:flex-row gap-4 w-full lg:w-auto">
+          <SchoolSelect
+            value={selectedSchool}
+            onChange={setSelectedSchool}
+          />
+          <YearDropdownWithoutAll
+            value={selectedYear}
+            onChange={setSelectedYear}
+          />
+        </div>
+
+        {/* Right Side - Photo Bulk Upload Button */}
+        <div className="flex justify-start lg:justify-end">
+          <Button
+            onClick={() => router.push("/photo-bulk-upload")}
+            className="whitespace-nowrap"
+          >
+            Student Photo Bulk Upload
+          </Button>
+        </div>
+
+      </div>
+
+
       <div className="grid gap-6 lg:grid-cols-3">
-        {/* Upload Area */}
         <div className="lg:col-span-2 space-y-6">
-          {/* Drag & Drop Zone */}
           <Card>
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
                 <Upload className="w-5 h-5" />
                 Upload File
               </CardTitle>
-              <CardDescription>Supported formats: CSV, XLS, XLSX (Max 10MB)</CardDescription>
+              <CardDescription>
+                Supported formats: CSV, XLS, XLSX
+              </CardDescription>
             </CardHeader>
+
             <CardContent>
               {uploadStatus === "idle" && (
                 <div
-                  className={`border-2 border-dashed rounded-lg p-8 text-center transition-colors ${
-                    dragActive ? "border-primary bg-primary/5" : "border-border"
-                  }`}
-                  onDragEnter={() => setDragActive(true)}
-                  onDragLeave={() => setDragActive(false)}
-                  onDragOver={(e) => e.preventDefault()}
-                  onDrop={() => {
+                  className={`border-2 border-dashed rounded-lg p-8 text-center ${dragActive ? "border-primary bg-primary/5" : ""
+                    }`}
+                  onDragEnter={(e) => {
+                    e.preventDefault()
+                    setDragActive(true)
+                  }}
+                  onDragLeave={(e) => {
+                    e.preventDefault()
                     setDragActive(false)
-                    handleFileUpload()
+                  }}
+                  onDragOver={(e) => e.preventDefault()}
+                  onDrop={(e) => {
+                    e.preventDefault()
+                    setDragActive(false)
+                    handleFileSelect(e.dataTransfer.files[0])
                   }}
                 >
-                  <FileSpreadsheet className="w-12 h-12 mx-auto text-muted-foreground mb-4" />
-                  <p className="text-foreground font-medium mb-2">Drag and drop your file here</p>
-                  <p className="text-sm text-muted-foreground mb-4">or</p>
-                  <Button onClick={handleFileUpload}>Browse Files</Button>
-                </div>
-              )}
+                  <FileSpreadsheet className="w-12 h-12 mx-auto mb-4" />
 
-              {(uploadStatus === "uploading" || uploadStatus === "validating") && (
-                <div className="p-8 text-center space-y-4">
-                  <FileSpreadsheet className="w-12 h-12 mx-auto text-primary" />
-                  <div>
-                    <p className="font-medium text-foreground">
-                      {uploadStatus === "uploading" ? "Uploading file..." : "Validating records..."}
+                  {selectedFile ? (
+                    <p className="font-medium mb-4">
+                      Selected: {selectedFile.name}
                     </p>
-                    <p className="text-sm text-muted-foreground">student_records_2024.csv</p>
+                  ) : (
+                    <p className="mb-4">Drag & drop file here</p>
+                  )}
+
+                  <div className="flex justify-center gap-3">
+                    <Button onClick={() => fileInputRef.current?.click()}>
+                      Choose File
+                    </Button>
+
                   </div>
-                  <Progress
-                    value={uploadStatus === "validating" ? 100 : progress}
-                    className="w-full max-w-xs mx-auto"
+
+                  <input
+                    ref={fileInputRef}
+                    hidden
+                    type="file"
+                    // accept=".csv,.xls,.xlsx"
+                    onChange={(e) =>
+                      e.target.files &&
+                      handleFileSelect(e.target.files[0])
+                    }
                   />
                 </div>
               )}
 
-              {uploadStatus === "complete" && (
-                <div className="p-8 text-center space-y-4">
-                  <CheckCircle className="w-12 h-12 mx-auto text-success" />
-                  <div>
-                    <p className="font-medium text-foreground">Upload Complete!</p>
-                    <p className="text-sm text-muted-foreground">
-                      Successfully added 1,230 records. 20 records had errors.
-                    </p>
-                  </div>
-                  <div className="flex gap-3 justify-center">
-                    <Button variant="outline" size="sm">
-                      <Download className="w-4 h-4 mr-2" />
-                      Download Error Report
-                    </Button>
-                    <Button size="sm" onClick={handleReset}>
-                      Upload Another
-                    </Button>
-                  </div>
+              {uploadStatus === "uploading" && (
+                <div className="space-y-4 text-center">
+                  <Progress value={progress} />
+                  <p>Uploading and validating data…</p>
                 </div>
               )}
+
+              {uploadStatus === "error" && (
+                <Button onClick={resetUpload}>Retry</Button>
+              )}
+              <div className="flex justify-end gap-3 mt-5">
+                <Button
+                  onClick={handleUpload}
+                  disabled={!selectedFile || !selectedSchool || !selectedYear}
+                >
+                  Upload Now
+                </Button>
+              </div>
             </CardContent>
+
           </Card>
 
-          {/* Preview Table */}
-          {uploadStatus === "preview" && (
+          {uploadStatus === "preview" && response && (
             <Card>
               <CardHeader>
-                <CardTitle className="flex items-center gap-2">
-                  <Eye className="w-5 h-5" />
-                  Preview Data
-                </CardTitle>
-                <CardDescription>
-                  Review the data before confirming. Found 3 valid, 1 error, 1 duplicate.
-                </CardDescription>
+                <CardTitle>Preview</CardTitle>
               </CardHeader>
               <CardContent>
-                <div className="rounded-lg border overflow-hidden">
-                  <Table>
-                    <TableHeader>
-                      <TableRow>
-                        <TableHead>Student ID</TableHead>
-                        <TableHead>Name</TableHead>
-                        <TableHead>Email</TableHead>
-                        <TableHead>Course</TableHead>
-                        <TableHead>Year</TableHead>
-                        <TableHead>Status</TableHead>
+                <Table>
+                  <TableHeader>
+                    <TableRow>
+                      <TableHead>Admission No</TableHead>
+                      <TableHead>Status</TableHead>
+                      <TableHead>Message</TableHead>
+                    </TableRow>
+                  </TableHeader>
+                  <TableBody>
+                    {report.map((row) => (
+                      <TableRow key={row.row}>
+                        <TableCell>{row.AdmissionNo}</TableCell>
+                        <TableCell>{row.status}</TableCell>
+                        <TableCell>{row.error || "-"}</TableCell>
                       </TableRow>
-                    </TableHeader>
-                    <TableBody>
-                      {samplePreviewData.map((row, i) => (
-                        <TableRow key={i} className={row.status !== "valid" ? "bg-destructive/5" : ""}>
-                          <TableCell className="font-mono text-sm">{row.id}</TableCell>
-                          <TableCell>{row.name}</TableCell>
-                          <TableCell>{row.email || <span className="text-destructive">Missing</span>}</TableCell>
-                          <TableCell>{row.course}</TableCell>
-                          <TableCell>{row.year}</TableCell>
-                          <TableCell>
-                            {row.status === "valid" && (
-                              <span className="flex items-center gap-1 text-success">
-                                <CheckCircle className="w-4 h-4" /> Valid
-                              </span>
-                            )}
-                            {row.status === "error" && (
-                              <span className="flex items-center gap-1 text-destructive">
-                                <XCircle className="w-4 h-4" /> Error
-                              </span>
-                            )}
-                            {row.status === "duplicate" && (
-                              <span className="flex items-center gap-1 text-warning">
-                                <AlertTriangle className="w-4 h-4" /> Duplicate
-                              </span>
-                            )}
-                          </TableCell>
-                        </TableRow>
-                      ))}
-                    </TableBody>
-                  </Table>
-                </div>
-                <div className="flex gap-3 mt-4">
-                  <Button variant="outline" onClick={handleReset}>
-                    Cancel
-                  </Button>
-                  <Button onClick={handleConfirmUpload}>Confirm & Upload Valid Records</Button>
-                </div>
+                    ))}
+                  </TableBody>
+                </Table>
               </CardContent>
             </Card>
           )}
         </div>
 
-        {/* Sidebar - Upload History & Template */}
-        <div className="space-y-6">
-          {/* Download Template */}
+        <div>
           <Card>
             <CardHeader>
-              <CardTitle className="text-base">Template</CardTitle>
+              <CardTitle>Template</CardTitle>
             </CardHeader>
             <CardContent>
-              <p className="text-sm text-muted-foreground mb-3">
-                Download our template to ensure your data is formatted correctly.
-              </p>
-              <Button variant="outline" className="w-full bg-transparent" size="sm">
+              <Button variant="outline" className="w-full">
                 <Download className="w-4 h-4 mr-2" />
                 Download Template
               </Button>
-            </CardContent>
-          </Card>
-
-          {/* Upload History */}
-          <Card>
-            <CardHeader>
-              <CardTitle className="text-base">Upload History</CardTitle>
-            </CardHeader>
-            <CardContent className="space-y-3">
-              {uploadHistory.map((item) => (
-                <div key={item.id} className="p-3 rounded-lg bg-muted/50 space-y-2">
-                  <div className="flex items-start justify-between">
-                    <div>
-                      <p className="text-sm font-medium text-foreground truncate max-w-[150px]">{item.filename}</p>
-                      <p className="text-xs text-muted-foreground">{item.date}</p>
-                    </div>
-                    <Button variant="ghost" size="icon" className="h-8 w-8">
-                      <Trash2 className="w-4 h-4" />
-                    </Button>
-                  </div>
-                  <div className="flex gap-3 text-xs">
-                    <span className="text-success">{item.success} success</span>
-                    <span className="text-destructive">{item.failed} failed</span>
-                  </div>
-                </div>
-              ))}
             </CardContent>
           </Card>
         </div>
@@ -255,3 +289,5 @@ export function BulkUploadModule() {
     </div>
   )
 }
+
+export default BulkUploadModule
