@@ -71,3 +71,47 @@
 [133:17:15.957] Server  ERROR   Error: ENOENT: no such file or directory, open '/Users/rajeevrawat/Desktop/MONTESSORI/Montessori-frontend/.next/dev/server/pages/_app/build-manifest.json'
 [133:17:15.979] Server  ERROR    ⨯ Error: ENOENT: no such file or directory, open '/Users/rajeevrawat/Desktop/MONTESSORI/Montessori-frontend/.next/dev/server/pages/_app/build-manifest.json'
 [133:17:15.999] Server  ERROR   Error: ENOENT: no such file or directory, open '/Users/rajeevrawat/Desktop/MONTESSORI/Montessori-frontend/.next/dev/server/pages/_app/build-manifest.json'
+[00:54:10.617] Server  ERROR    ⨯ Error: ENOENT: no such file or directory, open '/Users/rajeevrawat/Desktop/MONTESSORI/Montessori-frontend/.next/dev/server/app/_not-found/page/build-manifest.json'
+[00:54:10.675] Server  ERROR    ⨯ Error: ENOENT: no such file or directory, open '/Users/rajeevrawat/Desktop/MONTESSORI/Montessori-frontend/.next/dev/server/app/_not-found/page/build-manifest.json'
+[00:54:10.676] Server  LOG      ✓ Compiled in 1657ms
+[00:54:11.286] Server  LOG      ✓ Compiled in 619ms
+[00:54:11.695] Server  ERROR   Error: ENOENT: no such file or directory, open '/Users/rajeevrawat/Desktop/MONTESSORI/Montessori-frontend/.next/dev/static/development/_buildManifest.js.tmp.q57l38e8mf'
+[00:54:11.719] Server  ERROR   Error: ENOENT: no such file or directory, open '/Users/rajeevrawat/Desktop/MONTESSORI/Montessori-frontend/.next/dev/static/development/_clientMiddlewareManifest.json.tmp.hpk6aoi5wj4'
+[00:54:11.769] Server  ERROR    ⨯ Error: Cannot find module '../chunks/ssr/[turbopack]_runtime.js'
+Require stack:
+- /Users/rajeevrawat/Desktop/MONTESSORI/Montessori-frontend/.next/dev/server/pages/_document.js
+- /Users/rajeevrawat/Desktop/MONTESSORI/Montessori-frontend/node_modules/next/dist/server/require.js
+- /Users/rajeevrawat/Desktop/MONTESSORI/Montessori-frontend/node_modules/next/dist/server/load-components.js
+- /Users/rajeevrawat/Desktop/MONTESSORI/Montessori-frontend/node_modules/next/dist/build/utils.js
+- /Users/rajeevrawat/Desktop/MONTESSORI/Montessori-frontend/node_modules/next/dist/build/swc/options.js
+- /Users/rajeevrawat/Desktop/MONTESSORI/Montessori-frontend/node_modules/next/dist/build/swc/index.js
+- /Users/rajeevrawat/Desktop/MONTESSORI/Montessori-frontend/node_modules/next/dist/server/lib/router-utils/setup-dev-bundler.js
+- /Users/rajeevrawat/Desktop/MONTESSORI/Montessori-frontend/node_modules/next/dist/server/lib/router-server.js
+- /Users/rajeevrawat/Desktop/MONTESSORI/Montessori-frontend/node_modules/next/dist/server/lib/start-server.js
+[00:54:11.787] Server  ERROR    ⨯ Error: Cannot find module '../chunks/ssr/[turbopack]_runtime.js'
+Require stack:
+- /Users/rajeevrawat/Desktop/MONTESSORI/Montessori-frontend/.next/dev/server/pages/_document.js
+- /Users/rajeevrawat/Desktop/MONTESSORI/Montessori-frontend/node_modules/next/dist/server/require.js
+- /Users/rajeevrawat/Desktop/MONTESSORI/Montessori-frontend/node_modules/next/dist/server/load-components.js
+- /Users/rajeevrawat/Desktop/MONTESSORI/Montessori-frontend/node_modules/next/dist/build/utils.js
+- /Users/rajeevrawat/Desktop/MONTESSORI/Montessori-frontend/node_modules/next/dist/build/swc/options.js
+- /Users/rajeevrawat/Desktop/MONTESSORI/Montessori-frontend/node_modules/next/dist/build/swc/index.js
+- /Users/rajeevrawat/Desktop/MONTESSORI/Montessori-frontend/node_modules/next/dist/server/lib/router-utils/setup-dev-bundler.js
+- /Users/rajeevrawat/Desktop/MONTESSORI/Montessori-frontend/node_modules/next/dist/server/lib/router-server.js
+- /Users/rajeevrawat/Desktop/MONTESSORI/Montessori-frontend/node_modules/next/dist/server/lib/start-server.js
+[00:54:11.886] Server  ERROR   Error: ENOENT: no such file or directory, open '/Users/rajeevrawat/Desktop/MONTESSORI/Montessori-frontend/.next/dev/routes-manifest.json'
+[00:54:11.922] Server  ERROR   Error: ENOENT: no such file or directory, open '/Users/rajeevrawat/Desktop/MONTESSORI/Montessori-frontend/.next/dev/routes-manifest.json'
+[00:54:11.971] Server  ERROR    ⨯ Error: ENOENT: no such file or directory, open '/Users/rajeevrawat/Desktop/MONTESSORI/Montessori-frontend/.next/dev/server/app/_not-found/page/build-manifest.json'
+[00:54:11.999] Server  ERROR   Error: ENOENT: no such file or directory, open '/Users/rajeevrawat/Desktop/MONTESSORI/Montessori-frontend/.next/dev/routes-manifest.json'
+[00:54:12.043] Server  ERROR    ⨯ Error: Cannot find module '../chunks/ssr/[turbopack]_runtime.js'
+Require stack:
+- /Users/rajeevrawat/Desktop/MONTESSORI/Montessori-frontend/.next/dev/server/pages/_document.js
+- /Users/rajeevrawat/Desktop/MONTESSORI/Montessori-frontend/node_modules/next/dist/server/require.js
+- /Users/rajeevrawat/Desktop/MONTESSORI/Montessori-frontend/node_modules/next/dist/server/load-components.js
+- /Users/rajeevrawat/Desktop/MONTESSORI/Montessori-frontend/node_modules/next/dist/build/utils.js
+- /Users/rajeevrawat/Desktop/MONTESSORI/Montessori-frontend/node_modules/next/dist/build/swc/options.js
+- /Users/rajeevrawat/Desktop/MONTESSORI/Montessori-frontend/node_modules/next/dist/build/swc/index.js
+- /Users/rajeevrawat/Desktop/MONTESSORI/Montessori-frontend/node_modules/next/dist/server/lib/router-utils/setup-dev-bundler.js
+- /Users/rajeevrawat/Desktop/MONTESSORI/Montessori-frontend/node_modules/next/dist/server/lib/router-server.js
+- /Users/rajeevrawat/Desktop/MONTESSORI/Montessori-frontend/node_modules/next/dist/server/lib/start-server.js
+[00:54:12.073] Server  ERROR   Error: ENOENT: no such file or directory, open '/Users/rajeevrawat/Desktop/MONTESSORI/Montessori-frontend/.next/dev/routes-manifest.json'
