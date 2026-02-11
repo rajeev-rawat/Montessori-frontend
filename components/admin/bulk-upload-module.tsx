@@ -8,6 +8,8 @@ import { useAuthStore } from "@/store/auth.store"
 import { SchoolSelect } from "@/components/dropdown/dropdown"
 import { YearDropdown, YearDropdownWithoutAll } from "@/components/dropdown/year-dropdown"
 import Image from "next/image"
+import { useRouter } from "next/navigation"
+
 
 import {
   Card,
@@ -54,7 +56,7 @@ export function BulkUploadModule() {
   const { upload, response, report, reset } = useBulkUploadStore()
   const { toast } = useToast()
   const { schools, fetchSchools } = useSchoolStore()
-
+  const router = useRouter()
   useEffect(() => {
     if (user?.SchoolName && schools.length === 0) {
       fetchSchools(user.SchoolName)
@@ -128,10 +130,33 @@ export function BulkUploadModule() {
       </div>
 
       {/* DROPDOWNS */}
-      <div className="flex bg-white flex-col sm:flex-row gap-4 max-w-xl">
-        <SchoolSelect value={selectedSchool} onChange={setSelectedSchool} />
-        <YearDropdownWithoutAll value={selectedYear} onChange={setSelectedYear} />
+      {/* DROPDOWNS + ACTION BUTTON */}
+      <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4 bg-white p-4 rounded-lg shadow-sm">
+
+        {/* Left Side - Dropdowns */}
+        <div className="flex flex-col sm:flex-row gap-4 w-full lg:w-auto">
+          <SchoolSelect
+            value={selectedSchool}
+            onChange={setSelectedSchool}
+          />
+          <YearDropdownWithoutAll
+            value={selectedYear}
+            onChange={setSelectedYear}
+          />
+        </div>
+
+        {/* Right Side - Photo Bulk Upload Button */}
+        <div className="flex justify-start lg:justify-end">
+          <Button
+            onClick={() => router.push("/photo-bulk-upload")}
+            className="whitespace-nowrap"
+          >
+            Student Photo Bulk Upload
+          </Button>
+        </div>
+
       </div>
+
 
       <div className="grid gap-6 lg:grid-cols-3">
         <div className="lg:col-span-2 space-y-6">
@@ -149,9 +174,8 @@ export function BulkUploadModule() {
             <CardContent>
               {uploadStatus === "idle" && (
                 <div
-                  className={`border-2 border-dashed rounded-lg p-8 text-center ${
-                    dragActive ? "border-primary bg-primary/5" : ""
-                  }`}
+                  className={`border-2 border-dashed rounded-lg p-8 text-center ${dragActive ? "border-primary bg-primary/5" : ""
+                    }`}
                   onDragEnter={(e) => {
                     e.preventDefault()
                     setDragActive(true)
@@ -207,16 +231,16 @@ export function BulkUploadModule() {
               {uploadStatus === "error" && (
                 <Button onClick={resetUpload}>Retry</Button>
               )}
-               <div className="flex justify-end gap-3 mt-5">
-              <Button
-                onClick={handleUpload}
-                disabled={!selectedFile || !selectedSchool || !selectedYear}
-              >
-                Upload Now
-              </Button>
-            </div>
+              <div className="flex justify-end gap-3 mt-5">
+                <Button
+                  onClick={handleUpload}
+                  disabled={!selectedFile || !selectedSchool || !selectedYear}
+                >
+                  Upload Now
+                </Button>
+              </div>
             </CardContent>
-           
+
           </Card>
 
           {uploadStatus === "preview" && response && (
