@@ -42,6 +42,7 @@ const defaultStudent: Student = {
   MotherQualification: "",
   MotherOccupation: "",
   MotherMailID: "",
+  FatherMailID: "",
   MailID: "",
   ResidenceAddress: "",
   BankIFSCCode: "",
