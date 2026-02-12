@@ -1,7 +1,7 @@
 "use client"
 
 import { create } from "zustand"
-import { persist, StateStorage } from "zustand/middleware"
+import { persist, createJSONStorage } from "zustand/middleware"
 import { loginApi, LoginPayload, LoginResponse, User } from "@/services/auth.service"
 
 interface AuthState {
@@ -10,34 +10,6 @@ interface AuthState {
   loading: boolean
   login: (payload: LoginPayload) => Promise<LoginResponse>
   logout: () => void
-}
-
-// persisted state type (subset of AuthState)
-interface PersistedAuthState {
-  user: User | null
-  token: string | null
-}
-
-// ✅ Custom storage implementing StateStorage
-const localStoragePersist: StateStorage = {
-  getItem: (name: string) => {
-    if (typeof window === "undefined") return null
-    const item = localStorage.getItem(name)
-    if (!item) return null
-    try {
-      return JSON.parse(item) as PersistedAuthState
-    } catch {
-      return null
-    }
-  },
-  setItem: (name: string, value: PersistedAuthState) => {
-    if (typeof window === "undefined") return
-    localStorage.setItem(name, JSON.stringify(value))
-  },
-  removeItem: (name: string) => {
-    if (typeof window === "undefined") return
-    localStorage.removeItem(name)
-  },
 }
 
 export const useAuthStore = create<AuthState>()(
@@ -52,7 +24,12 @@ export const useAuthStore = create<AuthState>()(
           set({ loading: true })
           const res = await loginApi(payload)
 
-          set({ user: res.user, token: res.token, loading: false })
+          set({
+            user: res.user,
+            token: res.token,
+            loading: false,
+          })
+
           return res
         } catch (err) {
           set({ loading: false })
@@ -64,8 +41,11 @@ export const useAuthStore = create<AuthState>()(
     }),
     {
       name: "auth-store",
-      storage: localStoragePersist,
-      partialize: (state) => ({ user: state.user, token: state.token }), // now matches PersistedAuthState
+      storage: createJSONStorage(() => localStorage),
+      partialize: (state) => ({
+        user: state.user,
+        token: state.token,
+      }),
     }
   )
 )

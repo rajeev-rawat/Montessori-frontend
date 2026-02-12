@@ -103,7 +103,6 @@ export async function addStudentApi(
     headers: {
       Authorization: `Bearer ${token}`,
       "X-Api-Key": API_KEY,
-      // ❌ Do NOT set Content-Type; browser sets multipart/form-data automatically
     },
     body: student,
   })
@@ -123,7 +122,6 @@ export async function updateStudentApi(
     headers: {
       Authorization: `Bearer ${token}`,
       "X-Api-Key": API_KEY,
-      // ❌ Do NOT set Content-Type; browser sets multipart/form-data automatically
     },
     body: student,
   })

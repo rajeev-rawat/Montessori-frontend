@@ -26,8 +26,8 @@ export function SchoolSelect({
   const user = useAuthStore((state) => state.user)
 
   useEffect(() => {
-    if (!user) return
-    fetchSchools(user.SchoolName || undefined)
+    // if (!user) return
+    fetchSchools(user?.SchoolName || undefined)
   }, [user, fetchSchools])
 
   useEffect(() => {
