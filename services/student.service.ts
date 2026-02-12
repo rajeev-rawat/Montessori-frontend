@@ -19,6 +19,7 @@ export interface Student {
   FatherMobileNumber: string
   FatherQualification: string
   FatherOccupation: string
+  FatherMailID: string
 
   MotherName: string
   MotherAadharNo: string

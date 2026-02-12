@@ -37,6 +37,7 @@ const defaultStudent: Student = {
     MotherQualification: "",
     MotherOccupation: "",
     MotherMailID: "",
+    FatherMailID: "",
     MailID: "",
     ResidenceAddress: "",
     PreviousSchoolClass: "",
@@ -252,6 +253,7 @@ export default function StudentForm({
                             "FatherMobileNumber",
                             "FatherQualification",
                             "FatherOccupation",
+                            "FatherMailID"
                         ].map((key) => (
                             <div key={key}>
                                 {renderField(key, (formData as any)[key])}
