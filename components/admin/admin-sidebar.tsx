@@ -48,7 +48,7 @@ export function AdminSidebar() {
   const handleLogout = () => {
     logout()
     document.cookie = "auth_token=; path=/; max-age=0"
-    router.replace("/login")
+    router.replace("/")
   }
 
   return (
