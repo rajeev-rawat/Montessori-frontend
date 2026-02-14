@@ -34,7 +34,7 @@ export function DashboardOverview() {
       fetchSchools(user.SchoolName)
     }
   }, [user?.SchoolName, schools.length, fetchSchools])
-
+console.log('rajeev')
   // Fetch counts when school selected
   useEffect(() => {
     if (selectedSchool) {
