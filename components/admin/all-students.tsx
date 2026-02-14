@@ -25,6 +25,7 @@ import {
 import { useStudentStore } from "@/store/student.store"
 import SchoolSelect from "@/components/dropdown/dropdown"
 import { YearDropdown } from "@/components/dropdown/year-dropdown"
+import ConfirmationModal from "../Modal/ConfirmationModal"
 
 type SortKey = "NameOfThePupil" | "AdmissionNo" | null
 type SortOrder = "asc" | "desc"
@@ -47,10 +48,15 @@ export default function AllStudents() {
     setSchool,
     setYear,
     deleteStudent,
+    bulkDeleteStudents
   } = useStudentStore()
 
   const [sortKey, setSortKey] = useState<SortKey>(null)
   const [sortOrder, setSortOrder] = useState<SortOrder>("asc")
+
+  const [selectedRows, setSelectedRows] = useState<string[]>([])
+const [confirmOpen, setConfirmOpen] = useState(false)
+const [deleteLoading, setDeleteLoading] = useState(false)
 
   useEffect(() => {
     fetchStudents()
@@ -114,6 +120,7 @@ export default function AllStudents() {
   "MotherQualification",
   "MotherOccupation",
   "MotherMailID",
+  "FatherMailID",
   "MailID",
   "ResidenceAddress",
   "BankIFSCCode",
@@ -156,6 +163,31 @@ export default function AllStudents() {
   document.body.removeChild(link)
 }
 
+const toggleSelect = (admissionNo: string) => {
+  setSelectedRows((prev) =>
+    prev.includes(admissionNo)
+      ? prev.filter((id) => id !== admissionNo)
+      : [...prev, admissionNo]
+  )
+}
+
+const toggleSelectAll = () => {
+  if (selectedRows.length === sortedStudents.length) {
+    setSelectedRows([])
+  } else {
+    setSelectedRows(sortedStudents.map((s: any) => s.AdmissionNo))
+  }
+}
+
+const handleBulkDelete = async () => {
+  setDeleteLoading(true)
+  await bulkDeleteStudents(selectedRows)
+  setDeleteLoading(false)
+  setConfirmOpen(false)
+  setSelectedRows([])
+}
+
+
 
   return (
     <div className="p-6 space-y-6">
@@ -164,12 +196,25 @@ export default function AllStudents() {
         <h1 className="text-2xl font-bold">All Students</h1>
 
         <div className="flex gap-2">
-          <Button variant="outline" onClick={handleExport}>
+          {selectedRows.length > 0 && (
+            <Button
+            className="cursor-pointer"
+              variant="destructive"
+              onClick={() => setConfirmOpen(true)}
+            >
+              Delete Selected ({selectedRows.length})
+            </Button>
+          )}
+          <Button 
+          className="cursor-pointer"
+          variant="outline" onClick={handleExport}>
             <Download className="w-4 h-4 mr-2" />
             Export
           </Button>
 
-          <Button onClick={() => router.push("/students/add-student")}>
+          <Button 
+          className="cursor-pointer"
+          onClick={() => router.push("/students/add-student")}>
             <Plus className="w-4 h-4 mr-2" />
             Add Student
           </Button>
@@ -193,6 +238,16 @@ export default function AllStudents() {
           <Table className="w-full">
             <TableHeader className="top-0 z-20 bg-white shadow-sm  table-fixed">
               <TableRow>
+                <TableHead>
+                  <input
+                    type="checkbox"
+                    checked={
+                      sortedStudents.length > 0 &&
+                      selectedRows.length === sortedStudents.length
+                    }
+                    onChange={toggleSelectAll}
+                  />
+                </TableHead>
                 <TableHead>ID No</TableHead>
 
                 <TableHead
@@ -228,6 +283,13 @@ export default function AllStudents() {
               ) : (
                 sortedStudents.map((s: any) => (
                   <TableRow key={s.id} className="hover:bg-muted/40">
+                    <TableCell>
+                      <input
+                        type="checkbox"
+                        checked={selectedRows.includes(s.AdmissionNo)}
+                        onChange={() => toggleSelect(s.AdmissionNo)}
+                      />
+                    </TableCell>
                     <TableCell>{s.IDNo || "-"}</TableCell>
                     <TableCell>{s.AdmissionNo || "-"}</TableCell>
                     <TableCell>{s.NameOfThePupil}</TableCell>
@@ -250,6 +312,7 @@ export default function AllStudents() {
                     </TableCell>
                     <TableCell className="text-right space-x-1">
                       <Button
+                      className="cursor-pointer"
                         size="icon"
                         variant="ghost"
                         onClick={() => router.push(`/students/view/${s.id}`)}
@@ -258,6 +321,7 @@ export default function AllStudents() {
                       </Button>
 
                       <Button
+                      className="cursor-pointer"
                         size="icon"
                         variant="ghost"
                         onClick={() =>
@@ -267,13 +331,13 @@ export default function AllStudents() {
                         <Edit className="w-4 h-4" />
                       </Button>
 
-                      <Button
+                      {/* <Button
                         size="icon"
                         variant="ghost"
                         onClick={() => deleteStudent(s)}
                       >
                         <Trash className="w-4 h-4 text-destructive" />
-                      </Button>
+                      </Button> */}
                     </TableCell>
                   </TableRow>
                 ))
@@ -282,10 +346,20 @@ export default function AllStudents() {
           </Table>
         </div>
       </div>
+      <ConfirmationModal
+        open={confirmOpen}
+        onClose={() => setConfirmOpen(false)}
+        onConfirm={handleBulkDelete}
+        loading={deleteLoading}
+        title="Delete Students?"
+        description={`Are you sure you want to delete ${selectedRows.length} students?`}
+      />
 
       {/* Pagination */}
       <div className="flex items-center justify-between">
-        <Button disabled={page === 1} onClick={() => setPage(page - 1)}>
+        <Button 
+        className="cursor-pointer"
+        disabled={page === 1} onClick={() => setPage(page - 1)}>
           <ChevronLeft className="w-4 h-4 mr-1" />
           Prev
         </Button>
@@ -295,6 +369,7 @@ export default function AllStudents() {
         </span>
 
         <Button
+        className="cursor-pointer"
           disabled={page * limit >= total}
           onClick={() => setPage(page + 1)}
         >
