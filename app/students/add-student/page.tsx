@@ -14,7 +14,7 @@ export default function AddStudentPage() {
       <AdminSidebar />
       <main className="flex-1 overflow-auto bg-background">
         <StudentForm
-          title="Add Student"
+          title="Add"
           onSubmit={async (data: any) => {
             await addStudent(data)
             router.push("/students")

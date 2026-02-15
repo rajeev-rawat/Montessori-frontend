@@ -53,10 +53,13 @@ export default function AllStudents() {
 
   const [sortKey, setSortKey] = useState<SortKey>(null)
   const [sortOrder, setSortOrder] = useState<SortOrder>("asc")
-
+  const totalPages = Math.ceil(total / limit)
+  const pages = Array.from({ length: totalPages }, (_, i) => i + 1)
+  const start = (page - 1) * limit + 1
+  const end = Math.min(page * limit, total)
   const [selectedRows, setSelectedRows] = useState<string[]>([])
-const [confirmOpen, setConfirmOpen] = useState(false)
-const [deleteLoading, setDeleteLoading] = useState(false)
+  const [confirmOpen, setConfirmOpen] = useState(false)
+  const [deleteLoading, setDeleteLoading] = useState(false)
 
   useEffect(() => {
     fetchStudents()
@@ -90,102 +93,102 @@ const [deleteLoading, setDeleteLoading] = useState(false)
   ========================= */
 
   const EXPORT_FIELDS = [
-  "IDNo",
-  "AdmissionNo",
-  "NameOfThePupil",
-  "StudentAadhaarNo",
-  "PENNo",
-  "AAPARID",
-  "SchoolName",
-  "AcademicYear",
-  "DateOfAdmission",
-  "DateOfBirth",
-  "ClassAdmitted",
-  "ClassLeaving",
-  "PreviousSchoolClass",
-  "Nationality",
-  "Religion",
-  "Caste",
-  "SubCaste",
-  "MotherTongue",
-  "FatherName",
-  "FatherAadhaarNo",
-  "FatherMobileNumber",
-  "FatherQualification",
-  "FatherOccupation",
-  "MotherName",
-  "MotherAadharNo",
-  "MotherMobileNo",
-  "MotherBankAccountNo",
-  "MotherQualification",
-  "MotherOccupation",
-  "MotherMailID",
-  "FatherMailID",
-  "MailID",
-  "ResidenceAddress",
-  "BankIFSCCode",
-  "TCNumber",
-  "LeavingTCNo",
-  "TCTakenDate",
-  "DateOfLeaving",
-]
+    "IDNo",
+    "AdmissionNo",
+    "NameOfThePupil",
+    "StudentAadhaarNo",
+    "PENNo",
+    "AAPARID",
+    "SchoolName",
+    "AcademicYear",
+    "DateOfAdmission",
+    "DateOfBirth",
+    "ClassAdmitted",
+    "ClassLeaving",
+    "PreviousSchoolClass",
+    "Nationality",
+    "Religion",
+    "Caste",
+    "SubCaste",
+    "MotherTongue",
+    "FatherName",
+    "FatherAadhaarNo",
+    "FatherMobileNumber",
+    "FatherQualification",
+    "FatherOccupation",
+    "MotherName",
+    "MotherAadharNo",
+    "MotherMobileNo",
+    "MotherBankAccountNo",
+    "MotherQualification",
+    "MotherOccupation",
+    "MotherMailID",
+    "FatherMailID",
+    "MailID",
+    "ResidenceAddress",
+    "BankIFSCCode",
+    "TCNumber",
+    "LeavingTCNo",
+    "TCTakenDate",
+    "DateOfLeaving",
+  ]
   const handleExport = () => {
-  if (!sortedStudents.length) return
+    if (!sortedStudents.length) return
 
-  const headers = EXPORT_FIELDS.map((key) =>
-    key.replace(/([A-Z])/g, " $1").trim()
-  )
+    const headers = EXPORT_FIELDS.map((key) =>
+      key.replace(/([A-Z])/g, " $1").trim()
+    )
 
-  const rows = sortedStudents.map((student: any) =>
-    EXPORT_FIELDS.map((field) => {
-      const value = student[field]
-      return value === null || value === undefined ? "" : value
+    const rows = sortedStudents.map((student: any) =>
+      EXPORT_FIELDS.map((field) => {
+        const value = student[field]
+        return value === null || value === undefined ? "" : value
+      })
+    )
+
+    const csvContent =
+      [headers, ...rows]
+        .map((row) =>
+          row.map((cell) => `"${String(cell).replace(/"/g, '""')}"`).join(",")
+        )
+        .join("\n")
+
+    const blob = new Blob([csvContent], {
+      type: "text/csv;charset=utf-8;",
     })
-  )
 
-  const csvContent =
-    [headers, ...rows]
-      .map((row) =>
-        row.map((cell) => `"${String(cell).replace(/"/g, '""')}"`).join(",")
-      )
-      .join("\n")
-
-  const blob = new Blob([csvContent], {
-    type: "text/csv;charset=utf-8;",
-  })
-
-  const url = URL.createObjectURL(blob)
-  const link = document.createElement("a")
-  link.href = url
-  link.download = "students_export.csv"
-  document.body.appendChild(link)
-  link.click()
-  document.body.removeChild(link)
-}
-
-const toggleSelect = (admissionNo: string) => {
-  setSelectedRows((prev) =>
-    prev.includes(admissionNo)
-      ? prev.filter((id) => id !== admissionNo)
-      : [...prev, admissionNo]
-  )
-}
-
-const toggleSelectAll = () => {
-  if (selectedRows.length === sortedStudents.length) {
-    setSelectedRows([])
-  } else {
-    setSelectedRows(sortedStudents.map((s: any) => s.AdmissionNo))
+    const url = URL.createObjectURL(blob)
+    const link = document.createElement("a")
+    link.href = url
+    link.download = "students_export.csv"
+    document.body.appendChild(link)
+    link.click()
+    document.body.removeChild(link)
   }
-}
 
-const handleBulkDelete = async () => {
-  setDeleteLoading(true)
-  await bulkDeleteStudents(selectedRows)
-  setDeleteLoading(false)
-  setConfirmOpen(false)
-  setSelectedRows([])
-}
+  const toggleSelect = (admissionNo: string) => {
+    setSelectedRows((prev) =>
+      prev.includes(admissionNo)
+        ? prev.filter((id) => id !== admissionNo)
+        : [...prev, admissionNo]
+    )
+  }
+
+  const toggleSelectAll = () => {
+    if (selectedRows.length === sortedStudents.length) {
+      setSelectedRows([])
+    } else {
+      setSelectedRows(sortedStudents.map((s: any) => s.AdmissionNo))
+    }
+  }
+
+  const handleBulkDelete = async () => {
+    setDeleteLoading(true)
+    await bulkDeleteStudents(selectedRows)
+    setDeleteLoading(false)
+    setConfirmOpen(false)
+    setSelectedRows([])
+  }
 
 
 
@@ -198,23 +201,23 @@ const handleBulkDelete = async () => {
         <div className="flex gap-2">
           {selectedRows.length > 0 && (
             <Button
-            className="cursor-pointer"
+              className="cursor-pointer"
               variant="destructive"
               onClick={() => setConfirmOpen(true)}
             >
-              Delete Selected ({selectedRows.length})
+              Delete ({selectedRows.length})
             </Button>
           )}
-          <Button 
-          className="cursor-pointer"
-          variant="outline" onClick={handleExport}>
+          <Button
+            className="cursor-pointer"
+            variant="outline" onClick={handleExport}>
             <Download className="w-4 h-4 mr-2" />
             Export
           </Button>
 
-          <Button 
-          className="cursor-pointer"
-          onClick={() => router.push("/students/add-student")}>
+          <Button
+            className="cursor-pointer"
+            onClick={() => router.push("/students/add-student")}>
             <Plus className="w-4 h-4 mr-2" />
             Add Student
           </Button>
@@ -312,7 +315,7 @@ const handleBulkDelete = async () => {
                     </TableCell>
                     <TableCell className="text-right space-x-1">
                       <Button
-                      className="cursor-pointer"
+                        className="cursor-pointer"
                         size="icon"
                         variant="ghost"
                         onClick={() => router.push(`/students/view/${s.id}`)}
@@ -321,7 +324,7 @@ const handleBulkDelete = async () => {
                       </Button>
 
                       <Button
-                      className="cursor-pointer"
+                        className="cursor-pointer"
                         size="icon"
                         variant="ghost"
                         onClick={() =>
@@ -356,27 +359,46 @@ const handleBulkDelete = async () => {
       />
 
       {/* Pagination */}
-      <div className="flex items-center justify-between">
-        <Button 
-        className="cursor-pointer"
-        disabled={page === 1} onClick={() => setPage(page - 1)}>
-          <ChevronLeft className="w-4 h-4 mr-1" />
-          Prev
+      <div className="flex items-center justify-center gap-2 flex-wrap">
+        <div className="text-sm text-muted-foreground">
+          {start}-{end} of {total}
+        </div>
+
+        {/* Prev Button */}
+        <Button
+          className="cursor-pointer"
+          variant="outline"
+          disabled={page === 1}
+          onClick={() => setPage(page - 1)}
+        >
+          <ChevronLeft className="w-4 h-4" />
         </Button>
 
-        <span className="text-sm">
-          Page {page} of {Math.ceil(total / limit)}
-        </span>
+        {/* Page Numbers */}
+        {pages.map((p) => (
+          <Button
+            key={p}
+            size="sm"
+            variant={p === page ? "default" : "outline"}
+            className="cursor-pointer"
+            onClick={() => setPage(p)}
+          >
+            {p}
+          </Button>
+        ))}
 
+        {/* Next Button */}
         <Button
-        className="cursor-pointer"
-          disabled={page * limit >= total}
+          className="cursor-pointer"
+          variant="outline"
+          disabled={page === totalPages}
           onClick={() => setPage(page + 1)}
         >
-          Next
-          <ChevronRight className="w-4 h-4 ml-1" />
+          <ChevronRight className="w-4 h-4" />
         </Button>
+
       </div>
+
     </div>
   )
 }
