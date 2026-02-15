@@ -36,7 +36,7 @@ export default function ViewStudentPage() {
       <AdminSidebar />
       <main className="flex-1 overflow-auto bg-background">
         <StudentForm
-          title="View Student"
+          title="View"
           initialData={selectedStudent}
           mode="view"
         />

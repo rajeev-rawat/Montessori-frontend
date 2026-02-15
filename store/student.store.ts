@@ -8,6 +8,7 @@ import {
   updateStudentApi,
   deleteStudentApi,
   deleteDuplicateApi,
+  bulkDeleteStudentsApi,
 } from "@/services/student.service"
 import { toast } from "@/hooks/use-toast"
 
@@ -48,6 +49,8 @@ interface StudentStore {
   addStudent: (data: FormData) => Promise<void>
   updateStudent: (data: FormData) => Promise<void>
   deleteStudent: (s: Student) => Promise<void>
+  bulkDeleteStudents: (admissionNos: string[]) => Promise<void>
+
 }
 
 export const useStudentStore = create<StudentStore>((set, get) => ({
@@ -176,5 +179,17 @@ export const useStudentStore = create<StudentStore>((set, get) => ({
 
     toast({ title: "Student deleted successfully" })
     get().fetchStudents()
+  },
+  bulkDeleteStudents: async (admissionNos) => {
+    const token = localStorage.getItem("auth_token")
+    if (!token) return
+
+    await bulkDeleteStudentsApi(admissionNos, token)
+
+    toast({
+      title: "Students deleted successfully",
+    })
+
+    await get().fetchStudents()
   },
 }))

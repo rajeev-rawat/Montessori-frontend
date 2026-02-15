@@ -135,7 +135,7 @@ export async function deleteStudentApi(
   admissionNo: string,
   token: string
 ) {
-  const res = await fetch(`${BASE_URL}/delete_student.php`, {
+  const res = await fetch(`${BASE_URL}/delete_student`, {
     method: "POST",
     headers: {
       Authorization: `Bearer ${token}`,
@@ -166,6 +166,28 @@ export async function deleteDuplicateApi(
       "Content-Type": "application/json",
     },
     body: JSON.stringify({ AdmissionNo: admissionNo }),
+  })
+
+  const data = await res.json()
+  if (!data.status) throw new Error(data.message)
+  return data
+}
+
+export async function bulkDeleteStudentsApi(
+  admissionNos: string[],
+  token: string
+) {
+  const res = await fetch(`${BASE_URL}/delete_student_bulk`, {
+    method: "POST",
+    headers: {
+      Authorization: `Bearer ${token}`,
+      "X-Api-Key": API_KEY,
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({
+      AdmissionNos: admissionNos,
+      confirm: "DELETE",
+    }),
   })
 
   const data = await res.json()

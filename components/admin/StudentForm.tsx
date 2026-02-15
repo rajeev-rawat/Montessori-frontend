@@ -69,6 +69,7 @@ export default function StudentForm({
     const [formData, setFormData] = useState<Student>(defaultStudent)
     const { school: selectedSchool, setSchool } = useStudentStore()
     const router = useRouter()
+const [errors, setErrors] = useState<Record<string, string>>({})
 
     const isViewMode = mode === "view"
     const readOnly = isViewMode
@@ -87,10 +88,72 @@ export default function StudentForm({
         }
     }, [initialData, setSchool])
 
-    const handleChange = (key: keyof Student, value: any) => {
-        if (isViewMode) return
-        setFormData((prev) => ({ ...prev, [key]: value }))
+ const handleChange = (key: keyof Student, value: any) => {
+    if (isViewMode) return
+    setFormData((prev) => ({ ...prev, [key]: value }))
+    if (typeof value === "string") {
+        validateField(key, value)
     }
+}
+
+const validateField = (key: keyof Student, value: string) => {
+    let error = ""
+
+    const isNumeric = (val: string) => /^\d+$/.test(val)
+    const isIFSC = (val: string) => /^[A-Za-z0-9]{11}$/.test(val)
+
+    if (key === "AAPARID") {
+        if (!/^\d{12}$/.test(value)) {
+            error = "AAPAR ID must be 12 digits"
+        }
+    }
+
+    if (key === "PENNo") {
+        if (!/^\d{11}$/.test(value)) {
+            error = "PEN No must be 11 digits"
+        }
+    }
+
+    if (
+        key === "StudentAadhaarNo" ||
+        key === "FatherAadhaarNo" ||
+        key === "MotherAadharNo"
+    ) {
+        if (!/^\d{12}$/.test(value)) {
+            error = "Aadhaar must be 12 digits"
+        }
+    }
+
+    if (key === "BankIFSCCode") {
+        if (!isIFSC(value)) {
+            error = "IFSC must be 11 alphanumeric characters"
+        }
+    }
+
+    if (key === "MotherBankAccountNo") {
+        if (!isNumeric(value) || value.length < 9 || value.length > 18) {
+            error = "Account No must be 9–18 digits"
+        }
+    }
+    if (
+    key === "MailID" ||
+    key === "FatherMailID" ||
+    key === "MotherMailID"
+) {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
+
+    if (value && !emailRegex.test(value)) {
+        error = "Invalid email format"
+    }
+}
+
+    setErrors((prev) => ({
+        ...prev,
+        [key]: error,
+    }))
+}
+
+
 
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault()
@@ -120,7 +183,9 @@ export default function StudentForm({
     const renderField = (key: string, value: any) => (
         <div className="space-y-1">
             <Label className="text-sm font-medium">
-                {key.replace(/([A-Z])/g, " $1")}
+               {key 
+               .replace(/([a-z])([A-Z])/g, "$1 $2")
+                .replace(/([A-Z])([A-Z][a-z])/g, "$1 $2")}
             </Label>
 
             {key === "PhotoOfStudent" ? (
@@ -153,6 +218,11 @@ export default function StudentForm({
                             }
                         />
                     )}
+                    {errors[key] && (
+                        <p className="text-red-500 text-xs mt-1">
+                            {errors[key]}
+                        </p>
+                    )}
                 </div>
             ) : readOnly ? (
                 renderValue(value)
@@ -165,6 +235,11 @@ export default function StudentForm({
                     }
                 />
             )}
+             {errors[key] && (
+                        <p className="text-red-500 text-xs mt-1">
+                            {errors[key]}
+                        </p>
+                    )}
         </div>
     )
 
@@ -220,6 +295,7 @@ export default function StudentForm({
                                     }
                                 />
                             )}
+                            
                         </div>
 
                         {/* Other Student Fields */}

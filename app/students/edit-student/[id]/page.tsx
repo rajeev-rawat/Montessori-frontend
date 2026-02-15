@@ -38,7 +38,7 @@ export default function EditStudentPage() {
       <AdminSidebar />
       <main className="flex-1 overflow-auto bg-background">
         <StudentForm
-          title="Edit Student"
+          title="Update"
           initialData={selectedStudent}
           mode="edit"
           onSubmit={async (data) => {
