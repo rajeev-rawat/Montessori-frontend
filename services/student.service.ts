@@ -27,6 +27,7 @@ export interface Student {
   MotherBankAccountNo: string
   MotherQualification: string
   MotherOccupation: string
+  MotherTongue: string
   MotherMailID: string
 
 
@@ -50,7 +51,7 @@ export interface Student {
   Religion: string
   Caste: string
   SubCaste: string
-  MotherTongue: string
+ 
 
   PhotoOfStudent: string
   EntryDate: string

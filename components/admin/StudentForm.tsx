@@ -36,6 +36,7 @@ const defaultStudent: Student = {
     BankIFSCCode: "",
     MotherQualification: "",
     MotherOccupation: "",
+    MotherTongue: "",
     MotherMailID: "",
     FatherMailID: "",
     MailID: "",
@@ -53,7 +54,6 @@ const defaultStudent: Student = {
     Religion: "",
     Caste: "",
     SubCaste: "",
-    MotherTongue: "",
     PhotoOfStudent: "",
     EntryDate: "",
     SchoolName: "",
@@ -353,6 +353,7 @@ const validateField = (key: keyof Student, value: string) => {
                             "BankIFSCCode",
                             "MotherQualification",
                             "MotherOccupation",
+                            "MotherTongue",
                             "MotherMailID",
                         ].map((key) => (
                             <div key={key}>

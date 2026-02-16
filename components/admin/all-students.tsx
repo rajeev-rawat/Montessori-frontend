@@ -4,6 +4,7 @@ import { useEffect, useMemo, useState } from "react"
 import Image from "next/image"
 import { useRouter } from "next/navigation"
 import { Button } from "@/components/ui/button"
+import moment from 'moment'
 import {
   Table,
   TableBody,
@@ -122,6 +123,7 @@ export default function AllStudents() {
     "MotherBankAccountNo",
     "MotherQualification",
     "MotherOccupation",
+    "MotherTongue",
     "MotherMailID",
     "FatherMailID",
     "MailID",
@@ -297,8 +299,8 @@ export default function AllStudents() {
                     <TableCell>{s.AdmissionNo || "-"}</TableCell>
                     <TableCell>{s.NameOfThePupil}</TableCell>
                     <TableCell>{s.StudentAadhaarNo || "-"}</TableCell>
-                    <TableCell>{s.DateOfAdmission || "-"}</TableCell>
-                    <TableCell>{s.DateOfBirth || "-"}</TableCell>
+                    <TableCell>{moment(s.DateOfAdmission).format("DD-MM-YYYY") || "-"}</TableCell>
+                    <TableCell>{moment(s.DateOfBirth).format("DD-MM-YYYY") || "-"}</TableCell>
                     <TableCell>{s.ClassAdmitted || "-"}</TableCell>
                     <TableCell>
                       {s.PhotoOfStudent ? (
