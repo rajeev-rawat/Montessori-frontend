@@ -299,8 +299,16 @@ export default function AllStudents() {
                     <TableCell>{s.AdmissionNo || "-"}</TableCell>
                     <TableCell>{s.NameOfThePupil}</TableCell>
                     <TableCell>{s.StudentAadhaarNo || "-"}</TableCell>
-                    <TableCell>{moment(s.DateOfAdmission).format("DD-MM-YYYY") || "-"}</TableCell>
-                    <TableCell>{moment(s.DateOfBirth).format("DD-MM-YYYY") || "-"}</TableCell>
+                    <TableCell>
+                      {s.DateOfAdmission
+                        ? moment(s.DateOfAdmission).format("DD-MM-YYYY")
+                        : "-"}
+                    </TableCell>
+                    <TableCell>
+                      {s.DateOfBirth
+                        ? moment(s.DateOfBirth).format("DD-MM-YYYY")
+                        : "-"}
+                    </TableCell>
                     <TableCell>{s.ClassAdmitted || "-"}</TableCell>
                     <TableCell>
                       {s.PhotoOfStudent ? (
