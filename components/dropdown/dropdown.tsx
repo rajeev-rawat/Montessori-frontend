@@ -38,7 +38,7 @@ export function SchoolSelect({
 
   return (
     <Select value={value} onValueChange={onChange}>
-      <SelectTrigger className="w-full">
+      <SelectTrigger className="w-full cursor-pointer">
         <SelectValue placeholder={placeholder} />
       </SelectTrigger>
 

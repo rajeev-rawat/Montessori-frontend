@@ -9,7 +9,6 @@ import SchoolSelect from "@/components/dropdown/dropdown"
 import { YearDropdownWithoutAll } from "@/components/dropdown/year-dropdown"
 import { useStudentStore } from "@/store/student.store"
 import { useRouter } from "next/navigation"
-
 interface StudentFormProps {
     initialData?: Student | null
     title: string
@@ -243,16 +242,43 @@ const validateField = (key: keyof Student, value: string) => {
         </div>
     )
 
+    const handlePrint = () => {
+    if (!isViewMode) return
+
+    const printContents = document.getElementById("print-section")?.innerHTML
+    const originalContents = document.body.innerHTML
+
+    if (printContents) {
+        document.body.innerHTML = printContents
+        window.print()
+        document.body.innerHTML = originalContents
+        window.location.reload()
+    }
+}
+
     return (
         <div className="max-w-7xl mx-auto px-6 py-8">
             <div className="flex items-center justify-between mb-8">
                 <h1 className="text-3xl font-semibold">{title}</h1>
-                <Button type="button" onClick={() => router.back()}>
-                    Back
-                </Button>
-            </div>
+                <div className="flex gap-3">
+        {isViewMode && (
+            <>
+            <Button className="cursor-pointer" type="button" onClick={handlePrint}>
+                Print
+            </Button>
+            </>
+        )}
 
-            <form onSubmit={handleSubmit} className="space-y-8">
+        <Button type="button" onClick={() => router.back()}>
+            Back
+        </Button>
+    </div>
+               
+            </div>
+            <div id="print-section">
+                  <div id="student-print-area">
+
+            <form onSubmit={handleSubmit} className="space-y-8"  id="student-form">
 
                 {/* STUDENT DETAILS */}
                 <section className="bg-white rounded-xl border shadow-sm p-6">
@@ -307,7 +333,7 @@ const validateField = (key: keyof Student, value: string) => {
                                 key === "AcademicYear" ||
                                 key === "BankIFSCCode" ||
                                 key.startsWith("Father") ||
-                                key.startsWith("Mother")
+                                key.startsWith("Mother") && key !== "MotherTongue"
                             )
                                 return null
 
@@ -353,7 +379,6 @@ const validateField = (key: keyof Student, value: string) => {
                             "BankIFSCCode",
                             "MotherQualification",
                             "MotherOccupation",
-                            "MotherTongue",
                             "MotherMailID",
                         ].map((key) => (
                             <div key={key}>
@@ -368,16 +393,19 @@ const validateField = (key: keyof Student, value: string) => {
                         <Button
                             type="button"
                             variant="outline"
+                            className="cursor-pointer"
                             onClick={() => router.back()}
                         >
                             Back
                         </Button>
-                        <Button type="submit" className="px-8">
+                        <Button  type="submit" className="px-8 cursor-pointer">
                             {title}
                         </Button>
                     </div>
                 )}
             </form>
+            </div>
+            </div>
         </div>
     )
 }

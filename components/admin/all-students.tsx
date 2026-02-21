@@ -368,46 +368,80 @@ export default function AllStudents() {
         description={`Are you sure you want to delete ${selectedRows.length} students?`}
       />
 
-      {/* Pagination */}
-      <div className="flex items-center justify-center gap-2 flex-wrap">
-        <div className="text-sm text-muted-foreground">
-          {start}-{end} of {total}
-        </div>
+{/* Pagination */}
+<div className="flex items-center justify-center gap-3 flex-wrap mt-6">
 
-        {/* Prev Button */}
-        <Button
-          className="cursor-pointer"
-          variant="outline"
-          disabled={page === 1}
-          onClick={() => setPage(page - 1)}
-        >
-          <ChevronLeft className="w-4 h-4" />
-        </Button>
-
-        {/* Page Numbers */}
-        {pages.map((p) => (
-          <Button
-            key={p}
-            size="sm"
-            variant={p === page ? "default" : "outline"}
-            className="cursor-pointer"
-            onClick={() => setPage(p)}
-          >
-            {p}
-          </Button>
-        ))}
-
-        {/* Next Button */}
-        <Button
-          className="cursor-pointer"
-          variant="outline"
-          disabled={page === totalPages}
-          onClick={() => setPage(page + 1)}
-        >
-          <ChevronRight className="w-4 h-4" />
-        </Button>
-
+  {/* Prev */}
+    <div className="text-sm text-muted-foreground">
+        {start}-{end} of {total}
       </div>
+  <button
+    disabled={page === 1}
+    onClick={() => setPage(page - 1)}
+    className="w-10 h-10 flex items-center justify-center rounded-full border disabled:opacity-40 hover:bg-gray-100 transition"
+  >
+    <ChevronLeft size={18} />
+  </button>
+
+  {(() => {
+  const visiblePages: (number | string)[] = []
+
+  if (totalPages <= 7) {
+    for (let i = 1; i <= totalPages; i++) {
+      visiblePages.push(i)
+    }
+  } else {
+    const start = Math.max(1, page - 1)
+    const end = Math.min(totalPages, page + 1)
+
+    if (start > 1) {
+      visiblePages.push(1)
+      if (start > 2) visiblePages.push("...")
+    }
+
+    for (let i = start; i <= end; i++) {
+      visiblePages.push(i)
+    }
+
+    if (end < totalPages) {
+      if (end < totalPages - 1) visiblePages.push("...")
+      visiblePages.push(totalPages)
+    }
+  }
+
+  return visiblePages.map((p, index) =>
+    p === "..." ? (
+      <span key={`ellipsis-${index}`} className="px-2 text-gray-500">
+        ...
+      </span>
+    ) : (
+      <button
+        key={`page-${p}`}
+        onClick={() => setPage(Number(p))}
+        className={`w-10 h-10 rounded-full border flex items-center justify-center transition
+          ${
+            page === p
+              ? "bg-gray-300 border-gray-400"
+              : "hover:bg-gray-100"
+          }
+        `}
+      >
+        {p}
+      </button>
+    )
+  )
+})()}
+
+  {/* Next */}
+  <button
+    disabled={page === totalPages}
+    onClick={() => setPage(page + 1)}
+    className="w-10 h-10 flex items-center justify-center rounded-full border disabled:opacity-40 hover:bg-gray-100 transition"
+  >
+    <ChevronRight size={18} />
+  </button>
+
+</div>
 
     </div>
   )

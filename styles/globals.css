@@ -123,3 +123,10 @@
     @apply bg-background text-foreground;
   }
 }
+
+@media print {
+  * {
+    color: black !important;
+    background: white !important;
+  }
+}

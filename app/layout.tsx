@@ -10,8 +10,8 @@ const _geistMono = Geist_Mono({ subsets: ["latin"] })
 
 // <CHANGE> Updated metadata for Student Records Management Portal
 export const metadata: Metadata = {
-  title: "Indus Education - Student Records Management Portal",
-  description: "Centralized portal to store and manage student records for Indus Education",
+  title: "Montessori - Student Records Management Portal",
+  description: "Centralized portal to store and manage student records for Montessori",
   generator: "v0.app",
   icons: {
     icon: [
