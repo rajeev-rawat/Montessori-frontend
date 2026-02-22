@@ -38,6 +38,7 @@ import {
   Eye,
   Trash2,
 } from "lucide-react"
+import BoardSelect from "../dropdown/bordDropdown"
 
 type UploadStatus = "idle" | "uploading" | "preview" | "complete" | "error"
 
@@ -49,6 +50,7 @@ export function BulkUploadModule() {
   const [selectedSchool, setSelectedSchool] = useState("")
   const [selectedYear, setSelectedYear] = useState("")
   const [selectedFile, setSelectedFile] = useState<File | null>(null)
+  const [selectedBoard, setSelectedBoard] = useState("")
 
   const user = useAuthStore((state) => state.user)
   const fileInputRef = useRef<HTMLInputElement>(null)
@@ -87,11 +89,16 @@ export function BulkUploadModule() {
       return
     }
 
+    if (!selectedBoard) {
+      toast({ variant: "destructive", title: "Select board first" })
+      return
+    }
+
     setUploadStatus("uploading")
     setProgress(40)
 
     try {
-      await upload(selectedFile, selectedSchool, selectedYear)
+      await upload(selectedFile, selectedSchool, selectedYear, selectedBoard)
       setProgress(100)
       setUploadStatus("preview")
 
@@ -142,6 +149,10 @@ export function BulkUploadModule() {
           <YearDropdownWithoutAll
             value={selectedYear}
             onChange={setSelectedYear}
+          />
+           <BoardSelect
+            value={selectedBoard}
+            onChange={setSelectedBoard}
           />
         </div>
 
@@ -234,7 +245,7 @@ export function BulkUploadModule() {
               <div className="flex justify-end gap-3 mt-5">
                 <Button
                   onClick={handleUpload}
-                  disabled={!selectedFile || !selectedSchool || !selectedYear}
+                  disabled={!selectedFile || !selectedSchool || !selectedYear || !selectedBoard}
                 >
                   Upload Now
                 </Button>
@@ -278,10 +289,21 @@ export function BulkUploadModule() {
               <CardTitle>Template</CardTitle>
             </CardHeader>
             <CardContent>
-              <Button variant="outline" className="w-full">
-                <Download className="w-4 h-4 mr-2" />
-                Download Template
-              </Button>
+             <Button
+            variant="outline"
+            className="w-full"
+            onClick={() => {
+              const link = document.createElement("a")
+              link.href = "/templates/bulk-student.xlsx"
+              link.download = "bulk-student.xlsx"
+              document.body.appendChild(link)
+              link.click()
+              document.body.removeChild(link)
+            }}
+          >
+            <Download className="w-4 h-4 mr-2" />
+            Download Template
+          </Button>
             </CardContent>
           </Card>
         </div>

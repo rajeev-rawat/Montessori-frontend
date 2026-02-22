@@ -29,12 +29,14 @@ export async function bulkUploadApi(
   file: File,
   token: string,
   schoolSchoolName: string,
-selectedYear: string
+selectedYear: string,
+selectedBoard:string
 ): Promise<BulkUploadApiResponse> {
   const formData = new FormData()
   formData.append("file", file)
   formData.append("SchoolName", schoolSchoolName)
   formData.append("AcademicYear", selectedYear)
+  formData.append("Board", selectedBoard)
 
   const res = await fetch(`${BASE_URL}/student_bulk_upload`, {
     method: "POST",

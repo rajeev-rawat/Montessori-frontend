@@ -58,7 +58,7 @@ export interface Student {
 
   SchoolName: string
   AcademicYear: string
-
+ Board?: string
   status?: "valid" | "duplicate"
 }
 
@@ -68,6 +68,7 @@ interface GetStudentsParams {
   search?: string
   school?: string
   year?: string
+   board?: string
 }
 
 export async function getStudentsApi(
@@ -80,6 +81,7 @@ export async function getStudentsApi(
     search: params.search || "",
     SchoolName: params.school || "",
     AcademicYear: params.year || "",
+     Board: params.board || "",
   })
 
   const res = await fetch(`${BASE_URL}/student_list?${query}`, {
@@ -176,6 +178,8 @@ export async function deleteDuplicateApi(
 
 export async function bulkDeleteStudentsApi(
   admissionNos: string[],
+   schoolName: string,
+  board: string,
   token: string
 ) {
   const res = await fetch(`${BASE_URL}/delete_student_bulk`, {
@@ -187,6 +191,8 @@ export async function bulkDeleteStudentsApi(
     },
     body: JSON.stringify({
       AdmissionNos: admissionNos,
+      schoolName: schoolName,
+      board: board,
       confirm: "DELETE",
     }),
   })

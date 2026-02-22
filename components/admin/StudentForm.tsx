@@ -9,7 +9,7 @@ import SchoolSelect from "@/components/dropdown/dropdown"
 import { YearDropdownWithoutAll } from "@/components/dropdown/year-dropdown"
 import { useStudentStore } from "@/store/student.store"
 import { useRouter } from "next/navigation"
-
+import BoardSelect from "../dropdown/bordDropdown"
 interface StudentFormProps {
     initialData?: Student | null
     title: string
@@ -58,6 +58,7 @@ const defaultStudent: Student = {
     EntryDate: "",
     SchoolName: "",
     AcademicYear: "",
+    Board: ""
 }
 
 export default function StudentForm({
@@ -66,8 +67,15 @@ export default function StudentForm({
     onSubmit,
     mode = "create",
 }: StudentFormProps) {
-    const [formData, setFormData] = useState<Student>(defaultStudent)
-    const { school: selectedSchool, setSchool } = useStudentStore()
+    // const [formData, setFormData] = useState<Student>(defaultStudent)
+    const [formData, setFormData] = useState<Student>(() =>
+  initialData ? { ...defaultStudent, ...initialData } : defaultStudent
+)
+    // const { school: selectedSchool, setSchool } = useStudentStore()
+    const {
+  school: selectedSchool,
+  setSchool,
+} = useStudentStore()
     const router = useRouter()
 const [errors, setErrors] = useState<Record<string, string>>({})
 
@@ -81,12 +89,23 @@ const [errors, setErrors] = useState<Record<string, string>>({})
         "DateOfLeaving",
     ]
 
-    useEffect(() => {
-        if (initialData) {
-            setFormData({ ...defaultStudent, ...initialData })
-            if (initialData.SchoolName) setSchool(initialData.SchoolName)
-        }
-    }, [initialData, setSchool])
+useEffect(() => {
+  if (initialData) {
+    setFormData(prev => ({
+      ...prev,
+      ...initialData,
+      AcademicYear: initialData.AcademicYear || "",
+      Board: initialData.Board || "",
+    }))
+
+    if (initialData.SchoolName) {
+      setSchool(initialData.SchoolName)
+    }
+  }
+}, [initialData, setSchool])
+
+    console.log(formData, 'formData----')
+console.log(initialData, 'initialData')
 
  const handleChange = (key: keyof Student, value: any) => {
     if (isViewMode) return
@@ -243,15 +262,84 @@ const validateField = (key: keyof Student, value: string) => {
         </div>
     )
 
+    const handlePrint = () => {
+    if (!isViewMode) return
+
+    const printContents = document.getElementById("print-section")?.innerHTML
+    const originalContents = document.body.innerHTML
+
+    if (printContents) {
+        document.body.innerHTML = printContents
+        window.print()
+        document.body.innerHTML = originalContents
+        window.location.reload()
+    }
+}
+
+const handleExportCSV = () => {
+    if (!isViewMode) return
+
+    const studentData = {
+        ...formData,
+        SchoolName: selectedSchool || "",
+        AcademicYear: formData.AcademicYear
+            ? `${Number(formData.AcademicYear) - 1}-${formData.AcademicYear}`
+            : "",
+    }
+
+    const headers = Object.keys(studentData)
+    const values = Object.values(studentData)
+
+    const csvContent =
+        headers.join(",") +
+        "\n" +
+        values.map((val) => `"${val ?? ""}"`).join(",")
+
+    const blob = new Blob([csvContent], { type: "text/csv;charset=utf-8;" })
+    const url = URL.createObjectURL(blob)
+
+    const link = document.createElement("a")
+    link.href = url
+    link.setAttribute("download", `${formData.NameOfThePupil || "student"}.csv`)
+    document.body.appendChild(link)
+    link.click()
+    document.body.removeChild(link)
+}
+
     return (
         <div className="max-w-7xl mx-auto px-6 py-8">
             <div className="flex items-center justify-between mb-8">
                 <h1 className="text-3xl font-semibold">{title}</h1>
-                <Button type="button" onClick={() => router.back()}>
-                    Back
-                </Button>
-            </div>
+                <div className="flex gap-3">
+      {isViewMode && (
+    <>
+        {/* <Button
+            className="cursor-pointer"
+            type="button"
+            variant="outline"
+            onClick={handleExportCSV}
+        >
+            Export CSV
+        </Button> */}
 
+        <Button
+            className="cursor-pointer"
+            type="button"
+            variant="outline"
+            onClick={handlePrint}
+        >
+            Print
+        </Button>
+    </>
+)}
+
+        <Button type="button" onClick={() => router.back()}>
+            Back
+        </Button>
+    </div>
+               
+            </div>
+            <div id="print-section">
             <form onSubmit={handleSubmit} className="space-y-8">
 
                 {/* STUDENT DETAILS */}
@@ -298,6 +386,20 @@ const validateField = (key: keyof Student, value: string) => {
                             
                         </div>
 
+                        {/* Board */}
+                            <div className="space-y-1">
+                            <Label className="text-sm font-medium">Board</Label>
+
+                            {readOnly ? (
+                                renderValue(formData.Board || "")
+                            ) : (
+                               <BoardSelect
+                                value={formData.Board || ""}
+                                onChange={(val) => handleChange("Board", val)}
+                                />
+                            )}
+                            </div>
+
                         {/* Other Student Fields */}
                         {Object.entries(formData).map(([key, value]) => {
                             if (
@@ -306,8 +408,9 @@ const validateField = (key: keyof Student, value: string) => {
                                 key === "SchoolName" ||
                                 key === "AcademicYear" ||
                                 key === "BankIFSCCode" ||
+                                 key === "Board" ||
                                 key.startsWith("Father") ||
-                                key.startsWith("Mother")
+                                key.startsWith("Mother") && key !== "MotherTongue"
                             )
                                 return null
 
@@ -353,7 +456,6 @@ const validateField = (key: keyof Student, value: string) => {
                             "BankIFSCCode",
                             "MotherQualification",
                             "MotherOccupation",
-                            "MotherTongue",
                             "MotherMailID",
                         ].map((key) => (
                             <div key={key}>
@@ -368,16 +470,18 @@ const validateField = (key: keyof Student, value: string) => {
                         <Button
                             type="button"
                             variant="outline"
+                            className="cursor-pointer"
                             onClick={() => router.back()}
                         >
                             Back
                         </Button>
-                        <Button type="submit" className="px-8">
+                        <Button  type="submit" className="px-8 cursor-pointer">
                             {title}
                         </Button>
                     </div>
                 )}
             </form>
+            </div>
         </div>
     )
 }

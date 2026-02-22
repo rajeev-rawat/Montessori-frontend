@@ -12,11 +12,17 @@ const API_KEY = process.env.NEXT_PUBLIC_API_KEY!
 
 export async function photoBulkUploadApi(
   file: File,
+  selectedSchool:string, 
+  selectedYear:string, 
+  selectedBoard:string,
   token: string
 ): Promise<PhotoBulkUploadResponse> {
   const formData = new FormData()
   formData.append("file", file)
-
+    formData.append("SchoolName", selectedSchool)
+      formData.append("AcademicYear", selectedYear)
+        formData.append("Board", selectedBoard)
+  
   const res = await fetch(
     `${BASE_URL}/student_bulk_upload-StudentPhoto`,
     {

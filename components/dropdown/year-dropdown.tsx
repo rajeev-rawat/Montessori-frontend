@@ -33,7 +33,7 @@ export function YearDropdown({ value, onChange }: { value?: string; onChange: (v
         onChange(val === ALL_VALUE ? "" : val)
       }
     >
-      <SelectTrigger>
+      < SelectTrigger className="w-full cursor-pointer">
         <SelectValue placeholder="All Academic Years" />
       </SelectTrigger>
 

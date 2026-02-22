@@ -23,6 +23,7 @@ interface StudentStore {
   search: string
   school: string
   year: string
+  board: string
 
   viewModalOpen: boolean
   editModalOpen: boolean
@@ -36,21 +37,19 @@ interface StudentStore {
   setSearch: (search: string) => void
   setSchool: (school: string) => void
   setYear: (year: string) => void
+  setBoard: (board: string) => void  
 
-  // modal usage
   openViewModal: (s: Student) => void
   openEditModal: (s: Student) => void
   openAddModal: () => void
   closeModals: () => void
 
-  // 🔥 page-safe usage
   setSelectedStudent: (s: Student | null) => void
 
   addStudent: (data: FormData) => Promise<void>
   updateStudent: (data: FormData) => Promise<void>
   deleteStudent: (s: Student) => Promise<void>
-  bulkDeleteStudents: (admissionNos: string[]) => Promise<void>
-
+  bulkDeleteStudents: (admissionNos: string[], schoolName: string, board:string) => Promise<void>
 }
 
 export const useStudentStore = create<StudentStore>((set, get) => ({
@@ -64,6 +63,7 @@ export const useStudentStore = create<StudentStore>((set, get) => ({
   search: "",
   school: "",
   year: "",
+  board: "", 
 
   viewModalOpen: false,
   editModalOpen: false,
@@ -71,13 +71,17 @@ export const useStudentStore = create<StudentStore>((set, get) => ({
 
   selectedStudent: null,
 
+  /* ================= FETCH ================= */
+
   fetchStudents: async () => {
     const token = localStorage.getItem("auth_token")
     if (!token) return
 
     set({ loading: true })
+
     try {
       const res = await getStudentsApi(get(), token)
+
       set({
         students: res.data,
         total: res.pagination.total,
@@ -92,6 +96,8 @@ export const useStudentStore = create<StudentStore>((set, get) => ({
       set({ loading: false })
     }
   },
+
+  /* ================= FILTERS ================= */
 
   setPage: (page) => {
     if (page !== get().page) set({ page })
@@ -115,7 +121,13 @@ export const useStudentStore = create<StudentStore>((set, get) => ({
     }
   },
 
-  /* ---------------- MODALS ---------------- */
+  setBoard: (board) => {
+    if (board !== get().board) {
+      set({ board, page: 1 })
+    }
+  },
+
+  /* ================= MODALS ================= */
 
   openViewModal: (s) =>
     set({ viewModalOpen: true, selectedStudent: s }),
@@ -133,18 +145,22 @@ export const useStudentStore = create<StudentStore>((set, get) => ({
       addModalOpen: false,
     }),
 
-  /* ---------------- PAGE SAFE ---------------- */
+  /* ================= PAGE SAFE ================= */
 
   setSelectedStudent: (s) => set({ selectedStudent: s }),
 
-  /* ---------------- CRUD ---------------- */
+  /* ================= CRUD ================= */
 
   addStudent: async (formData) => {
     const token = localStorage.getItem("auth_token")
     if (!token) return
 
     await addStudentApi(formData, token)
-    toast({ title: "Student added successfully" })
+
+    toast({
+      title: "Student added successfully",
+    })
+
     await get().fetchStudents()
   },
 
@@ -161,8 +177,13 @@ export const useStudentStore = create<StudentStore>((set, get) => ({
       })
       return
     }
+
     await updateStudentApi(formData, token)
-    toast({ title: "Student updated successfully" })
+
+    toast({
+      title: "Student updated successfully",
+    })
+
     await get().fetchStudents()
     set({ selectedStudent: null })
   },
@@ -177,14 +198,18 @@ export const useStudentStore = create<StudentStore>((set, get) => ({
       await deleteStudentApi(student.AdmissionNo, token)
     }
 
-    toast({ title: "Student deleted successfully" })
-    get().fetchStudents()
+    toast({
+      title: "Student deleted successfully",
+    })
+
+    await get().fetchStudents()
   },
-  bulkDeleteStudents: async (admissionNos) => {
+
+  bulkDeleteStudents: async (admissionNos, SchoolName, Board) => {
     const token = localStorage.getItem("auth_token")
     if (!token) return
 
-    await bulkDeleteStudentsApi(admissionNos, token)
+    await bulkDeleteStudentsApi(admissionNos,SchoolName, Board, token)
 
     toast({
       title: "Students deleted successfully",
