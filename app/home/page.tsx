@@ -132,11 +132,11 @@ export default function Schools() {
             >
               <h2 className="text-lg font-semibold">{school.name}</h2>
 
-              {school.SchoolName && (
+              {/* {school.SchoolName && (
                 <p className="text-xs text-muted-foreground mt-1">
                   Code: {school.SchoolName}
                 </p>
-              )}
+              )} */}
             </button>
           ))}
         </div>

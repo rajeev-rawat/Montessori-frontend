@@ -178,8 +178,8 @@ export async function deleteDuplicateApi(
 
 export async function bulkDeleteStudentsApi(
   admissionNos: string[],
-   schoolName: string,
-  board: string,
+  schoolNames: string[],
+  boards: string[],
   token: string
 ) {
   const res = await fetch(`${BASE_URL}/delete_student_bulk`, {
@@ -191,8 +191,8 @@ export async function bulkDeleteStudentsApi(
     },
     body: JSON.stringify({
       AdmissionNos: admissionNos,
-      schoolName: schoolName,
-      board: board,
+      SchoolName: schoolNames,
+      Board: boards,
       confirm: "DELETE",
     }),
   })

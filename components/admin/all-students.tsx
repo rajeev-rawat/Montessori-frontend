@@ -63,15 +63,19 @@ export default function AllStudents() {
   const pages = Array.from({ length: totalPages }, (_, i) => i + 1)
   const start = (page - 1) * limit + 1
   const end = Math.min(page * limit, total)
-  const [selectedRows, setSelectedRows] = useState<string[]>([])
+const [selectedRows, setSelectedRows] = useState<{
+    AdmissionNo: string
+    SchoolName: string
+    Board: string
+  }[]>([])
   const [confirmOpen, setConfirmOpen] = useState(false)
   const [deleteLoading, setDeleteLoading] = useState(false)
 
-  useEffect(() => {
-  if (!board) {
-    setBoard("CBSE")
-  }
-}, [])
+//   useEffect(() => {
+//   if (!board) {
+//     setBoard("CBSE")
+//   }
+// }, [])
   useEffect(() => {
     fetchStudents()
   }, [page, search, school, year, board])
@@ -178,45 +182,78 @@ export default function AllStudents() {
     document.body.removeChild(link)
   }
 
-  const toggleSelect = (admissionNo: string) => {
-    setSelectedRows((prev) =>
-      prev.includes(admissionNo)
-        ? prev.filter((id) => id !== admissionNo)
-        : [...prev, admissionNo]
+  const toggleSelect = (student: any) => {
+  setSelectedRows((prev) => {
+    const exists = prev.find(
+      (s) => s.AdmissionNo === student.AdmissionNo
     )
-  }
 
-  const toggleSelectAll = () => {
-    if (selectedRows.length === sortedStudents.length) {
-      setSelectedRows([])
-    } else {
-      setSelectedRows(sortedStudents.map((s: any) => s.AdmissionNo))
+    if (exists) {
+      return prev.filter(
+        (s) => s.AdmissionNo !== student.AdmissionNo
+      )
     }
+
+    return [
+      ...prev,
+      {
+        AdmissionNo: student.AdmissionNo,
+        SchoolName: student.SchoolName,
+        Board: student.Board,
+      },
+    ]
+  })
+}
+
+const toggleSelectAll = () => {
+  if (selectedRows.length === sortedStudents.length) {
+    setSelectedRows([])
+  } else {
+    const all = sortedStudents.map((s: any) => ({
+      AdmissionNo: s.AdmissionNo,
+      SchoolName: s.SchoolName,
+      Board: s.Board,
+    }))
+
+    setSelectedRows(all)
   }
+}
 
 const handleBulkDelete = async () => {
   try {
     setDeleteLoading(true)
-    await bulkDeleteStudents(
-      selectedRows,
-      school,
-      board
+
+    const admissionNos = selectedRows.map(
+      (s) => s.AdmissionNo
     )
+
+    const schoolNames = selectedRows.map(
+      (s) => s.SchoolName
+    )
+
+    const boards = selectedRows.map(
+      (s) => s.Board
+    )
+
+    await bulkDeleteStudents(
+      admissionNos,
+      schoolNames,
+      boards
+    )
+
     setConfirmOpen(false)
     setSelectedRows([])
   } catch (error: any) {
-     toast({ variant: "destructive", title: 
-       error?.response?.data?.message ||
-      error?.message ||
-      "Something went wrong while deleting."
-      })
-
+    toast({
+      variant: "destructive",
+      title:
+        error?.message ||
+        "Something went wrong while deleting.",
+    })
   } finally {
-    // ✅ Always stop loading
     setDeleteLoading(false)
   }
 }
-
 
 
   return (
@@ -260,7 +297,11 @@ const handleBulkDelete = async () => {
         />
         <SchoolSelect value={school} onChange={setSchool} />
         <YearDropdown value={year} onChange={setYear} />
-        <BoardSelect value={board} onChange={setBoard} />
+        <BoardSelect
+          defaultValue="All"
+          value={board}
+          onChange={setBoard}
+        />
       </div>
 
       {/* Table */}
@@ -323,8 +364,10 @@ const handleBulkDelete = async () => {
                     <TableCell>
                       <input
                         type="checkbox"
-                        checked={selectedRows.includes(s.AdmissionNo)}
-                        onChange={() => toggleSelect(s.AdmissionNo)}
+                        checked={selectedRows.some(
+                        (row) => row.AdmissionNo === s.AdmissionNo
+                      )}
+                      onChange={() => toggleSelect(s)}
                       />
                     </TableCell>
                     <TableCell>{s.IDNo || "-"}</TableCell>
