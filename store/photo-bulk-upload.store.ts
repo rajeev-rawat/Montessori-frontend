@@ -9,7 +9,7 @@ import {
 interface PhotoBulkUploadState {
   loading: boolean
   response: PhotoBulkUploadResponse | null
-  upload: (file: File) => Promise<void>
+  upload: (file: File, selectedSchool:string, selectedYear:string, selectedBoard: string) => Promise<void>
   reset: () => void
 }
 
@@ -17,14 +17,14 @@ export const usePhotoBulkUploadStore = create<PhotoBulkUploadState>((set) => ({
   loading: false,
   response: null,
 
-  upload: async (file) => {
+  upload: async (file, selectedSchool, selectedYear, selectedBoard) => {
     const token = localStorage.getItem("auth_token")
     if (!token) throw new Error("Unauthorized")
 
     set({ loading: true })
 
     try {
-      const res = await photoBulkUploadApi(file, token)
+      const res = await photoBulkUploadApi(file, selectedSchool, selectedYear, selectedBoard, token)
 
       set({
         loading: false,

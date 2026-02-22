@@ -5,6 +5,8 @@ import Image from "next/image"
 import { useRouter } from "next/navigation"
 import { Button } from "@/components/ui/button"
 import moment from 'moment'
+import { toast } from "@/hooks/use-toast"
+
 import {
   Table,
   TableBody,
@@ -27,8 +29,9 @@ import { useStudentStore } from "@/store/student.store"
 import SchoolSelect from "@/components/dropdown/dropdown"
 import { YearDropdown } from "@/components/dropdown/year-dropdown"
 import ConfirmationModal from "../Modal/ConfirmationModal"
+import BoardSelect from "../dropdown/bordDropdown"
 
-type SortKey = "NameOfThePupil" | "AdmissionNo" | null
+type SortKey = "NameOfThePupil" | "AdmissionNo" | "ClassAdmitted" | null
 type SortOrder = "asc" | "desc"
 
 export default function AllStudents() {
@@ -43,11 +46,13 @@ export default function AllStudents() {
     search,
     school,
     year,
+    board,
     fetchStudents,
     setPage,
     setSearch,
     setSchool,
     setYear,
+    setBoard,
     deleteStudent,
     bulkDeleteStudents
   } = useStudentStore()
@@ -63,8 +68,13 @@ export default function AllStudents() {
   const [deleteLoading, setDeleteLoading] = useState(false)
 
   useEffect(() => {
+  if (!board) {
+    setBoard("CBSE")
+  }
+}, [])
+  useEffect(() => {
     fetchStudents()
-  }, [page, search, school, year])
+  }, [page, search, school, year, board])
 
   const handleSort = (key: SortKey) => {
     if (sortKey === key) {
@@ -184,13 +194,28 @@ export default function AllStudents() {
     }
   }
 
-  const handleBulkDelete = async () => {
+const handleBulkDelete = async () => {
+  try {
     setDeleteLoading(true)
-    await bulkDeleteStudents(selectedRows)
-    setDeleteLoading(false)
+    await bulkDeleteStudents(
+      selectedRows,
+      school,
+      board
+    )
     setConfirmOpen(false)
     setSelectedRows([])
+  } catch (error: any) {
+     toast({ variant: "destructive", title: 
+       error?.response?.data?.message ||
+      error?.message ||
+      "Something went wrong while deleting."
+      })
+
+  } finally {
+    // ✅ Always stop loading
+    setDeleteLoading(false)
   }
+}
 
 
 
@@ -229,12 +254,13 @@ export default function AllStudents() {
       {/* Filters */}
       <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4 bg-white p-4 rounded-lg shadow-sm">
         <Input
-          placeholder="Search by Aadhaar no"
+          placeholder="Search"
           value={search}
           onChange={(e) => setSearch(e.target.value)}
         />
         <SchoolSelect value={school} onChange={setSchool} />
         <YearDropdown value={year} onChange={setYear} />
+        <BoardSelect value={board} onChange={setBoard} />
       </div>
 
       {/* Table */}
@@ -272,7 +298,13 @@ export default function AllStudents() {
                 <TableHead>Student Aadhaar</TableHead>
                 <TableHead>Date of Admission</TableHead>
                 <TableHead>Date of Birth</TableHead>
-                <TableHead>Class Admitted</TableHead>
+                <TableHead
+                  className="cursor-pointer"
+                  onClick={() => handleSort("ClassAdmitted")}
+                >
+                  Class Admitted{arrow("ClassAdmitted")}
+                </TableHead>
+               
                 <TableHead>Photo</TableHead>
                 <TableHead className="text-right">Actions</TableHead>
               </TableRow>
@@ -327,6 +359,7 @@ export default function AllStudents() {
                       <Button
                         className="cursor-pointer"
                         size="icon"
+                        title="View"
                         variant="ghost"
                         onClick={() => router.push(`/students/view/${s.id}`)}
                       >
@@ -337,6 +370,7 @@ export default function AllStudents() {
                         className="cursor-pointer"
                         size="icon"
                         variant="ghost"
+                        title="Edit"
                         onClick={() =>
                           router.push(`/students/edit-student/${s.id}`)
                         }

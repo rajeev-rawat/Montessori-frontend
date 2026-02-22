@@ -9,6 +9,7 @@ import SchoolSelect from "@/components/dropdown/dropdown"
 import { YearDropdownWithoutAll } from "@/components/dropdown/year-dropdown"
 import { useStudentStore } from "@/store/student.store"
 import { useRouter } from "next/navigation"
+import BoardSelect from "../dropdown/bordDropdown"
 interface StudentFormProps {
     initialData?: Student | null
     title: string
@@ -57,6 +58,7 @@ const defaultStudent: Student = {
     EntryDate: "",
     SchoolName: "",
     AcademicYear: "",
+    Board: ""
 }
 
 export default function StudentForm({
@@ -65,8 +67,15 @@ export default function StudentForm({
     onSubmit,
     mode = "create",
 }: StudentFormProps) {
-    const [formData, setFormData] = useState<Student>(defaultStudent)
-    const { school: selectedSchool, setSchool } = useStudentStore()
+    // const [formData, setFormData] = useState<Student>(defaultStudent)
+    const [formData, setFormData] = useState<Student>(() =>
+  initialData ? { ...defaultStudent, ...initialData } : defaultStudent
+)
+    // const { school: selectedSchool, setSchool } = useStudentStore()
+    const {
+  school: selectedSchool,
+  setSchool,
+} = useStudentStore()
     const router = useRouter()
 const [errors, setErrors] = useState<Record<string, string>>({})
 
@@ -80,12 +89,23 @@ const [errors, setErrors] = useState<Record<string, string>>({})
         "DateOfLeaving",
     ]
 
-    useEffect(() => {
-        if (initialData) {
-            setFormData({ ...defaultStudent, ...initialData })
-            if (initialData.SchoolName) setSchool(initialData.SchoolName)
-        }
-    }, [initialData, setSchool])
+useEffect(() => {
+  if (initialData) {
+    setFormData(prev => ({
+      ...prev,
+      ...initialData,
+      AcademicYear: initialData.AcademicYear || "",
+      Board: initialData.Board || "",
+    }))
+
+    if (initialData.SchoolName) {
+      setSchool(initialData.SchoolName)
+    }
+  }
+}, [initialData, setSchool])
+
+    console.log(formData, 'formData----')
+console.log(initialData, 'initialData')
 
  const handleChange = (key: keyof Student, value: any) => {
     if (isViewMode) return
@@ -256,18 +276,62 @@ const validateField = (key: keyof Student, value: string) => {
     }
 }
 
+const handleExportCSV = () => {
+    if (!isViewMode) return
+
+    const studentData = {
+        ...formData,
+        SchoolName: selectedSchool || "",
+        AcademicYear: formData.AcademicYear
+            ? `${Number(formData.AcademicYear) - 1}-${formData.AcademicYear}`
+            : "",
+    }
+
+    const headers = Object.keys(studentData)
+    const values = Object.values(studentData)
+
+    const csvContent =
+        headers.join(",") +
+        "\n" +
+        values.map((val) => `"${val ?? ""}"`).join(",")
+
+    const blob = new Blob([csvContent], { type: "text/csv;charset=utf-8;" })
+    const url = URL.createObjectURL(blob)
+
+    const link = document.createElement("a")
+    link.href = url
+    link.setAttribute("download", `${formData.NameOfThePupil || "student"}.csv`)
+    document.body.appendChild(link)
+    link.click()
+    document.body.removeChild(link)
+}
+
     return (
         <div className="max-w-7xl mx-auto px-6 py-8">
             <div className="flex items-center justify-between mb-8">
                 <h1 className="text-3xl font-semibold">{title}</h1>
                 <div className="flex gap-3">
-        {isViewMode && (
-            <>
-            <Button className="cursor-pointer" type="button" onClick={handlePrint}>
-                Print
-            </Button>
-            </>
-        )}
+      {isViewMode && (
+    <>
+        {/* <Button
+            className="cursor-pointer"
+            type="button"
+            variant="outline"
+            onClick={handleExportCSV}
+        >
+            Export CSV
+        </Button> */}
+
+        <Button
+            className="cursor-pointer"
+            type="button"
+            variant="outline"
+            onClick={handlePrint}
+        >
+            Print
+        </Button>
+    </>
+)}
 
         <Button type="button" onClick={() => router.back()}>
             Back
@@ -276,9 +340,7 @@ const validateField = (key: keyof Student, value: string) => {
                
             </div>
             <div id="print-section">
-                  <div id="student-print-area">
-
-            <form onSubmit={handleSubmit} className="space-y-8"  id="student-form">
+            <form onSubmit={handleSubmit} className="space-y-8">
 
                 {/* STUDENT DETAILS */}
                 <section className="bg-white rounded-xl border shadow-sm p-6">
@@ -324,6 +386,20 @@ const validateField = (key: keyof Student, value: string) => {
                             
                         </div>
 
+                        {/* Board */}
+                            <div className="space-y-1">
+                            <Label className="text-sm font-medium">Board</Label>
+
+                            {readOnly ? (
+                                renderValue(formData.Board || "")
+                            ) : (
+                               <BoardSelect
+                                value={formData.Board || ""}
+                                onChange={(val) => handleChange("Board", val)}
+                                />
+                            )}
+                            </div>
+
                         {/* Other Student Fields */}
                         {Object.entries(formData).map(([key, value]) => {
                             if (
@@ -332,6 +408,7 @@ const validateField = (key: keyof Student, value: string) => {
                                 key === "SchoolName" ||
                                 key === "AcademicYear" ||
                                 key === "BankIFSCCode" ||
+                                 key === "Board" ||
                                 key.startsWith("Father") ||
                                 key.startsWith("Mother") && key !== "MotherTongue"
                             )
@@ -404,7 +481,6 @@ const validateField = (key: keyof Student, value: string) => {
                     </div>
                 )}
             </form>
-            </div>
             </div>
         </div>
     )

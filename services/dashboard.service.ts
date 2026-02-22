@@ -3,9 +3,9 @@ const API_KEY = process.env.NEXT_PUBLIC_API_KEY!
 
 export interface TotalCounts {
   total_students: number
-  uploads_this_month: number
-  records_verified: number
-  pending_reviews: number
+  class_leaving_from_10th: number
+  current_year_10th_students: number
+  students_admitted_current_year: number
 }
 
 export async function getTotalCountsApi(schoolSchoolName: string): Promise<TotalCounts> {

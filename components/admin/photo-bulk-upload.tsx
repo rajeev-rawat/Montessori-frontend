@@ -20,6 +20,9 @@ import {
     FileSpreadsheet,
     Download,
 } from "lucide-react"
+import SchoolSelect from "../dropdown/dropdown"
+import { YearDropdownWithoutAll } from "../dropdown/year-dropdown"
+import BoardSelect from "../dropdown/bordDropdown"
 
 type UploadStatus = "idle" | "uploading" | "complete" | "error"
 
@@ -28,6 +31,10 @@ export default function PhotoBulkUploadPage() {
     const [progress, setProgress] = useState(0)
     const [dragActive, setDragActive] = useState(false)
     const [file, setFile] = useState<File | null>(null)
+
+      const [selectedSchool, setSelectedSchool] = useState("")
+  const [selectedYear, setSelectedYear] = useState("")
+  const [selectedBoard, setSelectedBoard] = useState("")
 
     const fileInputRef = useRef<HTMLInputElement>(null)
 
@@ -47,13 +54,33 @@ export default function PhotoBulkUploadPage() {
     }
 
     const handleUpload = async () => {
+
+        
         if (!file) return
+
+    if (!selectedSchool) {
+      toast({ variant: "destructive", title: "Select school first" })
+      return
+    }
+
+    if (!selectedYear) {
+      toast({ variant: "destructive", title: "Select academic year" })
+      return
+    }
+
+    if (!selectedBoard) {
+      toast({ variant: "destructive", title: "Select board first" })
+      return
+    }
+
+
+        
 
         setUploadStatus("uploading")
         setProgress(40)
 
         try {
-            await upload(file)
+            await upload(file, selectedSchool, selectedYear, selectedBoard)
             setProgress(100)
             setUploadStatus("complete")
 
@@ -94,7 +121,35 @@ export default function PhotoBulkUploadPage() {
                 </div>
             </div>
 
+   <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4 bg-white p-4 rounded-lg shadow-sm">
 
+        {/* Left Side - Dropdowns */}
+        <div className="flex flex-col sm:flex-row gap-4 w-full lg:w-auto">
+          <SchoolSelect
+            value={selectedSchool}
+            onChange={setSelectedSchool}
+          />
+          <YearDropdownWithoutAll
+            value={selectedYear}
+            onChange={setSelectedYear}
+          />
+           <BoardSelect
+            value={selectedBoard}
+            onChange={setSelectedBoard}
+          />
+        </div>
+
+        {/* Right Side - Photo Bulk Upload Button */}
+        <div className="flex justify-start lg:justify-end">
+          <Button
+            onClick={() => router.push("/photo-bulk-upload")}
+            className="whitespace-nowrap"
+          >
+            Student Photo Bulk Upload
+          </Button>
+        </div>
+
+      </div>
             <div className="grid gap-6 lg:grid-cols-3">
                 {/* LEFT SIDE */}
                 <div className="lg:col-span-2 space-y-6">

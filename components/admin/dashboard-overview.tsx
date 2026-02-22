@@ -52,28 +52,28 @@ export function DashboardOverview() {
       label: "Total Students",
       value: counts ? counts.total_students?.toLocaleString() : "0",
       icon: Users,
-      trend: "+2.5%",
+      // trend: "+2.5%",
       color: "bg-primary",
     },
     {
-      label: "Uploads This Month",
-      value: counts ? counts.uploads_this_month?.toLocaleString() : "0",
+      label: "Students Admited Current Year",
+      value: counts ? counts.students_admitted_current_year?.toLocaleString() : "0",
       icon: Upload,
-      trend: "+12%",
+      // trend: "+12%",
       color: "bg-accent",
     },
     {
-      label: "Records Verified",
-      value: counts ? counts.records_verified?.toLocaleString() : "0",
+      label: "Current Year 10th Students",
+      value: counts ? counts.current_year_10th_students?.toLocaleString() : "0",
       icon: FileCheck,
-      trend: "+1.2%",
+      // trend: "+1.2%",
       color: "bg-success",
     },
     {
-      label: "Pending Reviews",
-      value: counts ? counts.pending_reviews?.toLocaleString() : "0",
+      label: "Class Leaving from 10th",
+      value: counts ? counts.class_leaving_from_10th?.toLocaleString() : "0",
       icon: AlertCircle,
-      trend: "-5%",
+      // trend: "-5%",
       color: "bg-warning",
     },
   ]
@@ -114,10 +114,10 @@ export function DashboardOverview() {
                 <div className={`w-12 h-12 rounded-lg ${stat.color} flex items-center justify-center`}>
                   <stat.icon className="w-6 h-6 text-primary-foreground" />
                 </div>
-                <div className="flex items-center gap-1 text-sm text-success">
+                {/* <div className="flex items-center gap-1 text-sm text-success">
                   <TrendingUp className="w-4 h-4" />
                   <span>{stat.trend}</span>
-                </div>
+                </div> */}
               </div>
               <div className="mt-4">
                 <p className="text-2xl font-bold text-foreground">{stat.value}</p>
