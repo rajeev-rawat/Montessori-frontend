@@ -9,12 +9,14 @@ import {
 } from "@/components/ui/select"
 
 interface BoardSelectProps {
+  defaultValue: string
   value?: string
   onChange: (value: string) => void
   placeholder?: string
 }
 
 export function BoardSelect({
+  defaultValue,
   value,
   onChange,
   placeholder = "Please Select Board",
@@ -29,7 +31,7 @@ export function BoardSelect({
       </SelectTrigger>
 
       <SelectContent>
-        <SelectItem value="ALL">Please Select</SelectItem>
+        <SelectItem value="ALL">{defaultValue}</SelectItem>
         <SelectItem value="CBSE">CBSE</SelectItem>
         <SelectItem value="STATE">STATE</SelectItem>
       </SelectContent>

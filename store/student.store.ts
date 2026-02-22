@@ -49,7 +49,11 @@ interface StudentStore {
   addStudent: (data: FormData) => Promise<void>
   updateStudent: (data: FormData) => Promise<void>
   deleteStudent: (s: Student) => Promise<void>
-  bulkDeleteStudents: (admissionNos: string[], schoolName: string, board:string) => Promise<void>
+  bulkDeleteStudents: (
+  admissionNos: string[],
+  schoolNames: string[],
+  boards: string[]
+) => Promise<void>
 }
 
 export const useStudentStore = create<StudentStore>((set, get) => ({
@@ -205,16 +209,25 @@ export const useStudentStore = create<StudentStore>((set, get) => ({
     await get().fetchStudents()
   },
 
-  bulkDeleteStudents: async (admissionNos, SchoolName, Board) => {
-    const token = localStorage.getItem("auth_token")
-    if (!token) return
+bulkDeleteStudents: async (
+  admissionNos,
+  schoolNames,
+  boards
+) => {
+  const token = localStorage.getItem("auth_token")
+  if (!token) return
 
-    await bulkDeleteStudentsApi(admissionNos,SchoolName, Board, token)
+  await bulkDeleteStudentsApi(
+    admissionNos,
+    schoolNames,
+    boards,
+    token
+  )
 
-    toast({
-      title: "Students deleted successfully",
-    })
+  toast({
+    title: "Students deleted successfully",
+  })
 
-    await get().fetchStudents()
-  },
+  await get().fetchStudents()
+},
 }))

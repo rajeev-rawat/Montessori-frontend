@@ -151,6 +151,7 @@ export function BulkUploadModule() {
             onChange={setSelectedYear}
           />
            <BoardSelect
+           defaultValue="Please Select"
             value={selectedBoard}
             onChange={setSelectedBoard}
           />
