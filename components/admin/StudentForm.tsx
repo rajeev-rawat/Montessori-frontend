@@ -272,7 +272,7 @@ const validateField = (key: keyof Student, value: string) => {
         document.body.innerHTML = printContents
         window.print()
         document.body.innerHTML = originalContents
-        window.location.reload()
+       router.back()
     }
 }
 
@@ -394,6 +394,7 @@ const handleExportCSV = () => {
                                 renderValue(formData.Board || "")
                             ) : (
                                <BoardSelect
+                                defaultValue="Please Eelect"
                                 value={formData.Board || ""}
                                 onChange={(val) => handleChange("Board", val)}
                                 />
