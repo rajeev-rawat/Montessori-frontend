@@ -10,6 +10,7 @@ import { YearDropdownWithoutAll } from "@/components/dropdown/year-dropdown"
 import { useStudentStore } from "@/store/student.store"
 import { useRouter } from "next/navigation"
 import BoardSelect from "../dropdown/bordDropdown"
+import { formatDate } from "@/lib/utils"
 interface StudentFormProps {
     initialData?: Student | null
     title: string
@@ -244,7 +245,9 @@ const validateField = (key: keyof Student, value: string) => {
                     )}
                 </div>
             ) : readOnly ? (
-                renderValue(value)
+                renderValue(
+                     dateFields.includes(key) ? formatDate(value) : value
+                )
             ) : (
                 <Input
                     type={dateFields.includes(key) ? "date" : "text"}
