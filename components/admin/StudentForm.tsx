@@ -195,7 +195,7 @@ const validateField = (key: keyof Student, value: string) => {
     }
 
     const renderValue = (value: any) => (
-        <div className="min-h-[40px] px-3 py-2 rounded-md border bg-muted/40 text-sm">
+        <div className="min-h-[40px] px-3 py-2 rounded-md border border-[#fcce00] bg-muted/40 text-sm">
             {value || "-"}
         </div>
     )
@@ -250,6 +250,7 @@ const validateField = (key: keyof Student, value: string) => {
                 )
             ) : (
                 <Input
+                    className="bg-white border border-[#fcce00] placeholder:text-[#000000] focus:ring-[#0cc0df] focus:border-[#0cc0df]"
                     type={dateFields.includes(key) ? "date" : "text"}
                     value={value || ""}
                     onChange={(e) =>
@@ -326,7 +327,7 @@ const handleExportCSV = () => {
         </Button> */}
 
         <Button
-            className="cursor-pointer"
+            className="cursor-pointer bg-[#fcce00] text-black hover:bg-[#fcce00]/90 hover:text-[#000000] cursor-pointer"
             type="button"
             variant="outline"
             onClick={handlePrint}
@@ -336,7 +337,7 @@ const handleExportCSV = () => {
     </>
 )}
 
-        <Button type="button" onClick={() => router.back()}>
+        <Button type="button" className="cursor-pointer bg-[#000000] text-white hover:bg-[#000000]/90 hover:text-[#ffffff]/90 cursor-pointer" onClick={() => router.back()}>
             Back
         </Button>
     </div>
@@ -472,14 +473,15 @@ const handleExportCSV = () => {
                 {!isViewMode && (
                     <div className="flex justify-end pt-4 gap-5">
                         <Button
+                            
                             type="button"
                             variant="outline"
-                            className="cursor-pointer"
+                            className="cursor-pointer bg-[#000000] text-white hover:bg-[#000000]/90 hover:text-[#ffffff]/90"
                             onClick={() => router.back()}
                         >
                             Back
                         </Button>
-                        <Button  type="submit" className="px-8 cursor-pointer">
+                        <Button  type="submit" className="px-8 cursor-pointer bg-[#fcce00] text-black hover:bg-[#fcce00]/90 hover:text-[#000000]">
                             {title}
                         </Button>
                     </div>

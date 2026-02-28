@@ -81,7 +81,7 @@ export function DashboardOverview() {
   return (
     <div className="p-6 space-y-6">
         {/* ================= WATERMARK (ADDED ONLY) ================= */}
-            <div className="pointer-events-none absolute inset-0 flex items-center justify-center opacity-[0.05]">
+            <div className="pointer-events-none absolute inset-0 flex items-center justify-center opacity-[0.07]">
               <Image
                 src="/logo.png"
                 alt="Watermark Logo"
@@ -108,7 +108,7 @@ export function DashboardOverview() {
       {/* Stats Grid */}
       <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
         {stats.map((stat) => (
-          <Card key={stat.label}>
+          <Card key={stat.label} className="bg-[#fcce00]">
             <CardContent className="p-6">
               <div className="flex items-center justify-between">
                 <div className={`w-12 h-12 rounded-lg ${stat.color} flex items-center justify-center`}>
@@ -121,7 +121,7 @@ export function DashboardOverview() {
               </div>
               <div className="mt-4">
                 <p className="text-2xl font-bold text-foreground">{stat.value}</p>
-                <p className="text-sm text-muted-foreground">{stat.label}</p>
+                <p className="text-sm text-[#000000]">{stat.label}</p>
               </div>
             </CardContent>
           </Card>
@@ -130,14 +130,14 @@ export function DashboardOverview() {
 
       {/* Quick Actions */}
       <div className="grid gap-6 lg:grid-cols-2">
-        <Card>
+        <Card className="bg-[#fcce00]">
           <CardHeader>
             <CardTitle>Quick Actions</CardTitle>
             <CardDescription>Common tasks you can perform</CardDescription>
           </CardHeader>
           <CardContent className="space-y-3">
             <Button
-              className="w-full justify-between bg-transparent"
+              className="w-full border-[1px] border-[#000000] justify-between bg-transparent hover:bg-[#0cc0df]/80 cursor-pointer"
               variant="outline"
              onClick={() => router.push("/students/add-student")}
             >
@@ -148,7 +148,7 @@ export function DashboardOverview() {
               <ArrowRight className="w-4 h-4" />
             </Button>
             <Button
-              className="w-full justify-between bg-transparent"
+              className="w-full justify-between bg-transparent border-[1px] border-[#000000] hover:bg-[#0cc0df]/80 cursor-pointer"
               variant="outline"
               onClick={() => router.push("/bulkUpload")}
             >
@@ -159,7 +159,7 @@ export function DashboardOverview() {
               <ArrowRight className="w-4 h-4" />
             </Button>
             <Button
-              className="w-full justify-between bg-transparent"
+              className="w-full justify-between bg-transparent border-[1px] border-[#000000]  hover:bg-[#0cc0df]/80 cursor-pointer"
               variant="outline"
               onClick={() => router.push("/students")}
             >

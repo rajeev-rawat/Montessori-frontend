@@ -88,7 +88,7 @@ export default function Schools() {
     router.push("/login");
   };
   return (
-    <div className="relative min-h-screen bg-background">
+    <div className="relative min-h-screen bg-[#0cc0df] overflow-hidden">
       {/* Watermark */}
       <div className="pointer-events-none absolute inset-0 flex items-center justify-center opacity-[0.05]">
         <Image
@@ -101,7 +101,7 @@ export default function Schools() {
       </div>
 
       {/* Header */}
-      <header className="relative z-10 border-b bg-card">
+      <header className="relative z-10 border-b bg-[#fcce00]">
         <div className="container mx-auto px-4 py-3 flex items-center gap-4">
           <Image
             src="/logo.png"
@@ -112,7 +112,7 @@ export default function Schools() {
           />
           <div>
             <h1 className="font-semibold">Montessori</h1>
-            <p className="text-xs text-muted-foreground">
+            <p className="text-xs text-[#000000]">
               Student Records Management Portal
             </p>
           </div>
@@ -128,7 +128,7 @@ export default function Schools() {
               onClick={() =>
                 handleSelect(school.email, school.SchoolName)
               }
-              className="border rounded-xl p-6 bg-card text-left hover:shadow-lg hover:border-primary transition-all"
+              className="border rounded-xl p-6 bg-[#fcce00] text-left hover:shadow-lg hover:border-primary transition-all"
             >
               <h2 className="text-lg font-semibold">{school.name}</h2>
 

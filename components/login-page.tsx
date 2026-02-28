@@ -84,7 +84,7 @@ export function LoginPage() {
   }, [router]);
 
   return (
-    <div className="relative min-h-screen bg-background overflow-hidden">
+    <div className="relative min-h-screen bg-[#0cc0df] overflow-hidden">
       {/* Watermark */}
       <div className="pointer-events-none absolute inset-0 flex items-center justify-center opacity-[0.05]">
         <Image
@@ -97,7 +97,7 @@ export function LoginPage() {
       </div>
 
       {/* Header */}
-      <header className="relative z-10 border-b bg-card">
+      <header className="relative z-10 border-b bg-[#fcce00]">
         <div className="container mx-auto px-4 py-3 flex items-center gap-4">
           <Image
             src="/logo.png"
@@ -108,7 +108,7 @@ export function LoginPage() {
           />
           <div>
             <h1 className="font-semibold">Montessori</h1>
-            <p className="text-xs text-muted-foreground">
+            <p className="text-xs text-[#000000]">
               Student Records Management Portal
             </p>
           </div>
@@ -125,21 +125,21 @@ export function LoginPage() {
             </h2>
 
             <div className="grid gap-4">
-              <div className="flex gap-4 p-4 border rounded-lg bg-card">
+              <div className="flex gap-4 p-4 border rounded-lg bg-[#fcce00]">
                 <ShieldCheck className="w-5 h-5 text-primary" />
                 <div>
                   <h3 className="font-medium">Secure & Scalable</h3>
-                  <p className="text-sm text-muted-foreground">
+                  <p className="text-sm text-[#000000]">
                     Role-based access and data privacy
                   </p>
                 </div>
               </div>
 
-              <div className="flex gap-4 p-4 border rounded-lg bg-card">
+              <div className="flex gap-4 p-4 border rounded-lg bg-[#fcce00]">
                 <Users className="w-5 h-5 text-accent" />
                 <div>
                   <h3 className="font-medium">Bulk Data Management</h3>
-                  <p className="text-sm text-muted-foreground">
+                  <p className="text-sm text-[#000000]">
                     CSV & Excel upload support
                   </p>
                 </div>
@@ -156,7 +156,7 @@ export function LoginPage() {
 
             <CardContent>
               <Tabs defaultValue="admin">
-                <TabsList className="grid w-full grid-cols-2 mb-6">
+                <TabsList className="grid w-full grid-cols-1 mb-6">
                   <TabsTrigger value="admin">Admin Login</TabsTrigger>
                   {/* <TabsTrigger value="student">Student Login</TabsTrigger> */}
                 </TabsList>
@@ -197,14 +197,14 @@ export function LoginPage() {
                       </div>
                     </div>
 
-                    <Button className="w-full mb-4" type="submit">
+                    <Button className="w-full mb-4 bg-[#0cc0df] text-[#000000] hover:bg-[#0bb0df]" type="submit">
                       Sign in as Admin
                     </Button>
 
                     <button
                       type="button"
                       onClick={() => router.push("/register-student")}
-                      className="text-primary hover:underline"
+                      className="text-[#000000] hover:underline"
                     >
                       Register here
                     </button>

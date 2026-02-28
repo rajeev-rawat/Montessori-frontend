@@ -101,7 +101,7 @@ export default function PhotoBulkUploadPage() {
     return (
         <div className="p-6 space-y-6 relative">
             {/* WATERMARK */}
-            <div className="pointer-events-none absolute inset-0 flex items-center justify-center opacity-[0.05]">
+            <div className="pointer-events-none absolute inset-0 flex items-center justify-center opacity-[0.07]">
                 <Image src="/logo.png" alt="Watermark" width={600} height={600} />
             </div>
 
@@ -115,13 +115,15 @@ export default function PhotoBulkUploadPage() {
                 </div>
 
                 <div className="flex justify-start lg:justify-end">
-                    <Button onClick={() => router.back()}>
+                    <Button
+                        className="bg-[#000000] text-white border-[#000000] hover:bg-[#000000]/90 hover:text-[#ffffff]/90 cursor-pointer"
+                        onClick={() => router.back()}>
                         Back
                     </Button>
                 </div>
             </div>
 
-   <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4 bg-white p-4 rounded-lg shadow-sm">
+   <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4 bg-[#fcce00] p-4 rounded-lg shadow-sm">
 
         {/* Left Side - Dropdowns */}
         <div className="flex flex-col sm:flex-row gap-4 w-full lg:w-auto">
@@ -144,7 +146,7 @@ export default function PhotoBulkUploadPage() {
         <div className="flex justify-start lg:justify-end">
           <Button
             onClick={() => router.push("/photo-bulk-upload")}
-            className="whitespace-nowrap"
+            className="whitespace-nowrap bg-[#0cc0df] border-[#0cc0df] text-black hover:bg-[#0cc0df]/90 cursor-pointer"
           >
             Student Photo Bulk Upload
           </Button>
@@ -154,7 +156,7 @@ export default function PhotoBulkUploadPage() {
             <div className="grid gap-6 lg:grid-cols-3">
                 {/* LEFT SIDE */}
                 <div className="lg:col-span-2 space-y-6">
-                    <Card>
+                    <Card className="bg-[#fcce00]">
                         <CardHeader>
                             <CardTitle className="flex items-center gap-2">
                                 <Upload className="w-5 h-5" />
@@ -168,7 +170,7 @@ export default function PhotoBulkUploadPage() {
                         <CardContent>
                             {uploadStatus === "idle" && (
                                 <div
-                                    className={`border-2 border-dashed rounded-lg p-8 text-center transition ${dragActive ? "border-primary bg-primary/5" : ""
+                                    className={`border-2 border-dashed border-black rounded-lg p-8 text-center transition ${dragActive ? "border-primary bg-primary/5" : ""
                                         }`}
                                     onDragEnter={(e) => {
                                         e.preventDefault()
@@ -197,7 +199,7 @@ export default function PhotoBulkUploadPage() {
                                         </p>
                                     )}
 
-                                    <Button onClick={() => fileInputRef.current?.click()}>
+                                    <Button className="bg-[#0cc0df] border-[#0cc0df] text-black hover:bg-[#0cc0df]/90" onClick={() => fileInputRef.current?.click()}>
                                         Choose File
                                     </Button>
 
@@ -226,6 +228,7 @@ export default function PhotoBulkUploadPage() {
 
                             <div className="flex justify-end gap-3 mt-5">
                                 <Button
+                                className="bg-[#0cc0df] text-black border-[#000000] hover:bg-[#fcce00]/90 hover:text-[#000000] cursor-pointer"
                                     onClick={handleUpload}
                                     disabled={!file || loading}
                                 >
@@ -252,12 +255,12 @@ export default function PhotoBulkUploadPage() {
 
                 {/* RIGHT SIDE */}
                 <div>
-                    <Card>
+                    <Card className="bg-[#fcce00]">
                         <CardHeader>
                             <CardTitle>Template</CardTitle>
                         </CardHeader>
                         <CardContent>
-                            <Button variant="outline" className="w-full">
+                            <Button variant="outline" className="w-full bg-[#0cc0df] text-black border-[#000000] hover:bg-[#0cc0df]/90 hover:text-[#000000] cursor-pointer">
                                 <Download className="w-4 h-4 mr-2" />
                                 Download Template
                             </Button>

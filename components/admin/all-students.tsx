@@ -280,7 +280,7 @@ const handleBulkDelete = async () => {
           </Button>
 
           <Button
-            className="cursor-pointer"
+            className="cursor-pointer bg-[#fcce00] border-[#0cc0df] text-black hover:bg-[#fcce00]/90"
             onClick={() => router.push("/students/add-student")}>
             <Plus className="w-4 h-4 mr-2" />
             Add Student
@@ -289,8 +289,9 @@ const handleBulkDelete = async () => {
       </div>
 
       {/* Filters */}
-      <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4 bg-white p-4 rounded-lg shadow-sm">
+      <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4 bg-[#fcce00] p-4 rounded-lg shadow-sm">
         <Input
+         className="bg-white  placeholder:text-[#000000] focus:ring-[#0cc0df] focus:border-[#0cc0df]"
           placeholder="Search"
           value={search}
           onChange={(e) => setSearch(e.target.value)}

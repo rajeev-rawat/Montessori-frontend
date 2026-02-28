@@ -125,7 +125,7 @@ export function BulkUploadModule() {
   return (
     <div className="p-6 space-y-6">
       {/* WATERMARK */}
-      <div className="pointer-events-none absolute inset-0 flex items-center justify-center opacity-[0.05]">
+      <div className="pointer-events-none absolute inset-0 flex items-center justify-center opacity-[0.07]">
         <Image src="/logo.png" alt="Watermark" width={600} height={600} />
       </div>
 
@@ -138,7 +138,7 @@ export function BulkUploadModule() {
 
       {/* DROPDOWNS */}
       {/* DROPDOWNS + ACTION BUTTON */}
-      <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4 bg-white p-4 rounded-lg shadow-sm">
+      <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4 bg-[#fcce00] p-4 rounded-lg shadow-sm">
 
         {/* Left Side - Dropdowns */}
         <div className="flex flex-col sm:flex-row gap-4 w-full lg:w-auto">
@@ -161,7 +161,7 @@ export function BulkUploadModule() {
         <div className="flex justify-start lg:justify-end">
           <Button
             onClick={() => router.push("/photo-bulk-upload")}
-            className="whitespace-nowrap"
+            className="whitespace-nowrap bg-[#0cc0df] border-[#0cc0df] text-black hover:bg-[#0cc0df]/90 cursor-pointer"
           >
             Student Photo Bulk Upload
           </Button>
@@ -172,7 +172,7 @@ export function BulkUploadModule() {
 
       <div className="grid gap-6 lg:grid-cols-3">
         <div className="lg:col-span-2 space-y-6">
-          <Card>
+          <Card className="bg-[#fcce00]">
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
                 <Upload className="w-5 h-5" />
@@ -186,7 +186,7 @@ export function BulkUploadModule() {
             <CardContent>
               {uploadStatus === "idle" && (
                 <div
-                  className={`border-2 border-dashed rounded-lg p-8 text-center ${dragActive ? "border-primary bg-primary/5" : ""
+                  className={`border-2 border-dashed border-[#000000] rounded-lg p-8 text-center ${dragActive ? "border-primary bg-primary/5" : ""
                     }`}
                   onDragEnter={(e) => {
                     e.preventDefault()
@@ -214,7 +214,7 @@ export function BulkUploadModule() {
                   )}
 
                   <div className="flex justify-center gap-3">
-                    <Button onClick={() => fileInputRef.current?.click()}>
+                    <Button className="bg-[#0cc0df] border-[#0cc0df] text-black hover:bg-[#0cc0df]/90" onClick={() => fileInputRef.current?.click()}>
                       Choose File
                     </Button>
 
@@ -245,6 +245,7 @@ export function BulkUploadModule() {
               )}
               <div className="flex justify-end gap-3 mt-5">
                 <Button
+                className="bg-[#0cc0df] border-[#0cc0df] text-black hover:bg-[#0cc0df]/90"
                   onClick={handleUpload}
                   disabled={!selectedFile || !selectedSchool || !selectedYear || !selectedBoard}
                 >
@@ -285,14 +286,15 @@ export function BulkUploadModule() {
         </div>
 
         <div>
-          <Card>
+          <Card className="bg-[#fcce00]">
             <CardHeader>
               <CardTitle>Template</CardTitle>
             </CardHeader>
             <CardContent>
              <Button
+            
             variant="outline"
-            className="w-full"
+            className="w-full bg-[#0cc0df] border-[#000000] hover:bg-[#0cc0df]/90 hover:text-[#000000] cursor-pointer"
             onClick={() => {
               const link = document.createElement("a")
               link.href = "/templates/bulk-student.xlsx"
