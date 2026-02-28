@@ -276,7 +276,8 @@ const validateField = (key: keyof Student, value: string) => {
         document.body.innerHTML = printContents
         window.print()
         document.body.innerHTML = originalContents
-       router.back()
+       router.push("/students")
+       window.location.reload() // To ensure the state is reset after printing
     }
 }
 
