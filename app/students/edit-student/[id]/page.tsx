@@ -36,7 +36,7 @@ export default function EditStudentPage() {
   return (
     <div className="flex h-screen overflow-hidden">
       <AdminSidebar />
-      <main className="flex-1 overflow-auto bg-background">
+      <main className="flex-1 overflow-auto bg-[#0cc0df]">
         <StudentForm
           title="Update"
           initialData={selectedStudent}

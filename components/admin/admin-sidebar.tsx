@@ -54,7 +54,7 @@ export function AdminSidebar() {
   return (
     <aside
       className={cn(
-        "h-screen bg-sidebar text-sidebar-foreground border-r border-sidebar-border flex flex-col transition-all duration-300",
+        "h-screen bg-[#000] text-sidebar-foreground border-r border-sidebar-border flex flex-col transition-all duration-300",
         collapsed ? "w-16" : "w-64",
       )}
     >
@@ -79,7 +79,7 @@ export function AdminSidebar() {
         <Button
           variant="ghost"
           size="icon"
-          className="text-sidebar-foreground hover:bg-sidebar-accent h-8 w-8"
+          className="text-sidebar-foreground hover:bg-sidebar-accent h-8 w-8 cursor-pointer"
           onClick={() => setCollapsed(!collapsed)}
         >
           {collapsed ? <Menu className="w-4 h-4" /> : <ChevronLeft className="w-4 h-4" />}

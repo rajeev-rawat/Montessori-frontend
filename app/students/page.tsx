@@ -5,7 +5,7 @@ export default function StudentsPage() {
     return (
     <div className="flex h-screen overflow-hidden">
       <AdminSidebar />
-      <main className="flex-1 overflow-auto bg-background"><AllStudents /></main>
+      <main className="flex-1 overflow-auto bg-[#0cc0df]"><AllStudents /></main>
     </div>
   )
 }
