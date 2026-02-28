@@ -143,8 +143,8 @@ export default function Schools() {
       </main>
 
       <footer className="border-t relative z-10">
-        <div className="container mx-auto px-4 py-6 text-center text-sm text-muted-foreground">
-          © 2025 Montessori Education. All rights reserved.
+        <div className="container mx-auto px-4 py-6 text-center text-sm text-[#000000]">
+          © 2026 Montessori Education. All rights reserved.
         </div>
       </footer>
     </div>
