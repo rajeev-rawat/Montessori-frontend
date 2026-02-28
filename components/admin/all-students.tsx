@@ -63,7 +63,7 @@ export default function AllStudents() {
   const pages = Array.from({ length: totalPages }, (_, i) => i + 1)
   const start = (page - 1) * limit + 1
   const end = Math.min(page * limit, total)
-const [selectedRows, setSelectedRows] = useState<{
+  const [selectedRows, setSelectedRows] = useState<{
     AdmissionNo: string
     SchoolName: string
     Board: string
@@ -71,11 +71,11 @@ const [selectedRows, setSelectedRows] = useState<{
   const [confirmOpen, setConfirmOpen] = useState(false)
   const [deleteLoading, setDeleteLoading] = useState(false)
 
-//   useEffect(() => {
-//   if (!board) {
-//     setBoard("CBSE")
-//   }
-// }, [])
+  //   useEffect(() => {
+  //   if (!board) {
+  //     setBoard("CBSE")
+  //   }
+  // }, [])
   useEffect(() => {
     fetchStudents()
   }, [page, search, school, year, board])
@@ -183,77 +183,77 @@ const [selectedRows, setSelectedRows] = useState<{
   }
 
   const toggleSelect = (student: any) => {
-  setSelectedRows((prev) => {
-    const exists = prev.find(
-      (s) => s.AdmissionNo === student.AdmissionNo
-    )
-
-    if (exists) {
-      return prev.filter(
-        (s) => s.AdmissionNo !== student.AdmissionNo
+    setSelectedRows((prev) => {
+      const exists = prev.find(
+        (s) => s.AdmissionNo === student.AdmissionNo
       )
-    }
 
-    return [
-      ...prev,
-      {
-        AdmissionNo: student.AdmissionNo,
-        SchoolName: student.SchoolName,
-        Board: student.Board,
-      },
-    ]
-  })
-}
+      if (exists) {
+        return prev.filter(
+          (s) => s.AdmissionNo !== student.AdmissionNo
+        )
+      }
 
-const toggleSelectAll = () => {
-  if (selectedRows.length === sortedStudents.length) {
-    setSelectedRows([])
-  } else {
-    const all = sortedStudents.map((s: any) => ({
-      AdmissionNo: s.AdmissionNo,
-      SchoolName: s.SchoolName,
-      Board: s.Board,
-    }))
-
-    setSelectedRows(all)
-  }
-}
-
-const handleBulkDelete = async () => {
-  try {
-    setDeleteLoading(true)
-
-    const admissionNos = selectedRows.map(
-      (s) => s.AdmissionNo
-    )
-
-    const schoolNames = selectedRows.map(
-      (s) => s.SchoolName
-    )
-
-    const boards = selectedRows.map(
-      (s) => s.Board
-    )
-
-    await bulkDeleteStudents(
-      admissionNos,
-      schoolNames,
-      boards
-    )
-
-    setConfirmOpen(false)
-    setSelectedRows([])
-  } catch (error: any) {
-    toast({
-      variant: "destructive",
-      title:
-        error?.message ||
-        "Something went wrong while deleting.",
+      return [
+        ...prev,
+        {
+          AdmissionNo: student.AdmissionNo,
+          SchoolName: student.SchoolName,
+          Board: student.Board,
+        },
+      ]
     })
-  } finally {
-    setDeleteLoading(false)
   }
-}
+
+  const toggleSelectAll = () => {
+    if (selectedRows.length === sortedStudents.length) {
+      setSelectedRows([])
+    } else {
+      const all = sortedStudents.map((s: any) => ({
+        AdmissionNo: s.AdmissionNo,
+        SchoolName: s.SchoolName,
+        Board: s.Board,
+      }))
+
+      setSelectedRows(all)
+    }
+  }
+
+  const handleBulkDelete = async () => {
+    try {
+      setDeleteLoading(true)
+
+      const admissionNos = selectedRows.map(
+        (s) => s.AdmissionNo
+      )
+
+      const schoolNames = selectedRows.map(
+        (s) => s.SchoolName
+      )
+
+      const boards = selectedRows.map(
+        (s) => s.Board
+      )
+
+      await bulkDeleteStudents(
+        admissionNos,
+        schoolNames,
+        boards
+      )
+
+      setConfirmOpen(false)
+      setSelectedRows([])
+    } catch (error: any) {
+      toast({
+        variant: "destructive",
+        title:
+          error?.message ||
+          "Something went wrong while deleting.",
+      })
+    } finally {
+      setDeleteLoading(false)
+    }
+  }
 
 
   return (
@@ -291,7 +291,7 @@ const handleBulkDelete = async () => {
       {/* Filters */}
       <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4 bg-[#fcce00] p-4 rounded-lg shadow-sm">
         <Input
-         className="bg-white  placeholder:text-[#000000] focus:ring-[#0cc0df] focus:border-[#0cc0df]"
+          className="bg-white  placeholder:text-[#000000] focus:ring-[#0cc0df] focus:border-[#0cc0df]"
           placeholder="Search"
           value={search}
           onChange={(e) => setSearch(e.target.value)}
@@ -346,7 +346,7 @@ const handleBulkDelete = async () => {
                 >
                   Class Admitted{arrow("ClassAdmitted")}
                 </TableHead>
-               
+
                 <TableHead>Photo</TableHead>
                 <TableHead className="text-right">Actions</TableHead>
               </TableRow>
@@ -366,9 +366,9 @@ const handleBulkDelete = async () => {
                       <input
                         type="checkbox"
                         checked={selectedRows.some(
-                        (row) => row.AdmissionNo === s.AdmissionNo
-                      )}
-                      onChange={() => toggleSelect(s)}
+                          (row) => row.AdmissionNo === s.AdmissionNo
+                        )}
+                        onChange={() => toggleSelect(s)}
                       />
                     </TableCell>
                     <TableCell>{s.IDNo || "-"}</TableCell>
@@ -446,80 +446,79 @@ const handleBulkDelete = async () => {
         description={`Are you sure you want to delete ${selectedRows.length} students?`}
       />
 
-{/* Pagination */}
-<div className="flex items-center justify-center gap-3 flex-wrap mt-6">
+      {/* Pagination */}
+      <div className="flex items-center justify-center gap-3 flex-wrap mt-6">
 
-  {/* Prev */}
-    <div className="text-sm text-muted-foreground">
-        {start}-{end} of {total}
-      </div>
-  <button
-    disabled={page === 1}
-    onClick={() => setPage(page - 1)}
-    className="w-10 h-10 flex items-center justify-center rounded-full border disabled:opacity-40 hover:bg-gray-100 transition"
-  >
-    <ChevronLeft size={18} />
-  </button>
+        {/* Prev */}
+        <div className="text-sm text-muted-foreground">
+          {start}-{end} of {total}
+        </div>
+        <button
+          disabled={page === 1}
+          onClick={() => setPage(page - 1)}
+          className="bg-[#fcce00] w-10 h-10 flex items-center justify-center rounded-full border disabled:opacity-40 hover:bg-[#fcce00]/100 transition"
+        >
+          <ChevronLeft size={18} />
+        </button>
 
-  {(() => {
-  const visiblePages: (number | string)[] = []
+        {(() => {
+          const visiblePages: (number | string)[] = []
 
-  if (totalPages <= 7) {
-    for (let i = 1; i <= totalPages; i++) {
-      visiblePages.push(i)
-    }
-  } else {
-    const start = Math.max(1, page - 1)
-    const end = Math.min(totalPages, page + 1)
+          if (totalPages <= 7) {
+            for (let i = 1; i <= totalPages; i++) {
+              visiblePages.push(i)
+            }
+          } else {
+            const start = Math.max(1, page - 1)
+            const end = Math.min(totalPages, page + 1)
 
-    if (start > 1) {
-      visiblePages.push(1)
-      if (start > 2) visiblePages.push("...")
-    }
+            if (start > 1) {
+              visiblePages.push(1)
+              if (start > 2) visiblePages.push("...")
+            }
 
-    for (let i = start; i <= end; i++) {
-      visiblePages.push(i)
-    }
+            for (let i = start; i <= end; i++) {
+              visiblePages.push(i)
+            }
 
-    if (end < totalPages) {
-      if (end < totalPages - 1) visiblePages.push("...")
-      visiblePages.push(totalPages)
-    }
-  }
-
-  return visiblePages.map((p, index) =>
-    p === "..." ? (
-      <span key={`ellipsis-${index}`} className="px-2 text-gray-500">
-        ...
-      </span>
-    ) : (
-      <button
-        key={`page-${p}`}
-        onClick={() => setPage(Number(p))}
-        className={`w-10 h-10 rounded-full border flex items-center justify-center transition
-          ${
-            page === p
-              ? "bg-gray-300 border-gray-400"
-              : "hover:bg-gray-100"
+            if (end < totalPages) {
+              if (end < totalPages - 1) visiblePages.push("...")
+              visiblePages.push(totalPages)
+            }
           }
+
+          return visiblePages.map((p, index) =>
+            p === "..." ? (
+              <span key={`ellipsis-${index}`} className="px-2 text-gray-500">
+                ...
+              </span>
+            ) : (
+              <button
+                key={`page-${p}`}
+                onClick={() => setPage(Number(p))}
+                className={`w-10 h-10 rounded-full border flex items-center justify-center transition
+          ${page === p
+                    ? "bg-[#fcce00] border-gray-400"
+                    : "hover:bg-[#fcce00]/100"
+                  }
         `}
-      >
-        {p}
-      </button>
-    )
-  )
-})()}
+              >
+                {p}
+              </button>
+            )
+          )
+        })()}
 
-  {/* Next */}
-  <button
-    disabled={page === totalPages}
-    onClick={() => setPage(page + 1)}
-    className="w-10 h-10 flex items-center justify-center rounded-full border disabled:opacity-40 hover:bg-gray-100 transition"
-  >
-    <ChevronRight size={18} />
-  </button>
+        {/* Next */}
+        <button
+          disabled={page === totalPages}
+          onClick={() => setPage(page + 1)}
+          className="w-10 h-10 flex items-center justify-center rounded-full border disabled:opacity-40 hover:bg-[#fcce00]/100 transition"
+        >
+          <ChevronRight size={18} />
+        </button>
 
-</div>
+      </div>
 
     </div>
   )
