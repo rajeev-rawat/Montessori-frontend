@@ -57,8 +57,9 @@ export default function AllStudents() {
     bulkDeleteStudents
   } = useStudentStore()
 
-  const [sortKey, setSortKey] = useState<SortKey>(null)
-  const [sortOrder, setSortOrder] = useState<SortOrder>("asc")
+  
+const [sortKey, setSortKey] = useState<SortKey>(null)
+const [sortOrder, setSortOrder] = useState<SortOrder>("asc")
   const totalPages = Math.ceil(total / limit)
   const pages = Array.from({ length: totalPages }, (_, i) => i + 1)
   const start = (page - 1) * limit + 1
@@ -80,32 +81,71 @@ export default function AllStudents() {
     fetchStudents()
   }, [page, search, school, year, board])
 
-  const handleSort = (key: SortKey) => {
-    if (sortKey === key) {
-      setSortOrder(sortOrder === "asc" ? "desc" : "asc")
-    } else {
-      setSortKey(key)
-      setSortOrder("asc")
-    }
+
+const handleSort = (key: SortKey) => {
+  if (!key) return
+
+  if (sortKey === key) {
+    setSortOrder(prev => (prev === "asc" ? "desc" : "asc"))
+  } else {
+    setSortKey(key)
+    setSortOrder("asc")
   }
+}
 
-  const sortedStudents = useMemo(() => {
-    if (!sortKey) return students
-    return [...students].sort((a: any, b: any) => {
-      const aVal = (a[sortKey] || "").toString().toLowerCase()
-      const bVal = (b[sortKey] || "").toString().toLowerCase()
-      if (aVal < bVal) return sortOrder === "asc" ? -1 : 1
-      if (aVal > bVal) return sortOrder === "asc" ? 1 : -1
-      return 0
-    })
-  }, [students, sortKey, sortOrder])
+ const sortedStudents = useMemo(() => {
+  if (!sortKey) return students
 
-  const arrow = (key: SortKey) =>
-    sortKey === key ? (sortOrder === "asc" ? " ↑" : " ↓") : ""
+  return [...students].sort((a: any, b: any) => {
+    let aVal = a[sortKey] ?? ""
+    let bVal = b[sortKey] ?? ""
 
-  /* =========================
-     EXPORT CSV LOGIC
-  ========================= */
+    // 🔥 1️⃣ AdmissionNo (Numeric Sort)
+    if (sortKey === "AdmissionNo") {
+      const numA = parseInt(aVal)
+      const numB = parseInt(bVal)
+
+      if (!isNaN(numA) && !isNaN(numB)) {
+        return sortOrder === "asc"
+          ? numA - numB
+          : numB - numA
+      }
+    }
+
+    if (sortKey === "ClassAdmitted") {
+      const romanMap: Record<string, number> = {
+        I: 1,
+        II: 2,
+        III: 3,
+        IV: 4,
+        V: 5,
+        VI: 6,
+        VII: 7,
+        VIII: 8,
+        IX: 9,
+        X: 10,
+        XI: 11,
+        XII: 12,
+      }
+
+      const numA = romanMap[aVal] || 0
+      const numB = romanMap[bVal] || 0
+
+      return sortOrder === "asc"
+        ? numA - numB
+        : numB - numA
+    }
+
+    return sortOrder === "asc"
+      ? String(aVal).localeCompare(String(bVal))
+      : String(bVal).localeCompare(String(aVal))
+  })
+}, [students, sortKey, sortOrder])
+
+const arrow = (key: SortKey) =>
+  sortKey === key ? (sortOrder === "asc" ? " ↑" : " ↓") : ""
+
+
 
   const EXPORT_FIELDS = [
     "IDNo",
