@@ -31,7 +31,11 @@ interface StudentStore {
 
   selectedStudent: Student | null
 
-  fetchStudents: () => Promise<void>
+  // fetchStudents: () => Promise<void>
+  fetchStudents: (
+  customLimit?: number,
+  exportMode?: boolean
+) => Promise<Student[] | void>
 
   setPage: (page: number) => void
   setSearch: (search: string) => void
@@ -77,29 +81,71 @@ export const useStudentStore = create<StudentStore>((set, get) => ({
 
   /* ================= FETCH ================= */
 
-  fetchStudents: async () => {
-    const token = localStorage.getItem("auth_token")
-    if (!token) return
+  // fetchStudents: async () => {
+  //   const token = localStorage.getItem("auth_token")
+  //   if (!token) return
 
+  //   set({ loading: true })
+
+  //   try {
+  //     const res = await getStudentsApi(get(), token)
+
+  //     set({
+  //       students: res.data,
+  //       total: res.pagination.total,
+  //     })
+  //   } catch (e: any) {
+  //     toast({
+  //       title: "Error",
+  //       description: e.message,
+  //       variant: "destructive",
+  //     })
+  //   } finally {
+  //     set({ loading: false })
+  //   }
+  // },
+
+  fetchStudents: async (
+  customLimit,
+  exportMode = false
+) => {
+  const token = localStorage.getItem("auth_token")
+  if (!token) return
+
+  if (!exportMode) {
     set({ loading: true })
+  }
 
-    try {
-      const res = await getStudentsApi(get(), token)
+  try {
+    const res = await getStudentsApi(
+      {
+        ...get(),
+        page: 1,
+        limit: customLimit || get().limit,
+      },
+      token
+    )
 
-      set({
-        students: res.data,
-        total: res.pagination.total,
-      })
-    } catch (e: any) {
-      toast({
-        title: "Error",
-        description: e.message,
-        variant: "destructive",
-      })
-    } finally {
+    if (exportMode) {
+      return res.data
+    }
+
+    set({
+      students: res.data,
+      total: res.pagination.total,
+    })
+  } catch (e: any) {
+    toast({
+      title: "Error",
+      description: e.message,
+      variant: "destructive",
+    })
+  } finally {
+    if (!exportMode) {
       set({ loading: false })
     }
-  },
+  }
+},
 
   /* ================= FILTERS ================= */
 

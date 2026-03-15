@@ -93,6 +93,7 @@ const handleSort = (key: SortKey) => {
   }
 }
 
+
  const sortedStudents = useMemo(() => {
   if (!sortKey) return students
 
@@ -188,40 +189,91 @@ const arrow = (key: SortKey) =>
     "TCTakenDate",
     "DateOfLeaving",
   ]
-  const handleExport = () => {
-    if (!sortedStudents.length) return
+  // const handleExport = () => {
+  //   if (!sortedStudents.length) return
 
-    const headers = EXPORT_FIELDS.map((key) =>
-      key.replace(/([A-Z])/g, " $1").trim()
-    )
+  //   const headers = EXPORT_FIELDS.map((key) =>
+  //     key.replace(/([A-Z])/g, " $1").trim()
+  //   )
 
-    const rows = sortedStudents.map((student: any) =>
-      EXPORT_FIELDS.map((field) => {
-        const value = student[field]
-        return value === null || value === undefined ? "" : value
-      })
-    )
+  //   const rows = sortedStudents.map((student: any) =>
+  //     EXPORT_FIELDS.map((field) => {
+  //       const value = student[field]
+  //       return value === null || value === undefined ? "" : value
+  //     })
+  //   )
 
-    const csvContent =
-      [headers, ...rows]
-        .map((row) =>
-          row.map((cell) => `"${String(cell).replace(/"/g, '""')}"`).join(",")
-        )
-        .join("\n")
+  //   const csvContent =
+  //     [headers, ...rows]
+  //       .map((row) =>
+  //         row.map((cell) => `"${String(cell).replace(/"/g, '""')}"`).join(",")
+  //       )
+  //       .join("\n")
 
-    const blob = new Blob([csvContent], {
-      type: "text/csv;charset=utf-8;",
+  //   const blob = new Blob([csvContent], {
+  //     type: "text/csv;charset=utf-8;",
+  //   })
+
+  //   const url = URL.createObjectURL(blob)
+  //   const link = document.createElement("a")
+  //   link.href = url
+  //   link.download = "students_export.csv"
+  //   document.body.appendChild(link)
+  //   link.click()
+  //   document.body.removeChild(link)
+  // }
+  
+
+
+  const handleExport = async () => {
+  const allStudents = await fetchStudents(total, true)
+
+  if (!allStudents || !allStudents.length) return
+
+  const headers = EXPORT_FIELDS.map((key) =>
+    key.replace(/([A-Z])/g, " $1").trim()
+  )
+
+  const rows = allStudents.map((student: any) =>
+    EXPORT_FIELDS.map((field) => {
+      const value = student[field]
+
+      if (
+        field === "DateOfAdmission" ||
+        field === "DateOfBirth" ||
+        field === "DateOfLeaving" ||
+        field === "TCTakenDate"
+      ) {
+        return value ? moment(value).format("DD-MM-YYYY") : ""
+      }
+
+      return value ?? ""
     })
+  )
 
-    const url = URL.createObjectURL(blob)
-    const link = document.createElement("a")
-    link.href = url
-    link.download = "students_export.csv"
-    document.body.appendChild(link)
-    link.click()
-    document.body.removeChild(link)
-  }
+  const csvContent =
+    [headers, ...rows]
+      .map((row) =>
+        row.map((cell) => `"${String(cell).replace(/"/g, '""')}"`).join(",")
+      )
+      .join("\n")
 
+  const blob = new Blob([csvContent], {
+    type: "text/csv;charset=utf-8;",
+  })
+
+  const url = URL.createObjectURL(blob)
+
+  const link = document.createElement("a")
+  link.href = url
+  link.download = `students_export_${moment().format("DD-MM-YYYY")}.csv`
+
+  document.body.appendChild(link)
+  link.click()
+  document.body.removeChild(link)
+
+  URL.revokeObjectURL(url)
+}
   const toggleSelect = (student: any) => {
     setSelectedRows((prev) => {
       const exists = prev.find(
