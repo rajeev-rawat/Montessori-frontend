@@ -111,6 +111,7 @@ export function BulkUploadModule() {
             ? "Upload completed with issues"
             : "Bulk upload successful",
         description: `${res.inserted_total} inserted, ${res.duplicates_inserted} duplicates, ${res.errors_count} errors`,
+         duration: 300000,
       })
     } catch (err: any) {
       toast({
