@@ -5,18 +5,18 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 
 const schools = [
-  {
-    id: 9,
-    name: "Montessori Invictus, Hyderabad",
-    email: "invitictus10@gmail.com",
-    SchoolName: "MIH",
-  },
-  {
-    id: 8,
-    name: "Sproutz School, Khanamit, Hyderabad",
-    email: "contact@sproutzschool.in",
-    SchoolName: "SSKH",
-  },
+  // {
+  //   id: 9,
+  //   name: "Montessori Invictus, Hyderabad",
+  //   email: "invitictus10@gmail.com",
+  //   SchoolName: "MIH",
+  // },
+  // {
+  //   id: 8,
+  //   name: "Sproutz School, Khanamit, Hyderabad",
+  //   email: "contact@sproutzschool.in",
+  //   SchoolName: "SSKH",
+  // },
   {
     id: 7,
     name: "Monte International School, NH-44, Kallur",
